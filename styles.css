@@ -440,7 +440,7 @@ h1 {
 
 /* ── Holiday ── */
 .holiday {
-  margin: 0 7% 70px;
+  margin: 40px 7% 70px;
   padding: 28px 32px;
   background: var(--red);
   color: white;
