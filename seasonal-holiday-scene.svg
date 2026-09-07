@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 300" role="img" aria-label="Holiday catalog scene with gifts, products, greenery, mug, candle and shipping box">
+<rect width="980" height="300" rx="28" fill="#FFF2EA"/>
+<ellipse cx="625" cy="244" rx="315" ry="26" fill="#F2DDCF"/>
+<!-- gift -->
+<g transform="translate(245 122)"><rect x="0" y="38" width="118" height="102" rx="8" fill="#D95E44"/><rect x="50" y="38" width="18" height="102" fill="#F7E9DC"/><rect x="0" y="70" width="118" height="16" fill="#F7E9DC"/><path d="M58 38c-18-29-3-49 15-32 8 7 8 21-15 32zM60 38c21-28 39-18 30 2-6 13-18 10-30-2z" fill="none" stroke="#F7E9DC" stroke-width="9" stroke-linecap="round"/><path d="M87 24c20 10 28 28 26 51M99 20c10 17 8 36 0 52" fill="none" stroke="#3E7A4A" stroke-width="5" stroke-linecap="round"/></g>
+<!-- catalog -->
+<g transform="translate(420 70)"><path d="M0 38c74-20 126-15 176 2v146c-55-17-111-19-176 0z" fill="#FFF" stroke="#D7DEE3" stroke-width="3"/><path d="M176 40c59-14 111-11 166 4v142c-57-14-111-15-166 0z" fill="#FFF" stroke="#D7DEE3" stroke-width="3"/><path d="M176 42v144" stroke="#B7C1C8" stroke-width="3"/>
+<g transform="translate(31 62)"><rect width="92" height="94" rx="10" fill="#F7F5EF"/><path d="M24 25h44l-5 49H29z" fill="#5A9D59"/><path d="M31 25c0-13 7-21 15-21s15 8 15 21" fill="none" stroke="#437C42" stroke-width="5"/><rect x="18" y="79" width="58" height="5" rx="3" fill="#DDE3E7"/></g>
+<g transform="translate(203 62)"><rect width="92" height="94" rx="10" fill="#F7F5EF"/><path d="M25 18c16-12 26-12 42 0l-6 48H31z" fill="#2D6B9A"/><path d="M34 11c5-9 11-12 17-12s12 3 17 12" fill="none" stroke="#2D6B9A" stroke-width="6"/><rect x="20" y="79" width="52" height="5" rx="3" fill="#DDE3E7"/></g></g>
+<!-- mug -->
+<g transform="translate(744 134)"><path d="M0 20h82v73c0 20-16 36-36 36H36C16 129 0 113 0 93z" fill="#F2E0C1"/><path d="M82 41h19c18 0 25 31 2 44H82" fill="none" stroke="#D4B486" stroke-width="9"/><path d="M36 52c6-10 15-10 21 0-6 10-15 10-21 0z" fill="#D95E44"/></g>
+<!-- candle -->
+<g transform="translate(835 145)"><rect x="0" y="26" width="70" height="82" rx="14" fill="#B86E38"/><rect x="10" y="40" width="50" height="48" rx="8" fill="#D98A53"/><path d="M35 26c-13-18 6-28 10-9 1 6-2 9-10 9z" fill="#F0A500"/></g>
+<!-- greenery -->
+<g fill="none" stroke="#3E7A4A" stroke-width="7" stroke-linecap="round"><path d="M724 176c-25-20-35-35-37-58M726 184c-8-32-2-52 20-71M724 190c18-25 38-35 63-33"/><path d="M340 187c-8-25-4-42 13-56M342 194c17-21 34-31 55-31"/></g>
+<!-- shipping box -->
+<g transform="translate(824 74)"><path d="M0 42l70-34 76 35-73 38z" fill="#D8A05A"/><path d="M0 42v100l73 37V81z" fill="#C78945"/><path d="M146 43v97l-73 39V81z" fill="#D39A52"/><path d="M68 108c8-12 20-12 28 0-8 11-20 11-28 0z" fill="#B56D36"/></g>
+</svg>
