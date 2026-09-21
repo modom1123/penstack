@@ -1,0 +1,66 @@
+/* Penstack blog */
+.blog-shell{background:#fff}
+.blog-hero{padding:58px 6% 44px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#fff 0%,#fffdf8 100%)}
+.blog-breadcrumbs{display:flex;gap:8px;align-items:center;color:var(--muted);font-size:13px;margin-bottom:24px}
+.blog-breadcrumbs a{text-decoration:underline;text-decoration-color:#c9cfcb;text-underline-offset:3px}
+.blog-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:44px;align-items:center}
+.blog-kicker{margin:0 0 12px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.blog-hero h1{font-size:clamp(44px,5.4vw,72px);max-width:880px}
+.blog-dek{margin:20px 0 22px;max-width:800px;color:var(--muted);font-size:18px;line-height:1.62}
+.blog-byline{display:flex;align-items:center;gap:11px;color:var(--muted);font-size:13px}
+.blog-byline-mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--soft);color:var(--green);font-weight:800}
+.blog-hero-visual{margin:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.blog-hero-visual img{width:100%;height:auto}
+.blog-layout{padding:52px 6% 76px;display:grid;grid-template-columns:minmax(0,790px) minmax(230px,290px);gap:72px;justify-content:center;align-items:start}
+.blog-article{min-width:0}
+.blog-article h2{margin:54px 0 16px;font-size:clamp(30px,3.2vw,42px);letter-spacing:-.035em;scroll-margin-top:30px}
+.blog-article h3{margin:34px 0 10px;font-size:24px;letter-spacing:-.02em;scroll-margin-top:30px}
+.blog-article p,.blog-article li{font-size:17px;line-height:1.72;color:#33485a}
+.blog-article p{margin:0 0 20px}
+.blog-article ul{margin:4px 0 24px;padding-left:24px}
+.blog-article li+li{margin-top:7px}
+.blog-article strong{color:var(--ink)}
+.blog-article a:not(.button){color:var(--green);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.blog-lead{font-size:20px!important;color:var(--ink)!important}
+.blog-callout{margin:28px 0;padding:20px 22px;border:1px solid #d8e9dd;border-radius:16px;background:#eef7f1}
+.blog-callout strong{display:block;margin-bottom:5px;font-size:17px}
+.blog-callout p{margin:0;font-size:15px}
+.blog-callout.orange{background:#fff8ec;border-color:#edd8bc}
+.blog-code{display:inline-block;padding:4px 9px;border-radius:8px;background:#f1f2ef;color:var(--navy);font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:.92em}
+.blog-code-list{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 24px}
+.blog-figure{margin:34px 0 42px}
+.blog-figure img{width:100%;height:auto;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 12px 34px rgba(20,43,63,.08)}
+.blog-figure figcaption{margin-top:9px;color:var(--muted);font-size:12px;line-height:1.45}
+.blog-example{margin:24px 0;padding:22px;border:1px solid var(--line);border-radius:16px;background:#fbfaf6}
+.blog-example-label{display:block;margin-bottom:8px;color:var(--green);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.blog-example h3{margin:0 0 10px;font-size:22px}
+.blog-example p:last-child{margin-bottom:0}
+.signal-stack{display:grid;gap:12px;margin:24px 0 30px}
+.signal-row{padding:16px 18px;border:1px solid var(--line);border-radius:13px;background:#fff}
+.signal-row small{display:block;margin-bottom:4px;color:var(--green);font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+.signal-row strong{font-size:17px}
+.blog-toc{position:sticky;top:24px;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.blog-toc h2{margin:0 0 12px;font-size:16px;letter-spacing:0}
+.blog-toc nav{display:grid;gap:4px}
+.blog-toc a{padding:7px 9px;border-radius:8px;color:var(--muted);font-size:13px;line-height:1.35}
+.blog-toc a:hover,.blog-toc a:focus-visible{background:var(--soft);color:var(--green)}
+.blog-takeaway{margin-top:50px;padding:28px;border:1px solid #d8e9dd;border-radius:18px;background:linear-gradient(135deg,#eef7f1 0%,#fff8ec 100%)}
+.blog-takeaway h2{margin:0 0 12px}
+.blog-flow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:20px 0 0}
+.blog-flow span{padding:10px 13px;border-radius:10px;background:#fff;border:1px solid var(--line);font-size:13px;font-weight:800}
+.blog-flow b{color:var(--green)}
+.blog-cta{margin-top:36px;padding:26px;border-radius:18px;background:#f4eefb;border:1px solid #e6daf5;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.blog-cta h2{margin:0 0 6px;font-size:26px}
+.blog-cta p{margin:0;color:var(--muted);font-size:15px}
+.blog-index-hero{padding:72px 6% 44px;text-align:center}
+.blog-index-hero h1{margin-left:auto;margin-right:auto}
+.blog-index-hero .lead{margin-left:auto;margin-right:auto}
+.blog-grid{padding:20px 6% 80px;display:grid;grid-template-columns:minmax(0,820px);justify-content:center}
+.post-card{display:grid;grid-template-columns:1fr 1.1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.post-card img{width:100%;height:100%;object-fit:cover}
+.post-card-body{padding:32px}
+.post-card-body h2{font-size:34px;margin:8px 0 12px}
+.post-card-body p{color:var(--muted);line-height:1.6}
+.post-meta{font-size:12px;color:var(--muted)}
+@media(max-width:1050px){.blog-hero-grid{grid-template-columns:1fr}.blog-hero-visual{max-width:760px}.blog-layout{grid-template-columns:minmax(0,790px);gap:28px}.blog-toc{position:static;order:-1}.blog-toc nav{grid-template-columns:repeat(2,minmax(0,1fr))}.post-card{grid-template-columns:1fr}}
+@media(max-width:760px){.blog-hero{padding:42px 5% 34px}.blog-layout{padding:34px 5% 58px}.blog-hero h1{font-size:44px}.blog-dek{font-size:17px}.blog-article p,.blog-article li{font-size:16px}.blog-article h2{margin-top:44px}.blog-toc nav{grid-template-columns:1fr}.blog-cta{align-items:flex-start;flex-direction:column}.blog-flow{align-items:flex-start}.blog-flow b{display:none}.blog-index-hero,.blog-grid{padding-left:5%;padding-right:5%}.post-card-body{padding:24px}}

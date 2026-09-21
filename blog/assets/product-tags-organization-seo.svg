@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Product tags connect store organization to clearer SEO structure</title>
+<desc id="desc">A three-stage diagram showing tagged products becoming organized collections and then a clearer search result.</desc>
+<defs>
+  <filter id="s" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#17324d" flood-opacity=".10"/></filter>
+  <linearGradient id="bg" x1="0" x2="1"><stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#eef7f1"/></linearGradient>
+</defs>
+<rect width="1200" height="675" rx="26" fill="url(#bg)"/>
+<text x="600" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="44" font-weight="700" fill="#132b3f">Product Tags: Organization + SEO</text>
+<text x="600" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#617080">Tags organize the store first. Clearer structure can support search later.</text>
+
+<g filter="url(#s)">
+  <rect x="70" y="160" width="300" height="390" rx="22" fill="#fff" stroke="#e4e2d9"/>
+  <rect x="450" y="160" width="300" height="390" rx="22" fill="#fff" stroke="#e4e2d9"/>
+  <rect x="830" y="160" width="300" height="390" rx="22" fill="#fff" stroke="#e4e2d9"/>
+</g>
+
+<text x="220" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#17324d">1. Tag products</text>
+<rect x="108" y="240" width="224" height="110" rx="16" fill="#eef4ef"/>
+<path d="M145 282h65l22 22-22 22h-65z" fill="#0f6b4f" opacity=".16"/>
+<circle cx="159" cy="304" r="6" fill="#0f6b4f"/>
+<text x="240" y="276" font-family="Arial,sans-serif" font-size="17" fill="#132b3f">waterproof</text>
+<text x="240" y="308" font-family="Arial,sans-serif" font-size="17" fill="#132b3f">dog lover</text>
+<text x="240" y="340" font-family="Arial,sans-serif" font-size="17" fill="#132b3f">blue</text>
+<g font-family="Arial,sans-serif" font-size="16" font-weight="700">
+  <rect x="100" y="388" width="112" height="38" rx="19" fill="#dff1ff"/><text x="156" y="413" text-anchor="middle" fill="#17324d">waterproof</text>
+  <rect x="218" y="388" width="103" height="38" rx="19" fill="#eee4ff"/><text x="269" y="413" text-anchor="middle" fill="#17324d">dog lover</text>
+  <rect x="100" y="438" width="72" height="38" rx="19" fill="#fff0bd"/><text x="136" y="463" text-anchor="middle" fill="#17324d">gift</text>
+  <rect x="180" y="438" width="72" height="38" rx="19" fill="#dff1ff"/><text x="216" y="463" text-anchor="middle" fill="#17324d">blue</text>
+</g>
+<text x="220" y="515" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Label useful product attributes</text>
+
+<path d="M380 355h50" stroke="#0f6b4f" stroke-width="7" stroke-linecap="round"/><path d="M420 340l18 15-18 15" fill="none" stroke="#0f6b4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+<text x="600" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#17324d">2. Build collections</text>
+<g font-family="Arial,sans-serif">
+  <rect x="490" y="245" width="220" height="62" rx="13" fill="#eef7f1"/><circle cx="520" cy="276" r="13" fill="#0f6b4f"/><text x="548" y="273" font-size="17" font-weight="700" fill="#132b3f">Rainwear</text><text x="548" y="293" font-size="13" fill="#617080">Waterproof gear</text>
+  <rect x="490" y="320" width="220" height="62" rx="13" fill="#fff8ec"/><circle cx="520" cy="351" r="13" fill="#df7b28"/><text x="548" y="348" font-size="17" font-weight="700" fill="#132b3f">Gifts</text><text x="548" y="368" font-size="13" fill="#617080">Useful groupings</text>
+  <rect x="490" y="395" width="220" height="62" rx="13" fill="#f4eefb"/><circle cx="520" cy="426" r="13" fill="#7b58b5"/><text x="548" y="423" font-size="17" font-weight="700" fill="#132b3f">For dog lovers</text><text x="548" y="443" font-size="13" fill="#617080">Shopper intent</text>
+</g>
+<text x="600" y="515" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Create logical, customer-facing structure</text>
+
+<path d="M760 355h50" stroke="#df7b28" stroke-width="7" stroke-linecap="round"/><path d="M800 340l18 15-18 15" fill="none" stroke="#df7b28" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+<text x="980" y="205" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#17324d">3. Clearer pages</text>
+<rect x="870" y="240" width="220" height="250" rx="16" fill="#fff" stroke="#d9ddd8"/>
+<rect x="890" y="265" width="180" height="38" rx="19" fill="#f5f7f7" stroke="#e4e2d9"/>
+<circle cx="910" cy="284" r="6" fill="none" stroke="#0f6b4f" stroke-width="2"/><path d="M914 289l7 7" stroke="#0f6b4f" stroke-width="2"/>
+<text x="930" y="290" font-family="Arial,sans-serif" font-size="13" fill="#617080">waterproof dog raincoat</text>
+<text x="895" y="335" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">Rainwear for Dogs</text>
+<text x="895" y="359" font-family="Arial,sans-serif" font-size="13" fill="#0f6b4f">/collections/rainwear</text>
+<line x1="895" y1="386" x2="1052" y2="386" stroke="#dce3df" stroke-width="8" stroke-linecap="round"/>
+<line x1="895" y1="410" x2="1028" y2="410" stroke="#e5e9e7" stroke-width="8" stroke-linecap="round"/>
+<line x1="895" y1="434" x2="1010" y2="434" stroke="#e5e9e7" stroke-width="8" stroke-linecap="round"/>
+<text x="980" y="515" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Help shoppers and search engines understand the page</text>
+
+<rect x="210" y="585" width="780" height="54" rx="27" fill="#fff" stroke="#d8e9dd"/>
+<text x="600" y="618" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">Tags don’t directly boost rankings. They help create clearer, better-organized pages.</text>
+</svg>
