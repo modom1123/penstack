@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc">
+<title id="title">One product with several useful tags</title>
+<desc id="desc">A hiking backpack product card with useful tags for product characteristics, use case, season, and merchandising.</desc>
+<rect width="1000" height="540" rx="24" fill="#fffdf8"/>
+
+<text x="500" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#132b3f">One product. Several useful labels.</text>
+<text x="500" y="86" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#617080">The title names the product. Tags describe the useful dimensions around it.</text>
+
+<rect x="335" y="124" width="330" height="306" rx="20" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<rect x="370" y="154" width="260" height="174" rx="16" fill="#eef4ef"/>
+
+<!-- hiking backpack -->
+<path d="M452 185c0-24 18-42 48-42s48 18 48 42" fill="none" stroke="#23485c" stroke-width="11" stroke-linecap="round"/>
+<path d="M430 190c8-26 31-41 70-41s62 15 70 41l18 112c3 20-12 38-32 38H444c-20 0-35-18-32-38z" fill="#35677f"/>
+<path d="M434 212h132l-12 44H446z" fill="#2a566c"/>
+<rect x="448" y="266" width="104" height="48" rx="12" fill="#285268"/>
+<path d="M444 198c-28 22-39 63-30 111M556 198c28 22 39 63 30 111" fill="none" stroke="#23485c" stroke-width="14" stroke-linecap="round"/>
+<path d="M421 272h-18c-11 0-20 9-20 20v17h31M579 272h18c11 0 20 9 20 20v17h-31" fill="none" stroke="#35677f" stroke-width="10" stroke-linecap="round"/>
+<path d="M456 330c6 20 18 31 44 31s38-11 44-31" fill="none" stroke="#23485c" stroke-width="11" stroke-linecap="round"/>
+<line x1="430" y1="238" x2="570" y2="238" stroke="#88a5b2" stroke-width="4"/>
+<line x1="438" y1="292" x2="562" y2="292" stroke="#88a5b2" stroke-width="4"/>
+<circle cx="500" cy="230" r="6" fill="#f0aa17"/>
+
+<text x="500" y="375" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#17324d">Waterproof Trail Backpack</text>
+<text x="500" y="402" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#617080">Customer-facing product title</text>
+
+<g font-family="Arial,sans-serif" font-size="16" fill="#17324d">
+<rect x="72" y="158" width="155" height="44" rx="22" fill="#dff1ff"/><text x="150" y="186" text-anchor="middle">waterproof</text>
+<rect x="90" y="230" width="118" height="44" rx="22" fill="#dff5ea"/><text x="149" y="258" text-anchor="middle">hiking</text>
+<rect x="76" y="302" width="146" height="44" rx="22" fill="#fff0bd"/><text x="149" y="330" text-anchor="middle">recycled</text>
+
+<rect x="773" y="158" width="155" height="44" rx="22" fill="#f4eefb"/><text x="850" y="186" text-anchor="middle">daypack</text>
+<rect x="791" y="230" width="118" height="44" rx="22" fill="#fff0ee"/><text x="850" y="258" text-anchor="middle">fall</text>
+<rect x="770" y="302" width="160" height="44" rx="22" fill="#dff1ff"/><text x="850" y="330" text-anchor="middle">trail gear</text>
+</g>
+
+<g stroke="#c9d4cf" stroke-width="3" fill="none">
+<path d="M227 180h108"/><path d="M208 252h127"/><path d="M222 324h113"/>
+<path d="M665 180h108"/><path d="M665 252h126"/><path d="M665 324h105"/>
+</g>
+
+<rect x="255" y="468" width="490" height="40" rx="20" fill="#eef7f1"/>
+<text x="500" y="494" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#17324d">characteristic · use case · season · merchandising</text>
+</svg>
