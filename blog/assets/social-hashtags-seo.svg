@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Social media hashtags and SEO</title>
+<desc id="desc">A diagram showing hashtags helping social platforms categorize content, while clear topic words and useful content support both platform search and Google discovery.</desc>
+<rect width="1200" height="675" rx="26" fill="#fffdf8"/>
+<text x="600" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="46" font-weight="700" fill="#132b3f">Hashtags help organize discovery.</text>
+<text x="600" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#617080">They are not a shortcut to Google rankings.</text>
+
+<rect x="70" y="175" width="300" height="330" rx="22" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="220" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">Your post</text>
+<g font-family="Arial,sans-serif" font-size="17" fill="#17324d">
+<rect x="105" y="265" width="125" height="44" rx="22" fill="#dff1ff"/><text x="168" y="293" text-anchor="middle">#rainwear</text>
+<rect x="238" y="265" width="96" height="44" rx="22" fill="#dff5ea"/><text x="286" y="293" text-anchor="middle">#hiking</text>
+<rect x="115" y="327" width="155" height="44" rx="22" fill="#fff0bd"/><text x="193" y="355" text-anchor="middle">#smallbusiness</text>
+</g>
+<text x="220" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#617080">Caption: Lightweight rain jackets</text>
+<text x="220" y="446" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#617080">for wet spring hikes.</text>
+
+<path d="M390 338h95" stroke="#0f6b4f" stroke-width="7" stroke-linecap="round"/>
+<path d="M472 324l18 14-18 14" fill="none" stroke="#0f6b4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="505" y="175" width="300" height="330" rx="22" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="655" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">Platform discovery</text>
+<rect x="548" y="266" width="214" height="64" rx="14" fill="#eef7f1"/><text x="655" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">Topic grouping</text><text x="655" y="317" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#617080">hashtags + caption + content</text>
+<rect x="548" y="348" width="214" height="64" rx="14" fill="#fff8ec"/><text x="655" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">In-app search</text><text x="655" y="399" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#617080">relevance + engagement</text>
+
+<path d="M825 338h95" stroke="#df7b28" stroke-width="7" stroke-linecap="round"/>
+<path d="M907 324l18 14-18 14" fill="none" stroke="#df7b28" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="940" y="175" width="190" height="330" rx="22" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="1035" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">Google</text>
+<text x="1035" y="273" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Public social posts</text>
+<text x="1035" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">can appear in Search.</text>
+<rect x="970" y="335" width="130" height="78" rx="14" fill="#f4eefb"/>
+<text x="1035" y="367" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">Hashtag?</text>
+<text x="1035" y="391" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#617080">Context clue.</text>
+
+<rect x="185" y="560" width="830" height="54" rx="27" fill="#eef7f1"/>
+<text x="600" y="593" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#17324d">Use hashtags to classify the post. Use clear language to explain what the post is actually about.</text>
+</svg>
