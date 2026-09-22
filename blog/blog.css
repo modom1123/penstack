@@ -416,6 +416,7 @@
   padding:20px 6% 80px;
   display:grid;
   grid-template-columns:minmax(0,820px);
+  gap:24px;
   justify-content:center;
 }
 .post-card{
