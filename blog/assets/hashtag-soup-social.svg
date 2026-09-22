@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" role="img" aria-labelledby="title desc">
+<title id="title">Avoid social hashtag soup</title>
+<desc id="desc">A comparison of a cluttered hashtag block with a smaller set of specific, relevant hashtags.</desc>
+<rect width="900" height="390" rx="22" fill="#fffdf8"/>
+<text x="450" y="52" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#132b3f">More hashtags do not automatically mean more discovery.</text>
+
+<rect x="55" y="92" width="370" height="245" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="240" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#c84e35">Hashtag soup</text>
+<text x="90" y="171" font-family="Arial,sans-serif" font-size="15" fill="#617080">#fashion #style #love #instagood #shop</text>
+<text x="90" y="199" font-family="Arial,sans-serif" font-size="15" fill="#617080">#viral #trending #cute #ootd #smallbiz</text>
+<text x="90" y="227" font-family="Arial,sans-serif" font-size="15" fill="#617080">#shopping #sale #gift #clothes #fun</text>
+<text x="90" y="270" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#c84e35">Weak signal: too broad, too mixed.</text>
+
+<rect x="475" y="92" width="370" height="245" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="660" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#0f6b4f">Focused set</text>
+<g font-family="Arial,sans-serif" font-size="15" fill="#17324d">
+<rect x="525" y="168" width="125" height="40" rx="20" fill="#dff1ff"/><text x="588" y="193" text-anchor="middle">#rainwear</text>
+<rect x="666" y="168" width="104" height="40" rx="20" fill="#dff5ea"/><text x="718" y="193" text-anchor="middle">#hiking</text>
+<rect x="548" y="224" width="174" height="40" rx="20" fill="#fff0bd"/><text x="635" y="249" text-anchor="middle">#pnwsmallbusiness</text>
+</g>
+<text x="660" y="302" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#0f6b4f">Clearer topic + audience context.</text>
+</svg>

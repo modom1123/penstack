@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-labelledby="title desc">
+<title id="title">Three ways social content gets discovered</title>
+<desc id="desc">A three-card diagram showing hashtag discovery, in-platform search, and Google Search as separate discovery paths.</desc>
+<rect width="900" height="360" rx="22" fill="#fffdf8"/>
+<text x="450" y="54" text-anchor="middle" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#132b3f">One post can be discovered three different ways.</text>
+
+<g font-family="Arial,sans-serif">
+<rect x="55" y="105" width="240" height="185" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="95" cy="145" r="19" fill="#dff1ff"/><text x="95" y="152" text-anchor="middle" font-size="19" font-weight="700" fill="#17324d">#</text>
+<text x="125" y="151" font-size="20" font-weight="700" fill="#17324d">Hashtag discovery</text>
+<text x="85" y="197" font-size="15" fill="#617080">People browse or tap a topic</text>
+<text x="85" y="221" font-size="15" fill="#617080">label inside the platform.</text>
+<text x="85" y="258" font-size="14" font-weight="700" fill="#0f6b4f">Hashtags matter most here.</text>
+
+<rect x="330" y="105" width="240" height="185" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="370" cy="145" r="19" fill="#dff5ea"/><text x="370" y="152" text-anchor="middle" font-size="18" font-weight="700" fill="#17324d">⌕</text>
+<text x="400" y="151" font-size="20" font-weight="700" fill="#17324d">Platform search</text>
+<text x="360" y="197" font-size="15" fill="#617080">People search a phrase, topic,</text>
+<text x="360" y="221" font-size="15" fill="#617080">product, or question.</text>
+<text x="360" y="258" font-size="14" font-weight="700" fill="#0f6b4f">Caption context matters more.</text>
+
+<rect x="605" y="105" width="240" height="185" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="645" cy="145" r="19" fill="#fff0bd"/><text x="645" y="152" text-anchor="middle" font-size="16" font-weight="700" fill="#17324d">G</text>
+<text x="675" y="151" font-size="20" font-weight="700" fill="#17324d">Google Search</text>
+<text x="635" y="197" font-size="15" fill="#617080">Public social posts can appear</text>
+<text x="635" y="221" font-size="15" fill="#617080">alongside web results.</text>
+<text x="635" y="258" font-size="14" font-weight="700" fill="#0f6b4f">Relevance + useful content matter.</text>
+</g>
+</svg>
