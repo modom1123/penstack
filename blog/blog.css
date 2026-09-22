@@ -39,7 +39,7 @@
 .signal-row{padding:16px 18px;border:1px solid var(--line);border-radius:13px;background:#fff}
 .signal-row small{display:block;margin-bottom:4px;color:var(--green);font-size:11px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
 .signal-row strong{font-size:17px}
-.blog-sidebar{display:grid;gap:18px;align-self:start}.blog-toc{position:static;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.blog-sidebar{display:grid;gap:18px;align-self:start;position:sticky;top:20px}.blog-toc{position:static;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff}
 .blog-toc h2{margin:0 0 12px;font-size:16px;letter-spacing:0}
 .blog-toc nav{display:grid;gap:4px}
 .blog-toc a{padding:7px 9px;border-radius:8px;color:var(--muted);font-size:13px;line-height:1.35}
@@ -96,7 +96,7 @@
 .blog-example-chip span{color:var(--muted);font-size:13px;line-height:1.4}
 @media(max-width:1050px){
   .blog-layout{grid-template-columns:minmax(0,860px);gap:28px}
-  .blog-sidebar{order:-1}
+  .blog-sidebar{order:-1;position:static}
   .blog-toc{position:static}
   .blog-sidebar-card{display:none}
 }
