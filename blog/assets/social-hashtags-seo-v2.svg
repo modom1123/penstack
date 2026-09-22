@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">Social media hashtags and SEO</title>
+<desc id="desc">A Penstack-branded visual showing that hashtags label social conversations but do not directly rank a website.</desc>
+<rect width="1200" height="675" rx="28" fill="#17324d"/>
+<rect x="76" y="86" width="214" height="214" rx="44" fill="#f0aa17" transform="rotate(-4 183 193)"/>
+<text x="183" y="235" text-anchor="middle" font-family="Arial,sans-serif" font-size="150" font-weight="700" fill="#17324d">#</text>
+
+<text x="350" y="122" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="2" fill="#9fd7c5">THE USEFUL DISTINCTION</text>
+<text x="350" y="183" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#ffffff">Hashtags label the</text>
+<text x="350" y="238" font-family="Arial,sans-serif" font-size="48" font-weight="700" fill="#ffffff">conversation.</text>
+<text x="350" y="292" font-family="Arial,sans-serif" font-size="22" fill="#d7e4ec">They can help a post get categorized and discovered.</text>
+<text x="350" y="326" font-family="Arial,sans-serif" font-size="22" fill="#d7e4ec">They are not a ranking button for your website.</text>
+
+<rect x="76" y="415" width="290" height="92" rx="16" fill="#10283b" stroke="#36526a"/>
+<text x="221" y="449" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#9fd7c5">SOCIAL DISCOVERY</text>
+<text x="221" y="482" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#ffffff">Topic + audience context</text>
+
+<path d="M389 461h82" stroke="#f0aa17" stroke-width="7" stroke-linecap="round"/>
+<path d="M457 447l17 14-17 14" fill="none" stroke="#f0aa17" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="495" y="415" width="290" height="92" rx="16" fill="#10283b" stroke="#36526a"/>
+<text x="640" y="449" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#9fd7c5">SEARCHABLE POST</text>
+<text x="640" y="482" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#ffffff">Public content can surface</text>
+
+<path d="M808 461h82" stroke="#f0aa17" stroke-width="7" stroke-linecap="round"/>
+<path d="M876 447l17 14-17 14" fill="none" stroke="#f0aa17" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="914" y="415" width="210" height="92" rx="16" fill="#10283b" stroke="#36526a"/>
+<text x="1019" y="449" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#9fd7c5">SITE VISIT</text>
+<text x="1019" y="482" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#ffffff">Maybe.</text>
+
+<rect x="168" y="565" width="864" height="54" rx="27" fill="#eef7f1"/>
+<text x="600" y="598" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#17324d">Clear language explains the post. Focused hashtags reinforce the topic.</text>
+</svg>
