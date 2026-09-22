@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+<title id="title">Consequences of inconsistent product tags</title>
+<desc id="desc">Four concise cards show how inconsistent duplicate tags can break collection rules, filters, reporting, and maintenance.</desc>
+<rect width="1100" height="520" rx="24" fill="#fffdf8"/>
+<text x="550" y="60" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#132b3f">What tag soup actually breaks</text>
+
+<g font-family="Arial,sans-serif">
+<rect x="65" y="115" width="460" height="135" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="108" cy="157" r="20" fill="#fff0ee"/><text x="108" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#c84e35">1</text>
+<text x="145" y="151" font-size="20" font-weight="700" fill="#17324d">Collection rules miss products</text>
+<text x="145" y="183" font-size="15" fill="#617080">A rule for one spelling will not catch</text>
+<text x="145" y="207" font-size="15" fill="#617080">products using another spelling.</text>
+
+<rect x="575" y="115" width="460" height="135" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="618" cy="157" r="20" fill="#fff0bd"/><text x="618" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#9a6814">2</text>
+<text x="655" y="151" font-size="20" font-weight="700" fill="#17324d">Filters become confusing</text>
+<text x="655" y="183" font-size="15" fill="#617080">One idea can appear as several nearly</text>
+<text x="655" y="207" font-size="15" fill="#617080">identical choices for shoppers.</text>
+
+<rect x="65" y="285" width="460" height="135" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="108" cy="327" r="20" fill="#f4eefb"/><text x="108" y="334" text-anchor="middle" font-size="21" font-weight="700" fill="#7b58b5">3</text>
+<text x="145" y="321" font-size="20" font-weight="700" fill="#17324d">Reporting gets fragmented</text>
+<text x="145" y="353" font-size="15" fill="#617080">Products that belong together get split</text>
+<text x="145" y="377" font-size="15" fill="#617080">across different labels.</text>
+
+<rect x="575" y="285" width="460" height="135" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<circle cx="618" cy="327" r="20" fill="#e7f6ed"/><text x="618" y="334" text-anchor="middle" font-size="21" font-weight="700" fill="#0f6b4f">4</text>
+<text x="655" y="321" font-size="20" font-weight="700" fill="#17324d">Maintenance snowballs</text>
+<text x="655" y="353" font-size="15" fill="#617080">Each duplicate makes cleanup and future</text>
+<text x="655" y="377" font-size="15" fill="#617080">automation harder.</text>
+</g>
+
+<rect x="180" y="455" width="740" height="38" rx="19" fill="#eef7f1"/>
+<text x="550" y="480" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#17324d">One reliable label for each meaning keeps the system usable.</text>
+</svg>
