@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">Hashtags versus keywords</title>
+<desc id="desc">Two columns compare hashtags as labels for discovery with keywords as natural language that explains the content.</desc>
+<rect width="900" height="420" rx="22" fill="#fffdf8"/>
+<rect x="55" y="70" width="360" height="285" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<rect x="485" y="70" width="360" height="285" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+
+<text x="235" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#0f6b4f">Hashtags</text>
+<text x="235" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Labels that connect a post to a topic.</text>
+<g font-family="Arial,sans-serif" font-size="16" fill="#17324d">
+<rect x="103" y="205" width="122" height="42" rx="21" fill="#dff1ff"/><text x="164" y="231" text-anchor="middle">#rainwear</text>
+<rect x="240" y="205" width="94" height="42" rx="21" fill="#dff5ea"/><text x="287" y="231" text-anchor="middle">#hiking</text>
+<rect x="124" y="266" width="174" height="42" rx="21" fill="#fff0bd"/><text x="211" y="292" text-anchor="middle">#smallbusiness</text>
+</g>
+
+<text x="665" y="116" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#df7b28">Keywords</text>
+<text x="665" y="151" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Natural language that explains the post.</text>
+<rect x="535" y="195" width="260" height="113" rx="14" fill="#fff8ec"/>
+<text x="665" y="229" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">“Lightweight rain jackets</text>
+<text x="665" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">for wet spring hikes.”</text>
+<text x="665" y="286" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#617080">Readable by people and search systems.</text>
+
+<text x="450" y="390" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">Best practice: use both, but let the actual language carry the meaning.</text>
+</svg>
