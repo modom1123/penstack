@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="400" viewBox="0 0 1100 400" role="img" aria-labelledby="title desc">
+<title id="title">Tags can reveal a more specific search opportunity</title>
+<desc id="desc">Four product tags converge into a specific idea: waterproof hiking gear for small dogs.</desc>
+<rect width="1100" height="400" rx="24" fill="#fffdf8"/>
+
+<g font-family="Arial,sans-serif" font-size="17" fill="#17324d">
+<rect x="72" y="65" width="160" height="46" rx="23" fill="#dff1ff"/><text x="152" y="94" text-anchor="middle">waterproof</text>
+<rect x="72" y="140" width="160" height="46" rx="23" fill="#dff5ea"/><text x="152" y="169" text-anchor="middle">small-dog</text>
+<rect x="72" y="215" width="160" height="46" rx="23" fill="#fff0bd"/><text x="152" y="244" text-anchor="middle">hiking</text>
+<rect x="72" y="290" width="160" height="46" rx="23" fill="#f4eefb"/><text x="152" y="319" text-anchor="middle">reflective</text>
+</g>
+
+<path d="M270 88C395 88 420 188 525 200M270 163C395 163 420 194 525 200M270 238C395 238 420 206 525 200M270 313C395 313 420 212 525 200" fill="none" stroke="#c9d4cf" stroke-width="4"/>
+<circle cx="570" cy="200" r="50" fill="#0f6b4f"/>
+<text x="570" y="194" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#fff">PATTERN</text>
+<text x="570" y="216" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#fff">spotted</text>
+
+<path d="M620 200h90" stroke="#df7b28" stroke-width="6" stroke-linecap="round"/>
+<path d="M698 187l15 13-15 13" fill="none" stroke="#df7b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="748" y="95" width="295" height="210" rx="20" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="895" y="136" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">Possible collection or article</text>
+<text x="895" y="190" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17324d">Waterproof Hiking Gear</text>
+<text x="895" y="222" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#17324d">for Small Dogs</text>
+<rect x="814" y="251" width="162" height="38" rx="19" fill="#eef7f1"/>
+<text x="895" y="276" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#0f6b4f">specific search intent</text>
+</svg>
