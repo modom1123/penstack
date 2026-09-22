@@ -1,20 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
-<title id="title">What product tags look like</title><desc id="desc">A ceramic mug product card surrounded by example tags for material, size, use case, and audience.</desc>
+<title id="title">A product listing with useful tags</title>
+<desc id="desc">A clean ecommerce product card for a waterproof trail jacket, surrounded by tags for material, use case, season, audience, and merchandising.</desc>
 <rect width="900" height="650" rx="28" fill="#fffdf8"/>
-<text x="450" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="#132b3f">One product. Several useful labels.</text>
-<text x="450" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#617080">Tags describe the product from different angles.</text>
-<rect x="250" y="160" width="400" height="360" rx="24" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
-<ellipse cx="400" cy="330" rx="88" ry="105" fill="#f2eee4"/><rect x="330" y="255" width="140" height="150" rx="18" fill="#fffaf0" stroke="#d8d2c5" stroke-width="4"/><path d="M470 286c80-10 86 103 7 109" fill="none" stroke="#d8d2c5" stroke-width="18"/>
-<circle cx="382" cy="326" r="10" fill="#df7b28"/><circle cx="415" cy="326" r="10" fill="#df7b28"/><path d="M388 350c17 13 29 13 45 0" fill="none" stroke="#df7b28" stroke-width="5" stroke-linecap="round"/>
-<text x="450" y="454" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#17324d">Ceramic dog-lover mug</text>
-<g font-family="Arial,sans-serif" font-size="18" fill="#17324d">
-<rect x="70" y="210" width="135" height="48" rx="24" fill="#e7f6ed"/><text x="138" y="241" text-anchor="middle">ceramic</text>
-<rect x="84" y="292" width="105" height="48" rx="24" fill="#dff1ff"/><text x="137" y="323" text-anchor="middle">11 oz</text>
-<rect x="62" y="382" width="172" height="48" rx="24" fill="#fff0bd"/><text x="148" y="413" text-anchor="middle">dishwasher safe</text>
-<rect x="697" y="210" width="138" height="48" rx="24" fill="#f4eefb"/><text x="766" y="241" text-anchor="middle">funny gift</text>
-<rect x="706" y="292" width="118" height="48" rx="24" fill="#fff0ee"/><text x="765" y="323" text-anchor="middle">office</text>
-<rect x="687" y="382" width="156" height="48" rx="24" fill="#dff1ff"/><text x="765" y="413" text-anchor="middle">dog lover</text>
+<text x="450" y="68" text-anchor="middle" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="#132b3f">One product. Several useful labels.</text>
+<text x="450" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#617080">Tags describe the product from different angles.</text>
+
+<rect x="274" y="148" width="352" height="392" rx="24" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<rect x="306" y="180" width="288" height="235" rx="18" fill="#eef4ef"/>
+
+<!-- stylized jacket -->
+<path d="M390 231l36-30h48l36 30 48 31-31 56-27-19v93H400v-93l-27 19-31-56 48-31z" fill="#315d72"/>
+<path d="M426 201l24 28 24-28" fill="#f8faf9"/>
+<path d="M450 229v163" stroke="#dce7e9" stroke-width="5"/>
+<path d="M410 260l-24 50M490 260l24 50" stroke="#284d5f" stroke-width="6" stroke-linecap="round"/>
+<rect x="420" y="320" width="60" height="35" rx="9" fill="#284d5f"/>
+<text x="450" y="455" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" font-weight="700" fill="#17324d">Waterproof Trail Jacket</text>
+<text x="450" y="483" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#617080">A product can belong to several useful groups.</text>
+
+<g font-family="Arial,sans-serif" font-size="17" fill="#17324d">
+  <rect x="62" y="205" width="150" height="48" rx="24" fill="#dff1ff"/><text x="137" y="236" text-anchor="middle">waterproof</text>
+  <rect x="78" y="300" width="118" height="48" rx="24" fill="#dff5ea"/><text x="137" y="331" text-anchor="middle">hiking</text>
+  <rect x="66" y="395" width="142" height="48" rx="24" fill="#fff0bd"/><text x="137" y="426" text-anchor="middle">recycled shell</text>
+  <rect x="690" y="205" width="150" height="48" rx="24" fill="#f4eefb"/><text x="765" y="236" text-anchor="middle">women</text>
+  <rect x="706" y="300" width="118" height="48" rx="24" fill="#fff0ee"/><text x="765" y="331" text-anchor="middle">fall</text>
+  <rect x="687" y="395" width="156" height="48" rx="24" fill="#dff1ff"/><text x="765" y="426" text-anchor="middle">rainwear</text>
 </g>
-<g stroke="#c9d4cf" stroke-width="3" fill="none"><path d="M205 234h75"/><path d="M189 316h91"/><path d="M234 406h46"/><path d="M650 234h47"/><path d="M650 316h56"/><path d="M650 406h37"/></g>
-<rect x="160" y="560" width="580" height="48" rx="24" fill="#eef7f1"/><text x="450" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#17324d">Material · size · care · use case · context · audience</text>
+<g stroke="#c9d4cf" stroke-width="3" fill="none">
+  <path d="M212 229h62"/><path d="M196 324h78"/><path d="M208 419h66"/>
+  <path d="M626 229h64"/><path d="M626 324h80"/><path d="M626 419h61"/>
+</g>
+
+<rect x="170" y="570" width="560" height="44" rx="22" fill="#eef7f1"/>
+<text x="450" y="598" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">material · use case · audience · season · merchandising</text>
 </svg>
