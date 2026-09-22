@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+<title id="title">AI plus SEO</title>
+<desc id="desc">A Penstack-branded diagram showing useful content moving through search systems into classic results and AI answers.</desc>
+<rect width="1200" height="675" rx="28" fill="#fffdf8"/>
+<text x="600" y="88" text-anchor="middle" font-family="Arial,sans-serif" font-size="50" font-weight="700" fill="#132b3f">AI + SEO</text>
+<text x="600" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#617080">Different search experience. Same need for useful source content.</text>
+
+<rect x="80" y="210" width="270" height="250" rx="22" fill="#eaf7f1" stroke="#d8e9dd" stroke-width="2"/>
+<text x="215" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#0f6b4f">Your content</text>
+<text x="215" y="310" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#17324d">crawlable</text>
+<text x="215" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#17324d">clear</text>
+<text x="215" y="378" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#17324d">original</text>
+<text x="215" y="412" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#17324d">useful</text>
+
+<path d="M380 335h100" stroke="#df7b28" stroke-width="8" stroke-linecap="round"/>
+<path d="M464 320l20 15-20 15" fill="none" stroke="#df7b28" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="505" y="195" width="190" height="280" rx="28" fill="#17324d"/>
+<text x="600" y="260" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#fff">Search +</text>
+<text x="600" y="296" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#fff">retrieval</text>
+<circle cx="600" cy="360" r="48" fill="#f4eefb"/>
+<text x="600" y="373" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#17324d">AI</text>
+<text x="600" y="430" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#d7e4ec">find · understand · select</text>
+
+<path d="M720 335h100" stroke="#0f6b4f" stroke-width="8" stroke-linecap="round"/>
+<path d="M804 320l20 15-20 15" fill="none" stroke="#0f6b4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="850" y="210" width="270" height="250" rx="22" fill="#f4eefb" stroke="#e1d4f1" stroke-width="2"/>
+<text x="985" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" font-weight="700" fill="#7b58b5">Search visibility</text>
+<rect x="890" y="300" width="190" height="48" rx="12" fill="#fff"/>
+<text x="985" y="331" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">Classic result</text>
+<rect x="890" y="368" width="190" height="48" rx="12" fill="#fff"/>
+<text x="985" y="399" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">AI answer / citation</text>
+
+<rect x="220" y="535" width="760" height="54" rx="27" fill="#eef7f1"/>
+<text x="600" y="568" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#17324d">SEO helps make your content available to both kinds of search experiences.</text>
+</svg>
