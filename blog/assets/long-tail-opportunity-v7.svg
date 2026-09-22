@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
+<title id="title">Tags revealing a specific search opportunity</title>
+<desc id="desc">Four related tags combine into a possible collection or article idea for waterproof hiking gear for small dogs.</desc>
+<rect width="900" height="270" rx="20" fill="#fffdf8"/>
+
+<g font-family="Arial,sans-serif" font-size="15" fill="#17324d">
+<rect x="55" y="55" width="130" height="40" rx="20" fill="#dff1ff"/><text x="120" y="80" text-anchor="middle">waterproof</text>
+<rect x="205" y="55" width="130" height="40" rx="20" fill="#dff5ea"/><text x="270" y="80" text-anchor="middle">small-dog</text>
+<rect x="55" y="115" width="130" height="40" rx="20" fill="#fff0bd"/><text x="120" y="140" text-anchor="middle">hiking</text>
+<rect x="205" y="115" width="130" height="40" rx="20" fill="#f4eefb"/><text x="270" y="140" text-anchor="middle">reflective</text>
+</g>
+
+<text x="195" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#617080">Repeated combination across products</text>
+
+<path d="M375 135h90" stroke="#df7b28" stroke-width="6" stroke-linecap="round"/>
+<path d="M452 122l15 13-15 13" fill="none" stroke="#df7b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="500" y="42" width="345" height="186" rx="18" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="672" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="#617080">Possible collection or article</text>
+<text x="672" y="124" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">Waterproof Hiking Gear</text>
+<text x="672" y="155" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" font-weight="700" fill="#17324d">for Small Dogs</text>
+<rect x="594" y="181" width="156" height="32" rx="16" fill="#eef7f1"/>
+<text x="672" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#0f6b4f">specific search intent</text>
+</svg>
