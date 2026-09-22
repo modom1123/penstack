@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="520" viewBox="0 0 1100 520" role="img" aria-labelledby="title desc">
+<title id="title">From product tag to collection page</title>
+<desc id="desc">Three concise steps show tagged products feeding an automated collection rule and a public rainwear collection page.</desc>
+<rect width="1100" height="520" rx="24" fill="#fffdf8"/>
+<text x="550" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#132b3f">From internal tag to customer-facing collection</text>
+
+<g font-family="Arial,sans-serif">
+<rect x="60" y="120" width="285" height="315" rx="20" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="202" y="160" text-anchor="middle" font-size="21" font-weight="700" fill="#17324d">1. Tagged products</text>
+<rect x="100" y="205" width="205" height="52" rx="12" fill="#eef7f1"/><text x="122" y="237" font-size="16" font-weight="700" fill="#17324d">Blue rain jacket</text>
+<rect x="100" y="272" width="205" height="52" rx="12" fill="#eef7f1"/><text x="122" y="304" font-size="16" font-weight="700" fill="#17324d">Packable shell</text>
+<rect x="100" y="339" width="205" height="52" rx="12" fill="#eef7f1"/><text x="122" y="371" font-size="16" font-weight="700" fill="#17324d">Dog raincoat</text>
+
+<rect x="407" y="120" width="285" height="315" rx="20" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="550" y="160" text-anchor="middle" font-size="21" font-weight="700" fill="#17324d">2. Collection rule</text>
+<rect x="450" y="225" width="200" height="126" rx="15" fill="#fff8ec" stroke="#edd8bc"/>
+<text x="550" y="257" text-anchor="middle" font-size="14" fill="#617080">Include products where</text>
+<rect x="474" y="278" width="152" height="42" rx="9" fill="#fff"/>
+<text x="550" y="305" text-anchor="middle" font-size="16" font-weight="700" fill="#17324d">tag = rainwear</text>
+
+<rect x="755" y="120" width="285" height="315" rx="20" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="897" y="160" text-anchor="middle" font-size="21" font-weight="700" fill="#17324d">3. Public collection</text>
+<rect x="795" y="205" width="205" height="175" rx="14" fill="#f8faf9" stroke="#d9ddd8"/>
+<text x="817" y="240" font-size="20" font-weight="700" fill="#17324d">Rainwear</text>
+<text x="817" y="267" font-size="13" fill="#0f6b4f">/collections/rainwear</text>
+<line x1="817" y1="302" x2="971" y2="302" stroke="#dce3df" stroke-width="7" stroke-linecap="round"/>
+<line x1="817" y1="325" x2="946" y2="325" stroke="#e5e9e7" stroke-width="7" stroke-linecap="round"/>
+<rect x="817" y="345" width="42" height="24" rx="5" fill="#dff1ff"/><rect x="870" y="345" width="42" height="24" rx="5" fill="#dff1ff"/><rect x="923" y="345" width="42" height="24" rx="5" fill="#dff1ff"/>
+</g>
+
+<g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+<path d="M356 278h38" stroke="#0f6b4f"/><path d="M382 266l14 12-14 12" stroke="#0f6b4f"/>
+<path d="M703 278h38" stroke="#df7b28"/><path d="M729 266l14 12-14 12" stroke="#df7b28"/>
+</g>
+</svg>
