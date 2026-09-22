@@ -8,8 +8,8 @@
   --blog-s6:64px;
   --blog-s7:80px;
   --blog-page:1180px;
-  --blog-copy:780px;
-  --blog-figure:1000px;
+  --blog-copy:900px;
+  --blog-figure:900px;
   background:#fff;
 }
 
@@ -263,7 +263,7 @@
   line-height:1.45;
 }
 .blog-figure.compact{
-  max-width:920px;
+  max-width:var(--blog-figure);
 }
 
 /* Simple editorial cards */
@@ -496,4 +496,16 @@
 .blog-figure+ .blog-prose{margin-top:24px}
 @media(max-width:860px){
   .blog-shell{--blog-copy:100%;--blog-figure:100%}
+}
+
+/* v7: unified article width + CTA button fix */
+.blog-cta .button,
+.blog-cta .button.primary{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  white-space:nowrap;
+  flex:0 0 auto;
+  line-height:1;
 }
