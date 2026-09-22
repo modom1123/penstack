@@ -1,21 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650" role="img" aria-labelledby="title desc">
-<title id="title">How tags can reveal a long-tail SEO opportunity</title><desc id="desc">Several product tags combine to reveal a more specific collection idea for waterproof hiking gear for small dogs.</desc>
-<rect width="1100" height="650" rx="28" fill="#fffdf8"/>
-<text x="550" y="70" text-anchor="middle" font-family="Arial,sans-serif" font-size="40" font-weight="700" fill="#132b3f">Tags can reveal patterns worth building around</text>
-<text x="550" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#617080">The useful insight often appears where several attributes overlap.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="460" viewBox="0 0 1100 460" role="img" aria-labelledby="title desc">
+<title id="title">Tags revealing a long-tail opportunity</title>
+<desc id="desc">Waterproof, small-dog, hiking, and reflective product tags combine into a specific content or collection opportunity.</desc>
+<rect width="1100" height="460" rx="28" fill="#fffdf8"/>
+
 <g font-family="Arial,sans-serif" font-size="18" fill="#17324d">
-<rect x="90" y="205" width="165" height="52" rx="26" fill="#dff1ff"/><text x="172" y="238" text-anchor="middle">waterproof</text>
-<rect x="90" y="285" width="165" height="52" rx="26" fill="#dff5ea"/><text x="172" y="318" text-anchor="middle">small-dog</text>
-<rect x="90" y="365" width="165" height="52" rx="26" fill="#fff0bd"/><text x="172" y="398" text-anchor="middle">hiking</text>
-<rect x="90" y="445" width="165" height="52" rx="26" fill="#f4eefb"/><text x="172" y="478" text-anchor="middle">reflective</text>
+  <rect x="70" y="92" width="165" height="52" rx="26" fill="#dff1ff"/><text x="152" y="125" text-anchor="middle">waterproof</text>
+  <rect x="70" y="165" width="165" height="52" rx="26" fill="#dff5ea"/><text x="152" y="198" text-anchor="middle">small-dog</text>
+  <rect x="70" y="238" width="165" height="52" rx="26" fill="#fff0bd"/><text x="152" y="271" text-anchor="middle">hiking</text>
+  <rect x="70" y="311" width="165" height="52" rx="26" fill="#f4eefb"/><text x="152" y="344" text-anchor="middle">reflective</text>
 </g>
-<path d="M290 232C420 232 420 325 515 325M290 312C420 312 420 325 515 325M290 392C420 392 420 325 515 325M290 472C420 472 420 325 515 325" fill="none" stroke="#c9d4cf" stroke-width="4"/>
-<circle cx="550" cy="325" r="54" fill="#0f6b4f"/><text x="550" y="318" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#fff">PATTERN</text><text x="550" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff">spotted</text>
-<path d="M604 325h88" stroke="#df7b28" stroke-width="6" stroke-linecap="round"/><path d="M680 312l15 13-15 13" fill="none" stroke="#df7b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="720" y="205" width="305" height="290" rx="22" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
-<text x="872" y="255" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#617080">Potential collection or content topic</text>
-<text x="872" y="312" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#17324d">Waterproof Hiking Gear</text>
-<text x="872" y="350" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="700" fill="#17324d">for Small Dogs</text>
-<rect x="775" y="395" width="194" height="48" rx="24" fill="#eef7f1"/><text x="872" y="426" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#0f6b4f">more specific search intent</text>
-<rect x="185" y="555" width="730" height="44" rx="22" fill="#f4eefb"/><text x="550" y="583" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#17324d">The tags do not create rankings. They help you notice useful catalog themes.</text>
+
+<path d="M275 118C390 118 410 212 500 228M275 191C390 191 410 220 500 228M275 264C390 264 410 236 500 228M275 337C390 337 410 244 500 228" fill="none" stroke="#c9d4cf" stroke-width="4"/>
+
+<circle cx="545" cy="228" r="54" fill="#0f6b4f"/>
+<text x="545" y="220" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#fff">PATTERN</text>
+<text x="545" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#fff">spotted</text>
+
+<path d="M600 228h92" stroke="#df7b28" stroke-width="6" stroke-linecap="round"/>
+<path d="M680 215l15 13-15 13" fill="none" stroke="#df7b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="720" y="105" width="310" height="245" rx="22" fill="#fff" stroke="#e4e2d9" stroke-width="2"/>
+<text x="875" y="150" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#617080">Possible collection or content idea</text>
+<text x="875" y="214" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#17324d">Waterproof Hiking Gear</text>
+<text x="875" y="250" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="700" fill="#17324d">for Small Dogs</text>
+<rect x="790" y="286" width="170" height="42" rx="21" fill="#eef7f1"/>
+<text x="875" y="313" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" font-weight="700" fill="#0f6b4f">more specific intent</text>
 </svg>
