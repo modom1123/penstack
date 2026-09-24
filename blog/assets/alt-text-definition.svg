@@ -1,15 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
-<rect width="1200" height="560" rx="30" fill="#FFFFFF"/>
-<rect x="58" y="58" width="430" height="444" rx="24" fill="#F7FAFF" stroke="#D8E3F2" stroke-width="3"/>
-<g transform="translate(100 170)">
-  <path d="M24 135c35-10 58-32 81-67 12-18 25-34 41-45 18-12 38-16 60-14 12 1 21 9 31 19 18 19 43 28 77 29 18 0 32 11 36 28 4 15 0 28-11 39-9 8-20 12-34 12H69c-24 0-39-2-45-6z" fill="#D7B4C8"/>
-  <path d="M40 129h260c20 0 35-7 44-20 7 15 4 30-9 41-9 8-21 11-35 11H63c-20 0-33-5-39-18l16-14z" fill="#FFFFFF"/>
-</g>
-<text x="560" y="120" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" fill="#7B58B5">VISIBLE IMAGE</text>
-<text x="560" y="165" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#17324D">What someone sees</text>
-<line x1="560" y1="205" x2="1080" y2="205" stroke="#D8E3F2" stroke-width="3"/>
-<text x="560" y="255" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" fill="#2F78C4">TEXT ALTERNATIVE</text>
-<rect x="560" y="285" width="520" height="150" rx="20" fill="#EEF4FF"/>
-<text x="590" y="345" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#17324D">“Pink women’s running shoe,</text>
-<text x="590" y="389" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800" fill="#17324D">side view”</text>
+<rect width="1200" height="560" rx="28" fill="#FFFFFF"/>
+<rect x="70" y="76" width="430" height="408" rx="24" fill="#F7FAFF" stroke="#D8E3F2" stroke-width="3"/>
+<text x="108" y="126" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#7B58B5">VISIBLE IMAGE</text>
+<rect x="108" y="160" width="354" height="238" rx="18" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="3"/>
+<rect x="152" y="202" width="266" height="154" rx="14" fill="#EAF7F1"/>
+<rect x="198" y="238" width="174" height="82" rx="10" fill="#0F6B4F" opacity=".14"/>
+<text x="285" y="287" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800" fill="#0F6B4F">PRODUCT IMAGE</text>
+<text x="108" y="444" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="800" fill="#17324D">What someone sees</text>
+
+<path d="M525 281 H604" stroke="#2F78C4" stroke-width="5" stroke-linecap="round"/>
+<path d="M589 265 L608 281 L589 297" fill="none" stroke="#2F78C4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+<rect x="636" y="76" width="494" height="408" rx="24" fill="#EEF4FF" stroke="#D8E3F2" stroke-width="3"/>
+<text x="674" y="126" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#2F78C4">TEXT ALTERNATIVE</text>
+<text x="674" y="205" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#17324D">“Pink women’s</text>
+<text x="674" y="251" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#17324D">running shoe,</text>
+<text x="674" y="297" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#17324D">side view”</text>
+<rect x="674" y="350" width="270" height="70" rx="16" fill="#FFFFFF"/>
+<text x="699" y="382" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" fill="#7B58B5">THE IMAGE’S USEFUL MEANING</text>
+<text x="699" y="406" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5F7180">translated into words</text>
 </svg>
