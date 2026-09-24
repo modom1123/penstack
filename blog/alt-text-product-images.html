@@ -46,13 +46,9 @@
         <p class="blog-dek">A practical introduction to product-image alt text: what it does, how to write it, what to avoid, and why accessibility comes before keyword stuffing.</p>
         <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-24">September 24, 2026</time> · 6 min read</span></div>
       </div>
-      <div class="blog-hero-visual" style="padding:28px">
-        <div class="blog-example" style="margin:0">
-          <span class="blog-example-label">START HERE</span>
-          <h3>Images + Accessibility</h3>
-          <p>Product image → useful context → clearer shopping experience</p>
-        </div>
-      </div>
+      <figure class="blog-hero-visual accessibility-hero-visual">
+        <img src="assets/alt-text-hero.svg" width="1200" height="760" alt="Diagram showing a product image connected to concise alt text">
+      </figure>
     </div>
   </header>
 
@@ -70,7 +66,10 @@
 <p>Alt text is text attached to an image in the page markup. Assistive technologies such as screen readers can announce it when the image carries information.</p>
 <p>Think of it as the image’s <strong>useful meaning in words</strong>. If the product photo shows a pink running shoe from the side, the alt text should communicate the information that matters about that view.</p>
 </div>
-<div class="blog-example"><span class="blog-example-label">Example</span><h3>Visible image</h3><p>Pink women’s running shoe, side view.</p><p><strong>Useful alt text:</strong> “Pink women’s running shoe, side view”</p></div></section>
+<figure class="blog-figure accessibility-figure">
+  <img src="assets/alt-text-definition.svg" width="1200" height="520" loading="lazy" alt="Diagram pairing a visible product image with its text alternative">
+  <figcaption>Alt text carries the useful meaning of the image into words.</figcaption>
+</figure></section>
 
 <section class="blog-section" id="why"><h2>2. Why does product-image alt text matter?</h2><div class="blog-three-up">
 <article><b>1</b><strong>Accessibility</strong><span>It gives screen-reader users access to visual product information that might otherwise disappear.</span></article>
@@ -87,9 +86,10 @@
 <div class="blog-prose"><p>Penstack keeps generated alt text under 125 characters as a writing target for concise product-image descriptions. That is <strong>not a universal accessibility limit</strong>. If an image genuinely needs more context, clarity matters more than hitting a magic number.</p></div></section>
 
 <section class="blog-section" id="examples"><h2>4. What does good product alt text look like?</h2>
-<div class="blog-compare"><div><strong>Too vague</strong><span>“Shoe”</span></div><div><strong>More useful</strong><span>“Pink women’s running shoe, side view”</span></div></div>
-<div class="blog-compare"><div><strong>Too generic</strong><span>“Model wearing shirt”</span></div><div><strong>More useful</strong><span>“Oversized green graphic tee on model, front view”</span></div></div>
-<div class="blog-compare"><div><strong>Keyword stuffed</strong><span>“Best organic cotton tee sustainable shirt eco friendly top”</span></div><div><strong>More useful</strong><span>“Cream organic cotton graphic tee, front view”</span></div></div>
+<figure class="blog-figure accessibility-figure">
+  <img src="assets/alt-text-examples.svg" width="1200" height="760" loading="lazy" alt="Three comparisons showing vague, generic, and keyword-stuffed alt text rewritten into useful product descriptions">
+  <figcaption>Useful alt text adds the visual detail a shopper needs without turning the field into hidden marketing copy.</figcaption>
+</figure>
 </section>
 
 <section class="blog-section" id="avoid"><h2>5. What should I avoid?</h2><div class="blog-prose">
@@ -102,7 +102,11 @@
 <section class="blog-section" id="decorative"><h2>6. Does every image need descriptive alt text?</h2><div class="blog-prose">
 <p>No. Purely decorative images that add no information can use empty alt text so assistive technology can skip them.</p>
 <p>Product-gallery images are usually informative, though. If a photo helps someone understand the item, variant, fit, texture, or view, it generally deserves a meaningful text alternative.</p>
-</div></section>
+</div>
+<figure class="blog-figure accessibility-figure">
+  <img src="assets/alt-text-informative-decorative.svg" width="1200" height="560" loading="lazy" alt="Comparison showing an informative product image with descriptive alt text and a decorative graphic with empty alt text">
+  <figcaption>Informative images communicate product information. Decorative images add no useful content and can usually be skipped by assistive technology.</figcaption>
+</figure></section>
 
 <section class="blog-section" id="penstack"><h2>Where penstack fits in</h2><div class="blog-prose">
 <p>In Penstack, you confirm the product image context such as the variant, view, and shot type. Penstack then generates alt text separately from the image title so the two fields can do different jobs.</p>
