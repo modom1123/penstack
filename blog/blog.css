@@ -2118,3 +2118,15 @@
 .blog-section .blog-flow + .blog-prose{
   margin-top:18px;
 }
+
+
+/* accessibility figure containment fix */
+.accessibility-figure{
+  overflow:hidden;
+  border-radius:16px;
+}
+.accessibility-figure img{
+  width:100%;
+  height:auto;
+  object-fit:contain;
+}
