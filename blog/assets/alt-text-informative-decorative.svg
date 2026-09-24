@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<rect width="1200" height="560" rx="30" fill="#FFFFFF"/>
+<rect x="62" y="70" width="500" height="420" rx="24" fill="#EAF7F1" stroke="#D8E9DD" stroke-width="3"/>
+<text x="100" y="118" font-family="Arial" font-size="18" font-weight="800" fill="#0F6B4F">INFORMATIVE IMAGE</text>
+<path d="M185 210h150l48 87-37 37v88H174v-88l-37-37 48-87z" fill="#6CB99D"/>
+<rect x="100" y="400" width="390" height="54" rx="14" fill="#FFFFFF"/>
+<text x="122" y="433" font-family="Arial" font-size="20" font-weight="700" fill="#17324D">Use descriptive alt text</text>
+<rect x="638" y="70" width="500" height="420" rx="24" fill="#EEF4FF" stroke="#D8E3F2" stroke-width="3"/>
+<text x="676" y="118" font-family="Arial" font-size="18" font-weight="800" fill="#2F78C4">DECORATIVE IMAGE</text>
+<circle cx="804" cy="285" r="100" fill="#F4EEFB"/>
+<path d="M804 210c15 42 31 58 74 75-43 17-59 33-74 75-16-42-32-58-75-75 43-17 59-33 75-75z" fill="#A887D2"/>
+<rect x="676" y="400" width="390" height="54" rx="14" fill="#FFFFFF"/>
+<text x="698" y="433" font-family="Arial" font-size="20" font-weight="700" fill="#17324D">Use empty alt text: alt=""</text>
+</svg>
