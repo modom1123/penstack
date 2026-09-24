@@ -1,18 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
-<rect width="1200" height="760" rx="34" fill="#EEF4FF"/>
-<rect x="92" y="92" width="430" height="530" rx="28" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="4"/>
-<rect x="142" y="144" width="330" height="330" rx="24" fill="#F7FAFF"/>
-<path d="M235 232h145l48 88-37 37v112H224V357l-37-37 48-88z" fill="#7CBFA7"/>
-<rect x="160" y="515" width="292" height="22" rx="11" fill="#DCE4E8"/>
-<rect x="160" y="552" width="220" height="16" rx="8" fill="#E5EAED"/>
-<rect x="585" y="184" width="500" height="255" rx="28" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="4"/>
-<text x="630" y="235" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#7B58B5">ALT TEXT</text>
-<text x="630" y="295" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#17324D">Green graphic tee,</text>
-<text x="630" y="339" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800" fill="#17324D">front view</text>
-<rect x="630" y="382" width="172" height="42" rx="21" fill="#EAF7F1"/>
-<text x="656" y="409" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" fill="#0F6B4F">ACCESSIBLE</text>
-<path d="M523 345 C560 345 566 308 585 308" fill="none" stroke="#7B58B5" stroke-width="5"/>
-<circle cx="523" cy="345" r="8" fill="#7B58B5"/>
-<text x="585" y="515" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#17324D">Describe the useful visual information.</text>
-<text x="585" y="550" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#5F7180">Not every pixel. Not a keyword pile.</text>
+<rect width="1200" height="760" rx="34" fill="#F7FAFF"/>
+<rect x="90" y="70" width="1020" height="620" rx="30" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="4"/>
+<rect x="135" y="120" width="500" height="500" rx="26" fill="#EEF4FF"/>
+<g transform="translate(215 215)">
+  <path d="M30 180c48-14 81-45 112-93 16-24 33-46 55-61 25-17 52-23 82-20 16 2 28 12 42 26 25 26 59 39 106 40 24 0 43 15 49 38 5 20 0 38-15 52-12 11-28 17-47 17H93c-33 0-54-3-63-9z" fill="#D7B4C8"/>
+  <path d="M52 173h358c28 0 48-10 61-27 9 20 5 42-13 57-13 11-29 16-49 16H84c-28 0-46-8-55-25l23-21z" fill="#FFFFFF"/>
+  <path d="M137 102c44 7 84 5 122-7" stroke="#F3E7EE" stroke-width="10" stroke-linecap="round"/>
+  <path d="M170 72c39 9 78 10 114 3" stroke="#F3E7EE" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="408" cy="137" r="9" fill="#C89BB4"/>
+</g>
+<rect x="675" y="188" width="360" height="250" rx="24" fill="#EEF4FF" stroke="#D8E3F2" stroke-width="3"/>
+<text x="715" y="236" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" fill="#7B58B5">ALT TEXT</text>
+<text x="715" y="294" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#17324D">Pink women’s</text>
+<text x="715" y="338" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#17324D">running shoe,</text>
+<text x="715" y="382" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="800" fill="#17324D">side view</text>
+<path d="M634 328 C653 328 659 315 675 315" fill="none" stroke="#2F78C4" stroke-width="5"/>
+<circle cx="634" cy="328" r="7" fill="#2F78C4"/>
+<circle cx="105" cy="95" r="10" fill="#0F6B4F"/>
+<circle cx="137" cy="95" r="10" fill="#D89B10"/>
+<circle cx="169" cy="95" r="10" fill="#7B58B5"/>
 </svg>
