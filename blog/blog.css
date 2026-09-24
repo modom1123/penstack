@@ -2051,3 +2051,12 @@
   .ai-term-compare{grid-template-columns:1fr}
   .ai-source-arrow{transform:rotate(90deg);min-height:32px}
 }
+
+
+/* Product image metadata workflow: keep the flow on the same editorial rail */
+.blog-section > .blog-flow{
+  width:100%;
+  max-width:var(--blog-copy);
+  margin-left:auto;
+  margin-right:auto;
+}
