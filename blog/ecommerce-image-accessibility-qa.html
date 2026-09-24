@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-496337Z0N8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-496337Z0N8');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How to Build an Image Accessibility QA Standard for Your Catalog | penstack</title>
+  <meta name="description" content="Build a repeatable ecommerce image accessibility QA process for product galleries, variants, teams, and large Shopify catalogs.">
+  <link rel="canonical" href="https://penstack.co/blog/ecommerce-image-accessibility-qa.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Build an Image Accessibility QA Standard for Your Catalog">
+  <meta property="og:description" content="Build a repeatable ecommerce image accessibility QA process for product galleries, variants, teams, and large Shopify catalogs.">
+  <meta property="og:url" content="https://penstack.co/blog/ecommerce-image-accessibility-qa.html">
+  <meta property="og:image" content="https://penstack.co/penstack-social-preview.jpg">
+  <meta property="article:published_time" content="2026-09-24">
+  <meta property="article:author" content="penstack">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Build an Image Accessibility QA Standard for Your Catalog">
+  <meta name="twitter:description" content="Build a repeatable ecommerce image accessibility QA process for product galleries, variants, teams, and large Shopify catalogs.">
+  <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
+  <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <link rel="stylesheet" href="blog.css?v=12">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Build an Image Accessibility QA Standard for Your Catalog","description":"Build a repeatable ecommerce image accessibility QA process for product galleries, variants, teams, and large Shopify catalogs.","datePublished":"2026-09-24","dateModified":"2026-09-24","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/ecommerce-image-accessibility-qa.html"},"keywords":["image accessibility QA","ecommerce accessibility","Shopify catalog QA","alt text standards","product image workflow"]}
+  </script>
+</head>
+<body>
+<main class="site blog-shell">
+  <header class="site-header">
+    <a class="brand" href="../index.html"><img src="../penstack_logo.png" alt="penstack"></a>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html">Home</a><a href="../product.html">Product</a><a href="../use-cases.html">Use Cases</a><a href="../compare.html">Compare</a><a href="../pricing.html">Pricing</a><a class="active" href="index.html">Blog</a><a href="../about.html">About</a>
+    </nav>
+    <div class="header-actions"><a class="login" href="https://app.penstack.co">Log in</a><a class="button primary" href="https://app.penstack.co">Start free</a></div>
+  </header>
+
+  <header class="blog-hero">
+    <div class="blog-breadcrumbs"><a href="index.html">Blog</a><span>›</span><span>Images + Accessibility</span></div>
+    <div class="blog-hero-grid">
+      <div>
+        <p class="blog-kicker">Images + accessibility · Go deeper</p>
+        <h1>How to Build an Image Accessibility QA Standard for Your Catalog</h1>
+        <p class="blog-dek">Move from one-off alt text to a repeatable process for variants, image roles, exceptions, review, and catalog-wide consistency.</p>
+        <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-24">September 24, 2026</time> · 7 min read</span></div>
+      </div>
+      <div class="blog-hero-visual" style="padding:28px">
+        <div class="blog-example" style="margin:0">
+          <span class="blog-example-label">GO DEEPER</span>
+          <h3>Images + Accessibility</h3>
+          <p>Product image → useful context → clearer shopping experience</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="blog-article-wrap"><article class="blog-article">
+<div class="blog-prose"><p class="blog-lead">Image accessibility gets harder when you stop thinking about one product and start thinking about hundreds or thousands of them.</p><p>The challenge is no longer “Can someone write good alt text?” It becomes “Can the whole team apply the same standard without flattening every image into the same sentence?”</p></div>
+<aside class="blog-quick-answer"><span class="blog-example-label">Short answer</span><p><strong>A scalable image-accessibility process needs a standard, image roles, review rules, and exceptions.</strong> Automation can accelerate the work, but catalog-wide quality still depends on human review.</p></aside>
+<aside class="blog-inline-toc"><h2>In this article</h2><nav><a href="#roles">Define image roles</a><a href="#standard">Create the standard</a><a href="#variants">Handle variants</a><a href="#exceptions">Handle exceptions</a><a href="#qa">Build the QA pass</a><a href="#measure">What to measure</a></nav></aside>
+
+<section class="blog-section" id="roles"><h2>1. Define the role of each product image</h2><div class="blog-prose">
+<p>A gallery is easier to describe consistently when the team knows why each image exists.</p></div>
+<div class="signal-stack">
+<div class="signal-row"><small>Hero image</small><strong>Primary product appearance</strong></div>
+<div class="signal-row"><small>Alternate view</small><strong>Back, side, top, interior, sole, closure</strong></div>
+<div class="signal-row"><small>Detail shot</small><strong>Texture, stitching, hardware, print, material</strong></div>
+<div class="signal-row"><small>Lifestyle image</small><strong>Scale, fit, use, environment, styling</strong></div>
+</div>
+<div class="blog-prose"><p>The image role gives reviewers a clue about what information should appear in the alt text. A detail shot should usually describe the detail. A back view should not be labeled like the hero image.</p></div></section>
+
+<section class="blog-section" id="standard"><h2>2. Create a standard that guides without over-templating</h2><div class="blog-prose">
+<p>A rigid template can make every image sound robotic. A loose standard gives the team enough structure to stay consistent while preserving the information unique to each image.</p>
+</div>
+<div class="blog-example"><span class="blog-example-label">Useful standard</span><p><strong>Include:</strong> product identity when needed, variant/color when visible and relevant, view or shot type, and the distinctive information in that image.</p><p><strong>Avoid:</strong> “image of,” promotional adjectives, unverified details, repeated SEO phrases, and copying identical text across an entire gallery.</p></div></section>
+
+<section class="blog-section" id="variants"><h2>3. Treat variant images as product information</h2><div class="blog-prose">
+<p>If color or another variant is visually different, that difference may be essential to the shopper. The text alternative should preserve it.</p>
+<p>For a product offered in black, cream, and green, “T-shirt front view” can erase the distinction a sighted shopper gets instantly.</p>
+</div>
+<div class="blog-compare"><div><strong>Too generic</strong><span>T-shirt front view</span></div><div><strong>Variant-aware</strong><span>Forest green oversized T-shirt, front view</span></div></div></section>
+
+<section class="blog-section" id="exceptions"><h2>4. Document the exceptions</h2><div class="blog-prose">
+<p>Not every image deserves the same treatment. Teams should know what to do with decorative graphics, duplicate thumbnails, swatches, diagrams, and images containing important text.</p>
+<p>Purely decorative images can use empty alt text. Informative diagrams or graphics may need a text alternative that communicates their meaning, not just their visual style.</p>
+<p>If important instructions or product information appear only inside an image, the better fix may be to provide that information as real page text too.</p>
+</div></section>
+
+<section class="blog-section" id="qa"><h2>5. Build a repeatable QA pass</h2>
+<div class="blog-three-up">
+<article><b>1</b><strong>Accuracy</strong><span>Does the text match the actual image and product variant?</span></article>
+<article><b>2</b><strong>Distinctiveness</strong><span>Does this image add information beyond the other images in the gallery?</span></article>
+<article><b>3</b><strong>Restraint</strong><span>Is the wording useful without keyword stuffing, invented detail, or filler?</span></article>
+</div>
+<div class="blog-prose"><p>Then add one catalog-level check: <strong>Are we describing the same type of image the same way across products?</strong> Consistency matters most where it helps a shopper predict what they will hear.</p></div></section>
+
+<section class="blog-section" id="measure"><h2>6. What should a team measure?</h2><div class="blog-prose">
+<p>Do not measure accessibility quality only by “percentage of images with alt text.” A store can reach 100% coverage with terrible descriptions.</p>
+</div>
+<div class="signal-stack">
+<div class="signal-row"><small>Coverage</small><strong>Informative images with a text alternative</strong></div>
+<div class="signal-row"><small>Accuracy</small><strong>Descriptions match image + variant</strong></div>
+<div class="signal-row"><small>Duplication</small><strong>Repeated text across distinct images</strong></div>
+<div class="signal-row"><small>Review quality</small><strong>Errors found before publish</strong></div>
+</div>
+</section>
+
+<section class="blog-section" id="penstack"><h2>Where penstack fits in</h2><div class="blog-prose">
+<p>Penstack separates image context from generated alt text. That makes the workflow easier to standardize: confirm the product, variant, view, and shot type, generate a concise draft, then review it against the image.</p>
+<p>For teams and agencies, the useful standard is not “accept whatever AI writes.” It is <strong>use automation to get to a reviewable draft faster, then apply the same QA rules across every store.</strong></p>
+</div></section>
+
+<section class="blog-takeaway"><h2>The takeaway</h2><p><strong>At catalog scale, accessibility becomes an operations problem as much as a writing problem.</strong></p><div class="blog-flow"><span>Standard</span><b>→</b><span>Image roles</span><b>→</b><span>Draft</span><b>→</b><span>Human QA</span><b>→</b><span>Consistent catalog</span></div></section>
+    <section class="blog-cta" aria-label="penstack call to action">
+      <div><h2>Put image details into the same product workflow.</h2><p>penstack keeps image titles, alt text, product content, review, and publishing connected.</p></div>
+      <a class="button primary" href="https://app.penstack.co"><span>Start free</span><span aria-hidden="true">→</span></a>
+    </section>
+  </article></div>
+
+  <footer><a class="brand" href="../index.html"><img src="../penstack_logo.png" alt="penstack"></a><p>Less grunt work. More time with your craft.</p><nav class="footer-links" aria-label="Legal and support"><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a></nav><span>© 2026 penstack</span></footer>
+</main>
+</body>
+</html>
