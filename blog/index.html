@@ -138,49 +138,53 @@
   <section class="resource-section guide-library" id="guides">
     <div class="library-heading">
       <div>
-        <p class="resource-kicker">AVAILABLE NOW</p>
-        <h2>Read the current guides</h2>
+        <p class="resource-kicker" id="libraryKicker">ALL GUIDES</p>
+        <h2 id="libraryTitle">Explore the learning library</h2>
+        <p class="library-intro" id="libraryIntro">Start with a published guide or see what we’re building next. Every guide is tagged by experience level and the problem it helps solve.</p>
       </div>
       <button type="button" class="clear-filter" id="clearFilters">Clear filters</button>
     </div>
 
     <div class="guide-grid" id="guideGrid">
-      <article class="guide-card" data-level="go-deeper" data-topic="seo">
+      <article class="guide-card published" data-level="go-deeper" data-topic="seo">
         <a class="guide-image" href="ai-seo-search-visibility.html">
           <img src="assets/ai-seo-search-visibility.svg" width="1200" height="675" alt="Diagram showing useful content moving through search and retrieval systems into classic results and AI answers">
         </a>
         <div class="guide-body">
           <div class="guide-labels">
+            <span class="status-badge status-live">PUBLISHED</span>
             <span class="level-badge badge-deep">GO DEEPER</span>
             <span class="topic-badge">SEO + Discovery</span>
           </div>
           <h3><a href="ai-seo-search-visibility.html">AI + SEO: How AI Changes Search and How SEO Helps You Show Up</a></h3>
-          <p>How AI changes the search experience, why SEO still matters, and what helps your content become useful source material.</p>
+          <p>How AI changes search, why SEO still matters, and what helps your content become useful source material.</p>
           <a class="guide-link" href="ai-seo-search-visibility.html">7 min read →</a>
         </div>
       </article>
 
-      <article class="guide-card" data-level="level-up" data-topic="seo">
+      <article class="guide-card published" data-level="level-up" data-topic="seo">
         <a class="guide-image" href="social-media-hashtags-seo.html">
           <img src="assets/social-hashtags-seo-v2.svg" width="1200" height="675" alt="Diagram showing how hashtags support social discovery without acting as a shortcut to Google rankings">
         </a>
         <div class="guide-body">
           <div class="guide-labels">
+            <span class="status-badge status-live">PUBLISHED</span>
             <span class="level-badge badge-up">LEVEL UP</span>
             <span class="topic-badge">SEO + Discovery</span>
           </div>
           <h3><a href="social-media-hashtags-seo.html">Social Media Hashtags &amp; SEO: What They Actually Do</a></h3>
-          <p>Where hashtags help, where they do not, and how to build a focused discovery strategy without creating hashtag soup.</p>
+          <p>Where hashtags help, where they do not, and how to build a focused discovery strategy without hashtag soup.</p>
           <a class="guide-link" href="social-media-hashtags-seo.html">6 min read →</a>
         </div>
       </article>
 
-      <article class="guide-card" data-level="level-up" data-topic="catalog seo">
+      <article class="guide-card published" data-level="level-up" data-topic="catalog seo">
         <a class="guide-image" href="product-tags-seo.html">
           <img src="assets/product-tags-organization-seo.svg" width="1200" height="675" alt="Diagram showing ecommerce tags organizing products into collections that support clearer search results">
         </a>
         <div class="guide-body">
           <div class="guide-labels">
+            <span class="status-badge status-live">PUBLISHED</span>
             <span class="level-badge badge-up">LEVEL UP</span>
             <span class="topic-badge">Catalog + Merchandising</span>
           </div>
@@ -189,70 +193,232 @@
           <a class="guide-link" href="product-tags-seo.html">5 min read →</a>
         </div>
       </article>
+
+      <article class="guide-card upcoming" data-level="start" data-topic="listings">
+        <div class="guide-placeholder placeholder-listings" aria-hidden="true"><span>TITLE</span><span>DESCRIPTION</span><span>IMAGES</span><b>LISTING</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-start">START HERE</span>
+            <span class="topic-badge">Product Listings</span>
+          </div>
+          <h3>Anatomy of a Great Product Listing</h3>
+          <p>What each part of a listing does, who it serves, and how titles, descriptions, images, organization, and search context work together.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="start" data-topic="listings seo">
+        <div class="guide-placeholder placeholder-seo" aria-hidden="true"><span>WHAT IT IS</span><span>WHO IT'S FOR</span><span>WHY IT MATTERS</span><b>SEO 101</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-start">START HERE</span>
+            <span class="topic-badge">SEO + Discovery</span>
+          </div>
+          <h3>Shopify SEO Without the Jargon</h3>
+          <p>A plain-language map of search intent, keywords, product pages, collections, images, URLs, and internal links.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="start" data-topic="listings catalog">
+        <div class="guide-placeholder placeholder-catalog" aria-hidden="true"><span>TAG</span><span>COLLECTION</span><span>PRODUCT TYPE</span><b>NOT THE SAME</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-start">START HERE</span>
+            <span class="topic-badge">Catalog + Merchandising</span>
+          </div>
+          <h3>Tags, Collections, Product Types: What’s the Difference?</h3>
+          <p>A visual primer for three Shopify concepts that sound related but solve very different catalog problems.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="start" data-topic="images listings">
+        <div class="guide-placeholder placeholder-images" aria-hidden="true"><span>IMAGE</span><span>ALT TEXT</span><b>WHAT GETS READ?</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-start">START HERE</span>
+            <span class="topic-badge">Images + Accessibility</span>
+          </div>
+          <h3>What Is Alt Text, and Why Does My Product Image Need It?</h3>
+          <p>Accessibility, search context, image filenames, and what good alt text should actually describe.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="start" data-topic="listings">
+        <div class="guide-placeholder placeholder-listings" aria-hidden="true"><span>WHAT IS IT?</span><span>WHY BUY IT?</span><span>WHAT MATTERS?</span><b>DESCRIPTION</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-start">START HERE</span>
+            <span class="topic-badge">Product Listings</span>
+          </div>
+          <h3>How to Write a Product Description When You Don’t Know Where to Start</h3>
+          <p>A simple framework for turning product facts into useful customer-facing copy without padding or empty adjectives.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="start" data-topic="listings seo">
+        <div class="guide-placeholder placeholder-listings" aria-hidden="true"><span>PRODUCT</span><span>ATTRIBUTE</span><span>SEARCH INTENT</span><b>50–60</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-start">START HERE</span>
+            <span class="topic-badge">Product Listings</span>
+          </div>
+          <h3>Product Titles 101: What Should Actually Go in One?</h3>
+          <p>How to write clearer titles for shoppers and search without turning the title into a keyword storage locker.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="level-up" data-topic="seo listings">
+        <div class="guide-placeholder placeholder-seo" aria-hidden="true"><span>BROAD</span><span>SPECIFIC</span><span>HIGH INTENT</span><b>LONG-TAIL</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-up">LEVEL UP</span>
+            <span class="topic-badge">SEO + Discovery</span>
+          </div>
+          <h3>Long-Tail Keywords: The SEO Strategy Small Stores Can Actually Use</h3>
+          <p>How specific search intent can reveal better product, collection, and article opportunities without keyword stuffing.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="level-up" data-topic="catalog seo">
+        <div class="guide-placeholder placeholder-catalog" aria-hidden="true"><span>TAGS</span><span>COLLECTION</span><span>SEARCH PAGE</span><b>PUBLIC STRUCTURE</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-up">LEVEL UP</span>
+            <span class="topic-badge">Catalog + Merchandising</span>
+          </div>
+          <h3>How Collections Can Become Search Landing Pages</h3>
+          <p>How internal catalog organization can turn into useful customer-facing pages with clearer search intent.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="level-up" data-topic="voice listings">
+        <div class="guide-placeholder placeholder-voice" aria-hidden="true"><span>WORDS</span><span>RHYTHM</span><span>POINT OF VIEW</span><b>VOICE</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-up">LEVEL UP</span>
+            <span class="topic-badge">Brand Voice</span>
+          </div>
+          <h3>Brand Voice Isn’t Just Tone</h3>
+          <p>Vocabulary, rhythm, personality, boundaries, and the ingredients that make product copy consistently sound like one brand.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="level-up" data-topic="images seo">
+        <div class="guide-placeholder placeholder-images" aria-hidden="true"><span>FILE NAME</span><span>ALT TEXT</span><span>VISIBLE COPY</span><b>3 DIFFERENT JOBS</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-up">LEVEL UP</span>
+            <span class="topic-badge">Images + Accessibility</span>
+          </div>
+          <h3>Product Image Metadata: Filenames vs. Alt Text vs. What Shoppers See</h3>
+          <p>What each field does, where it appears, and why they should not all contain the same sentence.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="level-up" data-topic="listings testing">
+        <div class="guide-placeholder placeholder-testing" aria-hidden="true"><span>KEEP</span><span>CHANGE</span><span>REVIEW</span><b>REFRESH</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-up">LEVEL UP</span>
+            <span class="topic-badge">Product Listings</span>
+          </div>
+          <h3>How to Refresh an Existing Product Without Starting Over</h3>
+          <p>A practical audit for deciding what deserves an update and what should stay untouched on an established listing.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="go-deeper" data-topic="testing listings">
+        <div class="guide-placeholder placeholder-testing" aria-hidden="true"><span>A</span><span>B</span><span>ONE VARIABLE</span><b>TEST</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-deep">GO DEEPER</span>
+            <span class="topic-badge">Optimization + Testing</span>
+          </div>
+          <h3>What Should You A/B Test on a Product Page?</h3>
+          <p>Titles, description openings, benefit order, imagery, and what to avoid changing all at once.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="go-deeper" data-topic="catalog agency">
+        <div class="guide-placeholder placeholder-catalog" aria-hidden="true"><span>TYPE</span><span>TAG</span><span>COLLECTION</span><b>TAXONOMY</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-deep">GO DEEPER</span>
+            <span class="topic-badge">Catalog + Merchandising</span>
+          </div>
+          <h3>How to Build a Product Taxonomy Before Your Catalog Becomes a Mess</h3>
+          <p>A scalable naming and classification system for product types, tags, collections, and structured fields.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="go-deeper" data-topic="agency voice catalog">
+        <div class="guide-placeholder placeholder-agency" aria-hidden="true"><span>STORE</span><span>VOICE</span><span>QA</span><b>CLIENT ONBOARDING</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">COMING NEXT</span>
+            <span class="level-badge badge-deep">GO DEEPER</span>
+            <span class="topic-badge">Teams + Agencies</span>
+          </div>
+          <h3>How Agencies Should Onboard a New Ecommerce Client</h3>
+          <p>Store context, Brand Voice, taxonomy, workflow, QA, and the decisions that should stay client-specific.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="go-deeper" data-topic="agency catalog">
+        <div class="guide-placeholder placeholder-agency" aria-hidden="true"><span>STRUCTURE</span><span>CONTENT</span><span>SEO</span><b>AUDIT</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-deep">GO DEEPER</span>
+            <span class="topic-badge">Teams + Agencies</span>
+          </div>
+          <h3>How to Audit an Inherited Shopify Catalog</h3>
+          <p>A practical order of operations for untangling product structure, content, images, SEO, collections, and merchandising.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="go-deeper" data-topic="agency testing">
+        <div class="guide-placeholder placeholder-agency" aria-hidden="true"><span>ACCURACY</span><span>BRAND</span><span>SEO</span><b>QA STANDARD</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-deep">GO DEEPER</span>
+            <span class="topic-badge">Teams + Agencies</span>
+          </div>
+          <h3>How to Create a Product Listing QA Standard for Your Team</h3>
+          <p>A reusable review framework for product accuracy, voice, SEO, accessibility, merchandising, and final approval.</p>
+        </div>
+      </article>
+
+      <article class="guide-card upcoming" data-level="go-deeper" data-topic="agency voice">
+        <div class="guide-placeholder placeholder-voice" aria-hidden="true"><span>SHARE PROCESS</span><span>SEPARATE VOICE</span><b>MULTI-BRAND</b></div>
+        <div class="guide-body">
+          <div class="guide-labels">
+            <span class="status-badge">PLANNED</span>
+            <span class="level-badge badge-deep">GO DEEPER</span>
+            <span class="topic-badge">Teams + Agencies</span>
+          </div>
+          <h3>One Account, Multiple Brands: What Should Never Be Shared Between Stores</h3>
+          <p>Which operating standards can scale across clients and which brand, SEO, and merchandising context must stay separate.</p>
+        </div>
+      </article>
     </div>
 
     <div class="no-guides" id="noGuides" hidden>
-      <strong>No published guide matches that combination yet.</strong>
-      <span>The roadmap below shows what is coming next.</span>
-    </div>
-  </section>
-
-  <section class="resource-section roadmap-section" id="roadmap">
-    <div class="section-heading">
-      <p class="resource-kicker">COMING NEXT</p>
-      <h2>Building the rest of the learning path.</h2>
-      <p>These guides fill the biggest gaps between “I just opened Shopify” and “I run this process across multiple brands.”</p>
-    </div>
-
-    <div class="roadmap-grid">
-      <article class="roadmap-card">
-        <span class="level-badge badge-start">START HERE</span>
-        <span class="roadmap-topic">Product Listings</span>
-        <h3>Anatomy of a Great Product Listing</h3>
-        <p>What each part of a listing does, who it serves, and how the pieces work together.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-start">START HERE</span>
-        <span class="roadmap-topic">Catalog + Merchandising</span>
-        <h3>Tags, Collections, Product Types: What’s the Difference?</h3>
-        <p>A visual primer for the Shopify terms that sound similar but do very different jobs.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-start">START HERE</span>
-        <span class="roadmap-topic">Images + Accessibility</span>
-        <h3>What Is Alt Text, and Why Does My Product Image Need It?</h3>
-        <p>Accessibility, search context, image filenames, and the difference between them.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-up">LEVEL UP</span>
-        <span class="roadmap-topic">SEO + Discovery</span>
-        <h3>Long-Tail Keywords: The SEO Strategy Small Stores Can Actually Use</h3>
-        <p>How specific search intent helps smaller catalogs compete without stuffing keywords everywhere.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-up">LEVEL UP</span>
-        <span class="roadmap-topic">Brand Voice</span>
-        <h3>Brand Voice Isn’t Just Tone</h3>
-        <p>Vocabulary, rhythm, personality, boundaries, and what actually makes product copy sound consistent.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-deep">GO DEEPER</span>
-        <span class="roadmap-topic">Optimization + Testing</span>
-        <h3>What Should You A/B Test on a Product Page?</h3>
-        <p>What to test, what to leave alone, and how to avoid changing so much that the result becomes meaningless.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-deep">GO DEEPER</span>
-        <span class="roadmap-topic">Teams + Agencies</span>
-        <h3>How Agencies Should Onboard a New Ecommerce Client</h3>
-        <p>Store context, Brand Voice, taxonomy, workflow, QA, and the pieces that should stay client-specific.</p>
-      </article>
-      <article class="roadmap-card">
-        <span class="level-badge badge-deep">GO DEEPER</span>
-        <span class="roadmap-topic">Teams + Agencies</span>
-        <h3>How to Audit an Inherited Shopify Catalog</h3>
-        <p>A practical order of operations for untangling structure, content, images, SEO, and merchandising.</p>
-      </article>
+      <strong>No guide matches that combination yet.</strong>
+      <span>Try another experience level or clear the filters.</span>
     </div>
   </section>
 
@@ -291,6 +457,19 @@
   const clearButton = document.getElementById('clearFilters');
   const noGuides = document.getElementById('noGuides');
   const guideSection = document.getElementById('guides');
+  const libraryKicker = document.getElementById('libraryKicker');
+  const libraryTitle = document.getElementById('libraryTitle');
+  const libraryIntro = document.getElementById('libraryIntro');
+  const topicCopy = {
+    all: ['ALL GUIDES','Explore the learning library','Start with a published guide or see what we’re building next. Every guide is tagged by experience level and the problem it helps solve.'],
+    listings: ['PRODUCT LISTINGS','Build listings that do more useful work','Learn the fundamentals of titles and descriptions, then move into refreshes, testing, and repeatable listing quality.'],
+    seo: ['SEO + DISCOVERY','Help the right people find the right products','Move from plain-language SEO fundamentals into long-tail strategy, collections, social discovery, and AI search.'],
+    catalog: ['CATALOG + MERCHANDISING','Give the catalog a structure that can grow','Understand tags, collections, product types, taxonomy, and the systems that keep products organized as the catalog expands.'],
+    voice: ['BRAND VOICE','Make every product sound like it belongs to the same brand','Learn what creates a recognizable voice, then scale it across products, stores, teams, and clients without flattening the personality.'],
+    images: ['IMAGES + ACCESSIBILITY','Make product images easier to understand and use','Get clear on alt text, filenames, accessibility, search context, and the metadata surrounding product photography.'],
+    testing: ['OPTIMIZATION + TESTING','Improve what already exists without creating chaos','Learn what to refresh, what to test, how to isolate useful signals, and how to build review standards around ongoing optimization.'],
+    agency: ['TEAMS + AGENCIES','Scale the process without blending the brands','Build repeatable onboarding, QA, catalog-audit, and multi-brand systems while keeping each client’s context separate.']
+  };
   let activeLevel = 'all';
   let activeTopic = 'all';
 
@@ -313,6 +492,10 @@
       button.classList.toggle('active', button.dataset.filterTopic === activeTopic);
     });
     noGuides.hidden = visible !== 0;
+    const copy = topicCopy[activeTopic] || topicCopy.all;
+    libraryKicker.textContent = copy[0];
+    libraryTitle.textContent = copy[1];
+    libraryIntro.textContent = copy[2];
 
     if (scrollToGuides) {
       guideSection.scrollIntoView({behavior:'smooth', block:'start'});
