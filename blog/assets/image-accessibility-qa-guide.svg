@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<rect width="1200" height="675" rx="32" fill="#EEF7F1"/>
+<text x="90" y="105" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#0F6B4F">CATALOG-WIDE IMAGE QA</text>
+<rect x="84" y="145" width="1032" height="420" rx="28" fill="#FFFFFF" stroke="#D8E9DD" stroke-width="4"/>
+<g>
+<rect x="126" y="205" width="232" height="286" rx="20" fill="#F8FAF9" stroke="#DFE5E2"/>
+<rect x="160" y="237" width="164" height="120" rx="16" fill="#EAF7F1"/>
+<path d="M205 266h75l26 47-21 20v48H199v-48l-20-20 26-47z" fill="#69B69A"/>
+<circle cx="177" cy="421" r="15" fill="#0F6B4F"/><path d="M170 421l5 5 10-12" fill="none" stroke="#fff" stroke-width="4"/>
+<text x="202" y="429" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#17324D">Accuracy</text>
+</g>
+<g>
+<rect x="484" y="205" width="232" height="286" rx="20" fill="#F8FAF9" stroke="#DFE5E2"/>
+<rect x="518" y="237" width="164" height="120" rx="16" fill="#FFF0E7"/>
+<text x="548" y="306" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#D07B45">A ≠ B</text>
+<circle cx="535" cy="421" r="15" fill="#0F6B4F"/><path d="M528 421l5 5 10-12" fill="none" stroke="#fff" stroke-width="4"/>
+<text x="560" y="429" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#17324D">Distinctiveness</text>
+</g>
+<g>
+<rect x="842" y="205" width="232" height="286" rx="20" fill="#F8FAF9" stroke="#DFE5E2"/>
+<rect x="876" y="237" width="164" height="120" rx="16" fill="#F4EEFB"/>
+<text x="913" y="306" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" fill="#7B58B5">QA</text>
+<circle cx="893" cy="421" r="15" fill="#0F6B4F"/><path d="M886 421l5 5 10-12" fill="none" stroke="#fff" stroke-width="4"/>
+<text x="918" y="429" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#17324D">Consistency</text>
+</g>
+<text x="90" y="620" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#17324D">A repeatable standard beats a thousand one-off fixes.</text>
+</svg>
