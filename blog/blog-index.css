@@ -528,3 +528,17 @@
     white-space:nowrap;
   }
 }
+
+
+/* v4: prevent awkward orphan wraps in large section headings */
+.guide-library .library-heading > div,
+.learning-model-copy{
+  max-width:1100px;
+}
+
+@media(min-width:1200px){
+  .guide-library .library-heading h2,
+  .learning-model-copy h2{
+    white-space:nowrap;
+  }
+}
