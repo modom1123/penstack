@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" rx="30" fill="#F7FAFF"/>
+<text x="72" y="75" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800" fill="#7B58B5">GOOD ALT TEXT ADDS USEFUL INFORMATION</text>
+<g transform="translate(70 120)">
+<rect width="1060" height="170" rx="22" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="3"/>
+<circle cx="95" cy="85" r="58" fill="#EEF4FF"/><text x="72" y="97" font-family="Arial" font-size="42" font-weight="800" fill="#7B58B5">1</text>
+<rect x="190" y="34" width="330" height="102" rx="16" fill="#FFF1F1"/>
+<text x="215" y="68" font-family="Arial" font-size="17" font-weight="800" fill="#C84848">TOO VAGUE</text>
+<text x="215" y="105" font-family="Arial" font-size="27" font-weight="800" fill="#17324D">“Shoe”</text>
+<path d="M545 85h70" stroke="#0F6B4F" stroke-width="5"/><path d="M600 70l18 15-18 15" fill="none" stroke="#0F6B4F" stroke-width="5"/>
+<rect x="650" y="34" width="350" height="102" rx="16" fill="#EAF7F1"/>
+<text x="675" y="68" font-family="Arial" font-size="17" font-weight="800" fill="#0F6B4F">MORE USEFUL</text>
+<text x="675" y="102" font-family="Arial" font-size="23" font-weight="800" fill="#17324D">“Pink running shoe, side view”</text>
+</g>
+<g transform="translate(70 315)">
+<rect width="1060" height="170" rx="22" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="3"/>
+<circle cx="95" cy="85" r="58" fill="#EEF4FF"/><text x="72" y="97" font-family="Arial" font-size="42" font-weight="800" fill="#7B58B5">2</text>
+<rect x="190" y="34" width="330" height="102" rx="16" fill="#FFF1F1"/>
+<text x="215" y="68" font-family="Arial" font-size="17" font-weight="800" fill="#C84848">TOO GENERIC</text>
+<text x="215" y="105" font-family="Arial" font-size="27" font-weight="800" fill="#17324D">“Model wearing shirt”</text>
+<path d="M545 85h70" stroke="#0F6B4F" stroke-width="5"/><path d="M600 70l18 15-18 15" fill="none" stroke="#0F6B4F" stroke-width="5"/>
+<rect x="650" y="24" width="350" height="122" rx="16" fill="#EAF7F1"/>
+<text x="675" y="58" font-family="Arial" font-size="17" font-weight="800" fill="#0F6B4F">MORE USEFUL</text>
+<text x="675" y="93" font-family="Arial" font-size="22" font-weight="800" fill="#17324D">“Oversized green graphic tee</text>
+<text x="675" y="122" font-family="Arial" font-size="22" font-weight="800" fill="#17324D">on model, front view”</text>
+</g>
+<g transform="translate(70 510)">
+<rect width="1060" height="170" rx="22" fill="#FFFFFF" stroke="#D8E3F2" stroke-width="3"/>
+<circle cx="95" cy="85" r="58" fill="#EEF4FF"/><text x="72" y="97" font-family="Arial" font-size="42" font-weight="800" fill="#7B58B5">3</text>
+<rect x="190" y="24" width="330" height="122" rx="16" fill="#FFF1F1"/>
+<text x="215" y="58" font-family="Arial" font-size="17" font-weight="800" fill="#C84848">KEYWORD STUFFED</text>
+<text x="215" y="93" font-family="Arial" font-size="20" font-weight="800" fill="#17324D">“Best organic cotton tee</text>
+<text x="215" y="121" font-family="Arial" font-size="20" font-weight="800" fill="#17324D">eco sustainable shirt”</text>
+<path d="M545 85h70" stroke="#0F6B4F" stroke-width="5"/><path d="M600 70l18 15-18 15" fill="none" stroke="#0F6B4F" stroke-width="5"/>
+<rect x="650" y="34" width="350" height="102" rx="16" fill="#EAF7F1"/>
+<text x="675" y="68" font-family="Arial" font-size="17" font-weight="800" fill="#0F6B4F">MORE USEFUL</text>
+<text x="675" y="103" font-family="Arial" font-size="22" font-weight="800" fill="#17324D">“Cream organic cotton tee, front view”</text>
+</g>
+</svg>
