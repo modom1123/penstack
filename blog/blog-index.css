@@ -517,3 +517,14 @@
   background:#fcfcfb;
 }
 .guide-card.upcoming .guide-body{opacity:.9}
+
+
+/* v3: keep experience heading from orphaning the last word on desktop */
+.experience-section .section-heading{
+  max-width:980px;
+}
+@media(min-width:1100px){
+  .experience-section .section-heading h2{
+    white-space:nowrap;
+  }
+}
