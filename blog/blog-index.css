@@ -452,3 +452,68 @@
   .mini-product{grid-template-columns:88px 1fr}
   .mini-shirt{height:96px}
 }
+
+
+/* v2: populated learning-library cards */
+.library-intro{
+  max-width:760px;
+  margin:10px 0 0;
+  color:var(--hub-muted);
+  font-size:14px;
+  line-height:1.5;
+}
+.status-badge{
+  display:inline-flex;
+  align-items:center;
+  min-height:26px;
+  padding:5px 9px;
+  border-radius:999px;
+  background:#f2f4f3;
+  color:var(--hub-muted);
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.06em;
+}
+.status-live{
+  background:#e9f7ef;
+  color:#0b6a48;
+}
+.guide-placeholder{
+  min-height:178px;
+  padding:22px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-content:center;
+  text-decoration:none;
+  border-bottom:1px solid var(--hub-line);
+}
+.guide-placeholder span{
+  padding:8px 10px;
+  border-radius:8px;
+  background:rgba(255,255,255,.8);
+  color:var(--hub-navy);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.04em;
+}
+.guide-placeholder b{
+  flex-basis:100%;
+  margin-top:8px;
+  color:var(--hub-ink);
+  font-size:24px;
+  line-height:1.05;
+  letter-spacing:-.03em;
+}
+.placeholder-listings{background:#fdeff4}
+.placeholder-seo{background:#eaf4ff}
+.placeholder-catalog{background:#eaf7f1}
+.placeholder-voice{background:#f2ecfb}
+.placeholder-images{background:#fff0e7}
+.placeholder-testing{background:#fff6d7}
+.placeholder-agency{background:#e8f4ff}
+.guide-card.upcoming{
+  box-shadow:none;
+  background:#fcfcfb;
+}
+.guide-card.upcoming .guide-body{opacity:.9}
