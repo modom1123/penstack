@@ -46,13 +46,9 @@
         <p class="blog-dek">Three fields can describe the same product image without doing the same job. Here is how to keep each one useful.</p>
         <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-24">September 24, 2026</time> · 6 min read</span></div>
       </div>
-      <div class="blog-hero-visual" style="padding:28px">
-        <div class="blog-example" style="margin:0">
-          <span class="blog-example-label">LEVEL UP</span>
-          <h3>Images + Accessibility</h3>
-          <p>Product image → useful context → clearer shopping experience</p>
-        </div>
-      </div>
+      <figure class="blog-hero-visual accessibility-hero-visual">
+        <img src="assets/penstack-product-image-metadata-hero.png" width="1200" height="760" alt="Product image metadata visual showing how a product image connects to descriptive metadata">
+      </figure>
     </div>
   </header>
 
@@ -66,7 +62,11 @@
 <article><b>1</b><strong>Filename</strong><span>A stable, readable label for the underlying image file.</span></article>
 <article><b>2</b><strong>Alt text</strong><span>A text alternative for the useful visual information in that specific image.</span></article>
 <article><b>3</b><strong>Visible copy</strong><span>Customer-facing language that explains benefits, context, details, and reasons to buy.</span></article>
-</div></section>
+</div>
+<figure class="blog-figure accessibility-figure">
+  <img src="assets/penstack-product-image-metadata-three-fields.png" width="1200" height="760" loading="lazy" alt="Visual comparing filename, alt text, and visible product copy as three different metadata fields for one product image">
+  <figcaption>The same product image can support three different fields, each with a different job.</figcaption>
+</figure></section>
 
 <section class="blog-section" id="filename"><h2>2. What should an image filename do?</h2><div class="blog-prose">
 <p>A filename should identify the asset clearly enough that a person or system can recognize it later. Generic camera names such as <span class="blog-code">IMG_4821.jpg</span> tell you almost nothing.</p>
@@ -78,7 +78,11 @@
 <p>Alt text should explain the visual information someone needs from the image. It is written for the image in context, not for the media library.</p>
 <p>That means two files with similar names may need different alt text if one is a back view and the other shows a close-up of embroidery.</p>
 </div>
-<div class="blog-example"><span class="blog-example-label">Example alt text</span><p><strong>“Green oversized graphic tee on model, front view”</strong></p></div></section>
+<div class="blog-example"><span class="blog-example-label">Example alt text</span><p><strong>“Green oversized graphic tee on model, front view”</strong></p></div>
+<figure class="blog-figure accessibility-figure">
+  <img src="assets/penstack-product-image-metadata-alt-text-example.png" width="1200" height="760" loading="lazy" alt="Product image paired with alt text showing how visible product details are translated into a useful text alternative">
+  <figcaption>Alt text describes the useful visual information in the image, rather than merely repeating the filename.</figcaption>
+</figure></section>
 
 <section class="blog-section" id="visible"><h2>4. What should visible product copy do?</h2><div class="blog-prose">
 <p>Visible copy can go beyond what is literally visible. It can explain the fabric, fit, inspiration, care, use case, or other product information a shopper needs.</p>
@@ -97,7 +101,10 @@
 <div class="blog-flow"><span>Identify product</span><b>→</b><span>Confirm variant</span><b>→</b><span>Confirm view</span><b>→</b><span>Name file</span><b>→</b><span>Write alt text</span><b>→</b><span>Review</span></div>
 <div class="blog-prose"><p>Penstack uses the product title plus image context such as color, view, and shot type to build a consistent image title. Alt text is generated separately because accessibility text should describe the image, not merely reproduce the filename.</p><p><a href="ecommerce-image-accessibility-qa.html">Next: turn this into a catalog-wide image QA standard →</a></p></div></section>
 
-<section class="blog-takeaway"><h2>The takeaway</h2><p><strong>Related fields should agree with each other without becoming duplicates.</strong></p><div class="blog-flow"><span>Filename = identify</span><b>·</b><span>Alt text = describe</span><b>·</b><span>Visible copy = explain + persuade</span></div></section>
+<section class="blog-takeaway"><h2>The takeaway</h2><p><strong>Related fields should agree with each other without becoming duplicates.</strong></p><div class="blog-flow"><span>Filename = identify</span><b>·</b><span>Alt text = describe</span><b>·</b><span>Visible copy = explain + persuade</span></div>
+<figure class="blog-figure accessibility-figure">
+  <img src="assets/penstack-product-image-metadata-takeaway.png" width="1200" height="760" loading="lazy" alt="Summary visual showing the distinct roles of filename, alt text, and visible product copy">
+</figure></section>
     <section class="blog-cta" aria-label="penstack call to action">
       <div><h2>Put image details into the same product workflow.</h2><p>penstack keeps image titles, alt text, product content, review, and publishing connected.</p></div>
       <a class="button primary" href="https://app.penstack.co"><span>Start free</span><span aria-hidden="true">→</span></a>
