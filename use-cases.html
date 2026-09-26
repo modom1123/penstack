@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-496337Z0N8"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,40 +10,67 @@
   </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Use Cases | penstack</title>
-  <meta name="description" content="See where penstack saves time across Shopify product launches, catalog cleanup, long-tail SEO, merchandising, multi-store workflows, and repeat product operations.">
+  <title>Shopify Product Content Use Cases | penstack</title>
+  <meta name="description" content="See how penstack helps Shopify teams launch products faster, clean up catalog content, improve product discovery, support merchandising, manage multiple stores, and reduce repetitive product work.">
   <link rel="canonical" href="https://penstack.co/use-cases.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Use Cases | penstack">
-  <meta property="og:description" content="See where penstack saves time across Shopify product launches, catalog cleanup, long-tail SEO, merchandising, multi-store workflows, and repeat product operations.">
+  <meta property="og:title" content="Shopify Product Content Use Cases | penstack">
+  <meta property="og:description" content="From product launches and catalog cleanup to SEO, merchandising, and multi-store workflows, see where penstack removes repetitive product work.">
   <meta property="og:url" content="https://penstack.co/use-cases.html">
-  <meta property="og:image" content="https://penstack.co/penstack-social-preview.jpg">
+  <meta property="og:image" content="https://penstack.co/penstack-use-cases-hero-workflow.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Use Cases | penstack">
-  <meta name="twitter:description" content="See where penstack saves time across Shopify product launches, catalog cleanup, long-tail SEO, merchandising, multi-store workflows, and repeat product operations.">
-  <meta name="twitter:image" content="https://penstack.co/penstack-social-preview.jpg">
+  <meta name="twitter:title" content="Shopify Product Content Use Cases | penstack">
+  <meta name="twitter:description" content="See where penstack removes repetitive product work across Shopify launches, cleanup, discovery, merchandising, and multi-store operations.">
+  <meta name="twitter:image" content="https://penstack.co/penstack-use-cases-hero-workflow.png">
   <link rel="icon" type="image/png" sizes="64x64" href="penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="penstack-favicon-180.png">
   <link rel="stylesheet" href="styles.css?v=19">
   <style>
-    .usecase-hero{padding-bottom:54px}
-    .usecase-map{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
-    .usecase-map div{padding:16px;border:1px solid var(--line);border-radius:14px;background:#fff}
-    .usecase-map strong{display:block;margin-bottom:4px;font-size:14px}.usecase-map span{color:var(--muted);font-size:12px;line-height:1.4}
-    .moment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .moment-card{padding:26px;border:1px solid var(--line);border-radius:18px;background:#fff;min-height:310px;display:flex;flex-direction:column}
-    .moment-card .eyebrow{margin-bottom:10px}.moment-card h3{margin:0 0 9px;font-size:28px;letter-spacing:-.03em}.moment-card>p{margin:0 0 18px;color:var(--muted);line-height:1.55}
-    .moment-list{display:grid;gap:10px;margin-top:auto}.moment-list div{padding:12px 14px;border-radius:10px;background:var(--soft);font-size:14px;line-height:1.45}.moment-list strong{color:var(--navy)}
-    .value-outcomes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.outcome-card{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}.outcome-card strong{display:block;margin-bottom:6px;font-size:18px}.outcome-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-    .role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.role-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}.role-card h3{margin:0 0 8px}.role-card p{margin:0;color:var(--muted);line-height:1.5}
-    .usecase-band{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center;padding:32px;border:1px solid var(--line);border-radius:18px;background:#fff8ec}.usecase-band h2{font-size:clamp(34px,4vw,48px)}.usecase-band p{color:var(--muted);line-height:1.55}.band-points{display:grid;grid-template-columns:1fr 1fr;gap:12px}.band-points div{padding:15px;border-radius:12px;background:#fff;border:1px solid #edd8bc}.band-points strong{display:block;margin-bottom:3px}.band-points span{font-size:13px;color:var(--muted);line-height:1.4}
-    @media(max-width:1050px){.usecase-map,.value-outcomes{grid-template-columns:repeat(2,1fr)}.role-grid{grid-template-columns:repeat(2,1fr)}.usecase-band{grid-template-columns:1fr}}
-    @media(max-width:760px){.usecase-map,.moment-grid,.value-outcomes,.role-grid,.band-points{grid-template-columns:1fr}.moment-card{min-height:0}}
+    .uc-page{padding-bottom:30px}
+    .uc-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:44px;align-items:center;padding:64px 0 54px}
+    .uc-hero h1{max-width:700px;margin:10px 0 18px;font-size:clamp(48px,6vw,76px);line-height:.98;letter-spacing:-.05em}
+    .uc-hero .lead{max-width:640px;font-size:20px;line-height:1.5;color:var(--muted)}
+    .uc-visual img{display:block;width:100%;height:auto;border-radius:24px}
+    .uc-actions{display:flex;gap:12px;align-items:center;margin-top:26px;flex-wrap:wrap}
+    .uc-section{padding:56px 0;border-top:1px solid var(--line)}
+    .uc-row{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:48px;align-items:center}
+    .uc-row.reverse{grid-template-columns:minmax(420px,1.1fr) minmax(0,.9fr)}
+    .uc-row.reverse .uc-copy{order:2}.uc-row.reverse .uc-visual{order:1}
+    .uc-number{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#dff0ff;color:#2175c9;font-weight:800;margin-bottom:16px}
+    .uc-copy h2{margin:0 0 12px;font-size:clamp(34px,4vw,50px);line-height:1.04;letter-spacing:-.04em}
+    .uc-copy>p{margin:0 0 20px;color:var(--muted);font-size:18px;line-height:1.55}
+    .uc-points{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+    .uc-points li{position:relative;padding-left:32px;color:var(--navy);line-height:1.45}
+    .uc-points li:before{content:"✓";position:absolute;left:0;top:-1px;display:grid;place-items:center;width:21px;height:21px;border-radius:50%;background:#dff7eb;color:#0b9b64;font-size:13px;font-weight:800}
+    .uc-link{display:inline-block;margin-top:18px;font-weight:700;text-decoration:none}
+    .uc-more{padding:54px 0;border-top:1px solid var(--line)}
+    .uc-more h2{margin:0 0 8px;font-size:40px;letter-spacing:-.04em}
+    .uc-more-intro{margin:0 0 24px;color:var(--muted);font-size:17px}
+    .uc-more-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .uc-more-card{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff;min-height:190px}
+    .uc-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;margin-bottom:15px;font-size:24px}
+    .uc-more-card:nth-child(1) .uc-icon{background:#fdecef}.uc-more-card:nth-child(2) .uc-icon{background:#eaf4ff}.uc-more-card:nth-child(3) .uc-icon{background:#e8f7ef}.uc-more-card:nth-child(4) .uc-icon{background:#fff1bf}
+    .uc-more-card h3{margin:0 0 8px;font-size:21px}.uc-more-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .uc-pattern{display:grid;grid-template-columns:.72fr 1.28fr;gap:34px;align-items:center;padding:42px;border:1px solid var(--line);border-radius:22px;background:#f8fbff;margin:10px 0 56px}
+    .uc-pattern h2{font-size:44px;margin:0 0 8px;letter-spacing:-.04em}.uc-pattern p{color:var(--muted);line-height:1.55;margin:0 0 20px}
+    @media(max-width:980px){
+      .uc-hero,.uc-row,.uc-row.reverse,.uc-pattern{grid-template-columns:1fr}
+      .uc-row.reverse .uc-copy,.uc-row.reverse .uc-visual{order:initial}
+      .uc-more-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      .uc-hero{padding-top:34px}.uc-section{padding:40px 0}
+      .uc-more-grid{grid-template-columns:1fr}
+      .uc-pattern{padding:24px}
+    }
   </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebPage","name":"Shopify Product Content Use Cases","url":"https://penstack.co/use-cases.html","description":"See how penstack helps Shopify teams launch products faster, clean up catalog content, improve product discovery, support merchandising, manage multiple stores, and reduce repetitive product work.","about":["Shopify product content","product launches","catalog cleanup","product SEO","merchandising","multi-store operations","brand voice","image accessibility"]}
+  </script>
 </head>
 <body>
-<main class="site">
+<main class="site uc-page">
   <header class="site-header">
     <a class="brand" href="index.html"><img src="penstack_logo.png" alt="penstack"></a>
     <nav>
@@ -62,165 +88,154 @@
     </div>
   </header>
 
-  <section class="page-hero single usecase-hero">
+  <section class="uc-hero">
     <div>
-      <p class="eyebrow">WHERE IT EARNS ITS KEEP</p>
-      <h1>Use it where the repetitive middle starts eating the day.</h1>
-      <p class="lead">penstack is useful anywhere a Shopify product needs more work before it is ready to sell. New launches, catalog cleanup, SEO updates, merchandising, repeated product setup, and multi-store operations all create the same kind of drag.</p>
-      <div class="hero-actions">
+      <p class="eyebrow green">USE CASES</p>
+      <h1>From product chaos to publish-ready.</h1>
+      <p class="lead">See how teams use penstack to create, optimize, and manage Shopify product content at scale, without the repetitive middle.</p>
+      <div class="uc-actions">
         <a class="button primary" href="https://app.penstack.co">Start free →</a>
-        <span class="microcopy">Set up in minutes. No credit card required.</span>
+        <a class="button secondary" href="product.html">See how it works</a>
       </div>
-      <div class="usecase-map">
-        <div><strong>Launch faster</strong><span>Move a product from draft to publish-ready without rebuilding context.</span></div>
-        <div><strong>Clean up the catalog</strong><span>Improve incomplete or inconsistent listings without starting over.</span></div>
-        <div><strong>Build discoverability in</strong><span>Keep long-tail SEO and product content connected.</span></div>
-        <div><strong>Scale the workflow</strong><span>Repeat the process more consistently as products, stores, or teams grow.</span></div>
+    </div>
+    <figure class="uc-visual">
+      <img src="penstack-use-cases-hero-workflow.png" width="1600" height="900" alt="Comparison between a manual Shopify workflow using documents, AI tools, and spreadsheets and the Penstack workflow of retrieve, build, review, and publish">
+    </figure>
+  </section>
+
+  <section class="uc-section">
+    <div class="uc-row">
+      <div class="uc-copy">
+        <span class="uc-number">1</span>
+        <h2>Launch new products faster.</h2>
+        <p>Go from a Shopify draft to publish-ready content with fewer handoffs and less repeated setup.</p>
+        <ul class="uc-points">
+          <li>Generate search-friendly titles and descriptions.</li>
+          <li>Add useful product details such as features, specs, and materials.</li>
+          <li>Keep writing consistent and aligned with your brand.</li>
+        </ul>
+        <a class="uc-link" href="product.html">Learn more →</a>
       </div>
+      <figure class="uc-visual">
+        <img src="penstack-use-cases-launch-new-products.png" width="1600" height="900" loading="lazy" alt="Draft Shopify product moving through Penstack product data retrieval, content generation, detail completion, and review to become publish-ready">
+      </figure>
     </div>
   </section>
 
-  <section class="section compact">
-    <div class="section-heading">
-      <p class="eyebrow green">USE CASES BY JOB TO BE DONE</p>
-      <h2>Same product. Different reason you need penstack today.</h2>
-      <p>The value changes depending on the moment. The common thread is reducing the number of places, passes, and handoffs required to get the product finished.</p>
-    </div>
-
-    <div class="moment-grid">
-      <article class="moment-card">
-        <p class="eyebrow green">01 · LAUNCH</p>
-        <h3>Get a new product online faster.</h3>
-        <p>Turn an existing Shopify draft into a complete listing without scattering the work across documents, AI tools, spreadsheets, and admin screens.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> product launches, seasonal drops, limited runs, new collections</div>
-          <div><strong>penstack helps with:</strong> content, discovery, images, product details, organization, review, and publishing</div>
-          <div><strong>What changes:</strong> fewer handoffs between “product exists” and “product is ready”</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">02 · CLEANUP</p>
-        <h3>Fix listings that technically exist but are not really finished.</h3>
-        <p>Refresh thin, outdated, inconsistent, or partially completed products while keeping the useful information that is already in Shopify.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> inherited catalogs, rushed launches, inconsistent legacy listings</div>
-          <div><strong>penstack helps with:</strong> stronger copy, missing product details, image context, tags, collections, and final review</div>
-          <div><strong>What changes:</strong> catalog cleanup becomes a repeatable workflow instead of a scavenger hunt</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">03 · DISCOVERY</p>
-        <h3>Make long-tail keyword strategy easier to apply.</h3>
-        <p>Bring search intent into the product workflow so the SEO work happens alongside the listing instead of becoming a separate project later.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> niche products, competitive categories, collection-level search strategies</div>
-          <div><strong>penstack helps with:</strong> long-tail keyword direction, structured product copy, image context, and more consistent product information</div>
-          <div><strong>What changes:</strong> discoverability becomes part of product setup instead of cleanup</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">04 · MERCHANDISING</p>
-        <h3>Keep product organization from becoming another admin pass.</h3>
-        <p>Handle the pieces that determine where a product lives and how it is grouped while you are already working on the listing.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> growing collections, seasonal merchandising, large catalogs</div>
-          <div><strong>penstack helps with:</strong> tags, collections, product details, image support, and consistent organization</div>
-          <div><strong>What changes:</strong> fewer “we’ll clean that up later” tasks pile up in Shopify</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">05 · CONSISTENCY</p>
-        <h3>Make repeated product setup feel more repeatable.</h3>
-        <p>Reduce variation in how products are prepared when multiple launches, SKUs, or teammates are moving through the same process.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> expanding catalogs, lean ecommerce teams, frequent launches</div>
-          <div><strong>penstack helps with:</strong> consistent workflow, brand-aligned drafts on paid plans, complete product review, and fewer missed details</div>
-          <div><strong>What changes:</strong> the process depends less on who happens to be doing the setup that day</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">06 · MULTI-STORE · PAID</p>
-        <h3>Work across more than one storefront without mixing the context.</h3>
-        <p>Use the same product workflow across brands, storefronts, or client stores while keeping the work organized by store.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> agencies, multi-brand operators, businesses with multiple Shopify stores</div>
-          <div><strong>penstack helps with:</strong> multi-site access, separate store workflows, brand voice, and repeat product operations</div>
-          <div><strong>What changes:</strong> fewer spreadsheets, tabs, and mental gymnastics between storefronts</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">07 · TEAM EFFICIENCY</p>
-        <h3>Take the lowest-leverage work off the team’s plate.</h3>
-        <p>Reduce the repetitive product-entry work that often lands on junior marketers, coordinators, founders, or whoever happens to have time.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> small teams, overloaded marketers, founder-led businesses</div>
-          <div><strong>penstack helps with:</strong> first drafts, repeat entry, product organization, image details, and review-ready output</div>
-          <div><strong>What changes:</strong> more team time goes toward judgment, positioning, campaigns, and customer experience</div>
-        </div>
-      </article>
-
-      <article class="moment-card">
-        <p class="eyebrow green">08 · BETTER PRODUCT OPS</p>
-        <h3>Turn a patchwork process into something you can actually repeat.</h3>
-        <p>When product setup lives partly in people’s heads and partly across several tools, penstack creates a clearer path from input to finished product.</p>
-        <div class="moment-list">
-          <div><strong>Best for:</strong> teams formalizing ecommerce operations or trying to reduce process debt</div>
-          <div><strong>penstack helps with:</strong> one connected workflow, fewer handoffs, clearer review, and one final publish step</div>
-          <div><strong>What changes:</strong> product setup becomes an operating process instead of a collection of habits</div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <section class="section soft">
-    <div class="section-heading">
-      <p class="eyebrow green">WHAT YOU GET BACK</p>
-      <h2>The value is bigger than faster copy.</h2>
-      <p>penstack is designed to reduce workflow overhead. That shows up in several places at once.</p>
-    </div>
-    <div class="value-outcomes">
-      <article class="outcome-card"><strong>Time</strong><p>Less repeat entry, fewer cleanup passes, and less bouncing between tools.</p></article>
-      <article class="outcome-card"><strong>Consistency</strong><p>More repeatable product setup across launches, catalogs, and teams.</p></article>
-      <article class="outcome-card"><strong>Focus</strong><p>More attention available for strategy, merchandising, marketing, and customer work.</p></article>
-      <article class="outcome-card"><strong>Control</strong><p>The human still reviews, edits, and decides what is ready to publish.</p></article>
-    </div>
-  </section>
-
-  <section class="section compact">
-    <div class="usecase-band">
-      <div>
-        <p class="eyebrow green">THE BIGGER PATTERN</p>
-        <h2>penstack replaces the repetitive middle.</h2>
-        <p>The product already exists. The customer-facing listing does not. penstack is built for the work in between, whether that work starts as a launch, cleanup project, SEO initiative, merchandising task, or operations problem.</p>
+  <section class="uc-section">
+    <div class="uc-row reverse">
+      <div class="uc-copy">
+        <span class="uc-number">2</span>
+        <h2>Clean up and improve existing products.</h2>
+        <p>Fix incomplete, outdated, or inconsistent product content so every listing is clearer, more useful, and easier to maintain.</p>
+        <ul class="uc-points">
+          <li>Fill in missing information.</li>
+          <li>Improve weak or unclear product writing.</li>
+          <li>Standardize product structure across your catalog.</li>
+        </ul>
+        <a class="uc-link" href="product.html">Learn more →</a>
       </div>
-      <div class="band-points">
-        <div><strong>Before</strong><span>Tabs, docs, admin screens, manual handoffs, cleanup later.</span></div>
-        <div><strong>With penstack</strong><span>Retrieve, build, review, publish in one connected path.</span></div>
-        <div><strong>The human still does</strong><span>Judgment, positioning, editing, strategy, final approval.</span></div>
-        <div><strong>penstack handles</strong><span>The repetitive setup work that keeps stealing time.</span></div>
-      </div>
+      <figure class="uc-visual">
+        <img src="penstack-use-cases-clean-up-products.png" width="1600" height="900" loading="lazy" alt="Before and after Shopify product listing showing missing details and vague copy improved into a complete ceramic mug listing">
+      </figure>
     </div>
   </section>
 
-  <section class="section soft">
-    <div class="section-heading">
-      <p class="eyebrow green">BUILT FOR THE PEOPLE DOING THE WORK</p>
-      <h2>Different teams. Same friction.</h2>
+  <section class="uc-section">
+    <div class="uc-row">
+      <div class="uc-copy">
+        <span class="uc-number">3</span>
+        <h2>Increase product discovery.</h2>
+        <p>Help more shoppers find your products by connecting product content with search intent, collection context, and structured data.</p>
+        <ul class="uc-points">
+          <li>Use relevant keywords naturally.</li>
+          <li>Write clear, descriptive titles and content.</li>
+          <li>Align product information with how shoppers actually search.</li>
+        </ul>
+        <a class="uc-link" href="blog/shopify-seo-without-jargon.html">Explore SEO guidance →</a>
+      </div>
+      <figure class="uc-visual">
+        <img src="penstack-use-cases-product-discovery.png" width="1600" height="900" loading="lazy" alt="Product connected to search intent, collection placement, tags, filters, and recommendation data">
+      </figure>
     </div>
-    <div class="role-grid">
-      <article class="role-card"><h3>Makers + founders</h3><p>Spend more time making, selling, and shaping the business, and less time shepherding product pages through admin work.</p></article>
-      <article class="role-card"><h3>Lean ecommerce teams</h3><p>Keep products moving without turning every launch into a relay race across Shopify, AI tools, docs, spreadsheets, and manual checks.</p></article>
-      <article class="role-card"><h3>Growing Shopify brands</h3><p>Make product setup more consistent as launches, SKUs, and catalog complexity grow.</p></article>
-      <article class="role-card"><h3>Catalog-heavy brands</h3><p>Reduce the compounding effect of repetitive work when every new SKU creates the same set of chores.</p></article>
-      <article class="role-card"><h3>Agencies + multi-brand teams</h3><p>Paid plans support work across multiple stores without turning each client or brand into another spreadsheet system.</p></article>
-      <article class="role-card"><h3>Teams that still want control</h3><p>Move faster without handing over the final decision. penstack drafts and organizes. You review and approve.</p></article>
+  </section>
+
+  <section class="uc-section">
+    <div class="uc-row reverse">
+      <div class="uc-copy">
+        <span class="uc-number">4</span>
+        <h2>Improve merchandising and collection placement.</h2>
+        <p>Make products easier to organize, promote, filter, and recommend across your storefront.</p>
+        <ul class="uc-points">
+          <li>Use clear, consistent attributes.</li>
+          <li>Support collection placement and filters.</li>
+          <li>Improve internal product organization and navigation.</li>
+        </ul>
+        <a class="uc-link" href="blog/tags-collections-product-types.html">Learn about product organization →</a>
+      </div>
+      <figure class="uc-visual">
+        <img src="penstack-use-cases-merchandising-placement.png" width="1600" height="900" loading="lazy" alt="One running shoe product routed into Running Shoes, New Arrivals, Women's Collection, and Training Essentials merchandising destinations">
+      </figure>
     </div>
+  </section>
+
+  <section class="uc-section">
+    <div class="uc-row">
+      <div class="uc-copy">
+        <span class="uc-number">5</span>
+        <h2>Manage multiple stores without mixing the context.</h2>
+        <p>Run distinct brand voices, catalogs, and SEO strategies from one Penstack workflow while keeping each storefront separate.</p>
+        <ul class="uc-points">
+          <li>Keep each store’s product context separate.</li>
+          <li>Adapt content for different audiences and brands.</li>
+          <li>Maintain unique brand voice and SEO context by store.</li>
+        </ul>
+        <a class="uc-link" href="pricing.html">See multi-store plans →</a>
+      </div>
+      <figure class="uc-visual">
+        <img src="penstack-use-cases-multi-store-management.png" width="1600" height="900" loading="lazy" alt="Penstack connected to three Shopify stores with separate brand voice, catalog, and SEO context for each store">
+      </figure>
+    </div>
+  </section>
+
+  <section class="uc-more">
+    <p class="eyebrow green">MORE JOBS PENSTACK CAN TAKE ON</p>
+    <h2>More ways to make product work lighter.</h2>
+    <p class="uc-more-intro">Not every use case needs a full workflow diagram. These jobs fit naturally into the same product-content process.</p>
+    <div class="uc-more-grid">
+      <article class="uc-more-card">
+        <div class="uc-icon">★</div>
+        <h3>Keep every product on-brand.</h3>
+        <p>Use Brand Voice context to keep product writing more consistent across products, launches, and stores.</p>
+      </article>
+      <article class="uc-more-card">
+        <div class="uc-icon">▣</div>
+        <h3>Make product images work harder.</h3>
+        <p>Generate useful alt text, improve image naming, and add stronger image context for accessibility and search.</p>
+      </article>
+      <article class="uc-more-card">
+        <div class="uc-icon">◉</div>
+        <h3>Complete the product record.</h3>
+        <p>Fill missing product details, custom fields, materials, care information, and other structured context.</p>
+      </article>
+      <article class="uc-more-card">
+        <div class="uc-icon">✓</div>
+        <h3>Build QA into publishing.</h3>
+        <p>Review, edit, and approve product content before the final publish step in Shopify.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="uc-pattern">
+    <div>
+      <p class="eyebrow green">THE BIGGER PATTERN</p>
+      <h2>Less busywork. More progress.</h2>
+      <p>Penstack removes the repetitive middle so your team can spend more time on judgment, merchandising, strategy, and customer experience.</p>
+      <a class="button primary" href="https://app.penstack.co">Get started →</a>
+    </div>
+    <figure class="uc-visual">
+      <img src="penstack-use-cases-bigger-pattern.png" width="1600" height="900" loading="lazy" alt="Before workflow of tabs, documents, AI tools, spreadsheets, admin screens, and handoffs compared with Penstack retrieve, build, review, and publish, while humans retain judgment, editing, strategy, and approval">
+    </figure>
   </section>
 
   <section class="final-cta">
