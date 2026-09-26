@@ -542,3 +542,11 @@
     white-space:nowrap;
   }
 }
+
+/* Keep the Brand Voice guide artwork fully visible in its card. */
+.guide-card a[href="brand-voice-isnt-just-tone.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  background:#f6f9fc;
+  padding:14px;
+}
