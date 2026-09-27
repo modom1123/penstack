@@ -607,13 +607,13 @@
   object-position:center;
 }
 
-/* Product Titles: show the complete infographic without clipping the qualifier. */
+/* Product Titles: fill the frame while protecting the right-side qualifier. */
 .guide-card a[href="product-titles-101.html"].guide-image{
   background:#dceefe;
 }
 .guide-card a[href="product-titles-101.html"].guide-image img{
-  object-fit:contain;
-  object-position:center;
+  object-fit:cover;
+  object-position:right center;
   background:#dceefe;
 }
 
