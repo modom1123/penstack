@@ -607,12 +607,12 @@
   object-position:center;
 }
 
-/* Product titles: wide informational artwork; never crop the right-side qualifier. */
+/* Product Titles: fill the card so the artwork reads as one integrated panel. */
 .guide-card a[href="product-titles-101.html"].guide-image{
   background:#eaf4ff;
 }
 .guide-card a[href="product-titles-101.html"].guide-image img{
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
 }
 
