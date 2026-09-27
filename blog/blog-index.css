@@ -567,3 +567,19 @@
   background:#eaf4ff;
   padding:0;
 }
+
+
+/* Card-specific image framing fixes */
+.guide-card a[href="product-image-metadata.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  background:#ffffff;
+  padding:10px;
+}
+
+.guide-card a[href="refresh-existing-product.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  background:#ffffff;
+  padding:10px;
+}
