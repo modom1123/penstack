@@ -305,9 +305,17 @@
   display:block;
   aspect-ratio:16/9;
   overflow:hidden;
-  background:#f5f6f5;
+  box-sizing:border-box;
+  padding:14px;
+  background:#f6f9fc;
 }
-.guide-image img{width:100%;height:100%;object-fit:cover}
+.guide-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:contain;
+  object-position:center;
+}
 .guide-body{padding:20px}
 .guide-labels{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}
 .level-badge,
@@ -543,10 +551,3 @@
   }
 }
 
-/* Keep the Brand Voice guide artwork fully visible in its card. */
-.guide-card a[href="brand-voice-isnt-just-tone.html"].guide-image img{
-  object-fit:contain;
-  object-position:center;
-  background:#f6f9fc;
-  padding:14px;
-}
