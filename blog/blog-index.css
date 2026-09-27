@@ -558,3 +558,12 @@
   background:#f6f9fc;
   padding:14px;
 }
+
+
+/* Product Titles card: keep the full title-anatomy artwork visible. */
+.guide-card a[href="product-titles-101.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  background:#eaf4ff;
+  padding:0;
+}
