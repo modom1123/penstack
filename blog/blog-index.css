@@ -679,18 +679,11 @@
   object-position:center;
 }
 
-/* Agency onboarding: crop away the large white canvas while preserving the full blue hero panel. */
+/* Agency onboarding: dedicated 16:9 card thumbnail. */
 .guide-card a[href="agency-client-onboarding-penstack.html"].guide-image{
-  position:relative;
   background:#eaf4ff;
 }
 .guide-card a[href="agency-client-onboarding-penstack.html"].guide-image img{
-  position:absolute;
-  width:109.72%;
-  height:auto;
-  max-width:none;
-  left:-1.29%;
-  top:-22.35%;
-  object-fit:initial;
-  object-position:initial;
+  object-fit:cover;
+  object-position:center;
 }
