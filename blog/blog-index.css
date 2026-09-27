@@ -607,13 +607,14 @@
   object-position:center;
 }
 
-/* Product Titles: fill the card so the artwork reads as one integrated panel. */
+/* Product Titles: show the complete infographic without clipping the qualifier. */
 .guide-card a[href="product-titles-101.html"].guide-image{
-  background:#eaf4ff;
+  background:#dceefe;
 }
 .guide-card a[href="product-titles-101.html"].guide-image img{
-  object-fit:cover;
+  object-fit:contain;
   object-position:center;
+  background:#dceefe;
 }
 
 /* Long-tail keywords: fill the card and remove the visible white side bars. */
