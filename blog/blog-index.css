@@ -551,35 +551,139 @@
 
 
 
-/* Preserve artwork that was authored with intentional internal framing. */
-.guide-card a[href="brand-voice-isnt-just-tone.html"].guide-image img{
-  object-fit:contain;
+
+
+
+
+
+
+/* v5: card-by-card image framing audit. No blanket overrides below. */
+
+/* AI + SEO: artwork was authored at card ratio; let it fill the frame. */
+.guide-card a[href="ai-seo-search-visibility.html"].guide-image img{
+  object-fit:cover;
   object-position:center;
-  background:#f6f9fc;
-  padding:14px;
 }
 
+/* Social hashtags: authored at 16:9; full-bleed is the cleanest treatment. */
+.guide-card a[href="social-media-hashtags-seo.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
 
-/* Product Titles card: keep the full title-anatomy artwork visible. */
+/* Product tags: authored at 16:9; keep it full-bleed. */
+.guide-card a[href="product-tags-seo.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Anatomy of a great listing: exact 16:9 artwork. */
+.guide-card a[href="anatomy-great-product-listing.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Shopify SEO: exact 16:9 artwork. */
+.guide-card a[href="shopify-seo-without-jargon.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Tags / collections / product types: exact 16:9 artwork. */
+.guide-card a[href="tags-collections-product-types.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Alt text: portrait-ish source, but the focal shoe/callout composes well as a crop. */
+.guide-card a[href="alt-text-product-images.html"].guide-image img{
+  object-fit:cover;
+  object-position:center 46%;
+}
+
+/* Product description: exact 16:9 source-card artwork. */
+.guide-card a[href="how-to-write-a-product-description.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Product titles: wide informational artwork; never crop the right-side qualifier. */
+.guide-card a[href="product-titles-101.html"].guide-image{
+  background:#eaf4ff;
+}
 .guide-card a[href="product-titles-101.html"].guide-image img{
   object-fit:contain;
   object-position:center;
-  background:#eaf4ff;
-  padding:0;
 }
 
+/* Long-tail keywords: preserve the full specificity/search diagram. */
+.guide-card a[href="long-tail-keywords-small-stores.html"].guide-image{
+  background:#f6f9fc;
+}
+.guide-card a[href="long-tail-keywords-small-stores.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+}
 
-/* Card-specific image framing fixes */
+/* Collections as landing pages: preserve the complete intent path. */
+.guide-card a[href="collections-search-landing-pages.html"].guide-image{
+  background:#f6f9fc;
+}
+.guide-card a[href="collections-search-landing-pages.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+}
+
+/* Brand Voice system: diagram needs its labels and perimeter visible. */
+.guide-card a[href="brand-voice-isnt-just-tone.html"].guide-image{
+  background:#f6f9fc;
+}
+.guide-card a[href="brand-voice-isnt-just-tone.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  padding:12px;
+  box-sizing:border-box;
+}
+
+/* Product image metadata: preserve heading + all three columns. */
+.guide-card a[href="product-image-metadata.html"].guide-image{
+  background:#fff;
+}
 .guide-card a[href="product-image-metadata.html"].guide-image img{
   object-fit:contain;
   object-position:center;
-  background:#ffffff;
-  padding:10px;
+  padding:8px;
+  box-sizing:border-box;
 }
 
+/* Image accessibility QA: hero composition reads cleanly as a crop. */
+.guide-card a[href="ecommerce-image-accessibility-qa.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Product refresh: preserve all six audit panels; no vertical clipping. */
+.guide-card a[href="refresh-existing-product.html"].guide-image{
+  background:#fff;
+}
 .guide-card a[href="refresh-existing-product.html"].guide-image img{
   object-fit:contain;
   object-position:center;
-  background:#ffffff;
-  padding:10px;
+  padding:8px;
+  box-sizing:border-box;
+}
+
+/* A/B testing: dedicated 16:9 card thumbnail, so fill the frame. */
+.guide-card a[href="ab-test-product-page.html"].guide-image img{
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Agency onboarding: keep the full title and right-side workflow artwork visible. */
+.guide-card a[href="agency-client-onboarding-penstack.html"].guide-image{
+  background:#eaf4ff;
+}
+.guide-card a[href="agency-client-onboarding-penstack.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
 }
