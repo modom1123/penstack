@@ -305,15 +305,13 @@
   display:block;
   aspect-ratio:16/9;
   overflow:hidden;
-  box-sizing:border-box;
-  padding:14px;
-  background:#f6f9fc;
+  background:#f5f6f5;
 }
 .guide-image img{
   width:100%;
   height:100%;
   display:block;
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
 }
 .guide-body{padding:20px}
@@ -551,3 +549,12 @@
   }
 }
 
+
+
+/* Preserve artwork that was authored with intentional internal framing. */
+.guide-card a[href="brand-voice-isnt-just-tone.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  background:#f6f9fc;
+  padding:14px;
+}
