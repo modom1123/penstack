@@ -616,12 +616,12 @@
   object-position:center;
 }
 
-/* Long-tail keywords: preserve the full specificity/search diagram. */
+/* Long-tail keywords: fill the card and remove the visible white side bars. */
 .guide-card a[href="long-tail-keywords-small-stores.html"].guide-image{
-  background:#f6f9fc;
+  background:#eaf4ff;
 }
 .guide-card a[href="long-tail-keywords-small-stores.html"].guide-image img{
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
 }
 
