@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-496337Z0N8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-496337Z0N8');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>What Should You A/B Test on a Product Page? | penstack</title>
+  <meta name="description" content="Learn what to A/B test on an ecommerce product page, including titles, description openings, benefit order, imagery, metrics, sample size, and what not to change all at once.">
+  <link rel="canonical" href="https://penstack.co/blog/ab-test-product-page.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="What Should You A/B Test on a Product Page?">
+  <meta property="og:description" content="Titles, description openings, benefit order, imagery, and what to avoid changing all at once.">
+  <meta property="og:url" content="https://penstack.co/blog/ab-test-product-page.html">
+  <meta property="og:image" content="https://penstack.co/penstack-ab-testing-hero.png">
+  <meta property="article:published_time" content="2026-09-26">
+  <meta property="article:author" content="penstack">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Should You A/B Test on a Product Page?">
+  <meta name="twitter:description" content="A practical guide to running cleaner, more useful product-page A/B tests.">
+  <meta name="twitter:image" content="https://penstack.co/penstack-ab-testing-hero.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
+  <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <link rel="stylesheet" href="blog.css?v=12">
+  <style>
+    .ab-table{width:100%;max-width:900px;margin:24px auto 0;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+    .ab-table th,.ab-table td{padding:14px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    .ab-table th:last-child,.ab-table td:last-child{border-right:0}.ab-table tr:last-child td{border-bottom:0}
+    .ab-table th{background:#f7fafc;font-size:13px}.ab-table td{color:#33485a;font-size:15px;line-height:1.45}
+    .ab-flow{max-width:900px;margin:24px auto 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+    .ab-flow div{padding:16px;border:1px solid var(--line);border-radius:12px;background:#fff;text-align:center}
+    .ab-flow strong{display:block;margin-bottom:4px}.ab-flow span{color:var(--muted);font-size:14px;line-height:1.4}
+    @media(max-width:760px){.ab-flow{grid-template-columns:1fr 1fr}.ab-table th,.ab-table td{padding:10px}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","headline":"What Should You A/B Test on a Product Page?","description":"Learn what to A/B test on an ecommerce product page, including titles, description openings, benefit order, imagery, metrics, sample size, and what not to change all at once.","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/ab-test-product-page.html"},"keywords":["A/B testing ecommerce","product page testing","Shopify A/B testing","product title test","description test","product image test","conversion optimization"]}
+  </script>
+</head>
+<body>
+<main class="site blog-shell">
+  <header class="site-header">
+    <a class="brand" href="../index.html"><img src="../penstack_logo.png" alt="penstack"></a>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html">Home</a><a href="../product.html">Product</a><a href="../use-cases.html">Use Cases</a><a href="../compare.html">Compare</a><a href="../pricing.html">Pricing</a><a class="active" href="index.html">Blog</a><a href="../about.html">About</a>
+    </nav>
+    <div class="header-actions"><a class="login" href="https://app.penstack.co">Log in</a><a class="button primary" href="https://app.penstack.co">Start free</a></div>
+  </header>
+
+  <header class="blog-hero">
+    <div class="blog-breadcrumbs"><a href="index.html">Blog</a><span>›</span><span>Optimization + Testing</span></div>
+    <div class="blog-hero-grid">
+      <div>
+        <p class="blog-kicker">Optimization + Testing · Go deeper</p>
+        <h1>What Should You A/B Test on a Product Page?</h1>
+        <p class="blog-dek">Titles, description openings, benefit order, imagery, and what to avoid changing all at once.</p>
+        <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-26">September 26, 2026</time> · 8 min read</span></div>
+      </div>
+      <figure class="blog-hero-visual">
+        <img src="../penstack-ab-testing-hero.png" alt="A and B ecommerce product-page variants illustrating a one-variable product test">
+      </figure>
+    </div>
+  </header>
+
+  <div class="blog-article-wrap"><article class="blog-article">
+    <div class="blog-prose">
+      <p class="blog-lead">A/B testing sounds simple: change something, show version A to some shoppers and version B to others, then see which performs better.</p>
+      <p>The dangerous part is the word <em>something</em>. If you change the title, description, image order, benefits, and call to action at the same time, the result may tell you the page changed. It cannot reliably tell you why.</p>
+    </div>
+
+    <aside class="blog-quick-answer">
+      <span class="blog-example-label">The short answer</span>
+      <p><strong>The cleanest tests use one hypothesis, one meaningful variable, one relevant metric, and enough evidence.</strong> Change everything at once and you get a makeover. Change one thing intentionally and you get a learning.</p>
+    </aside>
+
+    <aside class="blog-inline-toc"><h2>In this article</h2><nav>
+      <a href="#hypothesis">Start with a hypothesis</a>
+      <a href="#anatomy">Anatomy of a useful test</a>
+      <a href="#variable">Test one variable</a>
+      <a href="#titles">Product titles</a>
+      <a href="#openings">Description openings</a>
+      <a href="#benefits">Benefit order</a>
+      <a href="#images">Images</a>
+      <a href="#metrics">Choose the right metric</a>
+      <a href="#sample">Avoid tiny-sample traps</a>
+      <a href="#avoid">What not to test casually</a>
+      <a href="#broken">Don't test a broken page</a>
+      <a href="#record">Keep a record</a>
+    </nav></aside>
+
+    <section class="blog-section" id="hypothesis">
+      <h2>1. Start with a hypothesis, not a redesign.</h2>
+      <div class="blog-prose">
+        <p>Bad test: “Let’s make the product page better.”</p>
+        <p>Useful test: “Putting the primary product benefit in the first sentence will help shoppers understand the product faster and increase add-to-cart activity.”</p>
+        <p>A simple structure is: <strong>If we change X, we expect Y because Z.</strong></p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="anatomy">
+      <h2>2. A useful test has four parts.</h2>
+      <figure class="blog-figure">
+        <img src="../penstack-ab-testing-test-anatomy.png" loading="lazy" alt="A/B test anatomy showing question, one variable, metric, and result">
+        <figcaption>Start with a question, change one thing, choose the metric, then interpret the result.</figcaption>
+      </figure>
+      <div class="ab-flow">
+        <div><strong>Question</strong><span>What are we trying to learn?</span></div>
+        <div><strong>One variable</strong><span>What exactly changes?</span></div>
+        <div><strong>Metric</strong><span>What shopper behavior matters?</span></div>
+        <div><strong>Result</strong><span>Did enough shoppers see both versions?</span></div>
+      </div>
+    </section>
+
+    <section class="blog-section" id="variable">
+      <h2>3. Test one meaningful variable at a time.</h2>
+      <div class="blog-prose">
+        <p>If version B has a new title, new product image, reordered benefits, and different opening copy, you no longer know which change caused the result.</p>
+      </div>
+      <figure class="blog-figure">
+        <img src="../penstack-ab-testing-one-variable.png" loading="lazy" alt="Two ecommerce product-page variants where only the product title changes">
+        <figcaption>Keep the page stable and change one meaningful element so the result teaches you something specific.</figcaption>
+      </figure>
+    </section>
+
+    <section class="blog-section" id="titles">
+      <h2>4. Product titles can be tested, but carefully.</h2>
+      <div class="blog-prose">
+        <p>Titles influence scanning, product identification, and search context. That makes them testable, but they are also part of the product’s identity.</p>
+      </div>
+      <table class="ab-table">
+        <thead><tr><th>Version A</th><th>Version B</th><th>Question</th></tr></thead>
+        <tbody><tr><td>Riley Cotton Tee</td><td>Riley Oversized Cotton Tee</td><td>Does the differentiating fit detail help shoppers understand the product faster?</td></tr></tbody>
+      </table>
+      <div class="blog-prose"><p>For the underlying naming framework, see <a href="product-titles-101.html">Product Titles 101: What Should Actually Go in One?</a>.</p></div>
+    </section>
+
+    <section class="blog-section" id="openings">
+      <h2>5. Description openings are excellent testing territory.</h2>
+      <div class="blog-prose">
+        <p>The first lines set the information priority. You can test lifestyle-led, product-led, problem-led, benefit-led, or use-case-led openings while leaving the rest of the description alone.</p>
+      </div>
+      <table class="ab-table">
+        <thead><tr><th>A</th><th>B</th></tr></thead>
+        <tbody><tr><td>Made for everyday adventures.</td><td>Double-wall insulation keeps drinks cold for up to 12 hours.</td></tr></tbody>
+      </table>
+    </section>
+
+    <section class="blog-section" id="benefits">
+      <h2>6. Benefit order can change what shoppers see first.</h2>
+      <div class="blog-prose">
+        <p>The same benefits can produce a different experience when their order changes. Testing priority can help reveal which information deserves the top spot.</p>
+      </div>
+      <table class="ab-table">
+        <thead><tr><th>Version A</th><th>Version B</th></tr></thead>
+        <tbody>
+          <tr><td>1. Sustainability</td><td>1. Easy care</td></tr>
+          <tr><td>2. Easy care</td><td>2. Fit</td></tr>
+          <tr><td>3. Fit</td><td>3. Sustainability</td></tr>
+          <tr><td>4. Construction</td><td>4. Construction</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="blog-section" id="images">
+      <h2>7. Images are powerful variables, but isolate the change.</h2>
+      <div class="blog-prose">
+        <p>You might test a lifestyle image versus a clean product image first, a model image versus a flat product image, or one detail shot earlier in the gallery.</p>
+        <p>Do not replace the entire gallery if the question is whether the first image communicates the product more effectively.</p>
+        <p>For image metadata itself, see <a href="product-image-metadata.html">Product Image Metadata: Filenames vs. Alt Text vs. Visible Copy</a>.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="metrics">
+      <h2>8. Measure behavior that matches the hypothesis.</h2>
+      <table class="ab-table">
+        <thead><tr><th>Test</th><th>Useful signals</th></tr></thead>
+        <tbody>
+          <tr><td>Product title</td><td>Product clicks, engagement</td></tr>
+          <tr><td>Description opening</td><td>Add-to-cart, engagement</td></tr>
+          <tr><td>Benefit order</td><td>Add-to-cart, interaction</td></tr>
+          <tr><td>Hero image</td><td>Clicks, add-to-cart</td></tr>
+          <tr><td>Product information</td><td>Add-to-cart, conversion, fewer clarification questions</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="blog-section" id="sample">
+      <h2>9. Do not call a tiny sample a winner.</h2>
+      <div class="blog-prose">
+        <p>Early differences can look dramatic. Small samples are noisy, and a few individual shoppers can completely change the apparent result.</p>
+        <p>A result should have enough exposure to become meaningful before you treat it as a learning.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="avoid">
+      <h2>10. Avoid changing these casually.</h2>
+      <div class="blog-prose">
+        <ul>
+          <li>Product URLs</li>
+          <li>Core product identity</li>
+          <li>Pricing</li>
+          <li>Product availability</li>
+          <li>Fundamental variant structure</li>
+          <li>Claims that require substantiation</li>
+          <li>Accessibility or legally required information</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="blog-section" id="broken">
+      <h2>11. Do not test a broken page.</h2>
+      <div class="blog-prose">
+        <p>A/B testing is not a substitute for fixing wrong product information, broken imagery, incorrect pricing, confusing variants, or missing care instructions.</p>
+        <p>You do not need an experiment to learn whether incorrect information should remain incorrect.</p>
+        <p>Start with <a href="refresh-existing-product.html">How to Refresh an Existing Product Without Starting Over</a> if the listing needs basic repair first.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="record">
+      <h2>12. Keep a record of what you learned.</h2>
+      <table class="ab-table">
+        <thead><tr><th>Field</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>Hypothesis</td><td>Specific benefit first will improve clarity</td></tr>
+          <tr><td>Variable</td><td>Description opening</td></tr>
+          <tr><td>Version A</td><td>Lifestyle opening</td></tr>
+          <tr><td>Version B</td><td>Benefit opening</td></tr>
+          <tr><td>Primary metric</td><td>Add-to-cart</td></tr>
+          <tr><td>Learning</td><td>Shoppers responded better to immediate product utility</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="blog-section" id="penstack">
+      <h2>Where penstack fits in</h2>
+      <div class="blog-prose">
+        <p>Product content testing gets messy when every variation requires copying a listing, rewriting multiple fields, and manually remembering what changed.</p>
+        <p>Penstack can help keep experiments focused by creating a variation, changing one specific element, reviewing that change, publishing intentionally, and keeping the learning attached to the workflow.</p>
+      </div>
+    </section>
+
+    <section class="blog-takeaway">
+      <h2>The takeaway</h2>
+      <p><strong>A/B testing is not about which page looks better. It is about what specific question the experiment can answer.</strong> The cleanest tests use one hypothesis, one meaningful variable, one relevant metric, and enough evidence.</p>
+    </section>
+
+    <section class="blog-cta" aria-label="penstack call to action">
+      <div><h2>Make product experimentation easier to manage.</h2><p>Create focused variations, test content intentionally, and keep what you learn connected to the product workflow.</p></div>
+      <a href="https://app.penstack.co" class="button primary">Start free</a>
+    </section>
+  </article></div>
+
+  <footer><a class="brand" href="../index.html"><img src="../penstack_logo.png" alt="penstack"></a><p>Less grunt work. More time with your craft.</p><nav class="footer-links" aria-label="Legal and support"><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a></nav><span>© 2026 penstack</span></footer>
+</main>
+</body>
+</html>
