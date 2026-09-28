@@ -607,14 +607,25 @@
   object-position:center;
 }
 
-/* Product Titles: match the artwork's actual blue so any letterboxing blends invisibly. */
+/* Product Titles: keep the full infographic and visually erase the baked-in bottom band. */
 .guide-card a[href="product-titles-101.html"].guide-image{
-  background:#e8f3fd;
+  position:relative;
+  background:#d9edfd;
 }
 .guide-card a[href="product-titles-101.html"].guide-image img{
   object-fit:contain;
   object-position:center;
-  background:#e8f3fd;
+  background:#d9edfd;
+}
+.guide-card a[href="product-titles-101.html"].guide-image::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:10.5%;
+  pointer-events:none;
+  background:linear-gradient(90deg,#c8e6fb 0%,#d6ecfc 48%,#cce8fb 100%);
 }
 
 /* Long-tail keywords: fill the card and remove the visible white side bars. */
