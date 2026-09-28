@@ -607,25 +607,34 @@
   object-position:center;
 }
 
-/* Product Titles: keep the full infographic and visually erase the baked-in bottom band. */
+/* Product Titles: preserve the full infographic and blend its top/bottom canvas into the card. */
 .guide-card a[href="product-titles-101.html"].guide-image{
   position:relative;
-  background:#d9edfd;
+  background:#ddecfb;
 }
 .guide-card a[href="product-titles-101.html"].guide-image img{
   object-fit:contain;
   object-position:center;
-  background:#d9edfd;
+  background:#ddecfb;
 }
+.guide-card a[href="product-titles-101.html"].guide-image::before,
 .guide-card a[href="product-titles-101.html"].guide-image::after{
   content:"";
   position:absolute;
   left:0;
   right:0;
-  bottom:0;
-  height:10.5%;
+  z-index:1;
   pointer-events:none;
-  background:linear-gradient(90deg,#c8e6fb 0%,#d6ecfc 48%,#cce8fb 100%);
+}
+.guide-card a[href="product-titles-101.html"].guide-image::before{
+  top:0;
+  height:13%;
+  background:linear-gradient(to bottom,rgba(221,236,251,1) 0%,rgba(221,236,251,.78) 42%,rgba(221,236,251,0) 100%);
+}
+.guide-card a[href="product-titles-101.html"].guide-image::after{
+  bottom:0;
+  height:13%;
+  background:linear-gradient(to top,rgba(217,234,250,1) 0%,rgba(217,234,250,.78) 42%,rgba(217,234,250,0) 100%);
 }
 
 /* Long-tail keywords: fill the card and remove the visible white side bars. */
