@@ -655,15 +655,13 @@
   box-sizing:border-box;
 }
 
-/* Product image metadata: preserve heading + all three columns. */
+/* Product Image Metadata: dedicated 16:9 card artwork. */
 .guide-card a[href="product-image-metadata.html"].guide-image{
-  background:#fff;
+  background:#eaf4ff;
 }
 .guide-card a[href="product-image-metadata.html"].guide-image img{
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
-  padding:8px;
-  box-sizing:border-box;
 }
 
 /* Image accessibility QA: hero composition reads cleanly as a crop. */
