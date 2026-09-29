@@ -607,24 +607,13 @@
   object-position:center;
 }
 
-/* Product Titles: preserve the full infographic and blend its top/bottom canvas into the card. */
+/* Product Titles: dedicated 16:9 card artwork. */
 .guide-card a[href="product-titles-101.html"].guide-image{
-  position:relative;
   background:#ddecfb;
 }
 .guide-card a[href="product-titles-101.html"].guide-image img{
-  object-fit:contain;
+  object-fit:cover;
   object-position:center;
-  background:#ddecfb;
-}
-.guide-card a[href="product-titles-101.html"].guide-image::before,
-.guide-card a[href="product-titles-101.html"].guide-image::after{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  z-index:1;
-  pointer-events:none;
 }
 .guide-card a[href="product-titles-101.html"].guide-image::before{
   top:0;
