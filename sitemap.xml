@@ -6,7 +6,7 @@
   <url><loc>https://penstack.co/compare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/pricing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://penstack.co/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://penstack.co/blog/</loc><lastmod>2026-09-25</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://penstack.co/blog/</loc><lastmod>2026-09-30</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://penstack.co/blog/anatomy-great-product-listing.html</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/shopify-seo-without-jargon.html</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/tags-collections-product-types.html</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -20,4 +20,5 @@
   <url><loc>https://penstack.co/blog/refresh-existing-product.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/ab-test-product-page.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/agency-client-onboarding-penstack.html</loc><lastmod>2026-09-26</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/blog/product-taxonomy-before-catalog-mess.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
