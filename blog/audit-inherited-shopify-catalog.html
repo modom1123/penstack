@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-496337Z0N8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-496337Z0N8');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>How to Audit an Inherited Shopify Catalog | penstack</title>
+  <meta name="description" content="Audit an inherited Shopify catalog in the right order: product structure, content, images, SEO, collections, and merchandising. Use this practical framework to find issues, prioritize fixes, and avoid rework.">
+  <link rel="canonical" href="https://penstack.co/blog/audit-inherited-shopify-catalog.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Audit an Inherited Shopify Catalog">
+  <meta property="og:description" content="A practical order of operations for untangling product structure, content, images, SEO, collections, and merchandising.">
+  <meta property="og:url" content="https://penstack.co/blog/audit-inherited-shopify-catalog.html">
+  <meta property="og:image" content="https://penstack.co/penstack-shopify-catalog-audit-hero.png">
+  <meta property="article:published_time" content="2026-09-30">
+  <meta property="article:author" content="penstack">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Audit an Inherited Shopify Catalog">
+  <meta name="twitter:description" content="A practical Shopify catalog audit framework for teams inheriting messy product data, content, images, SEO, collections, and merchandising.">
+  <meta name="twitter:image" content="https://penstack.co/penstack-shopify-catalog-audit-hero.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
+  <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
+  <link rel="stylesheet" href="../styles.css?v=19">
+  <link rel="stylesheet" href="blog.css?v=12">
+  <style>
+    .audit-table{width:100%;max-width:900px;margin:24px auto 0;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff}
+    .audit-table th,.audit-table td{padding:14px 16px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+    .audit-table th:last-child,.audit-table td:last-child{border-right:0}.audit-table tr:last-child td{border-bottom:0}
+    .audit-table th{background:#f7fafc;font-size:13px}.audit-table td{color:#33485a;font-size:15px;line-height:1.45}
+    .audit-grid{max-width:900px;margin:24px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .audit-grid article{padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff}
+    .audit-grid h3{margin:0 0 8px;font-size:20px}.audit-grid p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .audit-grid ul{margin:12px 0 0;padding-left:18px}
+    @media(max-width:760px){.audit-grid{grid-template-columns:1fr}.audit-table th,.audit-table td{padding:10px}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Audit an Inherited Shopify Catalog","description":"Audit an inherited Shopify catalog in the right order: product structure, content, images, SEO, collections, and merchandising. Use this practical framework to find issues, prioritize fixes, and avoid rework.","datePublished":"2026-09-30","dateModified":"2026-09-30","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/audit-inherited-shopify-catalog.html"},"keywords":["Shopify catalog audit","ecommerce catalog audit","Shopify product data","product content audit","Shopify SEO audit","catalog cleanup","product taxonomy","merchandising audit"]}
+  </script>
+</head>
+<body>
+<main class="site blog-shell">
+  <header class="site-header">
+    <a class="brand" href="../index.html"><img src="../penstack_logo.png" alt="penstack"></a>
+    <nav aria-label="Primary navigation">
+      <a href="../index.html">Home</a><a href="../product.html">Product</a><a href="../use-cases.html">Use Cases</a><a href="../compare.html">Compare</a><a href="../pricing.html">Pricing</a><a class="active" href="index.html">Blog</a><a href="../about.html">About</a>
+    </nav>
+    <div class="header-actions"><a class="login" href="https://app.penstack.co">Log in</a><a class="button primary" href="https://app.penstack.co/?start=free">Start free</a></div>
+  </header>
+
+  <header class="blog-hero">
+    <div class="blog-breadcrumbs"><a href="index.html">Blog</a><span>›</span><span>Teams + Agencies</span></div>
+    <div class="blog-hero-grid">
+      <div>
+        <p class="blog-kicker">Teams + Agencies · Go deeper</p>
+        <h1>How to Audit an Inherited Shopify Catalog</h1>
+        <p class="blog-dek">A practical order of operations for untangling product structure, content, images, SEO, collections, and merchandising.</p>
+        <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-30">September 30, 2026</time> · 10 min read</span></div>
+      </div>
+      <figure class="blog-hero-visual">
+        <img src="../penstack-shopify-catalog-audit-hero.png" alt="Shopify catalog audit covering structure, content, images, SEO, collections, and merchandising">
+      </figure>
+    </div>
+  </header>
+
+  <div class="blog-article-wrap"><article class="blog-article">
+    <div class="blog-prose">
+      <p class="blog-lead">Inherited catalogs rarely fail in one dramatic way. They usually fail through hundreds of small decisions nobody remembers making.</p>
+      <p>You open the store and find duplicate products, inconsistent product types, thin descriptions, old images, tags that mean different things, collections that overlap, and SEO fields that were filled in by whoever happened to be working that day.</p>
+      <p>The instinct is often to start rewriting product pages immediately. That is usually the wrong first move. If the structure underneath the content is still messy, you will rewrite the same problems into cleaner sentences.</p>
+    </div>
+
+    <aside class="blog-quick-answer">
+      <span class="blog-example-label">The short answer</span>
+      <p><strong>Audit in this order:</strong> structure → content → images → SEO → collections → merchandising. Fix the foundation first so later improvements do not create more rework.</p>
+    </aside>
+
+    <aside class="blog-inline-toc"><h2>In this article</h2><nav>
+      <a href="#framework">The audit framework</a>
+      <a href="#structure">Audit structure first</a>
+      <a href="#content">Review product content</a>
+      <a href="#images">Audit images and alt text</a>
+      <a href="#seo">Review SEO signals</a>
+      <a href="#collections">Audit collections</a>
+      <a href="#merchandising">Check merchandising</a>
+      <a href="#prioritize">Prioritize the fixes</a>
+      <a href="#handoff">Document what you changed</a>
+    </nav></aside>
+
+    <section class="blog-section" id="framework">
+      <h2>The Shopify catalog audit framework</h2>
+      <div class="blog-prose">
+        <p>Work through the catalog in an order that reduces dependencies. Structure comes first because content, SEO, navigation, and merchandising all rely on it.</p>
+      </div>
+      <figure class="blog-figure">
+        <img src="../penstack-shopify-catalog-audit-framework.png" loading="lazy" alt="Six-step Shopify catalog audit framework: inventory and structure, content, images, SEO, collections, and merchandising">
+        <figcaption>Audit from foundational product data outward to customer-facing discovery and merchandising.</figcaption>
+      </figure>
+    </section>
+
+    <section class="blog-section" id="structure">
+      <h2>1. Start with product structure before rewriting copy.</h2>
+      <div class="blog-prose">
+        <p>Product structure is the part of the catalog most likely to create downstream chaos. If product types, variants, tags, vendors, and structured fields are inconsistent, every other audit becomes harder.</p>
+        <p>Start by identifying the system the store is actually using, not the system somebody intended it to use.</p>
+      </div>
+      <table class="audit-table">
+        <thead><tr><th>Check</th><th>What to look for</th><th>Typical fix</th></tr></thead>
+        <tbody>
+          <tr><td>Product types</td><td>Duplicates, near-duplicates, vague names</td><td>Normalize to a documented set</td></tr>
+          <tr><td>Variants</td><td>Inconsistent option names and values</td><td>Standardize Size, Color, Material, etc.</td></tr>
+          <tr><td>Structured fields</td><td>Important details buried only in descriptions</td><td>Move reusable data into metafields</td></tr>
+          <tr><td>Vendor</td><td>Different spellings or display names</td><td>Choose one canonical vendor value</td></tr>
+          <tr><td>Tags</td><td>Duplicate, temporary, or undocumented labels</td><td>Retire, normalize, or document</td></tr>
+        </tbody>
+      </table>
+      <div class="blog-prose">
+        <p>If the catalog does not have a clear classification system yet, start with <a href="product-taxonomy-before-catalog-mess.html">How to Build a Product Taxonomy Before Your Catalog Becomes a Mess</a>.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="content">
+      <h2>2. Audit product content for gaps, duplication, and accuracy.</h2>
+      <div class="blog-prose">
+        <p>Once the structure is stable enough to trust, review the customer-facing content. The goal is not to make every description longer. It is to make every listing useful, accurate, distinct, and complete.</p>
+      </div>
+      <div class="audit-grid">
+        <article><h3>Titles</h3><p>Check for clarity, consistency, unnecessary keyword stuffing, duplicate titles, and missing distinguishing details.</p></article>
+        <article><h3>Descriptions</h3><p>Look for thin copy, boilerplate language, repeated sentences, unsupported claims, and important information buried in prose.</p></article>
+        <article><h3>Product details</h3><p>Confirm materials, dimensions, care, compatibility, specifications, and variant details match the actual product.</p></article>
+        <article><h3>Brand Voice</h3><p>Identify copy that sounds like several different companies wrote the same catalog. Decide what should be standardized before rewriting at scale.</p></article>
+      </div>
+      <div class="blog-prose">
+        <p>For an individual listing, <a href="refresh-existing-product.html">How to Refresh an Existing Product Without Starting Over</a> provides a more focused product-level audit.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="images">
+      <h2>3. Review images, alt text, and visual consistency.</h2>
+      <div class="blog-prose">
+        <p>Images are both product information and interface. A catalog can have technically correct product data and still feel broken if the imagery is inconsistent, outdated, blurry, or incomplete.</p>
+      </div>
+      <figure class="blog-figure">
+        <img src="../penstack-shopify-catalog-audit-image-review.png" loading="lazy" alt="Product image audit checklist covering multiple angles, clean backgrounds, high resolution, descriptive filenames, and alt text">
+        <figcaption>Review image quality, consistency, coverage, file naming, and alt text together rather than treating them as separate cleanup projects.</figcaption>
+      </figure>
+      <div class="blog-prose">
+        <p>Check whether each product has the angles shoppers need, whether imagery follows a consistent visual system, and whether obsolete images should be removed. Then review accessibility separately from filename hygiene.</p>
+        <p>For a deeper image process, see <a href="ecommerce-image-accessibility-qa.html">How to Build an Image Accessibility QA Standard for Your Catalog</a> and <a href="product-image-metadata.html">Product Image Metadata: Filenames vs. Alt Text vs. Visible Copy</a>.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="seo">
+      <h2>4. Review SEO after the product itself is trustworthy.</h2>
+      <div class="blog-prose">
+        <p>SEO should describe a useful, accurate page. It cannot rescue a product page whose content, taxonomy, or merchandising context is wrong.</p>
+        <p>Once the product information is solid, review search-facing signals for duplication, missing context, and opportunities to better match the way customers search.</p>
+      </div>
+      <table class="audit-table">
+        <thead><tr><th>SEO element</th><th>Audit for</th></tr></thead>
+        <tbody>
+          <tr><td>Page title</td><td>Unique, descriptive wording that reflects the actual product</td></tr>
+          <tr><td>Meta description</td><td>Useful summary rather than duplicate boilerplate</td></tr>
+          <tr><td>URL</td><td>Unnecessary changes, legacy slugs, or redirects that need preservation</td></tr>
+          <tr><td>Internal links</td><td>Connections from relevant collections and supporting content</td></tr>
+          <tr><td>Search intent</td><td>Whether the page answers a product-specific need or should point elsewhere</td></tr>
+        </tbody>
+      </table>
+      <div class="blog-prose">
+        <p>Do not change URLs casually during a cleanup. A prettier slug is rarely worth breaking an existing path without a redirect plan.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="collections">
+      <h2>5. Audit collections as shopper destinations.</h2>
+      <div class="blog-prose">
+        <p>Inherited catalogs often accumulate collections because somebody needed a temporary landing page, campaign grouping, or internal merchandising shortcut. Some should stay. Some should be filters. Some should disappear.</p>
+        <p>Ask whether each collection still has a clear shopper purpose, enough relevant products, useful navigation context, and distinct intent from neighboring collections.</p>
+        <p>For the collection-specific decision framework, see <a href="collections-search-landing-pages.html">How Collections Can Become Search Landing Pages</a>.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="merchandising">
+      <h2>6. Finish with merchandising and discovery.</h2>
+      <div class="blog-prose">
+        <p>Merchandising is where the cleaned-up catalog finally becomes useful to a shopper. Review featured products, sort order, cross-sells, inventory-aware placement, collection membership, and whether the store is making the best products easy to find.</p>
+        <p>This is deliberately last. There is little value in polishing collection order while the products inside the collection are still misclassified.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="prioritize">
+      <h2>7. Prioritize the fixes by risk and reach.</h2>
+      <div class="blog-prose">
+        <p>A catalog audit can generate hundreds of findings. Treating them as one giant cleanup list is a good way to finish none of them.</p>
+      </div>
+      <div class="audit-grid">
+        <article><h3>Fix first</h3><p>Incorrect product data, broken variants, misleading claims, major navigation errors, accessibility blockers, and anything affecting many products.</p></article>
+        <article><h3>Fix next</h3><p>Duplicate content, inconsistent taxonomy, missing structured fields, weak images, collection overlap, and SEO duplication.</p></article>
+        <article><h3>Improve later</h3><p>Minor copy polish, optional enrichment, edge-case merchandising, and lower-impact formatting inconsistencies.</p></article>
+        <article><h3>Leave alone</h3><p>Differences that are intentional, harmless, or costly to change without a meaningful shopper or operational benefit.</p></article>
+      </div>
+    </section>
+
+    <section class="blog-section" id="handoff">
+      <h2>8. Document the catalog you are leaving behind.</h2>
+      <div class="blog-prose">
+        <p>An audit is not complete if the next person has to rediscover all of your decisions.</p>
+        <p>Document product-type rules, tag conventions, structured fields, vendor standards, collection logic, naming decisions, approval boundaries, and known exceptions. If a rule exists only in somebody’s memory, it is waiting to become inconsistent again.</p>
+      </div>
+    </section>
+
+    <section class="blog-section" id="penstack">
+      <h2>Where penstack fits in</h2>
+      <div class="blog-prose">
+        <p>penstack can help teams work through product content once the catalog context is clear. Product details, collection context, structured fields, Brand Voice, review, and publishing can stay connected instead of being managed across disconnected drafts and spreadsheets.</p>
+        <p>The audit still requires judgment. penstack helps make the cleanup and content work more repeatable once you have decided what the catalog should become.</p>
+      </div>
+    </section>
+
+    <section class="blog-takeaway">
+      <h2>The takeaway</h2>
+      <p><strong>Do not audit an inherited Shopify catalog in page order. Audit it in dependency order.</strong> Structure first. Then content, images, SEO, collections, and merchandising. The cleaner the foundation, the less work you have to redo later.</p>
+    </section>
+
+    <section class="blog-cta" aria-label="penstack call to action">
+      <div><h2>Turn catalog cleanup into a repeatable content workflow.</h2><p>Keep product context, Brand Voice, review, and publishing connected in penstack.</p></div>
+      <a href="https://app.penstack.co/?start=free" class="button primary">Start free</a>
+    </section>
+  </article></div>
+
+  <footer><a class="brand" href="../index.html"><img src="../penstack_logo.png" alt="penstack"></a><p>Less grunt work. More time with your craft.</p><nav class="footer-links" aria-label="Legal and support"><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a></nav><span>© 2026 penstack</span></footer>
+</main>
+</body>
+</html>
