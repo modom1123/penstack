@@ -706,3 +706,14 @@
   object-position:center;
   background:#fff7f1;
 }
+
+
+/* Multi-brand guide: show the complete wide hero artwork on the blog card. */
+.guide-card a[href="multi-brand-store-boundaries.html"].guide-image{
+  background:#eef8f3;
+}
+.guide-card a[href="multi-brand-store-boundaries.html"].guide-image img{
+  object-fit:contain;
+  object-position:center;
+  background:#eef8f3;
+}
