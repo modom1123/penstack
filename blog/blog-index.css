@@ -719,37 +719,105 @@
 }
 
 
-/* v6: journey-stage color system for the blog library.
-   Stage controls the large media signal; topic remains secondary. */
-.guide-card[data-level="start"] a.guide-image{
-  background:#eaf7f1;
-  padding:10px;
-  box-sizing:border-box;
+
+
+/* v7: journey-stage library, matching the approved full-page concept. */
+.journey-library{
+  display:grid;
+  gap:24px;
 }
-.guide-card[data-level="level-up"] a.guide-image{
-  background:#fff6d7;
-  padding:10px;
-  box-sizing:border-box;
+.journey-lane{
+  padding:26px;
+  border:1px solid var(--hub-line);
+  border-radius:22px;
 }
-.guide-card[data-level="go-deeper"] a.guide-image{
-  background:#eaf4ff;
-  padding:10px;
-  box-sizing:border-box;
+.journey-start{background:#eaf7f1}
+.journey-level-up{background:#fff6d7}
+.journey-go-deeper{background:#eaf4ff}
+
+.journey-lane-heading{
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  align-items:flex-end;
+  margin-bottom:20px;
+}
+.journey-lane-heading > div{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.journey-lane-heading h3{
+  margin:0;
+  color:var(--hub-ink);
+  font-size:30px;
+  line-height:1;
+  letter-spacing:-.03em;
+}
+.journey-lane-heading p{
+  max-width:560px;
+  margin:0;
+  color:var(--hub-muted);
+  font-size:13px;
+  line-height:1.45;
+  text-align:right;
+}
+.journey-stage-label{
+  display:inline-flex;
+  align-items:center;
+  min-height:28px;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.03em;
+}
+.journey-start .journey-stage-label{background:#d7f2e5;color:#0b6a48}
+.journey-level-up .journey-stage-label{background:#ffec9c;color:#765500}
+.journey-go-deeper .journey-stage-label{background:#d7eaff;color:#1b5fa8}
+
+.journey-card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.journey-card-grid .guide-card{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  background:#fff;
+}
+.journey-card-grid .guide-body{
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+.journey-card-grid .guide-link{margin-top:auto}
+
+/* Journey stage controls the media backdrop while card-specific image framing remains intact. */
+.journey-start .guide-image{background:#dff3e9}
+.journey-level-up .guide-image{background:#ffefb8}
+.journey-go-deeper .guide-image{background:#ddecfb}
+
+/* Preserve all card-specific object-fit/object-position rules; only give contained art a stage backdrop. */
+.journey-card-grid .guide-image img{
+  border-radius:0;
 }
 
-/* Keep the artwork itself neutral and crisp inside the stage frame. */
-.guide-card[data-level] a.guide-image img{
-  border-radius:12px;
-}
+/* Planned placeholder artwork inherits the lane color instead of topic color. */
+.journey-start .guide-placeholder{background:#dff3e9}
+.journey-level-up .guide-placeholder{background:#ffefb8}
+.journey-go-deeper .guide-placeholder{background:#ddecfb}
 
-/* Existing contained-artwork cards already supplied their own inner padding.
-   The stage frame now provides that spacing, so avoid double-insetting them. */
-.guide-card[data-level] a[href="brand-voice-isnt-just-tone.html"].guide-image img,
-.guide-card[data-level] a[href="refresh-existing-product.html"].guide-image img{
-  padding:0;
+@media(max-width:980px){
+  .journey-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .journey-lane-heading{align-items:flex-start}
 }
-
-/* Future roadmap placeholders inherit the same journey-stage system. */
-.guide-card[data-level="start"] .guide-placeholder{background:#eaf7f1}
-.guide-card[data-level="level-up"] .guide-placeholder{background:#fff6d7}
-.guide-card[data-level="go-deeper"] .guide-placeholder{background:#eaf4ff}
+@media(max-width:680px){
+  .journey-lane{padding:18px}
+  .journey-card-grid{grid-template-columns:1fr}
+  .journey-lane-heading{display:block}
+  .journey-lane-heading p{margin-top:10px;text-align:left}
+  .journey-lane-heading h3{font-size:26px}
+}
