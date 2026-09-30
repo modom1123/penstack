@@ -2130,3 +2130,13 @@
   height:auto;
   object-fit:contain;
 }
+
+
+/* Catalog audit framework: give the wide process graphic enough room to remain legible. */
+.audit-framework-figure{
+  max-width:1180px;
+}
+.audit-framework-figure img{
+  width:100%;
+  height:auto;
+}
