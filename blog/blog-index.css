@@ -717,3 +717,39 @@
   object-position:center;
   background:#eef8f3;
 }
+
+
+/* v6: journey-stage color system for the blog library.
+   Stage controls the large media signal; topic remains secondary. */
+.guide-card[data-level="start"] a.guide-image{
+  background:#eaf7f1;
+  padding:10px;
+  box-sizing:border-box;
+}
+.guide-card[data-level="level-up"] a.guide-image{
+  background:#fff6d7;
+  padding:10px;
+  box-sizing:border-box;
+}
+.guide-card[data-level="go-deeper"] a.guide-image{
+  background:#eaf4ff;
+  padding:10px;
+  box-sizing:border-box;
+}
+
+/* Keep the artwork itself neutral and crisp inside the stage frame. */
+.guide-card[data-level] a.guide-image img{
+  border-radius:12px;
+}
+
+/* Existing contained-artwork cards already supplied their own inner padding.
+   The stage frame now provides that spacing, so avoid double-insetting them. */
+.guide-card[data-level] a[href="brand-voice-isnt-just-tone.html"].guide-image img,
+.guide-card[data-level] a[href="refresh-existing-product.html"].guide-image img{
+  padding:0;
+}
+
+/* Future roadmap placeholders inherit the same journey-stage system. */
+.guide-card[data-level="start"] .guide-placeholder{background:#eaf7f1}
+.guide-card[data-level="level-up"] .guide-placeholder{background:#fff6d7}
+.guide-card[data-level="go-deeper"] .guide-placeholder{background:#eaf4ff}
