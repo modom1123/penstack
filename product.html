@@ -44,20 +44,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .capability-art img{width:100%;height:100%;object-fit:contain}
     .capability-card h3{margin:0 0 8px;font-size:18px}
     .capability-card p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
-    .system-band{display:grid;grid-template-columns:1fr .9fr;gap:32px;align-items:center;padding:34px;border:1px solid #dce9df;border-radius:18px;background:var(--soft)}
+    .system-band{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:center;padding:36px;border:1px solid #dce9df;border-radius:18px;background:var(--soft)}
     .system-band h2{margin:0 0 12px;font-size:clamp(34px,4vw,50px);line-height:1.05}
     .system-band p{margin:0;color:var(--muted);font-size:16px;line-height:1.6}
-    .system-diagram{display:grid;grid-template-columns:1fr 150px 1fr;gap:12px;align-items:center}
-    .system-list{display:grid;gap:8px}
-    .system-list span{display:block;padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:12px}
-    .system-core img{width:150px;height:150px;object-fit:contain;border-radius:16px;background:#fff}
-    .human-review{display:grid;grid-template-columns:1fr .9fr;gap:32px;align-items:center}
+    .system-diagram{display:grid;grid-template-columns:1fr 190px;gap:18px;align-items:center}
+    .system-core{position:relative;min-height:230px}
+    .system-core::before,.system-core::after{content:'';position:absolute;border:1px solid #b9d4c3;border-radius:14px;background:#fff;width:190px;height:150px;left:8px;top:28px}
+    .system-core::after{left:18px;top:18px}
+    .system-core img{position:relative;z-index:2;width:190px;height:190px;object-fit:contain;border-radius:16px;background:#fff}
+    .system-list{display:grid;gap:9px}
+    .system-list span{display:flex;align-items:center;gap:9px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:12px}
+    .system-list span::before{content:'✓';display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#e6f1ea;color:var(--green);font-weight:800}
+    .human-review{display:grid;grid-template-columns:.95fr 1.05fr;gap:34px;align-items:center}
     .human-review h2{margin:0 0 12px;font-size:clamp(34px,4vw,50px);line-height:1.05}
     .human-review p{color:var(--muted);line-height:1.6}
-    .review-proof{display:grid;gap:10px;margin-top:18px}
-    .review-proof div{display:flex;gap:10px;align-items:flex-start}
-    .review-proof b{display:grid;place-items:center;min-width:28px;height:28px;border-radius:50%;background:#e6f1ea;color:var(--green)}
-    .review-visual img{width:100%;height:auto;object-fit:contain}
+    .review-composition{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:center}
+    .review-visual{border:1px solid var(--line);border-radius:16px;background:#fff;padding:10px}
+    .review-visual img{width:100%;height:auto;object-fit:contain;display:block}
+    .review-proof{display:grid;gap:10px}
+    .review-proof div{display:flex;gap:10px;align-items:flex-start;padding:14px;border:1px solid #dce9df;border-radius:12px;background:#eef7f1}
+    .review-proof b{display:grid;place-items:center;min-width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff}
     .product-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .proof-card{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}
     .proof-card strong{display:block;font-size:18px;margin-bottom:7px}
@@ -144,12 +150,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <p class="eyebrow green">MORE THAN A DESCRIPTION GENERATOR</p>
         <h2>A complete process, not just a writing task.</h2>
-        <p>A complete product listing includes content, SEO, images, product details, and merchandising. penstack keeps those pieces connected so you get a ready-to-publish listing instead of a draft and another to-do list.</p>
+        <p>penstack connects product information, SEO, images, product details, and merchandising, so you get complete, ready-to-publish listings instead of a draft and another to-do list.</p>
+        <p style="margin-top:14px"><a href="#capabilities">See all features →</a></p>
       </div>
       <div class="system-diagram" aria-label="Connected product listing system">
-        <div class="system-list"><span>Content</span><span>SEO + discovery</span><span>Images + alt text</span></div>
-        <div class="system-core"><img src="eco_friendly_green_tee_product_page.png" width="1536" height="1536" loading="lazy" alt="Illustration of a green T-shirt product page"></div>
-        <div class="system-list"><span>Product details</span><span>Tags + collections</span><span>Brand voice</span></div>
+        <div class="system-core"><img src="eco_friendly_green_tee_product_page.png" width="1536" height="1536" loading="lazy" alt="Illustration of a complete product listing"></div>
+        <div class="system-list"><span>Content</span><span>SEO</span><span>Images</span><span>Product details</span><span>Tags + collections</span></div>
       </div>
     </div>
   </section>
@@ -160,15 +166,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="eyebrow green">HUMAN-IN-THE-LOOP BY DESIGN</p>
         <h2>You keep the judgment. penstack handles the repetition.</h2>
         <p>penstack prepares the content and supporting details, then puts the result in front of you to review. Nothing is published without your approval.</p>
+        <p style="margin-top:14px"><a href="about.html">Learn more about our approach →</a></p>
+      </div>
+      <div class="review-composition">
+        <figure class="review-visual">
+          <img src="sneaker_product_approval_dashboard.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product listing with a human approval checkmark">
+        </figure>
         <div class="review-proof">
           <div><b>✓</b><span>Nothing is published without your review.</span></div>
           <div><b>✓</b><span>You can edit anything before it goes live.</span></div>
           <div><b>✓</b><span>You stay in control of your brand and your store.</span></div>
         </div>
       </div>
-      <figure class="review-visual">
-        <img src="sneaker_product_approval_dashboard.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product listing with a human approval checkmark">
-      </figure>
     </div>
   </section>
 
