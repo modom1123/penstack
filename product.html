@@ -33,12 +33,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .process-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff;position:relative}
     .process-card:not(:last-child)::after{content:'→';position:absolute;right:-21px;top:50%;transform:translateY(-50%);font-size:24px;font-weight:800;color:var(--green);z-index:2}
-    .process-card .number{margin-bottom:14px}
+    .process-card .number{margin-bottom:10px}
+    .step-art{width:64px;height:64px;margin:0 0 14px;display:grid;place-items:center;border-radius:14px;background:#fbfaf6;overflow:hidden}
+    .step-art img{width:100%;height:100%;object-fit:contain}
     .process-card h3{margin:0 0 7px}
     .process-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
     .capability-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .capability-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:22px;min-height:210px}
-    .capability-icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:#eef7f1;color:var(--green);font-size:20px;font-weight:800;margin-bottom:14px}
+    .capability-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:22px;min-height:300px}
+    .capability-art{width:112px;height:112px;margin:0 0 16px;display:grid;place-items:center;border-radius:14px;background:#fbfaf6;overflow:hidden}
+    .capability-art img{width:100%;height:100%;object-fit:contain}
     .capability-card h3{margin:0 0 8px;font-size:18px}
     .capability-card p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
     .system-band{display:grid;grid-template-columns:1fr .9fr;gap:32px;align-items:center;padding:34px;border:1px solid #dce9df;border-radius:18px;background:var(--soft)}
@@ -110,10 +113,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>A connected workflow that turns what you already have into complete, optimized Shopify product listings.</p>
     </div>
     <div class="process-grid">
-      <article class="process-card"><span class="number">1</span><h3>Retrieve</h3><p>Pull in your product information from Shopify, including existing content, images, and details.</p></article>
-      <article class="process-card"><span class="number">2</span><h3>Build</h3><p>Prepare product content, SEO, images, product details, and more using your brand voice.</p></article>
-      <article class="process-card"><span class="number">3</span><h3>Review</h3><p>Check the facts and wording. Edit anything that needs your judgment.</p></article>
-      <article class="process-card"><span class="number">4</span><h3>Publish</h3><p>Send your finished listing to Shopify with only the changes you approve.</p></article>
+      <article class="process-card"><span class="number">1</span><div class="step-art"><img src="02_shopify-icon.png" width="512" height="512" loading="lazy" alt=""></div><h3>Retrieve</h3><p>Pull in your product information from Shopify, including existing content, images, and details.</p></article>
+      <article class="process-card"><span class="number">2</span><div class="step-art"><img src="document_and_pencil_icon.png" width="1536" height="1536" loading="lazy" alt=""></div><h3>Build</h3><p>Prepare product content, SEO, images, product details, and more using your brand voice.</p></article>
+      <article class="process-card"><span class="number">3</span><div class="step-art"><img src="04_eye-review-icon.png" width="512" height="512" loading="lazy" alt=""></div><h3>Review</h3><p>Check the facts and wording. Edit anything that needs your judgment.</p></article>
+      <article class="process-card"><span class="number">4</span><div class="step-art"><img src="05_publish-icon.png" width="512" height="512" loading="lazy" alt=""></div><h3>Publish</h3><p>Send your finished listing to Shopify with only the changes you approve.</p></article>
     </div>
   </section>
 
@@ -125,14 +128,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="capability-grid">
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">✎</div><h3>Product descriptions</h3><p>Accurate, on-brand descriptions based on your product information.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">⌕</div><h3>SEO + discovery</h3><p>SEO titles, meta descriptions, and content that supports discovery.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">▧</div><h3>Images + alt text</h3><p>Use your existing images and add optimized alt text.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">≡</div><h3>Product details</h3><p>Organize and complete details like materials, dimensions, care, and metafields.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">◇</div><h3>Tags + collections</h3><p>Generate relevant tags and suggest collection placement.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">◌</div><h3>Brand voice</h3><p>Keep your writing consistent with your brand tone, style, and vocabulary.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">✓</div><h3>Review + approval</h3><p>The human stays in the loop. You review and decide what gets published.</p></article>
-      <article class="capability-card"><div class="capability-icon" aria-hidden="true">↗</div><h3>Publish to Shopify</h3><p>Send your finished listing to Shopify when you are ready.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="document_and_pencil_icon.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product description document and pencil"></div><h3>Product descriptions</h3><p>Accurate, on-brand descriptions based on your product information.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="sneaker_search_discovery_illustration.png" width="1536" height="1536" loading="lazy" alt="Illustration of a sneaker in search discovery"></div><h3>SEO + discovery</h3><p>SEO titles, meta descriptions, and content that supports discovery.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="mug_product_image_with_metadata_card.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product image with metadata"></div><h3>Images + alt text</h3><p>Use your existing images and add optimized alt text.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="eco_friendly_green_tee_product_page.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product page with structured product details"></div><h3>Product details</h3><p>Organize and complete details like materials, dimensions, care, and metafields.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="t_shirt_tagging_into_folders.png" width="1536" height="1536" loading="lazy" alt="Illustration of a tagged product organized into collection folders"></div><h3>Tags + collections</h3><p>Generate relevant tags and suggest collection placement.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="three_chats_merging_into_one.png" width="1536" height="1536" loading="lazy" alt="Illustration of multiple messages becoming one consistent brand voice"></div><h3>Brand voice</h3><p>Keep your writing consistent with your brand tone, style, and vocabulary.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="sneaker_product_approval_dashboard.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product listing with an approval check"></div><h3>Review + approval</h3><p>The human stays in the loop. You review and decide what gets published.</p></article>
+      <article class="capability-card"><div class="capability-art"><img src="product_page_to_shopify_store.png" width="1536" height="1536" loading="lazy" alt="Illustration of a product page moving to a Shopify storefront"></div><h3>Publish to Shopify</h3><p>Send your finished listing to Shopify when you are ready.</p></article>
     </div>
   </section>
 
