@@ -24,11 +24,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:title" content="Shopify product listing use cases | penstack">
   <meta property="og:description" content="Prepare product launches, refresh older listings, apply search intent, organize collections, and manage distinct store contexts with penstack.">
   <meta property="og:url" content="https://penstack.co/use-cases.html">
-  <meta property="og:image" content="https://penstack.co/penstack-use-cases-hero-workflow.png">
+  <meta property="og:image" content="https://penstack.co/penstack-illustration-hero-v1.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify product listing use cases | penstack">
   <meta name="twitter:description" content="Prepare product launches, refresh older listings, apply search intent, organize collections, and manage distinct store contexts with penstack.">
-  <meta name="twitter:image" content="https://penstack.co/penstack-use-cases-hero-workflow.png">
+  <meta name="twitter:image" content="https://penstack.co/penstack-illustration-hero-v1.png">
   <link rel="icon" type="image/png" sizes="64x64" href="penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="penstack-favicon-180.png">
@@ -38,12 +38,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .uc-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:44px;align-items:center;padding:64px 6% 54px}
     .uc-hero h1{max-width:700px;margin:10px 0 18px;font-size:clamp(48px,6vw,76px);line-height:.98;letter-spacing:-.05em}
     .uc-hero .lead{max-width:640px;font-size:20px;line-height:1.5;color:var(--muted)}
-    .uc-visual{margin:0;min-width:0}.uc-visual img{display:block;width:100%;height:auto;border-radius:24px}
     .uc-actions{display:flex;gap:12px;align-items:center;margin-top:26px;flex-wrap:wrap}
     .uc-section{padding:56px 6%;border-top:1px solid var(--line)}
     .uc-row{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:48px;align-items:center}
     .uc-row.reverse{grid-template-columns:minmax(420px,1.1fr) minmax(0,.9fr)}
-    .uc-row.reverse .uc-copy{order:2}.uc-row.reverse .uc-visual{order:1}
+    .uc-row.reverse .uc-copy{order:2}.uc-row.reverse .brand-illustration{order:1}
     .uc-number{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#dff0ff;color:#2175c9;font-weight:800;margin-bottom:16px}
     .uc-copy h2{margin:0 0 12px;font-size:clamp(34px,4vw,50px);line-height:1.04;letter-spacing:-.04em}
     .uc-copy>p{margin:0 0 20px;color:var(--muted);font-size:18px;line-height:1.55}
@@ -57,13 +56,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .uc-more-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
     .uc-more-card{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff;min-height:190px}
     .uc-icon{display:grid;place-items:center;width:46px;height:46px;border-radius:14px;margin-bottom:15px;font-size:24px}
-    .uc-more-card:nth-child(1) .uc-icon{background:#fdecef}.uc-more-card:nth-child(2) .uc-icon{background:#eaf4ff}.uc-more-card:nth-child(3) .uc-icon{background:#e8f7ef}.uc-more-card:nth-child(4) .uc-icon{background:#fff1bf}
     .uc-more-card h3{margin:0 0 8px;font-size:21px}.uc-more-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
     .uc-pattern{display:grid;grid-template-columns:.72fr 1.28fr;gap:34px;align-items:center;padding:42px;border:1px solid var(--line);border-radius:22px;background:#f8fbff;margin:10px 6% 56px}
     .uc-pattern h2{font-size:44px;margin:0 0 8px;letter-spacing:-.04em}.uc-pattern p{color:var(--muted);line-height:1.55;margin:0 0 20px}
     @media(max-width:980px){
       .uc-hero,.uc-row,.uc-row.reverse,.uc-pattern{grid-template-columns:1fr}
-      .uc-row.reverse .uc-copy,.uc-row.reverse .uc-visual{order:initial}
+      .uc-row.reverse .uc-copy,.uc-row.reverse .brand-illustration{order:initial}
       .uc-more-grid{grid-template-columns:repeat(2,1fr)}
     }
     @media(max-width:640px){
@@ -76,6 +74,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {"@context":"https://schema.org","@type":"WebPage","name":"Shopify Product Content Use Cases","url":"https://penstack.co/use-cases.html","description":"Prepare product launches, refresh older listings, apply search intent, organize collections, and manage distinct store contexts with penstack.","about":["Shopify product content","product launches","catalog cleanup","product SEO","merchandising","multi-store operations","brand voice","image accessibility"]}
   </script>
   <link rel="stylesheet" href="brand.css?v=20261001-1">
+  <link rel="stylesheet" href="illustrations.css?v=20261001-1">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -110,8 +109,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="button secondary" href="product.html">See how it works</a>
       </div>
     </div>
-    <figure class="uc-visual">
-      <img src="penstack-use-cases-hero-workflow.png" width="1600" height="900" alt="Comparison between a manual Shopify workflow using documents, AI tools, and spreadsheets and the penstack workflow of retrieve, build, review, and publish">
+    <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-hero-v1.webp"><img src="penstack-illustration-hero-v1.png" width="1672" height="941" fetchpriority="high" decoding="async" alt="Ceramic mug alongside a listing of the same mug, product context, and a review pencil"></picture>
+      <figcaption>One product, its details, and your review.</figcaption>
     </figure>
   </section>
 
@@ -128,9 +128,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <a class="uc-link" href="product.html">Learn more →</a>
       </div>
-      <figure class="uc-visual">
-        <img src="penstack-use-cases-launch-new-products.png" width="1600" height="900" loading="lazy" alt="Draft Shopify product moving through penstack product data retrieval, content generation, detail completion, and review to become publish-ready">
-      </figure>
+      <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-launch-v1.webp"><img src="penstack-illustration-launch-v1.png" width="1672" height="941" loading="lazy" decoding="async" alt="Ceramic mug and its supplied facts carried into a product listing draft"></picture>
+      <figcaption>Start with the product and the facts you supply.</figcaption>
+    </figure>
     </div>
   </section>
 
@@ -147,9 +148,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <a class="uc-link" href="product.html">Learn more →</a>
       </div>
-      <figure class="uc-visual">
-        <img src="penstack-use-cases-clean-up-products.png" width="1600" height="900" loading="lazy" alt="Before and after Shopify product listing showing missing details and vague copy improved into a complete ceramic mug listing">
-      </figure>
+      <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-refresh-v1.webp"><img src="penstack-illustration-refresh-v1.png" width="1672" height="941" loading="lazy" decoding="async" alt="The same ceramic mug listing before and after adding description and product details"></picture>
+      <figcaption>Same product. More useful information.</figcaption>
+    </figure>
     </div>
   </section>
 
@@ -166,9 +168,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <a class="uc-link" href="blog/shopify-seo-without-jargon.html">Explore SEO guidance →</a>
       </div>
-      <figure class="uc-visual">
-        <img src="penstack-use-cases-product-discovery.png" width="1600" height="900" loading="lazy" alt="Product connected to search intent, collection placement, tags, filters, and recommendation data">
-      </figure>
+      <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-search-intent-v1.webp"><img src="penstack-illustration-search-intent-v1.png" width="1672" height="941" loading="lazy" decoding="async" alt="Magnifying glass on a ceramic mug alongside product and dishwasher care details"></picture>
+      <figcaption>A specific search needs matching product facts.</figcaption>
+    </figure>
     </div>
   </section>
 
@@ -185,9 +188,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <a class="uc-link" href="blog/tags-collections-product-types.html">Learn about product organization →</a>
       </div>
-      <figure class="uc-visual">
-        <img src="penstack-use-cases-merchandising-placement.png" width="1600" height="900" loading="lazy" alt="One running shoe product routed into Running Shoes, New Arrivals, Women's Collection, and Training Essentials merchandising destinations">
-      </figure>
+      <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-merchandising-v1.webp"><img src="penstack-illustration-merchandising-v1.png" width="1672" height="941" loading="lazy" decoding="async" alt="One running shoe connected to three collections showing the same shoe"></picture>
+      <figcaption>One product can belong in several relevant collections.</figcaption>
+    </figure>
     </div>
   </section>
 
@@ -204,9 +208,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
         <a class="uc-link" href="pricing.html">See multi-store plans →</a>
       </div>
-      <figure class="uc-visual">
-        <img src="penstack-use-cases-multi-store-management.png" width="1600" height="900" loading="lazy" alt="penstack connected to three Shopify stores with separate brand voice, catalog, and SEO context for each store">
-      </figure>
+      <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-store-contexts-v1.webp"><img src="penstack-illustration-store-contexts-v1.png" width="1672" height="941" loading="lazy" decoding="async" alt="Separate skincare and snowboard store panels, each with its own product facts and voice"></picture>
+      <figcaption>Distinct products. Distinct store contexts.</figcaption>
+    </figure>
     </div>
   </section>
 
@@ -216,22 +221,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="uc-more-intro">A strong description is a start. Image text, custom fields, and a careful review help finish the listing.</p>
     <div class="uc-more-grid">
       <article class="uc-more-card">
-        <div class="uc-icon">★</div>
+        <div class="brand-icon-tile "><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14v11h-8l-5 5v-5H5zM8 8h8M8 11h5"/></svg></div>
         <h3>Give drafts a familiar voice.</h3>
         <p>Solo, Pro, and Agency include the ten-question Brand Voice quiz. Pro and Agency keep each connected store’s voice separate.</p>
       </article>
       <article class="uc-more-card">
-        <div class="uc-icon">▣</div>
+        <div class="brand-icon-tile "><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.5"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg></div>
         <h3>Describe what the image shows.</h3>
         <p>Prepare alt text for the actual view in each photo. Check that the wording helps someone understand the image.</p>
       </article>
       <article class="uc-more-card">
-        <div class="uc-icon">◉</div>
+        <div class="brand-icon-tile "><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="2"/><rect x="3" y="14" width="18" height="6" rx="2"/><path d="M7 7h5M7 17h5"/></svg></div>
         <h3>Make practical details easy to find.</h3>
         <p>Add accurate materials, care information, and other supported Shopify custom fields.</p>
       </article>
       <article class="uc-more-card">
-        <div class="uc-icon">✓</div>
+        <div class="brand-icon-tile is-approval"><svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 4 4L19 6"/></svg></div>
         <h3>Catch the small mistakes.</h3>
         <p>Check the facts, image text, and organization before you publish the updates.</p>
       </article>
@@ -245,8 +250,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The products will change. The useful questions stay familiar: Is the information accurate? Is the description clear? Is the item organized where it belongs?</p>
       <a class="button primary" href="https://app.penstack.co">Get started →</a>
     </div>
-    <figure class="uc-visual">
-      <img src="penstack-use-cases-bigger-pattern.png" width="1600" height="900" loading="lazy" alt="Before workflow of tabs, documents, AI tools, spreadsheets, admin screens, and handoffs compared with penstack retrieve, build, review, and publish, while humans retain judgment, editing, strategy, and approval">
+    <figure class="brand-illustration ">
+      <picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-review-v1.webp"><img src="penstack-illustration-review-v1.png" width="1672" height="941" loading="lazy" decoding="async" alt="Ceramic mug listing with two review items checked and a third waiting beside a pencil"></picture>
+      <figcaption>A draft still needs your judgment.</figcaption>
     </figure>
   </section>
 

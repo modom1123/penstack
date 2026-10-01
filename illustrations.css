@@ -1,0 +1,43 @@
+/* Shared artwork, icon, and diagram grammar for core marketing pages. */
+:root {
+  --visual-blue: #2175c9;
+  --visual-blue-wash: #eaf4ff;
+  --visual-green-wash: #eef4ef;
+  --visual-yellow-wash: #fff4cf;
+  --visual-review-ink: #725016;
+  --visual-radius: 18px;
+}
+.brand-illustration { margin: 0; min-width: 0; }
+.brand-illustration picture { display: block; overflow: hidden; border-radius: var(--visual-radius); background: var(--paper); }
+.brand-illustration img { display: block; width: 100%; height: auto; }
+.brand-illustration figcaption { padding: 10px 4px 0; font-size: .875rem; line-height: 1.5; color: var(--muted); }
+.brand-icon { display: block; width: 24px; height: 24px; flex: 0 0 auto; }
+.brand-icon-tile { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-bottom: 16px; border-radius: 12px; background: var(--visual-blue-wash); color: var(--navy); }
+.brand-icon-tile.is-approval { background: var(--visual-green-wash); color: var(--green); }
+.brand-icon-tile.is-review { background: var(--visual-yellow-wash); color: var(--visual-review-ink); }
+.contrast-card .brand-icon-tile { margin-bottom: 0; }
+.contrast-card.before { background: #fff; }
+.contrast-card.after { background: var(--visual-green-wash); }
+.uc-number { background: var(--visual-blue-wash); color: var(--visual-blue); }
+.uc-pattern { background: var(--paper); }
+.product-hero-graphic, .compare-hero-panel { border-radius: var(--visual-radius); background: #fff; box-shadow: 0 12px 32px rgba(23,50,77,.06); }
+.product-flow { padding: 0; margin: 0; list-style: none; }
+.product-flow-step { background: var(--visual-blue-wash); color: var(--navy); }
+.product-flow-step:nth-child(3) { background: var(--visual-yellow-wash); }
+.product-flow-step:nth-child(4), .product-outcome { background: var(--visual-green-wash); }
+.product-flow-step strong { font-size: .9375rem; }
+.product-flow-step span { font-size: .875rem; line-height: 1.45; color: var(--navy); }
+.product-outcome span { font-size: .875rem; }
+.compare-path .note:first-child { background: var(--visual-blue-wash); }
+.compare-path .note:last-child { background: var(--visual-green-wash); }
+.illustrated-review { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; }
+.illustrated-review .control-grid { grid-template-columns: 1fr; }
+.illustrated-review .control-card:first-child { background: #fff; border-color: var(--line); }
+.illustrated-review .control-card:last-child { background: var(--visual-yellow-wash); border-color: var(--line); }
+@media (max-width: 980px) {
+  .illustrated-review { grid-template-columns: minmax(0,1fr); gap: 24px; }
+}
+@media (max-width: 760px) {
+  .product-flow-step:not(:last-child)::after { display: none; }
+  .brand-illustration figcaption { padding-top: 8px; }
+}
