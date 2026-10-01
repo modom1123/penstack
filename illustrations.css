@@ -41,3 +41,7 @@
   .product-flow-step:not(:last-child)::after { display: none; }
   .brand-illustration figcaption { padding-top: 8px; }
 }
+
+.workflow-story .workflow-number, .process-card .number { background: var(--visual-blue-wash); color: var(--navy); }
+.workflow-story article:nth-child(3) .workflow-number, .process-card:nth-child(3) .number { background: var(--visual-yellow-wash); color: var(--visual-review-ink); }
+.workflow-story article:nth-child(4) .workflow-number, .process-card:nth-child(4) .number { background: var(--visual-green-wash); color: var(--green); }
