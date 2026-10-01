@@ -1,0 +1,89 @@
+/* Shared penstack typography and site chrome. Load after page styles. */
+:root {
+  --font-brand: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --type-display: clamp(2.5rem, 4.8vw, 4rem);
+  --type-section: clamp(2rem, 3.6vw, 3rem);
+  --type-card: 1.25rem;
+  --type-body: 1rem;
+  --type-lead: 1.1875rem;
+  --type-label: .875rem;
+  --type-meta: .75rem;
+}
+body, .resource-hub {
+  font-family: var(--font-brand);
+  font-size: var(--type-body);
+  line-height: 1.6;
+}
+button, input, select, textarea { font-family: inherit; }
+.page-hero h1, .uc-hero h1, .resource-hero h1, .blog-hero h1 {
+  font-size: var(--type-display);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+}
+.section-heading h2, .value-band h2, .uc-copy h2,
+.uc-more h2, .uc-pattern h2, .library-heading h2,
+.learning-model h2, .final-cta h2 {
+  font-size: var(--type-section);
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+.blog-prose h2 { font-size: var(--type-section); line-height: 1.2; }
+.lead, .uc-hero .lead, .resource-hero-copy > p:not(.resource-kicker), .blog-dek {
+  font-size: var(--type-lead);
+  line-height: 1.6;
+}
+.eyebrow, .resource-kicker, .blog-kicker {
+  font-size: var(--type-meta);
+  line-height: 1.5;
+  letter-spacing: .12em;
+}
+.site-header nav, .site-header nav a, .login {
+  font-size: var(--type-label);
+  line-height: 1.5;
+}
+.site-header nav { gap: clamp(.875rem, 1.6vw, 1.375rem); }
+.site-header .brand img { width: 180px; }
+.button { font-size: var(--type-body); line-height: 1.5; }
+.workflow-story p, .what-card p, .getting-started-card p,
+.process-card p, .proof-card p, .uc-more-card p {
+  font-size: var(--type-body);
+  line-height: 1.6;
+}
+.workflow-story h3, .what-card h3, .getting-started-card h3,
+.process-card h3, .capability-card h3, .uc-more-card h3 {
+  font-size: var(--type-card);
+  line-height: 1.3;
+}
+.journey-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.journey-card-grid .guide-card h3 { font-size: 1.125rem; line-height: 1.35; }
+.journey-card-grid .guide-card p { font-size: var(--type-body); line-height: 1.6; }
+.journey-card-grid .guide-link, .stage-filter,
+.journey-lane-heading p, .learning-model-grid p { font-size: var(--type-label); }
+.journey-card-grid .level-badge, .journey-card-grid .topic-badge,
+.stage-filter span { font-size: var(--type-meta); }
+.journey-card-grid .guide-labels { flex-wrap: wrap; }
+footer { font-size: var(--type-label); line-height: 1.5; flex-wrap: wrap; }
+footer p { max-width: 24rem; }
+.footer-links a { padding: .375rem 0; }
+@media (max-width: 1100px) {
+  .site-header { height: auto; padding-top: 12px; gap: 12px; flex-wrap: wrap; }
+  .site-header nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    border-top: 1px solid var(--line);
+    gap: 20px;
+  }
+  .site-header nav a { padding: 12px 0 10px; white-space: nowrap; }
+  .header-actions { margin-left: auto; }
+  .journey-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .site-header { padding: 14px 5% 0; }
+  .site-header .brand img { width: 160px; }
+  .site-header nav { padding: 0; }
+  footer { align-items: flex-start; }
+}
+@media (max-width: 560px) {
+  .journey-card-grid { grid-template-columns: minmax(0, 1fr); }
+}
