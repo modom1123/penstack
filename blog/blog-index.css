@@ -997,8 +997,8 @@
 /* Approved Penstack Guides hero artwork */
 .blog-hero-art{
   display:block;
-  width:100%;
+  width:115%;
   height:auto;
-  max-width:720px;
-  margin:0 auto;
+  max-width:780px;
+  margin:0 0 0 -6%;
 }
