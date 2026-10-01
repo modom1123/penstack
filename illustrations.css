@@ -18,7 +18,7 @@
 .contrast-card .brand-icon-tile { margin-bottom: 0; }
 .contrast-card.before { background: #fff; }
 .contrast-card.after { background: var(--visual-green-wash); }
-.uc-number { background: var(--visual-blue-wash); color: var(--visual-blue); }
+.uc-number { background: var(--visual-blue-wash); color: var(--navy); }
 .uc-pattern { background: var(--paper); }
 .product-hero-graphic, .compare-hero-panel { border-radius: var(--visual-radius); background: #fff; box-shadow: 0 12px 32px rgba(23,50,77,.06); }
 .product-flow { padding: 0; margin: 0; list-style: none; }
