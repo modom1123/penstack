@@ -66,12 +66,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .system-band h2{margin:0 0 14px;font-size:clamp(32px,3.1vw,42px);line-height:1.08}
     .system-band p{margin:0;color:#53667a;font-size:16px;line-height:1.62}
     .system-band a{font-weight:700}
-    .system-diagram{display:grid;grid-template-columns:176px 1fr;gap:18px;align-items:center;padding:18px;border:1px solid rgba(207,221,211,.9);border-radius:16px;background:rgba(255,255,255,.78)}
-    .system-core{position:relative;min-height:190px;display:grid;place-items:center}
-    .system-core img{position:relative;z-index:2;width:184px;height:184px;object-fit:contain;border-radius:15px;background:#fff}
-    .system-list{display:grid;gap:10px}
-    .system-list span{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1px solid #d8e2da;border-radius:11px;background:#fff;font-size:13px}
-    .system-list span::before{content:'✓';display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#e6f1ea;color:var(--green);font-weight:800}
+    .system-visual{margin:0;display:grid;place-items:center}
+    .system-visual img{width:min(100%,430px);height:auto;display:block;object-fit:contain}
 
     .human-review{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;padding:4px 0}
     .human-review>div:first-child{max-width:560px}
@@ -101,7 +97,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .process-grid,.capability-grid{grid-template-columns:repeat(2,1fr)}
       .process-card::after{display:none}
       .system-band,.human-review{grid-template-columns:1fr}
-      .system-diagram{max-width:680px}
+      .system-visual{max-width:680px}
       .product-proof{grid-template-columns:1fr}
       .proof-card{border-right:0;border-bottom:1px solid var(--line)}
       .proof-card:last-child{border-bottom:0}
@@ -111,8 +107,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .process-grid,.capability-grid{grid-template-columns:1fr}
       .product-hero-visual{min-height:0}
       .system-band{padding:30px 24px}
-      .system-diagram{grid-template-columns:1fr;padding:18px}
-      .system-core{min-height:190px}
+      .system-visual{max-width:100%}
       .review-composition{grid-template-columns:1fr}
       .capability-card{min-height:0}
     }
@@ -154,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <figure class="product-hero-visual">
-      <img src="product_page_to_shopify_store.png" width="1536" height="1536" fetchpriority="high" decoding="async" alt="Illustration of a product listing moving into a Shopify storefront">
+      <img src="assets/illustrations/penstack-product-hero-connected-workflow.webp" width="640" height="640" fetchpriority="high" decoding="async" alt="Connected Penstack workflow bringing product content, SEO, images, review, and publishing together">
     </figure>
   </section>
 
@@ -199,10 +194,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>penstack connects product information, SEO, images, product details, and merchandising, so you get complete, ready-to-publish listings instead of a draft and another to-do list.</p>
         <p style="margin-top:14px"><a href="#capabilities">See all features →</a></p>
       </div>
-      <div class="system-diagram" aria-label="Connected product listing system">
-        <div class="system-core"><img src="t_shirt_tagging_into_folders.png" width="1536" height="1536" loading="lazy" alt="Illustration of product information organized into connected merchandising folders"></div>
-        <div class="system-list"><span>Content</span><span>SEO</span><span>Images</span><span>Product details</span><span>Tags + collections</span></div>
-      </div>
+      <figure class="system-visual">
+        <img src="assets/illustrations/penstack-product-complete-process.webp" width="640" height="640" loading="lazy" decoding="async" alt="Product listing connected to content, SEO, images, product details, tags, and brand voice">
+      </figure>
     </div>
   </section>
 
