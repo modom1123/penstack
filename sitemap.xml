@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://penstack.co/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://penstack.co/product.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://penstack.co/use-cases.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://penstack.co/compare.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://penstack.co/pricing.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://penstack.co/about.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://penstack.co/blog/</loc><lastmod>2026-09-30</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://penstack.co/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://penstack.co/product.html</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://penstack.co/use-cases.html</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/compare.html</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/pricing.html</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://penstack.co/about.html</loc><lastmod>2026-10-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://penstack.co/blog/</loc><lastmod>2026-10-01</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://penstack.co/blog/anatomy-great-product-listing.html</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/shopify-seo-without-jargon.html</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/tags-collections-product-types.html</loc><lastmod>2026-09-25</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -24,4 +24,8 @@
   <url><loc>https://penstack.co/blog/audit-inherited-shopify-catalog.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/product-listing-qa-standard.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://penstack.co/blog/multi-brand-store-boundaries.html</loc><lastmod>2026-09-30</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/blog/alt-text-product-images.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/blog/ecommerce-image-accessibility-qa.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/blog/how-to-write-a-product-description.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://penstack.co/blog/product-image-metadata.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
