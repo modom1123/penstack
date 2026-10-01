@@ -821,3 +821,24 @@
   .journey-lane-heading p{margin-top:10px;text-align:left}
   .journey-lane-heading h3{font-size:26px}
 }
+
+
+/* v8: dedicated index thumbnails. Exact 16:9 artwork replaces legacy article-image framing. */
+.journey-card-grid .guide-image{
+  padding:0 !important;
+  background:transparent !important;
+}
+.journey-card-grid .guide-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover !important;
+  object-position:center !important;
+  padding:0 !important;
+  margin:0 !important;
+  background:transparent !important;
+  border-radius:0 !important;
+}
+.journey-card-grid .guide-image::before,
+.journey-card-grid .guide-image::after{
+  display:none !important;
+}
