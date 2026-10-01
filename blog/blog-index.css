@@ -842,3 +842,92 @@
 .journey-card-grid .guide-image::after{
   display:none !important;
 }
+
+
+/* v9: completion pass — dense editorial grid matching the approved concept. */
+.guide-library{
+  max-width:none;
+  padding-left:max(24px,3vw);
+  padding-right:max(24px,3vw);
+}
+.guide-library .library-heading{
+  max-width:1280px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.journey-library{
+  max-width:1800px;
+  margin:0 auto;
+  gap:18px;
+}
+.journey-lane{
+  padding:22px;
+  border-radius:20px;
+}
+.journey-lane-heading{
+  margin-bottom:16px;
+  align-items:center;
+}
+.journey-lane-heading h3{
+  font-size:28px;
+}
+.journey-lane-heading p{
+  max-width:520px;
+  font-size:12px;
+}
+.journey-card-grid{
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:12px;
+}
+.journey-card-grid .guide-card{
+  min-width:0;
+  border-radius:14px;
+  box-shadow:0 7px 18px rgba(16,40,59,.055);
+}
+.journey-card-grid .guide-image{
+  aspect-ratio:16/9;
+}
+.journey-card-grid .guide-body{
+  padding:14px 14px 15px;
+}
+.journey-card-grid .guide-labels{
+  gap:5px;
+  margin-bottom:9px;
+}
+.journey-card-grid .level-badge,
+.journey-card-grid .topic-badge{
+  min-height:22px;
+  padding:4px 7px;
+  font-size:8px;
+}
+.journey-card-grid .guide-card h3{
+  margin-bottom:8px;
+  font-size:16px;
+  line-height:1.14;
+  letter-spacing:-.02em;
+}
+.journey-card-grid .guide-card p{
+  margin-bottom:12px;
+  font-size:11px;
+  line-height:1.43;
+}
+.journey-card-grid .guide-link{
+  font-size:11px;
+}
+@media(max-width:1500px){
+  .journey-card-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:1100px){
+  .journey-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:780px){
+  .journey-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .journey-lane-heading{align-items:flex-start}
+}
+@media(max-width:560px){
+  .guide-library{padding-left:16px;padding-right:16px}
+  .journey-card-grid{grid-template-columns:1fr}
+  .journey-lane{padding:16px}
+  .journey-lane-heading{display:block}
+  .journey-lane-heading p{margin-top:8px;text-align:left}
+}
