@@ -80,61 +80,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="resource-section experience-section" id="experience">
-    <div class="section-heading">
-      <p class="resource-kicker">START WHERE YOU ARE</p>
-      <h2>Where are you on your ecommerce journey?</h2>
-      <p>Choose the level that sounds most like you. You can always wander into another lane.</p>
-    </div>
-
-    <div class="experience-grid">
-      <button class="experience-card level-start" type="button" data-filter-level="start">
-        <span class="experience-icon">1</span>
-        <span class="experience-copy">
-          <strong>New to online listings</strong>
-          <small>Learn the fundamentals and build confidence.</small>
-          <span class="experience-meter" aria-label="Experience level 1 of 3"><i></i><em></em><em></em></span>
-        </span>
-        <span class="experience-arrow">→</span>
-      </button>
-
-      <button class="experience-card level-up" type="button" data-filter-level="level-up">
-        <span class="experience-icon">2</span>
-        <span class="experience-copy">
-          <strong>Experienced, need a refresh</strong>
-          <small>Sharpen your process with practical best practices.</small>
-          <span class="experience-meter" aria-label="Experience level 2 of 3"><i></i><i></i><em></em></span>
-        </span>
-        <span class="experience-arrow">→</span>
-      </button>
-
-      <button class="experience-card level-deep" type="button" data-filter-level="go-deeper">
-        <span class="experience-icon">3</span>
-        <span class="experience-copy">
-          <strong>Expert, looking to improve</strong>
-          <small>Explore advanced strategy, systems, and testing.</small>
-          <span class="experience-meter" aria-label="Experience level 3 of 3"><i></i><i></i><i></i></span>
-        </span>
-        <span class="experience-arrow">→</span>
-      </button>
-    </div>
-  </section>
-
-  <section class="resource-section topic-section" id="topics">
-    <div class="section-heading compact-heading">
-      <p class="resource-kicker">OR BROWSE BY TOPIC</p>
-      <h2>What do you want to improve?</h2>
-    </div>
-
-    <div class="topic-filters" role="group" aria-label="Filter guides by topic">
-      <button type="button" class="topic-chip active" data-filter-topic="all">All guides</button>
-      <button type="button" class="topic-chip topic-pink" data-filter-topic="listings">Product Listings</button>
-      <button type="button" class="topic-chip topic-blue" data-filter-topic="seo">SEO + Discovery</button>
-      <button type="button" class="topic-chip topic-green" data-filter-topic="catalog">Catalog + Merchandising</button>
-      <button type="button" class="topic-chip topic-purple" data-filter-topic="voice">Brand Voice</button>
-      <button type="button" class="topic-chip topic-peach" data-filter-topic="images">Images + Accessibility</button>
-      <button type="button" class="topic-chip topic-yellow" data-filter-topic="testing">Optimization + Testing</button>
-      <button type="button" class="topic-chip topic-sky" data-filter-topic="agency">Teams + Agencies</button>
+  <section class="resource-section library-stage-filter" aria-label="Filter guides by ecommerce journey">
+    <div class="stage-filter-row" role="group" aria-label="Guide experience level">
+      <button class="stage-filter active" type="button" data-filter-level="all">All articles <span>21</span></button>
+      <button class="stage-filter stage-filter-start" type="button" data-filter-level="start">Start Here <span>6</span></button>
+      <button class="stage-filter stage-filter-up" type="button" data-filter-level="level-up">Level Up <span>7</span></button>
+      <button class="stage-filter stage-filter-deep" type="button" data-filter-level="go-deeper">Go Deeper <span>8</span></button>
     </div>
   </section>
 
@@ -527,7 +478,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
     levelButtons.forEach(button => {
-      button.classList.toggle('selected', button.dataset.filterLevel === activeLevel);
+      const selected = button.dataset.filterLevel === activeLevel;
+      button.classList.toggle('selected', selected);
+      button.classList.toggle('active', selected);
     });
     topicButtons.forEach(button => {
       button.classList.toggle('active', button.dataset.filterTopic === activeTopic);
