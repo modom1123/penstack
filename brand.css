@@ -38,6 +38,7 @@
   --radius-control: 10px;
   --radius-card: 16px;
   --radius-panel: 20px;
+  --space-hero-y: 68px;
   --space-section-y: 72px;
   --space-section-compact-y: 48px;
   --space-card: 24px;
@@ -189,6 +190,13 @@ footer p { max-width: 24rem; }
 
 
 /* Shared marketing-page component system */
+.page-hero,
+.uc-hero,
+.about-hero {
+  padding-top: var(--space-hero-y);
+  padding-bottom: var(--space-hero-y);
+}
+
 .section {
   padding-top: var(--space-section-y);
   padding-bottom: var(--space-section-y);
@@ -218,6 +226,9 @@ footer p { max-width: 24rem; }
 .uc-more-card,
 .time-card,
 .control-card,
+.outcome-card,
+.usage-band,
+.contact-card,
 .note,
 .context-point {
   border-radius: var(--radius-card);
@@ -232,7 +243,8 @@ footer p { max-width: 24rem; }
 .context-panel,
 .contact-band,
 .plan-table-wrap,
-.matrix-wrap {
+.matrix-wrap,
+.experience-art {
   border-radius: var(--radius-panel);
 }
 
@@ -252,6 +264,29 @@ footer p { max-width: 24rem; }
 .control-card,
 .context-point {
   padding: var(--space-card-compact);
+}
+
+.feature-card,
+.use-card,
+.price-card,
+.step-card,
+.compare-card,
+.process-card,
+.capability-card,
+.proof-card,
+.fit-card,
+.strength-card,
+.takeaway-card,
+.value-step,
+.uc-more-card,
+.time-card,
+.control-card,
+.outcome-card,
+.usage-band,
+.contact-card,
+.note,
+.context-point {
+  border-color: var(--line);
 }
 
 .outcome-grid,
