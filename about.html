@@ -28,16 +28,61 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"AboutPage","@id":"https://penstack.co/about.html#webpage","name":"About penstack | Human-in-the-Loop Shopify Product Work","url":"https://penstack.co/about.html","description":"Learn why penstack keeps human judgment in the loop while reducing repetitive Shopify product-content work across content, SEO, images, and merchandising.","isPartOf":{"@id":"https://penstack.co/#website"},"about":{"@id":"https://penstack.co/#organization"}}
   </script>
+<link rel="preload" as="image" href="penstack-product-complete-process.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="styles.css?v=19">
   <style>
-    .about-hero{padding-bottom:58px}.about-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}.about-belief{padding:30px;border:1px solid var(--line);border-radius:18px;background:#fff8ec}.about-belief h2{font-size:clamp(34px,4vw,48px);margin-bottom:14px}.about-belief p{margin:0;color:var(--muted);font-size:16px;line-height:1.6}
-    .belief-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.belief-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}.belief-card h3{margin:0 0 8px}.belief-card p{margin:0;color:var(--muted);line-height:1.5}.belief-card .feature-icon{margin-bottom:12px}
-    .origin-band{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:center;padding:34px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}.origin-band h2{font-size:clamp(36px,4vw,52px)}.origin-band p{color:var(--muted);font-size:16px;line-height:1.6}.origin-points{display:grid;gap:12px}.origin-point{padding:16px 18px;border-radius:12px;background:#fff;border:1px solid var(--line)}.origin-point strong{display:block;margin-bottom:4px}.origin-point span{color:var(--muted);font-size:13px;line-height:1.45}
-    .principle-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.principle-card{padding:26px;border:1px solid var(--line);border-radius:16px;background:#fff}.principle-card h3{margin:0 0 8px}.principle-card p{margin:0;color:var(--muted);line-height:1.55}.principle-card:nth-child(1){background:#fff8ec;border-color:#edd8bc}.principle-card:nth-child(4){background:#eef7f1;border-color:#d8e9dd}
-    .philosophy-strip{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;padding:28px 30px;border:1px solid var(--line);border-radius:18px;background:#fff}.philosophy-side{padding:20px;border-radius:14px;background:var(--soft)}.philosophy-side strong{display:block;margin-bottom:6px;font-size:19px}.philosophy-side p{margin:0;color:var(--muted);line-height:1.5}.philosophy-arrow{font-size:32px;color:var(--green);font-weight:800}
-    .about-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.about-proof article{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}.about-proof strong{display:block;font-size:18px;margin-bottom:7px}.about-proof p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-    @media(max-width:1050px){.about-hero-grid,.origin-band{grid-template-columns:1fr}.belief-grid,.about-proof{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:760px){.belief-grid,.principle-grid,.about-proof,.philosophy-strip{grid-template-columns:1fr}.philosophy-arrow{transform:rotate(90deg);text-align:center}}
+    .about-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(380px,.95fr);gap:46px;align-items:center;padding-bottom:56px}
+    .about-hero h1{max-width:780px}
+    .about-hero-art{display:block;width:100%;height:auto;max-width:620px;margin:0 auto}
+    .origin-section{background:#fbfaf5}
+    .origin-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:32px;align-items:start}
+    .origin-copy{max-width:760px}
+    .origin-copy p{color:var(--muted);font-size:16px;line-height:1.65}
+    .origin-copy .pull{margin:22px 0;padding:18px 20px;border-left:4px solid var(--green);background:#fff;border-radius:0 12px 12px 0;color:var(--navy);font-size:20px;font-weight:800;line-height:1.35}
+    .founder-card{padding:26px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .founder-card .founder-kicker{display:block;margin-bottom:8px;color:var(--green);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+    .founder-card h3{margin:0 0 6px;font-size:28px}
+    .founder-card .role{margin:0 0 16px;color:var(--muted);font-weight:700}
+    .founder-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+    .belief-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .belief-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .belief-card:nth-child(1){background:#eef7f1;border-color:#d8e9dd}
+    .belief-card:nth-child(2){background:#eef5fb;border-color:#d7e6f3}
+    .belief-card:nth-child(3){background:#fff8e8;border-color:#f0dfb9}
+    .belief-card h3{margin:0 0 8px}
+    .belief-card p{margin:0;color:var(--muted);line-height:1.5}
+    .belief-icon{display:grid;place-items:center;width:38px;height:38px;margin-bottom:14px;border-radius:50%;background:#fff;color:var(--green);font-weight:900}
+    .principle-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .principle-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .principle-card h3{margin:0 0 8px}
+    .principle-card p{margin:0;color:var(--muted);line-height:1.55}
+    .principle-card:nth-child(1){background:#eef7f1}
+    .principle-card:nth-child(2){background:#eef5fb}
+    .principle-card:nth-child(3){background:#fff8e8}
+    .principle-card:nth-child(4){background:#f4eefb}
+    .time-back{background:#fbfaf5}
+    .time-back-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .time-back-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .time-back-card strong{display:block;margin-bottom:7px;font-size:19px}
+    .time-back-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .contact-band{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:30px;border:1px solid var(--line);border-radius:18px;background:#eef5fb}
+    .contact-band h2{margin:0 0 8px;font-size:clamp(32px,4vw,46px)}
+    .contact-band p{margin:0;color:var(--muted);line-height:1.55;max-width:760px}
+    .contact-band .button{white-space:nowrap}
+    .philosophy-strip{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;padding:28px 30px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .philosophy-side{padding:20px;border-radius:14px;background:var(--soft)}
+    .philosophy-side strong{display:block;margin-bottom:6px;font-size:19px}
+    .philosophy-side p{margin:0;color:var(--muted);line-height:1.5}
+    .philosophy-arrow{font-size:32px;color:var(--green);font-weight:800}
+    @media(max-width:1050px){
+      .about-hero,.origin-grid{grid-template-columns:1fr}
+      .belief-grid,.time-back-grid{grid-template-columns:repeat(2,1fr)}
+      .contact-band{grid-template-columns:1fr}
+    }
+    @media(max-width:760px){
+      .belief-grid,.principle-grid,.time-back-grid,.philosophy-strip{grid-template-columns:1fr}
+      .philosophy-arrow{transform:rotate(90deg);text-align:center}
+    }
   </style>
   <link rel="stylesheet" href="brand.css?v=20261001-1">
 </head>
@@ -65,63 +110,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </header>
 
   <section class="section about-hero">
-    <div class="about-hero-grid">
-      <div>
-        <p class="eyebrow">WHY IT EXISTS</p>
-        <h1>More time for the work that actually needs you.</h1>
-        <p class="lead">Getting products online should support the business, not consume the person running it. penstack exists to reduce the repetitive work between “the product exists” and “the product is ready to sell.”</p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://app.penstack.co/?start=free">Start free →</a>
-          <span class="microcopy">Set up in minutes. No credit card required.</span>
-        </div>
+    <div>
+      <p class="eyebrow">ABOUT PENSTACK</p>
+      <h1>More time for the work that actually needs you.</h1>
+      <p class="lead">penstack exists to reduce the repetitive work between “the product exists” and “the product is ready to sell,” without taking the judgment, creativity, or product knowledge out of your hands.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="https://app.penstack.co/?start=free">Start free →</a>
+        <a class="button secondary" href="product.html">See the product</a>
       </div>
-      <aside class="about-belief">
-        <p class="eyebrow green">THE BELIEF</p>
-        <h2>The valuable work is not the repetitive work.</h2>
-        <p>Your judgment, taste, strategy, customer understanding, merchandising instincts, and creative decisions are valuable. Copying information between tools, rebuilding context, cleaning up fields, and repeating the same setup steps are not where your best attention belongs.</p>
+    </div>
+    <div>
+      <img class="about-hero-art" src="penstack-product-complete-process.webp" width="1254" height="1254" loading="eager" fetchpriority="high" decoding="async" alt="Connected Shopify product workflow moving from product information through review and publishing">
+    </div>
+  </section>
+
+  <section class="section origin-section">
+    <div class="origin-grid">
+      <div class="origin-copy">
+        <p class="eyebrow green">BUILT FROM THE WORK</p>
+        <h2>penstack started with a question: why does getting a product online take so much time?</h2>
+        <p>After years working across product, marketing, customer experience, and ecommerce, I kept seeing the same pattern. The strategy and creative decisions were not usually the problem. It was everything between having the product and having a complete, accurate listing ready to publish.</p>
+        <p>Descriptions. SEO. Images. Product details. Tags. Collections. Review. Moving information between tools. Rebuilding context that already existed.</p>
+        <p>None of it seemed enormous on its own. Together, it could swallow hours.</p>
+        <div class="pull">Saving time is the feature. Giving time back is the reason.</div>
+        <p>penstack grew out of wanting those hours back, first for myself, and then for other people doing the same work. The goal is not to replace the judgment, creativity, or product knowledge that makes the work good. It is to spend less of your time on the repetitive middle so you can put that time somewhere better.</p>
+      </div>
+      <aside class="founder-card">
+        <span class="founder-kicker">FOUNDER</span>
+        <h3>Mallory Odom</h3>
+        <p class="role">Product + Marketing</p>
+        <p>penstack was shaped by years of product and marketing work where strategy, customer context, and execution all had to meet in the same place. The product reflects that bias: keep the work connected, make the repetitive parts lighter, and leave the final judgment with the person doing the work.</p>
       </aside>
-    </div>
-  </section>
-
-  <section class="section soft">
-    <div class="section-heading">
-      <p class="eyebrow green">WHAT WE BELIEVE</p>
-      <h2>Good software should give people leverage, not another place to work.</h2>
-      <p>penstack is built around a few simple ideas that shape the product more than any individual feature does.</p>
-    </div>
-    <div class="belief-grid">
-      <article class="belief-card"><div class="feature-icon">⌛</div><h3>Time is the scarce resource.</h3><p>Saving a few clicks is nice. Giving someone hours back across repeated product work is better.</p></article>
-      <article class="belief-card"><div class="feature-icon">✓</div><h3>Humans should keep the judgment.</h3><p>penstack should reduce repetition without removing the person who understands the product, brand, and customer.</p></article>
-      <article class="belief-card"><div class="feature-icon">↗</div><h3>The workflow matters more than one output.</h3><p>A faster paragraph does not solve a fragmented process. penstack is designed around the full path to publish.</p></article>
-    </div>
-  </section>
-
-  <section class="section compact">
-    <div class="origin-band">
-      <div>
-        <p class="eyebrow green">WHERE IT CAME FROM</p>
-        <h2>penstack started with a very ordinary frustration.</h2>
-        <p>Product work kept revealing the same pattern: the strategy was interesting, the creative work mattered, but getting a complete product online required too many repetitive steps spread across too many places.</p>
-        <p>Descriptions, SEO work, image details, product fields, organization, review, and publishing all needed attention. None of those tasks was especially difficult on its own. Together, they ate the day.</p>
-      </div>
-      <div class="origin-points">
-        <div class="origin-point"><strong>The problem was not a blank page.</strong><span>It was the chain of work surrounding the product.</span></div>
-        <div class="origin-point"><strong>The problem was not a lack of AI.</strong><span>It was having to stitch separate tools and outputs back into Shopify.</span></div>
-        <div class="origin-point"><strong>The opportunity was the workflow.</strong><span>Keep the work connected, reduce repeat setup, and let the person focus on the decisions.</span></div>
-      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="section-heading">
-      <p class="eyebrow green">HOW THAT BELIEF SHAPES THE PRODUCT</p>
-      <h2>penstack is built to remove friction without removing control.</h2>
+      <p class="eyebrow green">WHY PENSTACK EXISTS</p>
+      <h2>More than a description generator.</h2>
+      <p>The blank page is only one part of the job. penstack is built around the messy middle that turns product information into a complete Shopify listing.</p>
+    </div>
+    <div class="belief-grid">
+      <article class="belief-card"><div class="belief-icon">↓</div><h3>Less busywork</h3><p>Keep content, SEO, images, product details, merchandising, review, and publishing in one connected workflow.</p></article>
+      <article class="belief-card"><div class="belief-icon">↻</div><h3>More consistency</h3><p>Reuse relevant product, search, and store context instead of rebuilding it every time.</p></article>
+      <article class="belief-card"><div class="belief-icon">✓</div><h3>More control</h3><p>Nothing goes live until you review the work and decide what is ready to publish.</p></article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="section-heading">
+      <p class="eyebrow green">WHAT GUIDES THE PRODUCT</p>
+      <h2>Practical, accurate, and still in your hands.</h2>
     </div>
     <div class="principle-grid">
-      <article class="principle-card"><h3>Start with what already exists.</h3><p>Do not make people rebuild product context if Shopify already has useful information. penstack starts from the product and moves forward from there.</p></article>
-      <article class="principle-card"><h3>Keep related work together.</h3><p>Content, discovery, image details, product information, merchandising, review, and publishing belong to the same product journey.</p></article>
-      <article class="principle-card"><h3>Build strategy into execution.</h3><p>SEO strategy is only useful when it actually reaches the product. penstack is designed to help carry long-tail search direction into the work instead of leaving it in a separate document.</p></article>
-      <article class="principle-card"><h3>Keep the final decision human.</h3><p>Drafts are starting points. Review matters. Positioning matters. Accuracy matters. The person still decides what is ready to publish.</p></article>
+      <article class="principle-card"><h3>Human in the loop</h3><p>AI prepares the work. You review, edit, and decide what gets published.</p></article>
+      <article class="principle-card"><h3>Structured product content</h3><p>Descriptions, SEO, images, product details, and merchandising are treated as one product journey.</p></article>
+      <article class="principle-card"><h3>Reuse what you already know</h3><p>Start from existing Shopify product information instead of rebuilding useful context from scratch.</p></article>
+      <article class="principle-card"><h3>Built for real workflows</h3><p>Designed for solo merchants, growing teams, and multi-store operations without turning Penstack into another place to manage work.</p></article>
     </div>
   </section>
 
@@ -137,29 +182,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="section compact soft">
+  <section class="section time-back">
     <div class="section-heading">
       <p class="eyebrow green">WHAT WE ARE TRYING TO GIVE BACK</p>
       <h2>The outcome is not “more AI.” It is more useful time.</h2>
     </div>
-    <div class="about-proof">
-      <article><strong>More room for strategy</strong><p>Think about what to launch, how to position it, and what customers actually need.</p></article>
-      <article><strong>More room for creativity</strong><p>Spend energy on the brand, the product, the campaign, and the work only you can do.</p></article>
-      <article><strong>More room to log off</strong><p>Efficiency should not always become another task. Sometimes getting the work done faster should simply mean being done.</p></article>
+    <div class="time-back-grid">
+      <article class="time-back-card"><strong>More room for strategy</strong><p>Think about what to launch, how to position it, and what customers actually need.</p></article>
+      <article class="time-back-card"><strong>More room for creativity</strong><p>Spend energy on the brand, the product, the campaign, and the work only you can do.</p></article>
+      <article class="time-back-card"><strong>More room to log off</strong><p>Efficiency should not always become another task. Sometimes getting the work done faster should simply mean being done.</p></article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="contact-band">
+      <div>
+        <p class="eyebrow green">CONTACT</p>
+        <h2>Questions, feedback, or something we should know?</h2>
+        <p>If you have a product question, feedback, a partnership idea, or something in the workflow that is getting in your way, reach out. penstack is still close to the people using it.</p>
+      </div>
+      <a class="button secondary" href="mailto:support@penstack.co">support@penstack.co</a>
     </div>
   </section>
 
   <section class="final-cta">
-    <p class="eyebrow green">LESS GRUNT WORK. MORE OF WHAT MATTERS.</p>
-    <h2>Get back to the work that needs your brain.</h2>
-    <p>penstack was built to give the repetitive middle a better system, so your attention can go somewhere more useful.</p>
-    <a class="button primary" href="product.html">See how penstack works →</a>
+    <p class="eyebrow green">START WITH ONE PRODUCT YOU KNOW WELL</p>
+    <h2>See what giving the repetitive middle a better system feels like.</h2>
+    <p>Prepare the work, review the result, and publish only the changes you approve.</p>
+    <a class="button primary" href="https://app.penstack.co/?start=free">Start free →</a>
+    <span class="microcopy">No credit card required.</span>
   </section>
 
   <footer>
     <a class="brand" href="index.html"><img src="penstack_logo.png" alt="penstack"></a>
     <p>Less grunt work. More time with your craft.</p>
-    <nav class="footer-links" aria-label="Legal and support"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+    <nav class="footer-links" aria-label="Legal and support"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="mailto:support@penstack.co">Contact</a></nav>
     <span>© 2026 penstack</span>
   </footer>
 </main>
