@@ -86,22 +86,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .philosophy-side p{margin:0;color:var(--muted);line-height:1.5}
     .philosophy-arrow{font-size:32px;color:var(--green);font-weight:800}
 
-    .time-back{background:#eef7f1}
+    .time-back{background:#fbfaf5}
     .time-back .section-heading h2{color:var(--navy)}
     .time-back .section-heading p{color:var(--muted)}
     .time-back .eyebrow{color:var(--green)}
-    .time-back-quote{max-width:980px;margin:0 0 28px;font-size:clamp(28px,4vw,48px);line-height:1.08;letter-spacing:-.035em;font-weight:800;color:var(--navy)}
+    .time-back-quote{max-width:980px;margin:0 0 34px;font-size:clamp(30px,4vw,50px);line-height:1.08;letter-spacing:-.035em;font-weight:800;color:var(--navy)}
     .time-back-quote span{color:var(--green)}
-    .time-back-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .time-back-card{padding:0;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}
-    .time-back-art{height:132px;display:grid;place-items:center;border-bottom:1px solid var(--line)}
+    .time-back-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .time-back-card{display:grid;grid-template-columns:56px 1fr;gap:16px;align-items:start;padding:26px 28px;background:transparent;border:0;border-right:1px solid var(--line);border-radius:0}
+    .time-back-card:last-child{border-right:0}
+    .time-back-art{display:grid;place-items:center;width:56px;height:56px;border-radius:14px;border:1px solid var(--line);background:#fff}
     .time-back-card:nth-child(1) .time-back-art{background:#eef5fb}
     .time-back-card:nth-child(2) .time-back-art{background:#fff8e8}
     .time-back-card:nth-child(3) .time-back-art{background:#f4eefb}
-    .time-back-art svg{width:112px;height:88px}
-    .time-back-copy{padding:20px 22px 22px}
-    .time-back-card strong{display:block;margin-bottom:7px;font-size:19px;color:var(--navy)}
-    .time-back-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .time-back-art svg{width:34px;height:34px}
+    .time-back-copy{padding:0}
+    .time-back-card strong{display:block;margin:0 0 7px;font-size:18px;color:var(--navy)}
+    .time-back-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.5}
+    @media(max-width:900px){
+      .time-back-grid{grid-template-columns:1fr}
+      .time-back-card{border-right:0;border-bottom:1px solid var(--line)}
+      .time-back-card:last-child{border-bottom:0}
+    }
 
     .contact-band{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:30px;border:1px solid var(--line);border-radius:18px;background:#eef5fb}
     .contact-band h2{margin:0 0 8px;font-size:clamp(32px,4vw,46px)}
@@ -237,15 +243,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="time-back-quote">Saving time is the feature. <span>Giving time back is the reason.</span></div>
     <div class="time-back-grid">
       <article class="time-back-card">
-        <div class="time-back-art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none"><rect x="18" y="12" width="84" height="58" rx="8" fill="#fff" stroke="#17324d" stroke-width="3"/><path d="M31 55 48 38l12 10 15-18 16 25" stroke="#2f78c4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 78h56" stroke="#17324d" stroke-width="4" stroke-linecap="round"/></svg></div>
+        <div class="time-back-art" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M7 26V9h22" stroke="#17324d" stroke-width="2.5" stroke-linecap="round"/><path d="m9 23 7-7 5 4 7-9" stroke="#2f78c4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="time-back-copy"><strong>More room for strategy</strong><p>Think about what to launch, how to position it, and what customers actually need.</p></div>
       </article>
       <article class="time-back-card">
-        <div class="time-back-art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none"><path d="M28 65 55 20l12 9-27 45-17 5 5-14Z" fill="#fff" stroke="#17324d" stroke-width="3" stroke-linejoin="round"/><path d="M66 27 82 11" stroke="#f0aa17" stroke-width="4" stroke-linecap="round"/><path d="M75 38 99 34" stroke="#e4542f" stroke-width="4" stroke-linecap="round"/><path d="M58 16 57 5" stroke="#0f6b4f" stroke-width="4" stroke-linecap="round"/></svg></div>
+        <div class="time-back-art" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M10 27 21 8l5 3-11 19-7 2 2-5Z" stroke="#17324d" stroke-width="2.5" stroke-linejoin="round"/><path d="M26 8l3-3M28 14l4-1M21 6V2" stroke="#f0aa17" stroke-width="2.5" stroke-linecap="round"/></svg></div>
         <div class="time-back-copy"><strong>More room for creativity</strong><p>Spend energy on the brand, the product, the campaign, and the work only you can do.</p></div>
       </article>
       <article class="time-back-card">
-        <div class="time-back-art" aria-hidden="true"><svg viewBox="0 0 120 90" fill="none"><circle cx="60" cy="43" r="28" fill="#fff" stroke="#17324d" stroke-width="3"/><path d="M60 43 60 25M60 43 76 51" stroke="#0f6b4f" stroke-width="4" stroke-linecap="round"/><path d="M33 74h54" stroke="#17324d" stroke-width="4" stroke-linecap="round"/></svg></div>
+        <div class="time-back-art" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><circle cx="18" cy="17" r="11" stroke="#17324d" stroke-width="2.5"/><path d="M18 17V10M18 17l6 3" stroke="#0f6b4f" stroke-width="2.5" stroke-linecap="round"/><path d="M10 31h16" stroke="#17324d" stroke-width="2.5" stroke-linecap="round"/></svg></div>
         <div class="time-back-copy"><strong>More room to log off</strong><p>Efficiency should not always become another task. Sometimes getting the work done faster should simply mean being done.</p></div>
       </article>
     </div>
