@@ -1,0 +1,53 @@
+name: Optimize Batch 4B Images
+
+on:
+  push:
+    paths:
+      - ".github/workflows/optimize-batch-4b.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install WebP tools
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Convert blog card images
+        run: |
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "anatomy-of-a-great-product-listing.png" -o "anatomy-of-a-great-product-listing.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "Shoe in the search spotlight-1.png" -o "Shoe in the search spotlight-1.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "T-shirt tags and collection folders-4.png" -o "T-shirt tags and collection folders-4.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "Running Shoe Photo With Alt Text-3.png" -o "Running Shoe Photo With Alt Text-3.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "Crafting a clear product description-2.png" -o "Crafting a clear product description-2.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "product-titles-101.png" -o "product-titles-101.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "social-media-hashtags-seo.png" -o "social-media-hashtags-seo.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "product-tags-two-jobs.png" -o "product-tags-two-jobs.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "long-tail-keywords.png" -o "long-tail-keywords.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "how-collections-can-become-search-landing-pages.png" -o "how-collections-can-become-search-landing-pages.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "Three bubbles, one clear voice-5.png" -o "Three bubbles, one clear voice-5.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "product-image-metadata-filenames-alt-text-visible-copy.png" -o "product-image-metadata-filenames-alt-text-visible-copy.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "refresh-existing-product-without-starting-over.png" -o "refresh-existing-product-without-starting-over.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "ai-seo-how-ai-changes-search.png" -o "ai-seo-how-ai-changes-search.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "image-accessibility-qa-standard.png" -o "image-accessibility-qa-standard.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "One-variable product page test-6.png" -o "One-variable product page test-6.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "final-product-taxonomy-before-catalog-becomes-a-mess.png" -o "final-product-taxonomy-before-catalog-becomes-a-mess.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "final-agencies-onboard-new-ecommerce-client-penstack.png" -o "final-agencies-onboard-new-ecommerce-client-penstack.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "final-audit-inherited-shopify-catalog.png" -o "final-audit-inherited-shopify-catalog.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "final-product-listing-qa-standard-team.png" -o "final-product-listing-qa-standard-team.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "final-one-account-multiple-brands-separate-stores.png" -o "final-one-account-multiple-brands-separate-stores.webp"
+
+      - name: Commit optimized images and remove one-time workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add *.webp
+          git rm .github/workflows/optimize-batch-4b.yml
+          git commit -m "Optimize Batch 4B blog card images to WebP"
+          git push
