@@ -50,24 +50,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .matrix-legend .lg-partial{background:#d89b10}
     .matrix-legend .lg-manual{background:#8b7882}
     .matrix-wrap{overflow:auto;max-height:760px;border:1px solid var(--line);border-radius:16px;background:#fff}
-    .matrix{width:100%;min-width:1120px;border-collapse:separate;border-spacing:0}
-    .matrix th,.matrix td{padding:12px 13px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    .matrix{width:100%;min-width:1180px;border-collapse:separate;border-spacing:0}
+    .matrix th,.matrix td{padding:11px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:middle;text-align:left}
     .matrix th:last-child,.matrix td:last-child{border-right:0}
-    .matrix thead th{position:sticky;top:0;z-index:4;background:var(--navy);color:#fff;font-size:12px;line-height:1.3}
-    .matrix thead th:first-child{left:0;z-index:6}
-    .matrix tbody th[scope="row"]{position:sticky;left:0;z-index:2;width:205px;background:#fff;color:var(--navy);font-size:12.5px;line-height:1.35}
-    .matrix td{font-size:12.5px;line-height:1.4;color:var(--muted)}
-    .matrix td strong{display:block;margin-bottom:2px;color:var(--navy);font-size:12px}
-    .matrix .penstack-col{background:#f3faf5}
+    .matrix thead th{position:sticky;top:0;z-index:5;background:var(--navy);color:#fff;font-size:12px;line-height:1.25}
+    .matrix thead th:nth-child(1){left:0;z-index:8;width:120px}
+    .matrix thead th:nth-child(2){left:120px;z-index:7;width:205px}
+    .matrix tbody .category-cell{position:sticky;left:0;z-index:3;width:120px;color:var(--navy);font-size:11px;font-weight:800;letter-spacing:.02em;text-transform:uppercase}
+    .matrix tbody th[scope="row"]{position:sticky;left:120px;z-index:2;width:205px;background:#fff;color:var(--navy);font-size:12.5px;line-height:1.3}
+    .matrix td{font-size:12.25px;line-height:1.35;color:var(--muted)}
+    .matrix .penstack-col{background:#eef8f1}
     .matrix thead .penstack-col{background:#0f6b4f}
-    .matrix .section-row th{position:static;left:auto;background:#fff8ec;color:var(--navy);font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-    .matrix .section-row.seo th{background:#eef7f1}
-    .matrix .section-row.merch th{background:#fff6d9}
-    .matrix .section-row.workflow th{background:#fff0e8}
-    .status{font-weight:800}
-    .yes{color:var(--green)}
-    .partial{color:#9a6814}
-    .manual{color:#7a6773}
+    .category-content{background:#eaf5ff}
+    .category-seo{background:#eaf7f1}
+    .category-merch{background:#fff6d9}
+    .category-workflow{background:#fff0e8}
+    .status-line{display:flex;align-items:flex-start;gap:7px}
+    .status-dot{display:inline-grid;place-items:center;flex:0 0 17px;width:17px;height:17px;margin-top:1px;border-radius:50%;color:#fff;font-size:10px;font-weight:900;line-height:1}
+    .status-dot.yes{background:var(--green)}
+    .status-dot.partial{background:#d89b10}
+    .status-dot.manual{background:#8b7882}
+    .status-copy{display:block}
+    .status-copy strong{display:block;margin:0 0 2px;color:var(--navy);font-size:12px}
+    .status-copy span{display:block;color:var(--muted)}
+    .matrix-note{font-size:11.5px;color:var(--muted)}
     .comparison-takeaways{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:18px}
     .takeaway-card{padding:22px;border:1px solid var(--line);border-radius:16px;background:#f6fafc}
     .takeaway-card.detail{background:#f7f3fb}
@@ -192,132 +198,133 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <table class="matrix">
         <thead>
           <tr>
+            <th scope="col">Category</th>
             <th scope="col">Capability</th>
-            <th scope="col">Shopify Magic + Sidekick</th>
-            <th scope="col">General AI + manual Shopify</th>
+            <th scope="col">Shopify-native AI</th>
             <th scope="col">Jasper</th>
+            <th scope="col">General AI + manual Shopify</th>
             <th scope="col" class="penstack-col">penstack</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="section-row"><th colspan="5" scope="colgroup">Content</th></tr>
           <tr>
+            <th class="category-cell category-content" scope="rowgroup" rowspan="3">Content</th>
             <th scope="row">Product descriptions</th>
-            <td><strong class="yes">Yes</strong>Native AI generation</td>
-            <td><strong class="yes">Yes</strong>Generate, then transfer</td>
-            <td><strong class="yes">Yes</strong>Product-description and PDP workflows</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Editable inside the product workflow</td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Native AI generation</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Product-description and PDP workflows</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Generate, then transfer</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Editable inside the product workflow</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Brand Voice</th>
-            <td><strong class="partial">Partial</strong>Tone can be prompted</td>
-            <td><strong class="partial">Partial</strong>Depends on saved instructions and setup</td>
-            <td><strong class="yes">Yes</strong>Dedicated Brand Voice system</td>
-            <td class="penstack-col"><strong class="yes">Yes, paid</strong>Applied to product drafts</td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Tone can be prompted</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Dedicated Brand Voice system</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Depends on saved instructions and setup</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes, paid</strong><span>Applied to product drafts</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Features + care content</th>
-            <td><strong class="partial">Partial</strong>Can be generated in copy</td>
-            <td><strong class="partial">Partial</strong>Prompt-dependent</td>
-            <td><strong class="yes">Yes</strong>Can support structured PDP content</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Handled with product content</td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Can be generated in copy</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Can support structured PDP content</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Prompt-dependent</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Handled with product content</span></span></div></td>
           </tr>
 
-          <tr class="section-row seo"><th colspan="5" scope="colgroup">SEO + discovery</th></tr>
           <tr>
+            <th class="category-cell category-seo" scope="rowgroup" rowspan="5">SEO + discovery</th>
             <th scope="row">Long-tail keyword strategy</th>
-            <td><strong class="partial">Partial</strong>Keywords can be prompted into descriptions</td>
-            <td><strong class="partial">Partial</strong>Supply direction through prompts or saved context</td>
-            <td><strong class="yes">Yes</strong>Broader SEO and keyword workflows</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Apply search intent through supplied product context</td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Keywords can be prompted into descriptions</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Broader SEO and keyword workflows</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Supply direction through prompts or saved context</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Apply search intent through supplied product context</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">SEO context across products</th>
-            <td><strong class="partial">Partial</strong>Use prompts and existing store context</td>
-            <td><strong class="manual">Manual</strong>Requires prompts, docs, or another system</td>
-            <td><strong class="yes">Yes</strong>Can scale SEO workflows across content inventories</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Reuse relevant search and collection context</td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Use prompts and existing store context</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Can scale SEO workflows across content inventories</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual</strong><span>Requires prompts, docs, or another system</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Reuse relevant search and collection context</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Search-oriented product copy</th>
-            <td><strong class="yes">Yes</strong>SEO-focused description prompts</td>
-            <td><strong class="yes">Yes</strong>Prompt-driven</td>
-            <td><strong class="yes">Yes</strong>Search-ready PDP/content workflows</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Product workflow + human review</td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>SEO-focused description prompts</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Search-ready PDP/content workflows</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Prompt-driven</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Product workflow + human review</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Alt text support</th>
-            <td><strong class="manual">Mostly manual</strong>Shopify documents alt text as an SEO/accessibility task</td>
-            <td><strong class="partial">Partial</strong>Generate, then paste</td>
-            <td><strong class="partial">Partial</strong>Can generate image-related content</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Handled with product image work</td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Mostly manual</strong><span>Handled as an SEO/accessibility task</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Can generate image-related content</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Generate, then paste</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Handled with product image work</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Image naming support</th>
-            <td><strong class="manual">Manual</strong></td>
-            <td><strong class="partial">Partial</strong>Generate suggestions separately</td>
-            <td><strong class="partial">Partial</strong>Possible in broader workflows</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual</strong></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Possible in broader workflows</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Generate suggestions separately</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong></span></div></td>
           </tr>
 
-          <tr class="section-row merch"><th colspan="5" scope="colgroup">Product setup + merchandising</th></tr>
           <tr>
+            <th class="category-cell category-merch" scope="rowgroup" rowspan="4">Merchandising</th>
             <th scope="row">Retrieve Shopify product context</th>
-            <td><strong class="yes">Yes</strong>Native platform context</td>
-            <td><strong class="manual">Manual</strong>Context must be supplied</td>
-            <td><strong class="partial">Partial</strong>Product context can be loaded into knowledge assets</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Starts with the product already in Shopify</td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Native platform context</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Partial</strong><span>Product context can be loaded into knowledge assets</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual</strong><span>Context must be supplied</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Starts with the product already in Shopify</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Shopify custom fields</th>
-            <td><strong class="manual">Native but manual</strong>Managed in Shopify</td>
-            <td><strong class="manual">Manual transfer</strong></td>
-            <td><strong class="manual">Integration-dependent</strong></td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Part of the product workflow</td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Native, manual</strong><span>Managed in Shopify</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Integration-dependent</strong></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual transfer</strong></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Part of the product workflow</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Tags</th>
-            <td><strong class="yes">Yes</strong>Native Shopify functionality</td>
-            <td><strong class="manual">Manual transfer</strong></td>
-            <td><strong class="manual">Integration-dependent</strong></td>
-            <td class="penstack-col"><strong class="yes">Yes</strong></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Native Shopify functionality</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Integration-dependent</strong></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual transfer</strong></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong></span></div></td>
           </tr>
           <tr>
             <th scope="row">Collections</th>
-            <td><strong class="yes">Yes</strong>Sidekick supports collection-building tasks</td>
-            <td><strong class="manual">Manual transfer</strong></td>
-            <td><strong class="manual">Integration-dependent</strong></td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Included in product setup</td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Sidekick supports collection-building tasks</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Integration-dependent</strong></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual transfer</strong></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Included in product setup</span></span></div></td>
           </tr>
 
-          <tr class="section-row workflow"><th colspan="5" scope="colgroup">Workflow + control</th></tr>
           <tr>
+            <th class="category-cell category-workflow" scope="rowgroup" rowspan="4">Workflow + control</th>
             <th scope="row">Human review before publish</th>
-            <td><strong class="yes">Yes</strong>Merchant remains responsible for accuracy</td>
-            <td><strong class="yes">Yes</strong>Review drafts and transferred copy</td>
-            <td><strong class="yes">Yes</strong>Review and governance tools</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Core workflow step</td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Merchant remains responsible for accuracy</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Review and governance tools</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Review drafts and transferred copy</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Core workflow step</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Direct publish to Shopify</th>
-            <td><strong class="yes">Yes</strong>Native</td>
-            <td><strong class="manual">Usually manual</strong>Integration-dependent</td>
-            <td><strong class="manual">Integration-dependent</strong></td>
-            <td class="penstack-col"><strong class="yes">Yes</strong></td>
+            <td><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Native</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Integration-dependent</strong></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Usually manual</strong><span>Integration-dependent</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong></span></div></td>
           </tr>
           <tr>
             <th scope="row">Dedicated listing review step</th>
-            <td><strong class="partial">Merchant review</strong>Check changes in Shopify</td>
-            <td><strong class="partial">Setup-dependent</strong>Review draft and transferred fields</td>
-            <td><strong class="partial">Workflow-dependent</strong>Content review and governance tools</td>
-            <td class="penstack-col"><strong class="yes">Yes</strong>Review before publishing</td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Merchant review</strong><span>Check changes in Shopify</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Workflow-dependent</strong><span>Content review and governance tools</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Setup-dependent</strong><span>Review draft and transferred fields</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Yes</strong><span>Review before publishing</span></span></div></td>
           </tr>
           <tr>
             <th scope="row">Multi-store workflow</th>
-            <td><strong class="partial">Store-based</strong>Managed inside Shopify account/store structure</td>
-            <td><strong class="manual">Manual</strong>Depends on your setup</td>
-            <td><strong class="partial">Workspace-based</strong>Not Shopify-store operations by default</td>
-            <td class="penstack-col"><strong class="yes">Pro + Agency</strong>3 or 10 connected stores</td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Store-based</strong><span>Managed inside Shopify account/store structure</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot partial">–</span><span class="status-copy"><strong>Workspace-based</strong><span>Not Shopify-store operations by default</span></span></div></td>
+            <td><div class="status-line"><span class="status-dot manual">•</span><span class="status-copy"><strong>Manual</strong><span>Depends on your setup</span></span></div></td>
+            <td class="penstack-col"><div class="status-line"><span class="status-dot yes">✓</span><span class="status-copy"><strong>Pro + Agency</strong><span>3 or 10 connected stores</span></span></div></td>
           </tr>
         </tbody>
       </table>
