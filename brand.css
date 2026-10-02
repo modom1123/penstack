@@ -33,6 +33,18 @@
   --brand-blue: #2f78c4;
   --yellow-deep: #d89b10;
   --status-gray: #9aa5ad;
+
+  /* Shared component geometry + spacing */
+  --radius-control: 10px;
+  --radius-card: 16px;
+  --radius-panel: 20px;
+  --space-section-y: 72px;
+  --space-section-compact-y: 48px;
+  --space-card: 24px;
+  --space-card-compact: 20px;
+  --gap-grid: 18px;
+  --gap-split: 48px;
+  --border-default: 1px solid var(--line);
 }
 body, .resource-hub {
   font-family: var(--font-brand);
@@ -173,4 +185,101 @@ footer p { max-width: 24rem; }
 }
 @media (max-width: 560px) {
   .journey-card-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+
+/* Shared marketing-page component system */
+.section {
+  padding-top: var(--space-section-y);
+  padding-bottom: var(--space-section-y);
+}
+.section.compact {
+  padding-top: var(--space-section-compact-y);
+  padding-bottom: var(--space-section-compact-y);
+}
+
+.button,
+.contact-icon {
+  border-radius: var(--radius-control);
+}
+
+.feature-card,
+.use-card,
+.price-card,
+.step-card,
+.compare-card,
+.process-card,
+.capability-card,
+.proof-card,
+.fit-card,
+.strength-card,
+.takeaway-card,
+.value-step,
+.uc-more-card,
+.time-card,
+.control-card,
+.note,
+.context-point {
+  border-radius: var(--radius-card);
+}
+
+.home-belief,
+.before-after,
+.system-band,
+.review-visual,
+.uc-pattern,
+.seo-compare,
+.context-panel,
+.contact-band,
+.plan-table-wrap,
+.matrix-wrap {
+  border-radius: var(--radius-panel);
+}
+
+.price-card,
+.outcome-card,
+.proof-card {
+  padding: var(--space-card);
+}
+
+.fit-card,
+.process-card,
+.capability-card,
+.strength-card,
+.takeaway-card,
+.value-step,
+.uc-more-card,
+.control-card,
+.context-point {
+  padding: var(--space-card-compact);
+}
+
+.outcome-grid,
+.product-proof,
+.capability-grid,
+.quick-fit-grid,
+.strength-grid,
+.pricing-grid,
+.time-grid {
+  gap: var(--gap-grid);
+}
+
+.bridge-layout,
+.system-band,
+.human-review,
+.uc-row,
+.experience-grid,
+.control-grid {
+  column-gap: var(--gap-split);
+}
+
+@media (max-width: 760px) {
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .section.compact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
