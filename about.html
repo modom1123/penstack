@@ -41,17 +41,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .about-hero .text-link{color:var(--green);font-weight:800;text-decoration:none}
     .about-hero .text-link:hover{text-decoration:underline}
 
-    .experience-section{background:#eef7f1}
-    .experience-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:54px;align-items:center}
-    .experience-art{display:block;width:100%;height:auto}
+    .experience-section{background:#fbfaf5}
+    .experience-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:56px;align-items:end}
+    .experience-visual{align-self:end;display:flex;align-items:flex-end}
+    .experience-art{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:20px;background:#fff}
+    .experience-copy{align-self:end}
     .experience-copy h2{font-size:clamp(38px,4.4vw,58px);line-height:1.04;letter-spacing:-.035em;margin-bottom:16px}
-    .experience-copy>p:not(.eyebrow){color:var(--muted);font-size:16px;line-height:1.65}
-    .founder-note{margin:18px 0 22px;color:var(--navy);font-size:14px;font-weight:800}
-    .experience-points{display:grid;gap:12px}
-    .experience-point{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;padding:15px 16px;border:1px solid var(--line);border-radius:14px;background:#fff}
-    .experience-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#eef7f1;color:var(--green);font-size:18px;font-weight:900}
-    .experience-point strong{display:block;color:var(--navy);font-size:15px;margin:1px 0 4px}
-    .experience-point span{display:block;color:var(--muted);font-size:13px;line-height:1.45}
+    .experience-copy>p:not(.eyebrow){color:var(--muted);font-size:16px;line-height:1.62}
+    .founder-note{margin:18px 0 20px;color:var(--navy);font-size:14px;font-weight:800}
+    .experience-points{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .experience-point{display:block;padding:18px 18px 18px 0;background:transparent;border:0;border-right:1px solid var(--line);border-radius:0}
+    .experience-point:not(:first-child){padding-left:18px}
+    .experience-point:last-child{border-right:0}
+    .experience-icon{display:grid;place-items:center;width:34px;height:34px;margin-bottom:10px;border-radius:50%;background:#eef7f1;color:var(--green);font-size:15px;font-weight:900}
+    .experience-point strong{display:block;color:var(--navy);font-size:14px;margin:0 0 5px}
+    .experience-point span{display:block;color:var(--muted);font-size:12.5px;line-height:1.45}
 
     .time-section{background:#fbfaf5}
     .time-section .section-heading{max-width:780px}
@@ -86,6 +90,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     @media(max-width:1050px){
       .about-hero,.experience-grid,.control-grid{grid-template-columns:1fr}
       .about-hero-visual{max-width:780px}
+      .experience-points{grid-template-columns:1fr}
+      .experience-point,.experience-point:not(:first-child){padding:16px 0;border-right:0;border-bottom:1px solid var(--line)}
+      .experience-point:last-child{border-bottom:0}
       .time-grid{grid-template-columns:1fr}
       .control-points{grid-template-columns:1fr}
       .contact-band{grid-template-columns:1fr}
@@ -138,15 +145,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="section experience-section">
     <div class="experience-grid">
-      <div>
-        <img class="experience-art" src="penstack-product-complete-process.webp" width="1254" height="1254" loading="lazy" decoding="async" alt="Connected Penstack product workflow from product information through a complete Shopify listing">
+      <div class="experience-visual">
+        <img class="experience-art" src="assets/illustrations/penstack-illustration-review-v1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Penstack review workflow showing a product listing and approval checklist">
       </div>
       <div class="experience-copy">
         <p class="eyebrow green">WHY PENSTACK EXISTS</p>
         <h2>Built from experience, not theory.</h2>
         <p>After years working across product, marketing, customer experience, and ecommerce, I kept seeing the same pattern: the strategy and creative decisions were rarely the problem. The time disappeared in everything surrounding them.</p>
-        <p>Descriptions, SEO, images, product details, tags, collections, review, and moving information between tools all had to come together before a product was actually ready to sell.</p>
-        <p>penstack grew out of wanting those hours back, first for myself, and then for other people doing the same work.</p>
+        <p>Descriptions, SEO, images, product details, merchandising, review, and publishing all had to come together before a product was actually ready to sell. penstack grew out of wanting those hours back, first for myself, and then for other people doing the same work.</p>
         <div class="founder-note">Mallory Odom · Founder · Product + Marketing</div>
 
         <div class="experience-points">
