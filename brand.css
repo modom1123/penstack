@@ -18,6 +18,21 @@
   --leading-body: 1.60;
   --tracking-display: -.045em;
   --tracking-section: -.035em;
+
+  /* Shared penstack marketing palette */
+  --white: #ffffff;
+  --surface-neutral: #fbfaf5;
+  --tint-green: #eef7f1;
+  --tint-blue: #eaf5ff;
+  --tint-yellow: #fff6d9;
+  --tint-orange: #fff0e8;
+  --border-green: #d8e9dd;
+  --border-blue: #d7e6f3;
+  --border-yellow: #f0dfb9;
+  --border-orange: #edd8bc;
+  --brand-blue: #2f78c4;
+  --yellow-deep: #d89b10;
+  --status-gray: #9aa5ad;
 }
 body, .resource-hub {
   font-family: var(--font-brand);
