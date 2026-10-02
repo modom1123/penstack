@@ -30,28 +30,90 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
 <link rel="stylesheet" href="styles.css?v=19">
   <style>
-    .pricing-intro{max-width:780px}
-    .pricing-grid{align-items:stretch}
-    .price-card{display:flex;flex-direction:column;position:relative}
-    .price-card h3{font-size:2.25rem;line-height:1.1;letter-spacing:-.035em;margin-bottom:12px}
-    .price-card .button{margin-top:auto}
-    .plan-kicker{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
-    .annual-price{margin:-4px 0 10px;font-size:13px;color:var(--green);font-weight:800}
+    .pricing-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(380px,.85fr);gap:46px;align-items:center}
+    .pricing-intro{max-width:760px}
+    .pricing-hero-art{display:block;width:100%;height:auto;max-width:620px;margin:0 auto}
+    .pricing-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:stretch}
+    .price-card{display:flex;flex-direction:column;position:relative;padding:24px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .price-card.free{background:#fff}
+    .price-card.solo{background:#eef7f1;border-color:#d8e9dd}
+    .price-card.pro{background:#eef5fb;border-color:#d7e6f3}
+    .price-card.agency{background:#fff8e8;border-color:#f0dfb9}
+    .price-card h3{font-size:2.05rem;line-height:1.05;letter-spacing:-.035em;margin:0 0 6px}
+    .plan-kicker{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+    .plan-tagline{min-height:42px;margin:0 0 12px;color:var(--muted);font-size:13px;line-height:1.45}
+    .price{font-size:2.25rem;font-weight:800;color:var(--navy);letter-spacing:-.04em}
+    .price span{font-size:14px;font-weight:600;color:var(--muted);letter-spacing:0}
+    .annual-price{margin:2px 0 14px;font-size:12px;color:var(--green);font-weight:800}
     .annual-price span{color:var(--muted);font-weight:600}
-    .plan-value{font-size:13px;line-height:1.45;color:var(--muted);margin:10px 0 18px}
-    .plan-includes{display:grid;gap:8px;margin:18px 0 24px;padding:0;list-style:none}
-    .plan-includes li{font-size:13px;color:var(--muted);line-height:1.4;padding-left:19px;position:relative}
+    .plan-specs{display:grid;gap:9px;margin:4px 0 18px}
+    .plan-spec{display:grid;grid-template-columns:24px 1fr;gap:8px;align-items:start}
+    .plan-spec-icon{display:grid;place-items:center;width:22px;height:22px;border-radius:7px;background:rgba(23,50,77,.07);color:var(--navy);font-weight:900;font-size:12px}
+    .plan-spec strong{display:block;color:var(--navy);font-size:13px;line-height:1.25}
+    .plan-spec span{display:block;color:var(--muted);font-size:12px;line-height:1.35}
+    .plan-value{font-size:13px;line-height:1.45;color:var(--muted);margin:0 0 18px}
+    .plan-includes{display:grid;gap:7px;margin:0 0 22px;padding:0;list-style:none}
+    .plan-includes li{font-size:12.5px;color:var(--muted);line-height:1.4;padding-left:18px;position:relative}
     .plan-includes li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:900}
-    .value-ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-    .value-step{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}
-    .value-step strong{display:block;font-size:18px;margin-bottom:6px}.value-step span{display:block;color:var(--green);font-weight:800;font-size:12px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px}.value-step p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
-    .plan-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff}.plan-table{margin:0;min-width:920px}.plan-table td:first-child{font-weight:700;color:var(--navy)}
-    .strategy-row td{background:#fff8ec!important}.strategy-row td:first-child{color:var(--green)}
-    .context-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:start;padding:30px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}
-    .context-panel h2{font-size:clamp(34px,4vw,48px)}.context-panel p{color:var(--muted);line-height:1.55}.context-points{display:grid;gap:12px}.context-point{padding:17px;background:#fff;border:1px solid var(--line);border-radius:12px}.context-point strong{display:block;margin-bottom:4px}.context-point span{color:var(--muted);font-size:13px;line-height:1.45}
-    .pricing-note{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pricing-note .note{height:100%}
-    @media(max-width:1050px){.value-ladder{grid-template-columns:repeat(2,1fr)}.context-panel{grid-template-columns:1fr}}
-    @media(max-width:760px){.value-ladder,.pricing-note{grid-template-columns:1fr}.price-card h3{font-size:1.875rem}}
+    .price-card .button{margin-top:auto}
+    .usage-band{display:grid;grid-template-columns:1.2fr repeat(4,1fr);margin-top:18px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+    .usage-band>div{padding:18px;border-right:1px solid var(--line)}
+    .usage-band>div:last-child{border-right:0}
+    .usage-band h3{margin:0 0 6px;font-size:18px}
+    .usage-band strong{display:block;color:var(--navy);font-size:12px;margin-bottom:4px}
+    .usage-band span{display:block;color:var(--muted);font-size:11.5px;line-height:1.4}
+    .value-ladder{display:grid;grid-template-columns:repeat(7,auto);gap:10px;align-items:stretch}
+    .value-step{padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;min-width:0}
+    .value-step.free{background:#fff}
+    .value-step.solo{background:#eef7f1}
+    .value-step.pro{background:#eef5fb}
+    .value-step.agency{background:#fff8e8}
+    .value-step strong{display:block;font-size:17px;margin-bottom:6px}
+    .value-step span{display:block;color:var(--green);font-weight:800;font-size:11px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px}
+    .value-step p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+    .ladder-arrow{display:grid;place-items:center;color:var(--green);font-size:22px;font-weight:900}
+    .plan-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .plan-table{width:100%;min-width:980px;margin:0;border-collapse:separate;border-spacing:0}
+    .plan-table th,.plan-table td{padding:11px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+    .plan-table th:last-child,.plan-table td:last-child{border-right:0}
+    .plan-table thead th{position:sticky;top:0;z-index:4;background:var(--navy);color:#fff;font-size:12px}
+    .plan-table thead th:first-child{left:0;z-index:7;width:120px}
+    .plan-table thead th:nth-child(2){left:120px;z-index:6;width:240px}
+    .plan-table tbody .category-cell{position:sticky;left:0;z-index:3;width:120px;color:var(--navy);font-size:11px;font-weight:800;text-transform:uppercase}
+    .plan-table tbody th[scope="row"]{position:sticky;left:120px;z-index:2;width:240px;background:#fff;color:var(--navy);font-size:12.5px}
+    .plan-table td{font-size:12.5px;color:var(--muted);text-align:center}
+    .plan-table .category-content{background:#eaf5ff}
+    .plan-table .category-seo{background:#eaf7f1}
+    .plan-table .category-merch{background:#fff6d9}
+    .plan-table .category-workflow{background:#f4eefb}
+    .plan-table .plan-solo{background:#f5fbf7}
+    .plan-table .plan-pro{background:#f5f9fd}
+    .plan-table .plan-agency{background:#fffaf0}
+    .check{color:var(--green);font-weight:900}
+    .dash{color:#9a8c92}
+    .context-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center;padding:30px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}
+    .context-panel h2{font-size:clamp(34px,4vw,48px)}
+    .context-panel p{color:var(--muted);line-height:1.55}
+    .context-points{display:grid;gap:12px}
+    .context-point{padding:17px;background:#fff;border:1px solid var(--line);border-radius:12px}
+    .context-point strong{display:block;margin-bottom:4px}
+    .context-point span{color:var(--muted);font-size:13px;line-height:1.45}
+    .pricing-note{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .pricing-note .note{height:100%}
+    @media(max-width:1100px){
+      .pricing-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .pricing-hero{grid-template-columns:1fr}
+      .value-ladder{grid-template-columns:1fr}
+      .ladder-arrow{transform:rotate(90deg)}
+      .usage-band{grid-template-columns:1fr 1fr}
+      .usage-band>div{border-bottom:1px solid var(--line)}
+      .context-panel{grid-template-columns:1fr}
+    }
+    @media(max-width:760px){
+      .pricing-grid,.pricing-note{grid-template-columns:1fr}
+      .usage-band{grid-template-columns:1fr}
+      .price-card h3{font-size:1.875rem}
+    }
   </style>
   <link rel="stylesheet" href="brand.css?v=20261001-1">
 </head>
@@ -78,142 +140,136 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </header>
 
-  <section class="page-hero single">
+  <section class="page-hero pricing-hero">
     <div class="pricing-intro">
       <p class="eyebrow">PENSTACK PRICING</p>
-      <h1>Choose the plan that fits your store.</h1>
-      <p class="lead">Every plan includes product descriptions, SEO context, image text, tags, collections, review, and publishing. Solo adds Brand Voice. Pro and Agency add multiple stores and more monthly capacity.</p>
+      <h1>Start free. Scale as you grow.</h1>
+      <p class="lead">Every plan includes the core Shopify product workflow. Add Brand Voice, more monthly capacity, more team members, and more connected stores when the business needs them.</p>
+    </div>
+    <div>
+      <img class="pricing-hero-art" src="product_page_to_shopify_store.webp" width="1254" height="1254" loading="eager" fetchpriority="high" decoding="async" alt="Shopify product page moving through a connected product content workflow">
     </div>
   </section>
 
   <section class="section compact">
     <div class="pricing-grid">
-      <article class="price-card">
-        <div class="plan-kicker">START WITH REAL PRODUCTS</div>
+      <article class="price-card free">
+        <div class="plan-kicker">TRY THE WORKFLOW</div>
         <h3>Free</h3>
-        <p>For trying penstack on a real Shopify store.</p>
+        <p class="plan-tagline">For trying penstack on a real Shopify store.</p>
         <div class="price">Free</div>
-        <div class="allowance">10 published products / calendar month</div>
-        <p>1 store · 1 team member</p>
-        <p class="plan-value">Prepare and publish up to 10 products each calendar month.</p>
+        <div class="annual-price">No credit card required</div>
+        <div class="plan-specs">
+          <div class="plan-spec"><span class="plan-spec-icon">P</span><div><strong>10 products</strong><span>per calendar month</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">S</span><div><strong>1 store</strong><span>connected Shopify store</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">U</span><div><strong>1 team member</strong><span>single-user workspace</span></div></div>
+        </div>
+        <p class="plan-value">Use the core product workflow on up to 10 published products each calendar month.</p>
         <ul class="plan-includes">
-          <li>Product descriptions + supported details</li>
-          <li>Apply long-tail search context</li>
-          <li>Reuse SEO context across related products</li>
+          <li>Descriptions + supported details</li>
+          <li>Long-tail search context</li>
           <li>Alt text + image naming</li>
           <li>Tags + collections</li>
           <li>Review + publish to Shopify</li>
         </ul>
-        <a class="button primary" href="https://app.penstack.co/?start=free">Start free</a>
+        <a class="button secondary" href="https://app.penstack.co/?start=free">Start free</a>
       </article>
 
-      <article class="price-card">
-        <div class="plan-kicker">ADD YOUR BRAND VOICE</div>
+      <article class="price-card solo">
+        <div class="plan-kicker">ADD BRAND VOICE</div>
         <h3>Solo</h3>
-        <p>For one store that needs more monthly capacity and a consistent voice.</p>
+        <p class="plan-tagline">For one store that needs more monthly capacity and a consistent voice.</p>
         <div class="price">$39<span>/mo</span></div>
         <div class="annual-price">$395/year <span>· save about 16%</span></div>
-        <div class="allowance">100 published products / month</div>
-        <p>1 store · 2 team members</p>
-        <p class="plan-value">The core features from Free, with more capacity and Brand Voice.</p>
+        <div class="plan-specs">
+          <div class="plan-spec"><span class="plan-spec-icon">P</span><div><strong>100 products</strong><span>per month</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">S</span><div><strong>1 store</strong><span>connected Shopify store</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">U</span><div><strong>2 team members</strong><span>shared workspace</span></div></div>
+        </div>
+        <p class="plan-value">Everything in Free, with more capacity and Brand Voice.</p>
         <ul class="plan-includes">
-          <li>Everything in Free</li>
           <li>10-question Brand Voice quiz</li>
           <li>Brand-aligned product drafts</li>
-          <li>2 team members</li>
+          <li>Everything in Free</li>
         </ul>
-        <a class="button primary" href="https://app.penstack.co">Get started</a>
+        <a class="button primary" href="https://app.penstack.co">Start Solo</a>
       </article>
 
-      <article class="price-card">
-        <div class="plan-kicker">CONNECT MORE STORES</div>
+      <article class="price-card pro">
+        <div class="plan-kicker">ADD MULTI-STORE</div>
         <h3>Pro</h3>
-        <p>For teams managing up to three Shopify stores.</p>
+        <p class="plan-tagline">For teams managing up to three Shopify stores.</p>
         <div class="price">$99<span>/mo</span></div>
         <div class="annual-price">$995/year <span>· save about 16%</span></div>
-        <div class="allowance">400 pooled published products / month</div>
-        <p>3 stores · 5 team members</p>
-        <p class="plan-value">Share the product allowance. Keep each store’s context separate.</p>
+        <div class="plan-specs">
+          <div class="plan-spec"><span class="plan-spec-icon">P</span><div><strong>400 products</strong><span>pooled per month</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">S</span><div><strong>3 stores</strong><span>separate store context</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">U</span><div><strong>5 team members</strong><span>shared workspace</span></div></div>
+        </div>
+        <p class="plan-value">Share the allowance while each store keeps its own Brand Voice and SEO context.</p>
         <ul class="plan-includes">
           <li>Everything in Solo</li>
-          <li>3 connected stores</li>
           <li>Pooled usage across stores</li>
           <li>Separate Brand Voice by store</li>
           <li>Separate SEO context by store</li>
         </ul>
-        <a class="button primary" href="https://app.penstack.co">Get started</a>
+        <a class="button primary" href="https://app.penstack.co">Start Pro</a>
       </article>
 
-      <article class="price-card">
-        <div class="plan-kicker">MANAGE A STORE PORTFOLIO</div>
+      <article class="price-card agency">
+        <div class="plan-kicker">SCALE THE PORTFOLIO</div>
         <h3>Agency</h3>
-        <p>For agencies and operators managing up to ten Shopify stores.</p>
+        <p class="plan-tagline">For agencies and operators managing up to ten Shopify stores.</p>
         <div class="price">$249<span>/mo</span></div>
         <div class="annual-price">$2,495/year <span>· save about 16%</span></div>
-        <div class="allowance">1,500 pooled published products / month</div>
-        <p>10 stores · 8 team members</p>
-        <p class="plan-value">More monthly capacity, connected stores, and room for your team.</p>
-        <ul class="plan-includes">
-          <li>Everything in Pro</li>
-          <li>10 connected stores</li>
-          <li>1,500 pooled published products</li>
-          <li>Separate Brand Voice by store</li>
-          <li>Separate SEO context by store</li>
-        </ul>
-        <a class="button primary" href="https://app.penstack.co">Get started</a>
-      </article>
-    </div>
-
-    <div class="good-to-know">
-      <strong>A product only counts when it successfully publishes to Shopify.</strong>
-      <span>Failed attempts do not count. Normal edits and republishes of the same product—including copy, SEO, tags, and image tests—do not use another product. Turning an existing listing into a materially different product counts as a new product after you confirm the replacement.</span>
-    </div>
-    <div class="good-to-know">
-      <strong>When your allowance resets.</strong>
-      <span>Free resets each calendar month. Paid plans receive a fresh monthly allowance, whether you pay monthly or annually. Monthly subscriptions reset with their Shopify payment cycle; annual subscriptions reset on monthly anniversaries of the annual cycle start. Unused capacity does not roll over. Pro and Agency share the allowance across connected stores.</span>
-    </div>
-  </section>
-
-  <section class="section soft">
+        <div class="plan-specs">
+          <div class="plan-spec"><span class="plan-spec-icon">P</span><div><strong>1,500 products</strong><span>pooled per month</span></div></div>
+          <div class="plan-spec"><span class="plan-spec-icon">S</span><div><strong>10 stores</strong><span>separate store context</span></div></div>
+          <div c  <section class="section soft">
     <div class="section-heading">
       <p class="eyebrow green">HOW TO CHOOSE</p>
-      <h2>Start with the size of the job.</h2>
-      <p>Consider monthly product volume, the people doing the work, and the stores you manage.</p>
+      <h2>Start where you are. Upgrade when you need more.</h2>
+      <p>The plan changes when the job changes: more voice consistency, more stores, more people, or more monthly product work.</p>
     </div>
     <div class="value-ladder">
-      <article class="value-step"><span>Free</span><strong>Try the essentials</strong><p>Use the core features on up to 10 products per calendar month.</p></article>
-      <article class="value-step"><span>Solo</span><strong>Write in your voice</strong><p>Add Brand Voice and more product capacity for one store.</p></article>
-      <article class="value-step"><span>Pro</span><strong>Manage up to 3 stores</strong><p>Share 400 monthly publishes while each store keeps its own context.</p></article>
-      <article class="value-step"><span>Agency</span><strong>Manage up to 10 stores</strong><p>Share 1,500 monthly publishes across your connected stores.</p></article>
+      <article class="value-step free"><span>1 · Free</span><strong>Prove the workflow</strong><p>Use the core features on up to 10 products per calendar month.</p></article>
+      <div class="ladder-arrow">→</div>
+      <article class="value-step solo"><span>2 · Solo</span><strong>Add Brand Voice</strong><p>Move up when one store needs consistent, brand-aligned drafts.</p></article>
+      <div class="ladder-arrow">→</div>
+      <article class="value-step pro"><span>3 · Pro</span><strong>Add multi-store</strong><p>Manage up to three stores with separate context and pooled usage.</p></article>
+      <div class="ladder-arrow">→</div>
+      <article class="value-step agency"><span>4 · Agency</span><strong>Scale the portfolio</strong><p>Manage up to ten stores and 1,500 pooled products per month.</p></article>
     </div>
   </section>
 
   <section class="section">
     <div class="section-heading">
       <p class="eyebrow green">PLAN DETAILS</p>
-      <h2>What is included at each level.</h2>
-      <p>Compare the monthly allowance, store limits, team size, and Brand Voice access side by side.</p>
+      <h2>Compare the differences at a glance.</h2>
+      <p>The core product workflow is included on every plan. Higher tiers add Brand Voice, more capacity, more people, and multi-store support.</p>
     </div>
     <div class="plan-table-wrap">
       <table class="plan-table">
         <thead>
-          <tr><th>Capability</th><th>Free</th><th>Solo</th><th>Pro</th><th>Agency</th></tr>
+          <tr><th scope="col">Category</th><th scope="col">Capability</th><th scope="col">Free</th><th scope="col" class="plan-solo">Solo</th><th scope="col" class="plan-pro">Pro</th><th scope="col" class="plan-agency">Agency</th></tr>
         </thead>
         <tbody>
-          <tr><td>Published product allowance</td><td>10/calendar month</td><td>100/mo</td><td>400/mo pooled</td><td>1,500/mo pooled</td></tr>
-          <tr><td>Connected stores</td><td>1</td><td>1</td><td>3</td><td>10</td></tr>
-          <tr><td>Team members</td><td>1</td><td>2</td><td>5</td><td>8</td></tr>
-          <tr><td>Retrieve → Build → Review → Publish</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Product descriptions + details</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Alt text + image naming</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Tags + collections</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr class="strategy-row"><td>Apply long-tail search context</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr class="strategy-row"><td>Reuse SEO context across related products</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Brand Voice quiz</td><td>—</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Multi-store access</td><td>—</td><td>—</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Pooled product allowance across stores</td><td>—</td><td>—</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Separate Brand Voice by store</td><td>—</td><td>—</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
-          <tr><td>Separate SEO context by store</td><td>—</td><td>—</td><td><span class="check">✓</span></td><td><span class="check">✓</span></td></tr>
+          <tr><th class="category-cell category-content" scope="rowgroup" rowspan="4">Content</th><th scope="row">Product descriptions + details</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr><th scope="row">Alt text + image naming</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr><th scope="row">Brand Voice quiz</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr><th scope="row">Brand-aligned product drafts</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+
+          <tr><th class="category-cell category-seo" scope="rowgroup" rowspan="2">SEO + discovery</th><th scope="row">Apply long-tail search context</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr><th scope="row">Reuse SEO context across related products</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+
+          <tr><th class="category-cell category-merch" scope="rowgroup" rowspan="2">Merchandising</th><th scope="row">Tags + collections</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr><th scope="row">Separate store context</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="dash">—</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+
+          <tr><th class="category-cell category-workflow" scope="rowgroup" rowspan="5">Workflow + control</th><th scope="row">Retrieve → Build → Review → Publish</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr><th scope="row">Published product allowance</th><td>10/mo</td><td class="plan-solo">100/mo</td><td class="plan-pro">400/mo pooled</td><td class="plan-agency">1,500/mo pooled</td></tr>
+          <tr><th scope="row">Connected stores</th><td>1</td><td class="plan-solo">1</td><td class="plan-pro">3</td><td class="plan-agency">10</td></tr>
+          <tr><th scope="row">Team members</th><td>1</td><td class="plan-solo">2</td><td class="plan-pro">5</td><td class="plan-agency">8</td></tr>
+          <tr><th scope="row">Pooled usage across stores</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="dash">—</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
         </tbody>
       </table>
     </div>
@@ -222,9 +278,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <section class="section compact soft">
     <div class="context-panel">
       <div>
-        <p class="eyebrow green">WHY STORE CONTEXT MATTERS</p>
-        <h2>Each store needs its own context.</h2>
-        <p>A skincare store and an outdoor store speak to different needs. Pro and Agency keep each store’s Brand Voice and SEO context separate while sharing one product allowance.</p>
+        <p class="eyebrow green">BUILT FOR REAL STORE SETUPS</p>
+        <h2>Each store keeps its own context.</h2>
+        <p>Pro and Agency are built for teams managing more than one storefront. Each connected store keeps its own Brand Voice and SEO context while sharing the plan’s pooled product allowance.</p>
       </div>
       <div class="context-points">
         <div class="context-point"><strong>Separate Brand Voice by store</strong><span>Apply the voice and writing preferences intended for each connected store.</span></div>
@@ -242,9 +298,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <section class="final-cta">
-    <p class="eyebrow green">BEGIN WITH ONE PRODUCT.</p>
-    <h2>Try Free on your next listing.</h2>
-    <p>Prepare a product, review the result, and publish the changes you approve.</p>
+    <p class="eyebrow green">READY WHEN YOU ARE</p>
+    <h2>Start free and see how the workflow fits.</h2>
+    <p>Use a real Shopify product, review the work, and publish only the changes you approve.</p>
     <a class="button primary" href="https://app.penstack.co/?start=free">Start free →</a>
     <span class="microcopy">No credit card required.</span>
   </section>
