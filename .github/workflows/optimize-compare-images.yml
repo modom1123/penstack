@@ -1,0 +1,31 @@
+name: Optimize Compare Images
+
+on:
+  push:
+    paths:
+      - ".github/workflows/optimize-compare-images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install WebP tools
+        run: sudo apt-get update && sudo apt-get install -y webp
+      - name: Convert Compare images
+        run: |
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-compare-hero-tools-tradeoffs.png -o penstack-compare-hero-tools-tradeoffs.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-compare-connected-workflow.png -o penstack-compare-connected-workflow.webp
+      - name: Commit images
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add penstack-compare-hero-tools-tradeoffs.webp penstack-compare-connected-workflow.webp
+          git rm .github/workflows/optimize-compare-images.yml
+          git commit -m "Optimize Compare page illustrations to WebP"
+          git push
