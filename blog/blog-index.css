@@ -303,7 +303,7 @@
 .guide-card[hidden]{display:none}
 .guide-image{
   display:block;
-  aspect-ratio:16/9;
+  aspect-ratio:19/10;
   overflow:hidden;
   background:#f5f6f5;
 }
@@ -314,15 +314,15 @@
   object-fit:cover;
   object-position:center;
 }
-.guide-body{padding:20px}
-.guide-labels{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:13px}
+.guide-body{padding:16px 17px 17px}
+.guide-labels{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
 .level-badge,
 .topic-badge,
 .roadmap-topic{
   display:inline-flex;
   align-items:center;
-  min-height:26px;
-  padding:5px 9px;
+  min-height:24px;
+  padding:4px 8px;
   border-radius:999px;
   font-size:10px;
   font-weight:800;
@@ -333,18 +333,18 @@
 .badge-deep{background:#e5f1ff;color:#1b5fa8}
 .topic-badge{background:#f2ecfb;color:#5e408f}
 .guide-card h3{
-  margin:0 0 10px;
+  margin:0 0 8px;
   color:var(--hub-ink);
-  font-size:22px;
-  line-height:1.13;
+  font-size:20px;
+  line-height:1.16;
   letter-spacing:-.025em;
 }
 .guide-card h3 a{text-decoration:none;color:inherit}
 .guide-card p{
-  margin:0 0 15px;
+  margin:0 0 12px;
   color:var(--hub-muted);
-  font-size:14px;
-  line-height:1.5;
+  font-size:13.5px;
+  line-height:1.45;
 }
 .guide-link{
   color:var(--hub-purple);
