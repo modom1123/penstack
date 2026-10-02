@@ -1,36 +1,85 @@
 /* Shared penstack typography and site chrome. Load after page styles. */
 :root {
   --font-brand: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --type-display: clamp(2.5rem, 4.8vw, 4rem);
-  --type-section: clamp(2rem, 3.6vw, 3rem);
+
+  /* Shared penstack type scale */
+  --type-display: clamp(3rem, 5.2vw, 4.75rem);
+  --type-section: clamp(2.25rem, 3.8vw, 3.5rem);
+  --type-subsection: clamp(1.5rem, 2.2vw, 2rem);
   --type-card: 1.25rem;
   --type-body: 1rem;
-  --type-lead: 1.1875rem;
+  --type-lead: 1.125rem;
   --type-label: .875rem;
   --type-meta: .75rem;
+
+  --leading-display: 1.02;
+  --leading-section: 1.10;
+  --leading-subsection: 1.20;
+  --leading-body: 1.60;
+  --tracking-display: -.045em;
+  --tracking-section: -.035em;
 }
 body, .resource-hub {
   font-family: var(--font-brand);
   font-size: var(--type-body);
-  line-height: 1.6;
+  line-height: var(--leading-body);
 }
 button, input, select, textarea { font-family: inherit; }
-.page-hero h1, .uc-hero h1, .resource-hero h1, .blog-hero h1 {
+.page-hero h1,
+.uc-hero h1,
+.resource-hero h1,
+.blog-hero h1,
+.about-hero h1,
+.pricing-hero h1,
+.compare-hero h1 {
   font-size: var(--type-display);
-  line-height: 1.08;
-  letter-spacing: -.04em;
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+  font-weight: 800;
 }
-.section-heading h2, .value-band h2, .uc-copy h2,
-.uc-more h2, .uc-pattern h2, .library-heading h2,
-.learning-model h2, .final-cta h2 {
+.section-heading h2,
+.value-band h2,
+.uc-copy h2,
+.uc-more h2,
+.uc-pattern h2,
+.library-heading h2,
+.learning-model h2,
+.final-cta h2,
+.experience-copy h2,
+.control-copy h2,
+.contact-band h2,
+.plan-details h2,
+.how-to-choose h2,
+.quick-fit h2 {
   font-size: var(--type-section);
-  line-height: 1.15;
-  letter-spacing: -.035em;
+  line-height: var(--leading-section);
+  letter-spacing: var(--tracking-section);
+  font-weight: 800;
 }
-.blog-prose h2 { font-size: var(--type-section); line-height: 1.2; }
-.lead, .uc-hero .lead, .resource-hero-copy > p:not(.resource-kicker), .blog-dek {
+.blog-prose h2 {
+  font-size: var(--type-section);
+  line-height: var(--leading-section);
+  letter-spacing: var(--tracking-section);
+}
+.blog-prose h3,
+.journey-lane-heading h3,
+.plan-card h3,
+.price-card h3,
+.compare-card h3,
+.use-case-group h3 {
+  font-size: var(--type-subsection);
+  line-height: var(--leading-subsection);
+  letter-spacing: -.02em;
+}
+.lead,
+.uc-hero .lead,
+.resource-hero-copy > p:not(.resource-kicker),
+.blog-dek,
+.about-hero .lead,
+.pricing-hero .lead,
+.compare-hero .lead {
   font-size: var(--type-lead);
-  line-height: 1.6;
+  line-height: var(--leading-body);
 }
 .eyebrow, .resource-kicker, .blog-kicker {
   font-size: var(--type-meta);
@@ -44,15 +93,38 @@ button, input, select, textarea { font-family: inherit; }
 .site-header nav { gap: clamp(.875rem, 1.6vw, 1.375rem); }
 .site-header .brand img { width: 180px; }
 .button { font-size: var(--type-body); line-height: 1.5; }
-.workflow-story p, .what-card p, .getting-started-card p,
-.process-card p, .proof-card p, .uc-more-card p {
+.workflow-story p,
+.what-card p,
+.getting-started-card p,
+.process-card p,
+.proof-card p,
+.uc-more-card p,
+.feature-card p,
+.use-card p,
+.compare-card p,
+.price-card p,
+.plan-card p,
+.principle-card p,
+.belief-card p,
+.time-card-copy p,
+.control-card p {
   font-size: var(--type-body);
-  line-height: 1.6;
+  line-height: var(--leading-body);
 }
-.workflow-story h3, .what-card h3, .getting-started-card h3,
-.process-card h3, .capability-card h3, .uc-more-card h3 {
+.workflow-story h3,
+.what-card h3,
+.getting-started-card h3,
+.process-card h3,
+.capability-card h3,
+.uc-more-card h3,
+.feature-card h3,
+.use-card h3,
+.compare-card h3,
+.time-card-copy h3,
+.control-card h3 {
   font-size: var(--type-card);
-  line-height: 1.3;
+  line-height: 1.30;
+  letter-spacing: -.015em;
 }
 .journey-card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .journey-card-grid .guide-card h3 { font-size: 1.125rem; line-height: 1.35; }
