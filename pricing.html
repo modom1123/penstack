@@ -72,25 +72,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .value-step span{display:block;color:var(--green);font-weight:800;font-size:11px;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px}
     .value-step p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
     .ladder-arrow{display:grid;place-items:center;color:var(--green);font-size:22px;font-weight:900}
-    .plan-table-wrap{overflow:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
-    .plan-table{width:100%;min-width:980px;margin:0;border-collapse:separate;border-spacing:0}
-    .plan-table th,.plan-table td{padding:11px 12px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+    .plan-details .section-heading{max-width:1180px;margin-left:auto;margin-right:auto}
+    .plan-details .section-heading h2{font-size:clamp(34px,4vw,48px)}
+    .plan-table-wrap{overflow:auto;max-width:1180px;margin:0 auto;border:1px solid var(--line);border-radius:14px;background:#fff}
+    .plan-table{width:100%;min-width:900px;margin:0;border-collapse:separate;border-spacing:0}
+    .plan-table th,.plan-table td{padding:8px 10px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
     .plan-table th:last-child,.plan-table td:last-child{border-right:0}
-    .plan-table thead th{position:sticky;top:0;z-index:4;background:var(--navy);color:#fff;font-size:12px}
-    .plan-table thead th:first-child{left:0;z-index:7;width:120px}
-    .plan-table thead th:nth-child(2){left:120px;z-index:6;width:240px}
-    .plan-table tbody .category-cell{position:sticky;left:0;z-index:3;width:120px;color:var(--navy);font-size:11px;font-weight:800;text-transform:uppercase}
-    .plan-table tbody th[scope="row"]{position:sticky;left:120px;z-index:2;width:240px;background:#fff;color:var(--navy);font-size:12.5px}
-    .plan-table td{font-size:12.5px;color:var(--muted);text-align:center}
-    .plan-table .category-content{background:#eaf5ff}
-    .plan-table .category-seo{background:#eaf7f1}
+    .plan-table thead th{background:var(--navy);color:#fff;font-size:11px;font-weight:800}
+    .plan-table thead th:first-child{width:150px}
+    .plan-table thead th:nth-child(2){width:300px}
+    .plan-table tbody .category-cell{width:150px;color:var(--navy);font-size:10.5px;font-weight:800;text-transform:uppercase}
+    .category-label{display:flex;align-items:center;gap:9px}
+    .category-icon{display:grid;place-items:center;width:25px;height:25px;flex:0 0 25px;color:var(--navy)}
+    .category-icon svg{width:22px;height:22px;display:block;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .plan-table tbody th[scope="row"]{background:#fff;color:var(--navy);font-size:11px;font-weight:700}
+    .plan-table td{font-size:11px;color:var(--muted);text-align:center}
+    .plan-table .category-content{background:#eaf7f1}
+    .plan-table .category-seo{background:#eaf5ff}
     .plan-table .category-merch{background:#fff6d9}
     .plan-table .category-workflow{background:#f4eefb}
-    .plan-table tbody .plan-solo{background:#f5fbf7}
-    .plan-table tbody .plan-pro{background:#f5f9fd}
-    .plan-table tbody .plan-agency{background:#fffaf0}
-    .check{color:var(--green);font-weight:900}
-    .dash{color:#9a8c92}
+    .plan-status{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;color:#fff;font-size:10px;font-weight:900;line-height:1}
+    .plan-status.included{background:var(--green)}
+    .plan-status.limited{background:#d89b10}
+    .plan-status.none{background:#aaa5a8}
+    .plan-value-text{font-weight:700;color:var(--navy)}
+    .plan-legend{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:nowrap;max-width:1180px;margin:10px auto 0;color:var(--muted);font-size:11px;white-space:nowrap}
+    .plan-legend span{display:inline-flex;align-items:center;gap:6px}
     .context-panel{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center;padding:30px;border:1px solid var(--line);border-radius:18px;background:var(--soft)}
     .context-panel h2{font-size:clamp(34px,4vw,48px)}
     .context-panel p{color:var(--muted);line-height:1.55}
@@ -264,36 +271,159 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section plan-details">
     <div class="section-heading">
       <p class="eyebrow green">PLAN DETAILS</p>
       <h2>Compare the differences at a glance.</h2>
       <p>The core product workflow is included on every plan. Higher tiers add Brand Voice, more capacity, more people, and multi-store support.</p>
     </div>
+
     <div class="plan-table-wrap">
       <table class="plan-table">
         <thead>
-          <tr><th scope="col">Category</th><th scope="col">Capability</th><th scope="col">Free</th><th scope="col" class="plan-solo">Solo</th><th scope="col" class="plan-pro">Pro</th><th scope="col" class="plan-agency">Agency</th></tr>
+          <tr>
+            <th scope="col">Category</th>
+            <th scope="col">Capability</th>
+            <th scope="col">Free</th>
+            <th scope="col">Solo</th>
+            <th scope="col">Pro</th>
+            <th scope="col">Agency</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><th class="category-cell category-content" scope="rowgroup" rowspan="4">Content</th><th scope="row">Product descriptions + details</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
-          <tr><th scope="row">Alt text + image naming</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
-          <tr><th scope="row">Brand Voice quiz</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
-          <tr><th scope="row">Brand-aligned product drafts</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr>
+            <th class="category-cell category-content" scope="rowgroup" rowspan="3">
+              <span class="category-label">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3h7l3 3v15H7z"/><path d="M14 3v4h4"/><path d="M10 11h4M10 15h4"/></svg></span>
+                Content
+              </span>
+            </th>
+            <th scope="row">Product descriptions</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Brand Voice</th>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Features + care content</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
 
-          <tr><th class="category-cell category-seo" scope="rowgroup" rowspan="2">SEO + discovery</th><th scope="row">Apply long-tail search context</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
-          <tr><th scope="row">Reuse SEO context across related products</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr>
+            <th class="category-cell category-seo" scope="rowgroup" rowspan="3">
+              <span class="category-label">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg></span>
+                SEO + discovery
+              </span>
+            </th>
+            <th scope="row">Long-tail keyword strategy</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">SEO context across products</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Alt text + image naming</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
 
-          <tr><th class="category-cell category-merch" scope="rowgroup" rowspan="2">Merchandising</th><th scope="row">Tags + collections</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
-          <tr><th scope="row">Separate store context</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="dash">—</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr>
+            <th class="category-cell category-merch" scope="rowgroup" rowspan="3">
+              <span class="category-label">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12 12 3h7l2 2v7l-9 9z"/><circle cx="16.5" cy="7.5" r="1.5"/></svg></span>
+                Merchandising
+              </span>
+            </th>
+            <th scope="row">Tags + collections</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Product fields + metafields</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Separate store context</th>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
 
-          <tr><th class="category-cell category-workflow" scope="rowgroup" rowspan="5">Workflow + control</th><th scope="row">Retrieve → Build → Review → Publish</th><td><span class="check">✓</span></td><td class="plan-solo"><span class="check">✓</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
-          <tr><th scope="row">Published product allowance</th><td>10/mo</td><td class="plan-solo">100/mo</td><td class="plan-pro">400/mo pooled</td><td class="plan-agency">1,500/mo pooled</td></tr>
-          <tr><th scope="row">Connected stores</th><td>1</td><td class="plan-solo">1</td><td class="plan-pro">3</td><td class="plan-agency">10</td></tr>
-          <tr><th scope="row">Team members</th><td>1</td><td class="plan-solo">2</td><td class="plan-pro">5</td><td class="plan-agency">8</td></tr>
-          <tr><th scope="row">Pooled usage across stores</th><td><span class="dash">—</span></td><td class="plan-solo"><span class="dash">—</span></td><td class="plan-pro"><span class="check">✓</span></td><td class="plan-agency"><span class="check">✓</span></td></tr>
+          <tr>
+            <th class="category-cell category-workflow" scope="rowgroup" rowspan="5">
+              <span class="category-label">
+                <span class="category-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></span>
+                Workflow + control
+              </span>
+            </th>
+            <th scope="row">Retrieve → Build → Review → Publish</th>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Published products / month</th>
+            <td><span class="plan-value-text">10</span></td>
+            <td><span class="plan-value-text">100</span></td>
+            <td><span class="plan-value-text">400 pooled</span></td>
+            <td><span class="plan-value-text">1,500 pooled</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Multi-store support</th>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Team member access</th>
+            <td><span class="plan-value-text">1</span></td>
+            <td><span class="plan-value-text">2</span></td>
+            <td><span class="plan-value-text">5</span></td>
+            <td><span class="plan-value-text">8</span></td>
+          </tr>
+          <tr>
+            <th scope="row">Pooled usage across stores</th>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status none">•</span></td>
+            <td><span class="plan-status included">✓</span></td>
+            <td><span class="plan-status included">✓</span></td>
+          </tr>
         </tbody>
       </table>
+    </div>
+
+    <div class="plan-legend" aria-label="Pricing comparison legend">
+      <span><span class="plan-status included">✓</span> Included</span>
+      <span><span class="plan-status limited">–</span> Plan-dependent / limited</span>
+      <span><span class="plan-status none">•</span> Not included</span>
     </div>
   </section>
 
