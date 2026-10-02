@@ -28,17 +28,80 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebPage","@id":"https://penstack.co/compare.html#webpage","name":"Compare Shopify Product Content Tools | penstack","url":"https://penstack.co/compare.html","description":"Compare penstack, Shopify Magic and Sidekick, general AI tools, and Jasper across product content, SEO, images, merchandising, review, and publishing.","isPartOf":{"@id":"https://penstack.co/#website"}}
   </script>
+<link rel="preload" as="image" href="penstack-compare-hero-tools-tradeoffs.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="styles.css?v=19">
   <style>
-    .compare-hero-panel{padding:30px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:var(--shadow)}
-    .compare-hero-panel h2{font-size:36px;margin-bottom:18px}.compare-path{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center}.compare-path .note{height:100%}.compare-path .arrow{font-size:30px;color:var(--green);font-weight:800}
-    .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.stack-card{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff;min-height:205px}.stack-card h3{margin:0 0 8px}.stack-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}.stack-card.penstack{background:#eef7f1;border-color:#d8e9dd}.stack-card strong{display:block;margin-bottom:6px;color:var(--green)}
-    .matrix-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff}.matrix{width:100%;min-width:1080px;border-collapse:collapse}.matrix th,.matrix td{padding:15px 14px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;text-align:left}.matrix th:last-child,.matrix td:last-child{border-right:0}.matrix tr:last-child td{border-bottom:0}.matrix th{background:var(--soft);font-size:13px}.matrix td{font-size:13px;line-height:1.45;color:var(--muted)}.matrix td:first-child{color:var(--navy);font-weight:800;width:22%}.matrix .yes{color:var(--green);font-weight:800}.matrix .partial{color:#9a6814;font-weight:800}.matrix .manual{color:#7a6773;font-weight:700}.matrix .penstack-col{background:#f6fbf8}.matrix .section-row td{background:#fff8ec;color:var(--navy);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
-    .seo-compare{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:start;padding:30px;border:1px solid var(--line);border-radius:18px;background:#fff8ec}.seo-compare h2{font-size:clamp(36px,4vw,50px)}.seo-layers{display:grid;gap:12px}.seo-layer{padding:16px 18px;background:#fff;border:1px solid #edd8bc;border-radius:12px}.seo-layer strong{display:block;margin-bottom:4px}.seo-layer span{color:var(--muted);font-size:13px;line-height:1.45}
-    .strength-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.strength-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}.strength-card h3{margin:0 0 8px}.strength-card p{margin:0;color:var(--muted);line-height:1.5}.strength-card small{display:block;margin-top:12px;color:var(--muted);line-height:1.45}
-    .source-note{margin-top:18px;padding:18px 20px;border-radius:14px;background:#f7f7f4;border:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.55}.source-note a{text-decoration:underline}.source-note strong{color:var(--navy)}
-    @media(max-width:1050px){.stack-grid{grid-template-columns:repeat(2,1fr)}.seo-compare{grid-template-columns:1fr}.strength-grid{grid-template-columns:1fr}.compare-path{grid-template-columns:1fr}.compare-path .arrow{transform:rotate(90deg);text-align:center}}
-    @media(max-width:760px){.stack-grid{grid-template-columns:1fr}.compare-hero-panel{padding:22px}}
+    .compare-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(380px,.9fr);gap:46px;align-items:center}
+    .compare-hero h1{max-width:760px}
+    .compare-hero-art{display:block;width:100%;height:auto;max-width:680px;margin:0 auto}
+    .quick-fit{background:#f6fafc}
+    .quick-fit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+    .fit-card{display:flex;flex-direction:column;min-height:190px;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .fit-card.penstack{background:#eef7f1;border-color:#d8e9dd}
+    .fit-card .fit-label{display:block;margin-bottom:8px;color:var(--navy);font-weight:800;font-size:18px}
+    .fit-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .fit-chip{margin-top:auto;padding-top:14px;color:var(--green);font-size:12px;font-weight:800}
+    .matrix-intro{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:18px}
+    .matrix-intro .section-heading{margin:0}
+    .matrix-legend{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end;font-size:12px;color:var(--muted)}
+    .matrix-legend span{white-space:nowrap}
+    .matrix-legend b{display:inline-grid;place-items:center;width:18px;height:18px;margin-right:5px;border-radius:50%;color:#fff;font-size:11px}
+    .matrix-legend .lg-yes{background:var(--green)}
+    .matrix-legend .lg-partial{background:#d89b10}
+    .matrix-legend .lg-manual{background:#8b7882}
+    .matrix-wrap{overflow:auto;max-height:760px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .matrix{width:100%;min-width:1120px;border-collapse:separate;border-spacing:0}
+    .matrix th,.matrix td{padding:12px 13px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+    .matrix th:last-child,.matrix td:last-child{border-right:0}
+    .matrix thead th{position:sticky;top:0;z-index:4;background:var(--navy);color:#fff;font-size:12px;line-height:1.3}
+    .matrix thead th:first-child{left:0;z-index:6}
+    .matrix tbody th[scope="row"]{position:sticky;left:0;z-index:2;width:205px;background:#fff;color:var(--navy);font-size:12.5px;line-height:1.35}
+    .matrix td{font-size:12.5px;line-height:1.4;color:var(--muted)}
+    .matrix td strong{display:block;margin-bottom:2px;color:var(--navy);font-size:12px}
+    .matrix .penstack-col{background:#f3faf5}
+    .matrix thead .penstack-col{background:#0f6b4f}
+    .matrix .section-row th{position:static;left:auto;background:#fff8ec;color:var(--navy);font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+    .matrix .section-row.seo th{background:#eef7f1}
+    .matrix .section-row.merch th{background:#fff6d9}
+    .matrix .section-row.workflow th{background:#fff0e8}
+    .status{font-weight:800}
+    .yes{color:var(--green)}
+    .partial{color:#9a6814}
+    .manual{color:#7a6773}
+    .comparison-takeaways{display:grid;grid-template-columns:1.05fr .95fr;gap:16px;margin-top:18px}
+    .takeaway-card{padding:22px;border:1px solid var(--line);border-radius:16px;background:#f6fafc}
+    .takeaway-card.detail{background:#f7f3fb}
+    .takeaway-card h3{margin:0 0 10px;font-size:20px}
+    .takeaway-card ul{margin:0;padding-left:20px;color:var(--muted);font-size:13px;line-height:1.55}
+    .takeaway-card p{margin:0 0 14px;color:var(--muted);font-size:13px;line-height:1.5}
+    .source-note{margin-top:18px;padding:18px 20px;border-radius:14px;background:#f7f7f4;border:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.55}
+    .source-note a{text-decoration:underline}.source-note strong{color:var(--navy)}
+    .seo-compare{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:start;padding:30px;border:1px solid var(--line);border-radius:18px;background:#fff8ec}
+    .seo-compare h2{font-size:clamp(36px,4vw,50px)}
+    .seo-layers{display:grid;gap:12px}.seo-layer{padding:16px 18px;background:#fff;border:1px solid #edd8bc;border-radius:12px}
+    .seo-layer strong{display:block;margin-bottom:4px}.seo-layer span{color:var(--muted);font-size:13px;line-height:1.45}
+    .strength-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .strength-card{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}
+    .strength-card.penstack{background:#eef7f1;border-color:#d8e9dd}
+    .strength-card h3{margin:0 0 8px;font-size:19px}
+    .strength-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
+    .strength-card small{display:block;margin-top:12px;color:var(--muted);line-height:1.45}
+    .compare-final{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);gap:34px;align-items:center;padding:38px;border-top:1px solid var(--line);background:#fff8ec}
+    .compare-final img{display:block;width:100%;height:auto}
+    .compare-final h2{margin-bottom:10px}
+    @media(max-width:1050px){
+      .compare-hero,.compare-final{grid-template-columns:1fr}
+      .quick-fit-grid,.strength-grid{grid-template-columns:repeat(2,1fr)}
+      .seo-compare{grid-template-columns:1fr}
+      .comparison-takeaways{grid-template-columns:1fr}
+      .matrix-wrap{max-height:none}
+    }
+    @media(max-width:760px){
+      .quick-fit-grid,.strength-grid{grid-template-columns:1fr}
+      .matrix-intro{display:block}
+      .matrix-legend{justify-content:flex-start;margin-top:12px}
+      .compare-final{padding:28px 20px}
+    }
   </style>
   <link rel="stylesheet" href="brand.css?v=20261001-1">
   <link rel="stylesheet" href="illustrations.css?v=20261001-3">
@@ -66,79 +129,218 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </header>
 
-  <section class="page-hero">
+  <section class="page-hero compare-hero">
     <div>
       <p class="eyebrow">COMPARE SHOPIFY PRODUCT CONTENT TOOLS</p>
-      <h1>Choose the tool for the job.</h1>
-      <p class="lead">Shopify’s AI helps inside your store. General AI tools offer flexible drafting. Jasper supports broader marketing content. penstack focuses on preparing and updating Shopify product listings.</p>
+      <h1>Different tools. Different trade-offs.</h1>
+      <p class="lead">There are a few ways to create and manage Shopify product content. Compare penstack, Shopify-native AI, general AI workflows, and Jasper by the work each approach helps you finish.</p>
       <div class="hero-actions">
-        <a class="button primary" href="https://app.penstack.co/?start=free">Start free →</a>
-        <span class="microcopy">Try Free with 10 product publishes per calendar month. No credit card required.</span>
+        <a class="button primary" href="#comparison">Compare approaches ↓</a>
+        <span class="microcopy">Same underlying research. Easier to scan.</span>
       </div>
     </div>
-    <div class="compare-hero-panel">
-      <p class="eyebrow green">THE DIFFERENCE</p>
-      <h2>Follow the work after the first draft.</h2>
-      <div class="compare-path">
-        <div class="note"><strong>Start with product facts</strong><p>Existing copy, images, specifications, and Shopify fields.</p></div>
-        <div class="arrow">→</div>
-        <div class="note"><strong>Finish the listing</strong><p>Description, image text, product details, tags, collections, and review.</p></div>
-      </div>
-      <p style="margin:18px 0 0;color:var(--muted)">Look beyond the draft: where will you check facts, prepare image text, assign collections, and publish the changes?</p>
+    <div>
+      <img class="compare-hero-art" src="penstack-compare-hero-tools-tradeoffs.webp" width="1600" height="800" loading="eager" fetchpriority="high" decoding="async" alt="Balance scale comparing a product-content draft with product organization work">
     </div>
   </section>
 
-  <section class="section compact soft">
+  <section class="section compact quick-fit">
     <div class="section-heading">
-      <p class="eyebrow green">FOUR COMMON APPROACHES</p>
-      <h2>Four approaches, with different strengths.</h2>
-      <p>Compare the work each tool supports directly and the setup you would need around it.</p>
+      <p class="eyebrow green">QUICK FIT</p>
+      <h2>Which approach fits what?</h2>
+      <p>Start with the kind of work you need to finish. The detailed comparison is just below.</p>
     </div>
-    <div class="stack-grid">
-      <article class="stack-card penstack"><strong>penstack</strong><h3>Product workflow</h3><p>Retrieve a Shopify product, draft its copy, prepare image text and supported fields, assign tags and collections, then review and publish.</p></article>
-      <article class="stack-card"><strong>Shopify Magic + Sidekick</strong><h3>Native Shopify AI</h3><p>Work inside Shopify with product-description generation and Sidekick assistance for store tasks, including collections.</p></article>
-      <article class="stack-card"><strong>General AI tools</strong><h3>Flexible generation</h3><p>Brainstorm, draft, and rewrite with flexible prompts. Supplying product facts and transferring approved copy depend on your setup.</p></article>
-      <article class="stack-card"><strong>Jasper</strong><h3>Marketing content platform</h3><p>Create marketing content across channels with shared brand guidance, product knowledge, and content processes.</p></article>
+    <div class="quick-fit-grid">
+      <article class="fit-card">
+        <span class="fit-label">Shopify-native AI</span>
+        <p>A strong starting point when you want assistance close to your Shopify store and straightforward product-description help.</p>
+        <span class="fit-chip">Best for native Shopify assistance</span>
+      </article>
+      <article class="fit-card">
+        <span class="fit-label">Jasper</span>
+        <p>Built for broader marketing-content operations, shared brand guidance, and content production across channels and teams.</p>
+        <span class="fit-chip">Best for broader marketing content</span>
+      </article>
+      <article class="fit-card">
+        <span class="fit-label">General AI + manual Shopify</span>
+        <p>Flexible for brainstorming and drafting when you are comfortable supplying context and moving approved work into Shopify yourself.</p>
+        <span class="fit-chip">Best for flexible drafting</span>
+      </article>
+      <article class="fit-card penstack">
+        <span class="fit-label">penstack</span>
+        <p>A connected workflow for preparing Shopify product listings, including content, image details, merchandising, review, and publishing.</p>
+        <span class="fit-chip">Best for connected product-listing work</span>
+      </article>
     </div>
   </section>
 
-  <section class="section compact">
-    <div class="section-heading">
-      <p class="eyebrow green">FEATURE + WORKFLOW COMPARISON</p>
-      <h2>Compare the work you need to finish.</h2>
-      <p>“Partial” indicates support through prompts, integrations, or a separate process. General AI tools vary; custom integrations can change what stays manual.</p>
+  <section class="section compact" id="comparison">
+    <div class="matrix-intro">
+      <div class="section-heading">
+        <p class="eyebrow green">SIDE-BY-SIDE COMPARISON</p>
+        <h2>Compare the work you need to finish.</h2>
+        <p>“Partial” means the work is possible through prompts, integrations, or a separate process. General AI tools vary by vendor and setup.</p>
+      </div>
+      <div class="matrix-legend" aria-label="Comparison status legend">
+        <span><b class="lg-yes">✓</b>Direct support</span>
+        <span><b class="lg-partial">–</b>Partial / setup-dependent</span>
+        <span><b class="lg-manual">•</b>Mostly manual</span>
+      </div>
     </div>
-    <div class="matrix-wrap">
+
+    <div class="matrix-wrap" tabindex="0" aria-label="Scrollable comparison table">
       <table class="matrix">
-        <thead><tr><th>Capability</th><th class="penstack-col">penstack</th><th>Shopify Magic + Sidekick</th><th>General AI + manual Shopify</th><th>Jasper</th></tr></thead>
+        <thead>
+          <tr>
+            <th scope="col">Capability</th>
+            <th scope="col">Shopify Magic + Sidekick</th>
+            <th scope="col">General AI + manual Shopify</th>
+            <th scope="col">Jasper</th>
+            <th scope="col" class="penstack-col">penstack</th>
+          </tr>
+        </thead>
         <tbody>
-          <tr class="section-row"><td colspan="5">Content</td></tr>
-          <tr><td>Product descriptions</td><td class="penstack-col"><span class="yes">Yes</span><br>Editable inside the workflow</td><td><span class="yes">Yes</span><br>Native AI product-description generation</td><td><span class="yes">Yes</span><br>Generate, then transfer</td><td><span class="yes">Yes</span><br>Product Description and PDP agents</td></tr>
-          <tr><td>Brand Voice</td><td class="penstack-col"><span class="yes">Yes, paid</span><br>Applied to product drafts</td><td><span class="partial">Partial</span><br>Tone can be prompted</td><td><span class="partial">Partial</span><br>Depends on saved instructions/workflow</td><td><span class="yes">Yes</span><br>Dedicated Brand Voice system</td></tr>
-          <tr><td>Features + care content</td><td class="penstack-col"><span class="yes">Yes</span><br>Handled with product content</td><td><span class="partial">Partial</span><br>Can be generated in copy</td><td><span class="partial">Partial</span><br>Prompt-dependent</td><td><span class="yes">Yes</span><br>PDP generation can include structured product content</td></tr>
+          <tr class="section-row"><th colspan="5" scope="colgroup">Content</th></tr>
+          <tr>
+            <th scope="row">Product descriptions</th>
+            <td><strong class="yes">Yes</strong>Native AI generation</td>
+            <td><strong class="yes">Yes</strong>Generate, then transfer</td>
+            <td><strong class="yes">Yes</strong>Product-description and PDP workflows</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Editable inside the product workflow</td>
+          </tr>
+          <tr>
+            <th scope="row">Brand Voice</th>
+            <td><strong class="partial">Partial</strong>Tone can be prompted</td>
+            <td><strong class="partial">Partial</strong>Depends on saved instructions and setup</td>
+            <td><strong class="yes">Yes</strong>Dedicated Brand Voice system</td>
+            <td class="penstack-col"><strong class="yes">Yes, paid</strong>Applied to product drafts</td>
+          </tr>
+          <tr>
+            <th scope="row">Features + care content</th>
+            <td><strong class="partial">Partial</strong>Can be generated in copy</td>
+            <td><strong class="partial">Partial</strong>Prompt-dependent</td>
+            <td><strong class="yes">Yes</strong>Can support structured PDP content</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Handled with product content</td>
+          </tr>
 
-          <tr class="section-row"><td colspan="5">SEO + discovery</td></tr>
-          <tr><td>Long-tail keyword strategy</td><td class="penstack-col"><span class="yes">Yes</span><br>Apply search intent through supplied product context</td><td><span class="partial">Partial</span><br>Keywords can be prompted into descriptions</td><td><span class="partial">Partial</span><br>Supply search direction through prompts or saved context</td><td><span class="yes">Yes</span><br>Broader SEO tooling and keyword-oriented workflows</td></tr>
-          <tr><td>Apply SEO context across related products</td><td class="penstack-col"><span class="yes">Yes</span><br>Reuse relevant search and collection context</td><td><span class="partial">Partial</span><br>Use prompts and the store’s existing context</td><td><span class="manual">Manual</span><br>Requires prompts, docs, or another system</td><td><span class="yes">Yes</span><br>Can scale SEO workflows across content inventories</td></tr>
-          <tr><td>Search-oriented product copy</td><td class="penstack-col"><span class="yes">Yes</span><br>Product workflow + human review</td><td><span class="yes">Yes</span><br>Shopify supports SEO-focused description prompts</td><td><span class="yes">Yes</span><br>Prompt-driven</td><td><span class="yes">Yes</span><br>Search-ready PDP/content workflows</td></tr>
-          <tr><td>Alt text support</td><td class="penstack-col"><span class="yes">Yes</span><br>Handled with product image work</td><td><span class="manual">Mostly manual</span><br>Shopify documents alt text as an SEO/accessibility task</td><td><span class="partial">Partial</span><br>Can generate, then paste</td><td><span class="partial">Partial</span><br>Can generate image-related content, but not the same native product path</td></tr>
-          <tr><td>Image naming support</td><td class="penstack-col"><span class="yes">Yes</span></td><td><span class="manual">Manual</span></td><td><span class="partial">Partial</span><br>Generate suggestions separately</td><td><span class="partial">Partial</span><br>Possible in broader workflows</td></tr>
+          <tr class="section-row seo"><th colspan="5" scope="colgroup">SEO + discovery</th></tr>
+          <tr>
+            <th scope="row">Long-tail keyword strategy</th>
+            <td><strong class="partial">Partial</strong>Keywords can be prompted into descriptions</td>
+            <td><strong class="partial">Partial</strong>Supply direction through prompts or saved context</td>
+            <td><strong class="yes">Yes</strong>Broader SEO and keyword workflows</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Apply search intent through supplied product context</td>
+          </tr>
+          <tr>
+            <th scope="row">SEO context across products</th>
+            <td><strong class="partial">Partial</strong>Use prompts and existing store context</td>
+            <td><strong class="manual">Manual</strong>Requires prompts, docs, or another system</td>
+            <td><strong class="yes">Yes</strong>Can scale SEO workflows across content inventories</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Reuse relevant search and collection context</td>
+          </tr>
+          <tr>
+            <th scope="row">Search-oriented product copy</th>
+            <td><strong class="yes">Yes</strong>SEO-focused description prompts</td>
+            <td><strong class="yes">Yes</strong>Prompt-driven</td>
+            <td><strong class="yes">Yes</strong>Search-ready PDP/content workflows</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Product workflow + human review</td>
+          </tr>
+          <tr>
+            <th scope="row">Alt text support</th>
+            <td><strong class="manual">Mostly manual</strong>Shopify documents alt text as an SEO/accessibility task</td>
+            <td><strong class="partial">Partial</strong>Generate, then paste</td>
+            <td><strong class="partial">Partial</strong>Can generate image-related content</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Handled with product image work</td>
+          </tr>
+          <tr>
+            <th scope="row">Image naming support</th>
+            <td><strong class="manual">Manual</strong></td>
+            <td><strong class="partial">Partial</strong>Generate suggestions separately</td>
+            <td><strong class="partial">Partial</strong>Possible in broader workflows</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong></td>
+          </tr>
 
-          <tr class="section-row"><td colspan="5">Product setup + merchandising</td></tr>
-          <tr><td>Retrieve existing Shopify product context</td><td class="penstack-col"><span class="yes">Yes</span><br>Starts with the product already in Shopify</td><td><span class="yes">Yes</span><br>Native platform context</td><td><span class="manual">Manual</span><br>Context must be supplied</td><td><span class="partial">Partial</span><br>Product context can be loaded into Product IQ/Knowledge assets</td></tr>
-          <tr><td>Shopify custom fields</td><td class="penstack-col"><span class="yes">Yes</span><br>Part of product workflow</td><td><span class="manual">Native but manual</span><br>Managed directly in Shopify</td><td><span class="manual">Manual transfer</span></td><td><span class="manual">Depends on Shopify integration</span></td></tr>
-          <tr><td>Tags</td><td class="penstack-col"><span class="yes">Yes</span></td><td><span class="yes">Yes</span><br>Native Shopify functionality</td><td><span class="manual">Manual transfer</span></td><td><span class="manual">Depends on Shopify integration</span></td></tr>
-          <tr><td>Collections</td><td class="penstack-col"><span class="yes">Yes</span><br>Included in product setup</td><td><span class="yes">Yes</span><br>Sidekick supports collection-building tasks</td><td><span class="manual">Manual transfer</span></td><td><span class="manual">Depends on Shopify integration</span></td></tr>
+          <tr class="section-row merch"><th colspan="5" scope="colgroup">Product setup + merchandising</th></tr>
+          <tr>
+            <th scope="row">Retrieve Shopify product context</th>
+            <td><strong class="yes">Yes</strong>Native platform context</td>
+            <td><strong class="manual">Manual</strong>Context must be supplied</td>
+            <td><strong class="partial">Partial</strong>Product context can be loaded into knowledge assets</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Starts with the product already in Shopify</td>
+          </tr>
+          <tr>
+            <th scope="row">Shopify custom fields</th>
+            <td><strong class="manual">Native but manual</strong>Managed in Shopify</td>
+            <td><strong class="manual">Manual transfer</strong></td>
+            <td><strong class="manual">Integration-dependent</strong></td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Part of the product workflow</td>
+          </tr>
+          <tr>
+            <th scope="row">Tags</th>
+            <td><strong class="yes">Yes</strong>Native Shopify functionality</td>
+            <td><strong class="manual">Manual transfer</strong></td>
+            <td><strong class="manual">Integration-dependent</strong></td>
+            <td class="penstack-col"><strong class="yes">Yes</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Collections</th>
+            <td><strong class="yes">Yes</strong>Sidekick supports collection-building tasks</td>
+            <td><strong class="manual">Manual transfer</strong></td>
+            <td><strong class="manual">Integration-dependent</strong></td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Included in product setup</td>
+          </tr>
 
-          <tr class="section-row"><td colspan="5">Workflow + control</td></tr>
-          <tr><td>Human review before publish</td><td class="penstack-col"><span class="yes">Yes</span><br>Core workflow step</td><td><span class="yes">Yes</span><br>Merchant remains responsible for accuracy</td><td><span class="yes">Yes</span><br>Review the draft and any transferred copy</td><td><span class="yes">Yes</span><br>Review and governance are core platform concepts</td></tr>
-          <tr><td>Direct publish to Shopify</td><td class="penstack-col"><span class="yes">Yes</span></td><td><span class="yes">Yes</span><br>Native</td><td><span class="manual">Usually manual/integration-dependent</span></td><td><span class="manual">Integration-dependent</span></td></tr>
-          <tr><td>Dedicated listing review step</td><td class="penstack-col"><span class="yes">Yes</span><br>Review before publishing</td><td><span class="partial">Merchant review</span><br>Check changes in Shopify</td><td><span class="partial">Depends on setup</span><br>Review the draft and transferred fields</td><td><span class="partial">Depends on workflow</span><br>Content review and governance tools</td></tr>
-          <tr><td>Multi-store workflow</td><td class="penstack-col"><span class="yes">Pro and Agency</span><br>3 or 10 connected stores</td><td><span class="partial">Store-based</span><br>Managed inside Shopify account/store structure</td><td><span class="manual">Manual</span><br>Depends on your setup</td><td><span class="partial">Workspace/platform based</span><br>Not Shopify-store operations by default</td></tr>
+          <tr class="section-row workflow"><th colspan="5" scope="colgroup">Workflow + control</th></tr>
+          <tr>
+            <th scope="row">Human review before publish</th>
+            <td><strong class="yes">Yes</strong>Merchant remains responsible for accuracy</td>
+            <td><strong class="yes">Yes</strong>Review drafts and transferred copy</td>
+            <td><strong class="yes">Yes</strong>Review and governance tools</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Core workflow step</td>
+          </tr>
+          <tr>
+            <th scope="row">Direct publish to Shopify</th>
+            <td><strong class="yes">Yes</strong>Native</td>
+            <td><strong class="manual">Usually manual</strong>Integration-dependent</td>
+            <td><strong class="manual">Integration-dependent</strong></td>
+            <td class="penstack-col"><strong class="yes">Yes</strong></td>
+          </tr>
+          <tr>
+            <th scope="row">Dedicated listing review step</th>
+            <td><strong class="partial">Merchant review</strong>Check changes in Shopify</td>
+            <td><strong class="partial">Setup-dependent</strong>Review draft and transferred fields</td>
+            <td><strong class="partial">Workflow-dependent</strong>Content review and governance tools</td>
+            <td class="penstack-col"><strong class="yes">Yes</strong>Review before publishing</td>
+          </tr>
+          <tr>
+            <th scope="row">Multi-store workflow</th>
+            <td><strong class="partial">Store-based</strong>Managed inside Shopify account/store structure</td>
+            <td><strong class="manual">Manual</strong>Depends on your setup</td>
+            <td><strong class="partial">Workspace-based</strong>Not Shopify-store operations by default</td>
+            <td class="penstack-col"><strong class="yes">Pro + Agency</strong>3 or 10 connected stores</td>
+          </tr>
         </tbody>
       </table>
     </div>
-    <div class="source-note"><strong>Comparison note:</strong> Competitor capabilities change frequently. This page was checked against Shopify and Jasper documentation on September 30, 2026. General-AI comparisons describe the common manual workflow rather than one specific vendor. Shopify sources: <a href="https://help.shopify.com/en/manual/products/details/product-descriptions/shopify-magic">Magic product descriptions</a>, <a href="https://www.shopify.com/sidekick">Sidekick</a>, <a href="https://www.shopify.com/blog/image-alt-text">alt text guidance</a>. Jasper sources: <a href="https://help.jasper.ai/hc/en-us/articles/55085106001051-Brand-Voice">Brand Voice</a>, <a href="https://www.jasper.ai/workflows/product-description-generator">product-description workflows</a>, <a href="https://www.jasper.ai/solutions/seo-aeo-geo">SEO/AEO/GEO</a>.</div>
+
+    <div class="comparison-takeaways">
+      <article class="takeaway-card">
+        <h3>Key takeaways</h3>
+        <ul>
+          <li>Shopify-native AI keeps assistance close to store data and native tasks.</li>
+          <li>Jasper is designed for broader marketing-content operations.</li>
+          <li>General AI is flexible, but the Shopify handoff depends on your setup.</li>
+          <li>penstack focuses on keeping Shopify product-listing work connected through review and publishing.</li>
+        </ul>
+      </article>
+      <article class="takeaway-card detail">
+        <h3>Want the full details?</h3>
+        <p>The research notes and source links remain on this page so the quick comparison does not replace the underlying evidence.</p>
+        <a class="button secondary" href="#research-notes">View research notes ↓</a>
+      </article>
+    </div>
+
+    <div class="source-note" id="research-notes"><strong>Comparison note:</strong> Competitor capabilities change frequently. This page was checked against Shopify and Jasper documentation on September 30, 2026. General-AI comparisons describe the common manual workflow rather than one specific vendor. Shopify sources: <a href="https://help.shopify.com/en/manual/products/details/product-descriptions/shopify-magic">Magic product descriptions</a>, <a href="https://www.shopify.com/sidekick">Sidekick</a>, <a href="https://www.shopify.com/blog/image-alt-text">alt text guidance</a>. Jasper sources: <a href="https://help.jasper.ai/hc/en-us/articles/55085106001051-Brand-Voice">Brand Voice</a>, <a href="https://www.jasper.ai/workflows/product-description-generator">product-description workflows</a>, <a href="https://www.jasper.ai/solutions/seo-aeo-geo">SEO/AEO/GEO</a>.</div>
   </section>
 
   <section class="section soft">
@@ -160,14 +362,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="section compact">
     <div class="section-heading">
-      <p class="eyebrow green">WHERE EACH APPROACH IS STRONG</p>
-      <h2>The right tool depends on the job.</h2>
-      <p>Choose according to your store, your team, and the work ahead.</p>
+      <p class="eyebrow green">A CLOSER LOOK</p>
+      <h2>Each approach can be useful for a different job.</h2>
+      <p>Choose according to your store, your team, and the work you need to finish.</p>
     </div>
     <div class="strength-grid">
-      <article class="strength-card"><h3>Choose Shopify-native AI when…</h3><p>Your main need is help with tasks inside Shopify, including drafting descriptions and managing store operations.</p><small>Strength: assistance close to your Shopify store data.</small></article>
-      <article class="strength-card"><h3>Choose Jasper when…</h3><p>You need shared brand guidance and content production across marketing channels, teams, and campaigns.</p><small>Strength: brand guidance and broader marketing content operations.</small></article>
-      <article class="strength-card"><h3>Choose penstack when…</h3><p>Your recurring job is preparing Shopify listings, including descriptions, image text, supported fields, tags, collections, review, and publishing.</p><small>Strength: preparing the listing around an existing Shopify product.</small></article>
+      <article class="strength-card"><h3>Shopify-native AI</h3><p>Useful when you want assistance close to Shopify for descriptions and store tasks.</p><small>Strength: native Shopify context.</small></article>
+      <article class="strength-card"><h3>Jasper</h3><p>Useful when you need shared brand guidance and broader content production across channels.</p><small>Strength: wider marketing-content operations.</small></article>
+      <article class="strength-card"><h3>General AI</h3><p>Useful when flexible prompting matters more than having the product workflow connected to Shopify.</p><small>Strength: flexible drafting and ideation.</small></article>
+      <article class="strength-card penstack"><h3>penstack</h3><p>Useful when the recurring job is preparing Shopify listings from product context through review and publishing.</p><small>Strength: connected product-listing workflow.</small></article>
     </div>
   </section>
 
@@ -178,11 +381,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="final-cta">
-    <p class="eyebrow green">SEE THE PRODUCT IN PRACTICE.</p>
-    <h2>See how the listing comes together.</h2>
-    <p>Follow the steps from selecting a Shopify product to publishing the changes you approve.</p>
-    <a class="button primary" href="product.html">See how penstack works →</a>
+  <section class="compare-final">
+    <div>
+      <img src="penstack-compare-connected-workflow.webp" width="1600" height="560" loading="lazy" decoding="async" alt="Connected Shopify product workflow moving from product details through review to prepared listing content">
+    </div>
+    <div>
+      <p class="eyebrow green">SEE THE PRODUCT IN PRACTICE</p>
+      <h2>See how penstack brings the work together.</h2>
+      <p>Follow the workflow from selecting a Shopify product through content, product details, review, and the changes you approve for publishing.</p>
+      <a class="button primary" href="product.html">Explore the product →</a>
+    </div>
   </section>
 
   <footer>
