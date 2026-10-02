@@ -1,0 +1,41 @@
+name: Optimize Batch 3A Images
+
+on:
+  push:
+    paths:
+      - ".github/workflows/optimize-batch-3a.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install WebP tools
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Convert core marketing PNGs to WebP
+        run: |
+          set -euo pipefail
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none product_page_to_shopify_store.png -o product_page_to_shopify_store.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-product-hero-connected-workflow.png -o penstack-product-hero-connected-workflow.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-product-complete-process.png -o penstack-product-complete-process.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-retrieve-from-shopify.png -o penstack-retrieve-from-shopify.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-use-cases-overview.png -o penstack-use-cases-overview.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-use-cases-merchandising.png -o penstack-use-cases-merchandising.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none PS-blog-hero-cropped.png -o PS-blog-hero-cropped.webp
+          ls -lh *.webp
+
+      - name: Commit optimized images and remove one-time workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add product_page_to_shopify_store.webp                   penstack-product-hero-connected-workflow.webp                   penstack-product-complete-process.webp                   penstack-retrieve-from-shopify.webp                   penstack-use-cases-overview.webp                   penstack-use-cases-merchandising.webp                   PS-blog-hero-cropped.webp
+          git rm .github/workflows/optimize-batch-3a.yml
+          git commit -m "Optimize Batch 3A marketing images to WebP"
+          git push
