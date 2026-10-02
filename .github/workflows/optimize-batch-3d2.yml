@@ -1,0 +1,43 @@
+name: Optimize Batch 3D2 Images
+
+on:
+  push:
+    paths:
+      - ".github/workflows/optimize-batch-3d2.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install WebP tools
+        run: sudo apt-get update && sudo apt-get install -y webp
+
+      - name: Convert next heavy below-the-fold blog PNGs
+        run: |
+          set -euo pipefail
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-agency-onboarding-standardize-vs-client-specific.png -o penstack-agency-onboarding-standardize-vs-client-specific.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-shopify-seo-search-intent-example.png -o penstack-shopify-seo-search-intent-example.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none blog/assets/penstack-product-image-metadata-takeaway.png -o blog/assets/penstack-product-image-metadata-takeaway.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none blog/assets/penstack-ecommerce-image-accessibility-qa-variant-example.png -o blog/assets/penstack-ecommerce-image-accessibility-qa-variant-example.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none blog/assets/penstack-product-image-metadata-three-fields.png -o blog/assets/penstack-product-image-metadata-three-fields.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none "Shopify Catalog Audit Framework.png" -o "Shopify Catalog Audit Framework.webp"
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-shopify-seo-page-types.png -o penstack-shopify-seo-page-types.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-product-listing-qa-framework.png -o penstack-product-listing-qa-framework.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none penstack-long-tail-keywords-specificity-ladder.png -o penstack-long-tail-keywords-specificity-ladder.webp
+          cwebp -quiet -q 86 -m 6 -alpha_q 100 -metadata none blog/assets/penstack-product-image-metadata-alt-text-example.png -o blog/assets/penstack-product-image-metadata-alt-text-example.webp
+
+      - name: Commit optimized images and remove one-time workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add penstack-agency-onboarding-standardize-vs-client-specific.webp                   penstack-shopify-seo-search-intent-example.webp                   blog/assets/penstack-product-image-metadata-takeaway.webp                   blog/assets/penstack-ecommerce-image-accessibility-qa-variant-example.webp                   blog/assets/penstack-product-image-metadata-three-fields.webp                   "Shopify Catalog Audit Framework.webp"                   penstack-shopify-seo-page-types.webp                   penstack-product-listing-qa-framework.webp                   penstack-long-tail-keywords-specificity-ladder.webp                   blog/assets/penstack-product-image-metadata-alt-text-example.webp
+          git rm .github/workflows/optimize-batch-3d2.yml
+          git commit -m "Optimize Batch 3D2 blog illustrations to WebP"
+          git push
