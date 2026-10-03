@@ -1,0 +1,29 @@
+/* Focused buyer pages share the approved marketing palette and type scale. */
+.buyer-breadcrumb{padding:22px 6% 0;color:var(--muted);font-size:var(--type-label)}
+.buyer-breadcrumb a{text-decoration:underline;text-underline-offset:4px}
+.buyer-page .buyer-hero{padding-top:38px;grid-template-columns:1.05fr .95fr;gap:40px}
+.buyer-art{margin:0}.buyer-art img{width:100%;height:auto}
+.buyer-section{border-top:1px solid var(--line)}
+.buyer-grid{display:grid;gap:var(--gap-grid)}.buyer-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.buyer-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.buyer-card{padding:var(--space-card);border:var(--border-default);border-top:4px solid var(--navy);border-radius:var(--radius-card);background:var(--white)}
+.buyer-card h3,.buyer-steps h3{margin:0 0 12px;font-size:var(--type-card);line-height:var(--leading-subsection);letter-spacing:-.02em}
+.buyer-card p{margin:0;color:var(--muted)}.buyer-card p+p{margin-top:16px}
+.buyer-card .eyebrow{margin:0 0 12px;color:var(--green)}
+.buyer-card.before{border-top-color:var(--yellow)}.buyer-card.after{border-top-color:var(--green)}
+.buyer-note{font-size:var(--type-label);color:var(--muted);margin:18px 0 0}
+.buyer-link{color:var(--green);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.buyer-steps{list-style:none;counter-reset:step;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--gap-grid);margin:0;padding:0}
+.buyer-steps li{counter-increment:step;min-width:0;padding-top:20px;border-top:3px solid var(--green)}
+.buyer-steps li:before{content:counter(step,decimal-leading-zero);display:block;color:var(--green);font-weight:800;margin-bottom:12px}
+.buyer-steps p{color:var(--muted);margin:0}
+.buyer-split{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap-split)}.buyer-split h2{font-size:var(--type-section);line-height:var(--leading-section)}.buyer-split p{color:var(--muted);margin:0 0 18px}
+.store-examples .buyer-card:nth-child(2){border-top-color:var(--orange)}
+.store-examples dl{margin:0;display:grid;gap:6px}.store-examples dt{font-weight:700}.store-examples dd{margin:0 0 12px;color:var(--muted)}
+.buyer-shared{display:flex;gap:24px;align-items:baseline;flex-wrap:wrap;margin-top:18px;padding:20px 24px;border:var(--border-default);border-left:4px solid var(--yellow);border-radius:var(--radius-control)}.buyer-shared span{color:var(--muted)}
+.buyer-table-wrap{overflow-x:auto;border:var(--border-default);border-radius:var(--radius-card)}
+.buyer-table{width:100%;border-collapse:collapse;text-align:left;margin:0;table-layout:fixed}.buyer-table caption{text-align:left;padding:16px 20px;color:var(--muted);font-size:var(--type-label)}
+.buyer-table th,.buyer-table td{padding:16px 20px;border-top:1px solid var(--line);vertical-align:top;overflow-wrap:break-word}.buyer-table thead{background:var(--navy);color:var(--white)}.buyer-table th:first-child{width:44%}.buyer-table tbody td{color:var(--muted)}
+.buyer-faq{max-width:900px}.buyer-faq details{border-bottom:1px solid var(--line);padding:20px 0}.buyer-faq summary{font-weight:700;cursor:pointer}.buyer-faq p{color:var(--muted);margin:12px 0 0}.buyer-faq a{text-decoration:underline;text-underline-offset:3px;color:var(--green)}
+.buyer-page a:focus-visible,.buyer-faq summary:focus-visible{outline:3px solid var(--green);outline-offset:5px}
+@media(max-width:1100px){.buyer-page .buyer-hero{grid-template-columns:1fr}.buyer-art{max-width:700px;margin:auto}.buyer-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.buyer-grid.three,.buyer-grid.two,.buyer-split,.buyer-steps{grid-template-columns:1fr}.buyer-table th,.buyer-table td{padding:12px 10px;font-size:var(--type-label)}.buyer-page .buyer-hero{padding-top:28px}.buyer-shared{gap:6px}}
