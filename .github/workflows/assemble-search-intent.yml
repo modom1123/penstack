@@ -1,0 +1,30 @@
+name: Assemble search intent asset
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/assemble-search-intent.yml'
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Assemble WebP
+        run: |
+          cat .tmp-search-intent/part*.txt | tr -d '\n' | base64 -d > penstack-use-cases-search-intent.webp
+          test "$(wc -c < penstack-use-cases-search-intent.webp)" -gt 30000
+      - name: Clean staging files
+        run: |
+          rm -rf .tmp-search-intent
+          rm .github/workflows/assemble-search-intent.yml
+      - name: Commit asset
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add Use Cases search intent illustration"
+          git push
