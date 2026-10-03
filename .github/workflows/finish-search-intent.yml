@@ -1,0 +1,56 @@
+name: Finish search intent artwork
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/finish-search-intent.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  finish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reassemble WebP and update Use Cases
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          cat             .tmp-search-intent/part00a.txt             .tmp-search-intent/part00b.txt             .tmp-search-intent/part01.txt             .tmp-search-intent/part02.txt             .tmp-search-intent/part03.txt             .tmp-search-intent/part04.txt             .tmp-search-intent/part05.txt             .tmp-search-intent/part06.txt             .tmp-search-intent/part07.txt             .tmp-search-intent/part08.txt             .tmp-search-intent/part09.txt             .tmp-search-intent/part10.txt             .tmp-search-intent/part11.txt             .tmp-search-intent/part12.txt             .tmp-search-intent/part13.txt             .tmp-search-intent/part14.txt             .tmp-search-intent/part15.txt             .tmp-search-intent/part16a.txt             .tmp-search-intent/part16b.txt             | tr -d '\n\r '             | base64 --decode > penstack-use-cases-search-intent.webp
+
+          test -s penstack-use-cases-search-intent.webp
+
+          python3 - <<'PY'
+          from pathlib import Path
+
+          p = Path("use-cases.html")
+          s = p.read_text()
+          old = '<picture><source type="image/webp" srcset="assets/illustrations/penstack-illustration-search-intent-v1.webp"><img src="penstack-illustration-search-intent-v1.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Magnifying glass on a ceramic mug alongside product and dishwasher care details"></picture>'
+          new = '<img src="penstack-use-cases-search-intent.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Magnifying glass on a ceramic mug alongside product and dishwasher care details">'
+
+          if old not in s:
+              raise SystemExit("Expected search-intent markup not found")
+
+          s = s.replace(old, new, 1)
+
+          if s.count("penstack-illustration-search-intent-v1.webp") != 0:
+              raise SystemExit("Old reference still present")
+          if s.count("penstack-use-cases-search-intent.webp") != 1:
+              raise SystemExit("New reference count is not exactly 1")
+
+          p.write_text(s)
+          PY
+
+          rm -rf .tmp-search-intent
+          rm -f .github/workflows/finish-search-intent.yml
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Finish use cases search intent artwork"
+          git push
