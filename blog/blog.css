@@ -2144,3 +2144,5 @@
 /* Article-to-buyer bridges use the approved white, navy, and green palette. */
 .blog-cta.buyer-bridge{background:var(--white);border-color:var(--line);border-top:4px solid var(--green)}
 .blog-cta.buyer-bridge .button{white-space:normal;text-align:center}
+/* Buyer bridges that keep Start free: stack the primary and secondary buttons at equal width. */
+.blog-cta .hero-actions{flex:0 0 auto;flex-direction:column;align-items:stretch;gap:10px}

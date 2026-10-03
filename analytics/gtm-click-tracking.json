@@ -1129,6 +1129,26 @@
                 "value": "^https?://(www\\.)?penstack\\.co/shopify-(catalog-cleanup|agency-workflows)(\\.html)?/?([?#].*)?$"
               }
             ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "a[href^=\"#\"]"
+              },
+              {
+                "type": "BOOLEAN",
+                "key": "negate",
+                "value": "true"
+              }
+            ]
           }
         ],
         "waitForTags": {
@@ -1181,6 +1201,26 @@
                 "type": "TEMPLATE",
                 "key": "arg1",
                 "value": "header.site-header a, header.site-header a *, footer a, footer a *"
+              },
+              {
+                "type": "BOOLEAN",
+                "key": "negate",
+                "value": "true"
+              }
+            ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "a[href^=\"#\"]"
               },
               {
                 "type": "BOOLEAN",
