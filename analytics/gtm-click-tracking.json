@@ -665,6 +665,21 @@
                 "value": "^https?://(www\\.)?penstack\\.co/product(\\.html)?/?([?#].*)?$"
               }
             ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "header.site-header a, header.site-header a *"
+              }
+            ]
           }
         ],
         "waitForTags": {
@@ -702,6 +717,21 @@
                 "type": "TEMPLATE",
                 "key": "arg1",
                 "value": "^https?://(www\\.)?penstack\\.co/use\\-cases(\\.html)?/?([?#].*)?$"
+              }
+            ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "header.site-header a, header.site-header a *"
               }
             ]
           }
@@ -743,6 +773,21 @@
                 "value": "^https?://(www\\.)?penstack\\.co/pricing(\\.html)?/?([?#].*)?$"
               }
             ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "header.site-header a, header.site-header a *"
+              }
+            ]
           }
         ],
         "waitForTags": {
@@ -780,6 +825,21 @@
                 "type": "TEMPLATE",
                 "key": "arg1",
                 "value": "^https?://(www\\.)?penstack\\.co/blog/(index\\.html)?([?#].*)?$"
+              }
+            ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "header.site-header a, header.site-header a *"
               }
             ]
           }
@@ -821,6 +881,21 @@
                 "value": "^https?://(www\\.)?penstack\\.co/compare(\\.html)?/?([?#].*)?$"
               }
             ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "header.site-header a, header.site-header a *"
+              }
+            ]
           }
         ],
         "waitForTags": {
@@ -858,6 +933,21 @@
                 "type": "TEMPLATE",
                 "key": "arg1",
                 "value": "^https?://(www\\.)?penstack\\.co/about(\\.html)?/?([?#].*)?$"
+              }
+            ]
+          },
+          {
+            "type": "CSS_SELECTOR",
+            "parameter": [
+              {
+                "type": "TEMPLATE",
+                "key": "arg0",
+                "value": "{{Click Element}}"
+              },
+              {
+                "type": "TEMPLATE",
+                "key": "arg1",
+                "value": "header.site-header a, header.site-header a *"
               }
             ]
           }
