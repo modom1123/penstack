@@ -1,10 +1,10 @@
 /* Shared artwork, icon, and diagram grammar for core marketing pages. */
 :root {
   --visual-blue: #2175c9;
-  --visual-blue-wash: #eaf4ff;
-  --visual-green-wash: #eef4ef;
+  --visual-blue-wash: #ffffff;
+  --visual-green-wash: #ffffff;
   --visual-yellow-wash: #fff4cf;
-  --visual-review-ink: #725016;
+  --visual-review-ink: #1b2a4a;
   --visual-radius: 18px;
 }
 .brand-illustration { margin: 0; min-width: 0; }
@@ -13,7 +13,7 @@
 .brand-illustration figcaption { padding: 10px 4px 0; font-size: .875rem; line-height: 1.5; color: var(--muted); }
 .brand-icon { display: block; width: 24px; height: 24px; flex: 0 0 auto; }
 .brand-icon-tile { display: inline-grid; place-items: center; width: 44px; height: 44px; margin-bottom: 16px; border-radius: 12px; background: var(--visual-blue-wash); color: var(--navy); }
-.brand-icon-tile.is-approval { background: var(--visual-green-wash); color: var(--green); }
+.brand-icon-tile.is-approval { background: var(--green); color: #fff; }
 .brand-icon-tile.is-review { background: var(--visual-yellow-wash); color: var(--visual-review-ink); }
 .contrast-card .brand-icon-tile { margin-bottom: 0; }
 .contrast-card.before { background: #fff; }
@@ -42,6 +42,6 @@
   .brand-illustration figcaption { padding-top: 8px; }
 }
 
-.workflow-story .workflow-number, .process-card .number { background: var(--visual-blue-wash); color: var(--navy); }
+.workflow-story .workflow-number, .process-card .number { background: var(--yellow); color: var(--navy); }
 .workflow-story article:nth-child(3) .workflow-number, .process-card:nth-child(3) .number { background: var(--visual-yellow-wash); color: var(--visual-review-ink); }
-.workflow-story article:nth-child(4) .workflow-number, .process-card:nth-child(4) .number { background: var(--visual-green-wash); color: var(--green); }
+.workflow-story article:nth-child(4) .workflow-number, .process-card:nth-child(4) .number { background: var(--green); color: #fff; }

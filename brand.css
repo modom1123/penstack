@@ -19,19 +19,31 @@
   --tracking-display: -.045em;
   --tracking-section: -.035em;
 
-  /* Shared penstack marketing palette */
+  /* Logo palette: white canvas with navy, green, yellow, and orange accents. */
+  --navy: #1b2a4a;
+  --ink: #1b2a4a;
+  --green: #1a5c3a;
+  --yellow: #f0a500;
+  --orange: #c94b2a;
+  --red: #c94b2a;
+  --muted: #526078;
+  --line: #d8dee8;
+  --cream: #ffffff;
+  --paper: #ffffff;
+  --soft: #ffffff;
+  --peach: #ffffff;
   --white: #ffffff;
-  --surface-neutral: #fbfaf5;
-  --tint-green: #eef7f1;
-  --tint-blue: #eaf5ff;
+  --surface-neutral: #ffffff;
+  --tint-green: #ffffff;
+  --tint-blue: #ffffff;
   --tint-yellow: #fff6d9;
-  --tint-orange: #fff0e8;
-  --border-green: #d8e9dd;
-  --border-blue: #d7e6f3;
-  --border-yellow: #f0dfb9;
-  --border-orange: #edd8bc;
+  --tint-orange: #ffffff;
+  --border-green: #d8dee8;
+  --border-blue: #d8dee8;
+  --border-yellow: #d8dee8;
+  --border-orange: #d8dee8;
   --brand-blue: #2f78c4;
-  --yellow-deep: #d89b10;
+  --yellow-deep: #8a5900;
   --status-gray: #9aa5ad;
 
   /* Shared component geometry + spacing */
@@ -318,3 +330,78 @@ footer p { max-width: 24rem; }
     padding-bottom: 40px;
   }
 }
+
+/* Logo palette pass. Layout and image framing stay with their existing rules. */
+.home-belief, .system-band, .context-panel, .contact-band,
+.uc-pattern, .seo-panel, .seo-compare, .quote-card, .why-strip {
+  background: var(--white);
+  border-color: var(--line);
+  border-top: 4px solid var(--green);
+}
+.section.soft, .section.peach, .process-section, .outcome-section,
+.control-section, .how-to-choose, .quick-fit, .experience-section,
+.time-section, .compare-final {
+  background: var(--white);
+  border-top: 1px solid var(--line);
+}
+.product-hero-visual { background: var(--white); }
+.workflow-side.after, .review-proof div,
+.fit-card.penstack, .strength-card.penstack {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--green);
+}
+.process-card::before, .process-card:nth-child(4)::before { background: var(--green); }
+.process-card:nth-child(2)::before { background: var(--orange); }
+.process-card:nth-child(3)::before { background: var(--yellow); }
+.price-card.free, .price-card.solo, .price-card.pro, .price-card.agency,
+.value-step.free, .value-step.solo, .value-step.pro, .value-step.agency {
+  background: var(--white);
+  border-color: var(--line);
+  border-top: 4px solid var(--navy);
+}
+.price-card.solo, .value-step.solo { border-top-color: var(--green); }
+.price-card.pro, .value-step.pro { border-top-color: var(--orange); }
+.price-card.agency, .value-step.agency { border-top-color: var(--yellow); }
+.final-cta { background: var(--navy); color: var(--white); }
+.final-cta p { color: #e3e8f0; }
+.final-cta .eyebrow { color: var(--yellow); }
+.final-cta .button.primary { background: var(--yellow); color: var(--navy); box-shadow: none; }
+.final-cta .button.secondary { background: var(--white); color: var(--navy); border-color: var(--white); }
+.button.primary { box-shadow: 0 8px 18px rgb(27 42 74 / 10%); }
+.button.primary:hover { background: #14482d; }
+.final-cta .button.primary:hover { background: #ffba2a; }
+.button.secondary { border-color: var(--navy); color: var(--navy); }
+.button.secondary:hover { border-color: var(--green); color: var(--green); }
+:is(a, button, input, select, textarea):focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+.final-cta :is(a, button):focus-visible, footer a:focus-visible { outline-color: var(--yellow); }
+
+/* Learning levels use text and a shared editorial surface. */
+.resource-hub {
+  --hub-ink: var(--navy);
+  --hub-navy: var(--navy);
+  --hub-green: var(--green);
+  --hub-amber: var(--yellow-deep);
+  --hub-purple: var(--green);
+  --hub-line: var(--line);
+  --hub-muted: var(--muted);
+  --hub-soft: var(--white);
+}
+.resource-hero, .blog-hero, .roadmap-section,
+.journey-start, .journey-level-up, .journey-go-deeper { background: var(--white); }
+.journey-lane { border-top: 3px solid var(--navy); }
+.resource-kicker { color: var(--orange); }
+.journey-stage-label, .journey-start .journey-stage-label,
+.journey-level-up .journey-stage-label, .journey-go-deeper .journey-stage-label,
+.badge-start, .badge-up, .badge-deep, .topic-badge {
+  background: var(--white);
+  color: var(--navy);
+  border: 1px solid var(--line);
+}
+.stage-filter-start:not(.active):not(.selected),
+.stage-filter-up:not(.active):not(.selected),
+.stage-filter-deep:not(.active):not(.selected) { background: var(--white); }
+.stage-filter.active, .stage-filter.selected { background: var(--navy); color: var(--white); border-color: var(--navy); }
+.learning-model-grid article:nth-child(1) { border-top-color: var(--green); }
+.learning-model-grid article:nth-child(2) { border-top-color: var(--yellow); }
+.learning-model-grid article:nth-child(3) { border-top-color: var(--orange); }
