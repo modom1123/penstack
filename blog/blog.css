@@ -2140,3 +2140,7 @@
   width:100%;
   height:auto;
 }
+
+/* Article-to-buyer bridges use the approved white, navy, and green palette. */
+.blog-cta.buyer-bridge{background:var(--white);border-color:var(--line);border-top:4px solid var(--green)}
+.blog-cta.buyer-bridge .button{white-space:normal;text-align:center}
