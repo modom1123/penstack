@@ -32,6 +32,9 @@
     .audit-grid article{padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff}
     .audit-grid h3{margin:0 0 8px;font-size:20px}.audit-grid p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}
     .audit-grid ul{margin:12px 0 0;padding-left:18px}
+    .audit-visual-key{max-width:900px;margin:16px auto 0;padding-left:24px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 24px;color:var(--navy);font-size:14px;line-height:1.5}
+    .audit-visual-key li{padding-left:3px}
+    @media(max-width:760px){.audit-visual-key{grid-template-columns:1fr;gap:8px}}
     @media(max-width:760px){.audit-grid{grid-template-columns:1fr}.audit-table th,.audit-table td{padding:10px}}
   </style>
   <script type="application/ld+json">
@@ -103,9 +106,17 @@
         <p>Work through the catalog in an order that reduces dependencies. Structure comes first because content, SEO, navigation, and merchandising all rely on it.</p>
       </div>
       <figure class="blog-figure audit-framework-figure">
-        <img src="../Shopify Catalog Audit Framework.webp" loading="lazy" alt="Six-step Shopify catalog audit framework: inventory and structure, content, images, SEO, collections, and merchandising">
+        <img src="../penstack-shopify-catalog-audit-framework.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Green sneaker product record connected to cards representing product structure, content, images, search, collections, and merchandising">
         <figcaption>Audit from foundational product data outward to customer-facing discovery and merchandising.</figcaption>
       </figure>
+      <ol class="audit-visual-key" aria-label="Catalog audit order">
+        <li>Inventory and structure</li>
+        <li>Product content</li>
+        <li>Product images</li>
+        <li>SEO and search context</li>
+        <li>Collections</li>
+        <li>Merchandising</li>
+      </ol>
     </section>
 
     <section class="blog-section" id="structure">
@@ -151,9 +162,14 @@
         <p>Images are both product information and interface. A catalog can have technically correct product data and still feel broken if the imagery is inconsistent, outdated, blurry, or incomplete.</p>
       </div>
       <figure class="blog-figure">
-        <img src="../Image Audit Checklist with Blue Trail Shoe.webp" loading="lazy" alt="Image audit checklist showing multiple product angles, a clean background, high resolution, descriptive file names, and accurate alt text">
+        <img src="../penstack-shopify-catalog-image-audit-checklist.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Green sneaker photo with matching rear and sole views beside an image review card; the description still needs human review">
         <figcaption>Review image quality, consistency, coverage, file naming, and alt text together rather than treating them as separate cleanup projects.</figcaption>
       </figure>
+      <ul class="audit-visual-key" aria-label="Product image review checklist">
+        <li>Cover the product views shoppers need.</li>
+        <li>Check sharpness and consistent backgrounds.</li>
+        <li>Verify filenames and image descriptions.</li>
+      </ul>
       <div class="blog-prose">
         <p>Check whether each product has the angles shoppers need, whether imagery follows a consistent visual system, and whether obsolete images should be removed. Then review accessibility separately from filename hygiene.</p>
         <p>For a deeper image process, see <a href="ecommerce-image-accessibility-qa.html">How to Build an Image Accessibility QA Standard for Your Catalog</a> and <a href="product-image-metadata.html">Product Image Metadata: Filenames vs. Alt Text vs. Visible Copy</a>.</p>
