@@ -55,7 +55,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .plan-includes{display:grid;gap:7px;margin:0 0 22px;padding:0;list-style:none}
     .plan-includes li{font-size:12.5px;color:var(--muted);line-height:1.4;padding-left:18px;position:relative}
     .plan-includes li:before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:900}
-    .price-card .button{margin-top:auto}
+    /* Shared rows keep each plan readable straight across as copy wraps. */
+    .pricing-grid > .price-card{display:grid;grid-row:span 9;grid-template-rows:subgrid;row-gap:12px}
+    .pricing-grid > .price-card > *{margin:0;min-width:0}
+    .pricing-grid > .price-card .plan-tagline{min-height:0;padding-bottom:8px}
+    .pricing-grid > .price-card .price{line-height:1.1;align-self:start}
+    .pricing-grid > .price-card .annual-price{padding-bottom:6px}
+    .pricing-grid > .price-card .plan-specs{grid-template-rows:repeat(3,1fr);gap:9px;padding-bottom:6px}
+    .pricing-grid > .price-card .plan-value{padding-bottom:6px}
+    .pricing-grid > .price-card .plan-includes{align-content:start;padding-bottom:10px}
+    .pricing-grid > .price-card .button{align-self:end}
     .usage-band{display:grid;grid-template-columns:1.2fr repeat(4,1fr);margin-top:18px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--white)}
     .usage-band>div{padding:18px;border-right:1px solid var(--line)}
     .usage-band>div:last-child{border-right:0}
