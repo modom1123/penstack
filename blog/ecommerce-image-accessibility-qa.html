@@ -38,6 +38,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .variant-alt-examples h3{margin:0 0 10px;font-size:18px}
     .variant-alt-examples p{margin:0;font-size:16px;line-height:1.5}
     @media(max-width:600px){.variant-alt-examples{gap:14px;padding:14px}.variant-alt-examples h3{font-size:15px}.variant-alt-examples p{font-size:14px}}
+    .qa-checklist-copy,.qa-workflow-copy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding:20px;color:var(--navy);text-align:left}
+    .qa-workflow-copy{margin:0;padding-left:42px}
+    .qa-checklist-copy h3,.qa-workflow-copy h3{margin:0 0 8px;font-size:18px}
+    .qa-checklist-copy p,.qa-workflow-copy p{margin:0;font-size:16px;line-height:1.5}
+    @media(max-width:600px){.qa-checklist-copy,.qa-workflow-copy{grid-template-columns:1fr;gap:16px;padding:16px}.qa-workflow-copy{padding-left:38px}.qa-checklist-copy h3,.qa-workflow-copy h3{font-size:16px}}
   </style>
 </head>
 <body>
@@ -119,7 +124,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="blog-section" id="qa"><h2>5. Build a repeatable QA pass</h2>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-ecommerce-image-accessibility-qa-checklist.webp" width="1200" height="760" loading="lazy" alt="Image accessibility QA checklist covering accuracy, distinctiveness, variant awareness, and restraint">
+  <img src="../penstack-blog-ecommerce-image-accessibility-qa-checklist-v2.webp" width="1902" height="827" loading="lazy" alt="Green and cream lace-up sneaker in a product image card with a review check">
+  <div class="qa-checklist-copy">
+    <div><h3>Accuracy</h3><p>Does the alt text match what’s actually in the image?</p></div>
+    <div><h3>Distinctiveness</h3><p>Is this alt text unique to this image (and not just copied from another)?</p></div>
+    <div><h3>Variant-aware</h3><p>Does it reflect the specific color, style, or view shown?</p></div>
+    <div><h3>Restraint</h3><p>Is it concise and free of keyword stuffing?</p></div>
+  </div>
   <figcaption>A good QA pass checks both the individual image and the consistency of the wider catalog.</figcaption>
 </figure>
 <div class="blog-prose"><p>Then add one catalog-level check: <strong>Are we describing the same type of image the same way across products?</strong> Consistency matters most where it helps a shopper predict what they will hear.</p></div></section>
@@ -142,7 +153,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="blog-takeaway"><h2>The takeaway</h2><p><strong>At catalog scale, accessibility becomes an operations problem as much as a writing problem.</strong></p>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-ecommerce-image-accessibility-qa-workflow.webp" width="1200" height="760" loading="lazy" alt="Repeatable ecommerce image accessibility workflow from setting a standard through review and ongoing catalog maintenance">
+  <img src="../penstack-blog-ecommerce-image-accessibility-qa-workflow-v2.webp" width="1902" height="827" loading="lazy" alt="Green and cream sneaker product card surrounded by a curved return arrow and a review check">
+  <ol class="qa-workflow-copy">
+    <li><h3>Set a standard</h3><p>Define your rules and examples.</p></li>
+    <li><h3>Apply to images</h3><p>Use role-based guidance (hero, detail, alternate view, etc.).</p></li>
+    <li><h3>Review</h3><p>Spot-check for accuracy and consistency.</p></li>
+    <li><h3>Keep it going</h3><p>Make image accessibility part of your catalog process.</p></li>
+  </ol>
 </figure></section>
     <section class="blog-cta" aria-label="penstack call to action">
       <div><h2>Put image details into the same product workflow.</h2><p>penstack keeps image titles, alt text, product content, review, and publishing connected.</p></div>
