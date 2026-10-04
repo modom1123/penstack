@@ -33,6 +33,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"What Is Alt Text, and Why Does My Product Image Need It?","description":"Learn what product image alt text is, why it matters for accessibility, and how to write useful alt text for ecommerce images.","datePublished":"2026-09-24","dateModified":"2026-09-24","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/alt-text-product-images.html"},"keywords":["product image alt text","ecommerce accessibility","Shopify alt text","image SEO","screen readers"]}
   </script>
   <link rel="stylesheet" href="../brand.css?v=20261003-logo-palette">
+  <style>
+    .alt-example-details,.alt-comparison-details{display:grid;gap:20px;padding:20px;color:var(--navy)}
+    .alt-example-details{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .alt-comparison-details{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .alt-example-details h3,.alt-comparison-details h3{margin:0 0 10px;font-size:18px}
+    .alt-example-details p,.alt-comparison-details p{margin:8px 0;font-size:16px;line-height:1.5}
+    @media(max-width:600px){.alt-example-details{grid-template-columns:1fr}.alt-example-details>div+div{border-top:1px solid var(--line);padding-top:16px}.alt-comparison-details{gap:14px;padding:14px}.alt-comparison-details h3{font-size:15px}.alt-comparison-details p{font-size:14px}}
+  </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -111,7 +119,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="blog-section" id="examples"><h2>4. What does good product alt text look like?</h2>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-alt-text-examples.webp" width="1200" height="760" loading="lazy" alt="Product alt text examples comparing unhelpful descriptions with specific useful descriptions for a shoe, shirt, and mug">
+  <img src="../penstack-blog-alt-text-examples-v2.webp" width="1902" height="827" loading="lazy" alt="Three product image cards: a green and cream lace-up sneaker, a navy crew-neck T-shirt, and a cream mug">
+  <div class="alt-example-details">
+    <div><h3>Sneaker</h3><p><strong>Unhelpful:</strong> Shoe</p><p><strong>Useful:</strong> Green and cream lace-up sneaker, side view.</p></div>
+    <div><h3>T-shirt</h3><p><strong>Unhelpful:</strong> Shirt blue</p><p><strong>Useful:</strong> Navy crew-neck T-shirt, front view.</p></div>
+    <div><h3>Mug</h3><p><strong>Unhelpful:</strong> Mug product drink cup</p><p><strong>Useful:</strong> Cream mug with handle on the right, side view.</p></div>
+  </div>
   <figcaption>Useful alt text adds the visual detail a shopper needs without turning the field into hidden marketing copy.</figcaption>
 </figure>
 </section>
@@ -128,7 +141,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>Product-gallery images are usually informative, though. If a photo helps someone understand the item, variant, fit, texture, or view, it generally deserves a meaningful text alternative.</p>
 </div>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/alt-text-informative-decorative.svg" width="1200" height="560" loading="lazy" alt="Comparison showing an informative product image with descriptive alt text and a decorative graphic with empty alt text">
+  <img src="../penstack-blog-alt-text-informative-decorative-v2.webp" width="1902" height="827" loading="lazy" alt="An informative sneaker image beside a purely decorative pattern of green, yellow, and orange curved bands">
+  <div class="alt-comparison-details">
+    <div><h3>Informative image</h3><p>Describe the useful product information.</p><p><strong>Example:</strong> Green and cream lace-up sneaker, side view.</p></div>
+    <div><h3>Decorative image</h3><p>Use empty alt text when the image adds no information.</p><p><code>alt=""</code></p></div>
+  </div>
   <figcaption>Informative images communicate product information. Decorative images add no useful content and can usually be skipped by assistive technology.</figcaption>
 </figure></section>
 

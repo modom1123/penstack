@@ -26,13 +26,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
-    <link rel="preload" as="image" href="assets/penstack-product-image-metadata-hero.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../penstack-blog-product-image-metadata-hero-v2.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="../styles.css?v=19">
   <link rel="stylesheet" href="blog.css?v=12">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"Product Image Metadata: Filenames vs. Alt Text vs. Visible Copy","description":"Understand the difference between ecommerce image filenames, alt text, and visible product copy, with practical Shopify examples.","datePublished":"2026-09-24","dateModified":"2026-09-24","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/product-image-metadata.html"},"keywords":["image filenames","alt text","product copy","Shopify images","ecommerce SEO"]}
   </script>
   <link rel="stylesheet" href="../brand.css?v=20261003-logo-palette">
+  <style>
+    .metadata-fields-visual{position:relative}
+    .metadata-field-name{position:absolute;left:59%;width:33%;transform:translateY(-50%);text-align:center;color:var(--navy);font-weight:700;font-size:clamp(12px,2.2vw,22px);line-height:1.2}
+    .metadata-field-examples{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:0;padding:20px;color:var(--navy)}
+    .metadata-field-examples dt{font-weight:700;margin-bottom:10px}
+    .metadata-field-examples dd{margin:0;font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+    .metadata-field-examples p{margin:8px 0}
+    @media(max-width:600px){.metadata-field-examples{grid-template-columns:1fr}.metadata-field-examples>div+div{border-top:1px solid var(--line);padding-top:16px}}
+  </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -67,7 +76,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-24">September 24, 2026</time> · 6 min read</span></div>
       </div>
       <figure class="blog-hero-visual accessibility-hero-visual">
-        <img src="assets/penstack-product-image-metadata-hero.webp" width="1200" height="760" alt="Product image metadata visual showing how a product image connects to descriptive metadata" loading="eager" fetchpriority="high" decoding="async">
+        <img src="../penstack-blog-product-image-metadata-hero-v2.webp" width="1586" height="992" alt="Green and cream lace-up sneaker in an image card connected to a yellow file tab representing attached metadata" loading="eager" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </header>
@@ -84,7 +93,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <article><b>3</b><strong>Visible copy</strong><span>Customer-facing language that explains benefits, context, details, and reasons to buy.</span></article>
 </div>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-product-image-metadata-three-fields.webp" width="1200" height="760" loading="lazy" alt="Visual comparing filename, alt text, and visible product copy as three different metadata fields for one product image">
+  <div class="metadata-fields-visual">
+    <img src="../penstack-blog-product-image-metadata-three-fields-v2.webp" width="1672" height="941" loading="lazy" alt="One sneaker image connected to three fields: filename, alt text, and visible copy">
+    <span class="metadata-field-name" style="top:25.7%">Filename</span>
+    <span class="metadata-field-name" style="top:50%">Alt text</span>
+    <span class="metadata-field-name" style="top:75%">Visible copy</span>
+  </div>
+  <dl class="metadata-field-examples">
+    <div><dt>Filename</dt><dd><code>green-cream-sneaker-side.webp</code><p>Identifies the image file.</p></dd></div>
+    <div><dt>Alt text</dt><dd>Green and cream lace-up sneaker, side view.<p>Communicates the useful visual information.</p></dd></div>
+    <div><dt>Visible copy</dt><dd>Green and cream lace-up sneaker.<p>Names the product for shoppers on the page.</p></dd></div>
+  </dl>
   <figcaption>The same product image can support three different fields, each with a different job.</figcaption>
 </figure></section>
 
