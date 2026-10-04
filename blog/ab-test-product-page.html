@@ -17,17 +17,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:title" content="What Should You A/B Test on a Product Page?">
   <meta property="og:description" content="Titles, description openings, benefit order, imagery, and what to avoid changing all at once.">
   <meta property="og:url" content="https://penstack.co/blog/ab-test-product-page.html">
-  <meta property="og:image" content="https://penstack.co/penstack-ab-testing-hero.png">
+  <meta property="og:image" content="https://penstack.co/penstack-blog-ab-testing-hero-v2.webp">
   <meta property="article:published_time" content="2026-09-26">
   <meta property="article:author" content="penstack">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="What Should You A/B Test on a Product Page?">
   <meta name="twitter:description" content="A practical guide to running cleaner, more useful product-page A/B tests.">
-  <meta name="twitter:image" content="https://penstack.co/penstack-ab-testing-hero.png">
+  <meta name="twitter:image" content="https://penstack.co/penstack-blog-ab-testing-hero-v2.webp">
   <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
-    <link rel="preload" as="image" href="../penstack-ab-testing-hero.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../penstack-blog-ab-testing-hero-v2.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="../styles.css?v=19">
   <link rel="stylesheet" href="blog.css?v=12">
   <style>
@@ -39,6 +39,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .ab-flow div{padding:16px;border:1px solid var(--line);border-radius:12px;background:#fff;text-align:center}
     .ab-flow strong{display:block;margin-bottom:4px}.ab-flow span{color:var(--muted);font-size:14px;line-height:1.4}
     @media(max-width:760px){.ab-flow{grid-template-columns:1fr 1fr}.ab-table th,.ab-table td{padding:10px}}
+    .ab-title-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;padding:20px;color:var(--navy);text-align:left}
+    .ab-title-comparison h3{font-size:18px;margin:0 0 12px}
+    .ab-title-comparison p,.ab-variable-note{font-size:16px;line-height:1.5}
+    .ab-title-comparison p{margin:0}.ab-variable-note{padding:0 20px 12px;text-align:left;color:var(--navy)}
+    @media(max-width:600px){.ab-title-comparison{grid-template-columns:1fr;padding:16px}.ab-variable-note{padding:0 16px 12px}}
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"What Should You A/B Test on a Product Page?","description":"Learn what to A/B test on an ecommerce product page, including titles, description openings, benefit order, imagery, metrics, sample size, and what not to change all at once.","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/ab-test-product-page.html"},"keywords":["A/B testing ecommerce","product page testing","Shopify A/B testing","product title test","description test","product image test","conversion optimization"]}
@@ -77,8 +82,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="blog-dek">Titles, description openings, benefit order, imagery, and what to avoid changing all at once.</p>
         <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-26">September 26, 2026</time> · 8 min read</span></div>
       </div>
-      <figure class="blog-hero-visual">
-        <img src="../penstack-ab-testing-hero.webp" alt="A and B ecommerce product-page variants illustrating a one-variable product test" loading="eager" fetchpriority="high" decoding="async">
+      <figure class="blog-hero-visual accessibility-hero-visual">
+        <img src="../penstack-blog-ab-testing-hero-v2.webp" width="1637" height="961" alt="Matching green and cream sneaker product cards with yellow and green headers joined by a navy connector" loading="eager" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </header>
@@ -120,15 +125,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <section class="blog-section" id="anatomy">
       <h2>2. A useful test has four parts.</h2>
-      <figure class="blog-figure">
-        <img src="../penstack-ab-testing-test-anatomy.webp" loading="lazy" alt="A/B test anatomy showing question, one variable, metric, and result">
+      <figure class="blog-figure accessibility-figure">
+        <img src="../penstack-blog-ab-testing-plan-v2.webp" width="1902" height="827" loading="lazy" alt="Green and cream sneaker product card connected to a blank planning card with a yellow pencil">
         <figcaption>Start with a question, change one thing, choose the metric, then interpret the result.</figcaption>
       </figure>
       <div class="ab-flow">
         <div><strong>Question</strong><span>What are we trying to learn?</span></div>
-        <div><strong>One variable</strong><span>What exactly changes?</span></div>
-        <div><strong>Metric</strong><span>What shopper behavior matters?</span></div>
-        <div><strong>Result</strong><span>Did enough shoppers see both versions?</span></div>
+        <div><strong>One variable</strong><span>What exactly changes? Change only one thing.</span></div>
+        <div><strong>Metric</strong><span>What shopper behavior matters? Pick a clear success metric.</span></div>
+        <div><strong>Result</strong><span>Did enough shoppers see both versions? Learn and apply the result.</span></div>
       </div>
     </section>
 
@@ -137,8 +142,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="blog-prose">
         <p>If version B has a new title, new product image, reordered benefits, and different opening copy, you no longer know which change caused the result.</p>
       </div>
-      <figure class="blog-figure">
-        <img src="../penstack-ab-testing-one-variable.webp" loading="lazy" alt="Two ecommerce product-page variants where only the product title changes">
+      <figure class="blog-figure accessibility-figure">
+        <img src="../penstack-blog-ab-testing-one-variable-v2.webp" width="1902" height="827" loading="lazy" alt="Matching green and cream sneaker product cards with blank title areas and a yellow pencil between them">
+        <div class="ab-title-comparison"><div><h3>Version A</h3><p>Everyday Runner</p></div><div><h3>Version B</h3><p>Lightweight Running Shoes for Daily Miles</p></div></div>
+        <p class="ab-variable-note"><strong>Only the title changes.</strong> Keep the product image, description, and add-to-cart button the same.</p>
         <figcaption>Keep the page stable and change one meaningful element so the result teaches you something specific.</figcaption>
       </figure>
     </section>
