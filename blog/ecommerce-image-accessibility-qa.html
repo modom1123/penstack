@@ -26,13 +26,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
-    <link rel="preload" as="image" href="assets/penstack-ecommerce-image-accessibility-qa-hero.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../penstack-blog-ecommerce-image-accessibility-qa-hero-v2.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="../styles.css?v=19">
   <link rel="stylesheet" href="blog.css?v=12">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Build an Image Accessibility QA Standard for Your Catalog","description":"Build a repeatable ecommerce image accessibility QA process for product galleries, variants, teams, and large Shopify catalogs.","datePublished":"2026-09-24","dateModified":"2026-09-24","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/ecommerce-image-accessibility-qa.html"},"keywords":["image accessibility QA","ecommerce accessibility","Shopify catalog QA","alt text standards","product image workflow"]}
   </script>
   <link rel="stylesheet" href="../brand.css?v=20261003-logo-palette">
+  <style>
+    .variant-alt-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;padding:20px;color:var(--navy)}
+    .variant-alt-examples h3{margin:0 0 10px;font-size:18px}
+    .variant-alt-examples p{margin:0;font-size:16px;line-height:1.5}
+    @media(max-width:600px){.variant-alt-examples{gap:14px;padding:14px}.variant-alt-examples h3{font-size:15px}.variant-alt-examples p{font-size:14px}}
+  </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -67,7 +73,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-24">September 24, 2026</time> · 7 min read</span></div>
       </div>
       <figure class="blog-hero-visual accessibility-hero-visual">
-        <img src="assets/penstack-ecommerce-image-accessibility-qa-hero.webp" width="1200" height="760" alt="Ecommerce image accessibility QA visual showing a product image paired with reviewed alt text" loading="eager" fetchpriority="high" decoding="async">
+        <img src="../penstack-blog-ecommerce-image-accessibility-qa-hero-v2.webp" width="1586" height="992" alt="Green and cream lace-up sneaker in a product image card with a review check" loading="eager" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </header>
@@ -94,10 +100,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="blog-section" id="variants"><h2>3. Treat variant images as product information</h2><div class="blog-prose">
 <p>If color or another variant is visually different, that difference may be essential to the shopper. The text alternative should preserve it.</p>
-<p>For a product offered in black, cream, and green, “T-shirt front view” can erase the distinction a sighted shopper gets instantly.</p>
+<p>For a product offered in forest green and navy, “T-shirt front view” can erase the distinction a sighted shopper gets instantly.</p>
 </div>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-ecommerce-image-accessibility-qa-variant-example.webp" width="1200" height="760" loading="lazy" alt="Variant-aware alt text example comparing generic T-shirt alt text with a specific forest green oversized T-shirt description">
+  <img src="../penstack-blog-ecommerce-image-accessibility-qa-variant-example-v2.webp" width="1902" height="827" loading="lazy" alt="Matching crew-neck T-shirts in forest green and navy, shown from the front">
+  <div class="variant-alt-examples">
+    <div><h3>Forest green variant</h3><p><strong>Alt text:</strong> Forest green crew-neck T-shirt, front view.</p></div>
+    <div><h3>Navy variant</h3><p><strong>Alt text:</strong> Navy crew-neck T-shirt, front view.</p></div>
+  </div>
   <figcaption>Variant-aware alt text preserves visible product differences that matter to the shopper.</figcaption>
 </figure></section>
 

@@ -42,6 +42,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .metadata-field-examples p{margin:8px 0}
     @media(max-width:600px){.metadata-field-examples{grid-template-columns:1fr}.metadata-field-examples>div+div{border-top:1px solid var(--line);padding-top:16px}}
   </style>
+  <style>
+    .metadata-alt-example-visual{position:relative}
+    .metadata-alt-example-description{position:absolute;left:58%;width:34%;top:56%;transform:translateY(-50%);color:var(--navy)}
+    .metadata-alt-example-description strong{display:block;font-size:clamp(11px,1.6vw,16px);margin-bottom:8px}
+    .metadata-alt-example-description p{font-size:clamp(12px,2.2vw,22px);line-height:1.4;margin:0;color:var(--navy)}
+    .metadata-takeaway-labels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;text-align:center;padding:12px 16px 20px;color:var(--navy);font-size:16px;line-height:1.5}
+    @media(max-width:600px){.metadata-takeaway-labels{font-size:13px;gap:8px;padding:10px}}
+  </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -119,7 +127,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="blog-example"><span class="blog-example-label">Example alt text</span><p><strong>“Green oversized graphic tee on model, front view”</strong></p></div>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-product-image-metadata-alt-text-example.webp" width="1200" height="760" loading="lazy" alt="Product image paired with alt text showing how visible product details are translated into a useful text alternative">
+  <div class="metadata-alt-example-visual">
+    <img src="../penstack-blog-product-image-metadata-alt-text-example-v2.webp" width="1900" height="828" loading="lazy" alt="Green and cream lace-up sneaker linked to its written image description">
+    <div class="metadata-alt-example-description"><strong>Alt text</strong><p>Green and cream lace-up sneaker, side view.</p></div>
+  </div>
   <figcaption>Alt text describes the useful visual information in the image, rather than merely repeating the filename.</figcaption>
 </figure></section>
 
@@ -142,7 +153,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <section class="blog-takeaway"><h2>The takeaway</h2><p><strong>Related fields should agree with each other without becoming duplicates.</strong></p><div class="blog-flow"><span>Filename = identify</span><b>·</b><span>Alt text = describe</span><b>·</b><span>Visible copy = explain + persuade</span></div>
 <figure class="blog-figure accessibility-figure">
-  <img src="assets/penstack-product-image-metadata-takeaway.webp" width="1200" height="760" loading="lazy" alt="Summary visual showing the distinct roles of filename, alt text, and visible product copy">
+  <img src="../penstack-blog-product-image-metadata-takeaway-v2.webp" width="1902" height="827" loading="lazy" alt="The same sneaker paired with a file tab, pencil, and speech bubble to represent filename, alt text, and visible copy">
+  <div class="metadata-takeaway-labels"><span><strong>Filename</strong><br>Identify</span><span><strong>Alt text</strong><br>Describe</span><span><strong>Visible copy</strong><br>Explain</span></div>
 </figure></section>
     <section class="blog-cta" aria-label="penstack call to action">
       <div><h2>Put image details into the same product workflow.</h2><p>penstack keeps image titles, alt text, product content, review, and publishing connected.</p></div>
