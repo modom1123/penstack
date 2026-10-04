@@ -17,17 +17,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:title" content="How to Refresh an Existing Product Without Starting Over">
   <meta property="og:description" content="A practical audit for deciding what deserves an update and what should stay untouched on an established listing.">
   <meta property="og:url" content="https://penstack.co/blog/refresh-existing-product.html">
-  <meta property="og:image" content="https://penstack.co/penstack-product-refresh-audit-map.png">
+  <meta property="og:image" content="https://penstack.co/penstack-blog-product-refresh-audit-v2.webp">
   <meta property="article:published_time" content="2026-09-26">
   <meta property="article:author" content="penstack">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Refresh an Existing Product Without Starting Over">
   <meta name="twitter:description" content="A practical keep/change/review framework for updating established product listings.">
-  <meta name="twitter:image" content="https://penstack.co/penstack-product-refresh-audit-map.png">
+  <meta name="twitter:image" content="https://penstack.co/penstack-blog-product-refresh-audit-v2.webp">
   <link rel="icon" type="image/png" sizes="64x64" href="../penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="../penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../penstack-favicon-180.png">
-    <link rel="preload" as="image" href="../penstack-product-refresh-audit-map.webp" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../penstack-blog-product-refresh-audit-v2.webp" type="image/webp" fetchpriority="high">
 <link rel="stylesheet" href="../styles.css?v=19">
   <link rel="stylesheet" href="blog.css?v=14">
   <style>
@@ -39,6 +39,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .refresh-grid article{padding:18px;border:1px solid var(--line);border-radius:14px;background:#fff}
     .refresh-grid h3{margin:0 0 6px;font-size:20px}.refresh-grid p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
     @media(max-width:760px){.refresh-grid{grid-template-columns:1fr}.refresh-table th,.refresh-table td{padding:10px}}
+    .refresh-audit-copy,.refresh-kcr-copy{padding:20px;color:var(--navy);text-align:left}
+    .refresh-audit-areas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:16px}
+    .refresh-kcr-copy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+    .refresh-audit-areas h3,.refresh-kcr-copy h3{font-size:18px;margin:0 0 12px}
+    .refresh-audit-areas p,.refresh-audit-areas li,.refresh-kcr-copy p,.refresh-kcr-copy dd{font-size:16px;line-height:1.5}
+    .refresh-audit-areas p,.refresh-kcr-copy p{margin:0 0 12px}.refresh-audit-areas ul{padding-left:20px;margin:0}.refresh-audit-areas li{margin-bottom:8px}
+    .refresh-kcr-copy>div{border-top:4px solid var(--green);padding-top:16px}.refresh-kcr-copy>div:nth-child(2){border-color:var(--orange)}.refresh-kcr-copy>div:nth-child(3){border-color:var(--yellow)}
+    .refresh-kcr-copy dl{margin:0}.refresh-kcr-copy dl>div{margin-bottom:16px}.refresh-kcr-copy dt{font-weight:700}.refresh-kcr-copy dd{margin:4px 0 0}
+    .refresh-kcr-example{border-top:1px solid var(--line);padding-top:16px}.refresh-kcr-example h4{font-size:16px;margin:12px 0}
+    @media(max-width:760px){.refresh-kcr-copy{grid-template-columns:1fr}}@media(max-width:600px){.refresh-audit-copy,.refresh-kcr-copy{padding:16px}.refresh-audit-areas{grid-template-columns:1fr}}
   </style>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Refresh an Existing Product Without Starting Over","description":"Learn how to refresh an existing Shopify product listing without rewriting everything. Audit what to keep, change, review, and improve across copy, details, images, SEO, and merchandising.","datePublished":"2026-09-26","dateModified":"2026-09-26","author":{"@type":"Organization","name":"the penstack team","url":"https://penstack.co/about.html"},"publisher":{"@type":"Organization","name":"penstack","logo":{"@type":"ImageObject","url":"https://penstack.co/penstack_logo.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://penstack.co/blog/refresh-existing-product.html"},"keywords":["product listing refresh","Shopify product optimization","product description refresh","product SEO","product merchandising","product page audit"]}
@@ -77,8 +87,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="blog-dek">A practical audit for deciding what deserves an update and what should stay untouched on an established listing.</p>
         <div class="blog-byline"><span class="blog-byline-mark">p</span><span><strong>By the penstack team</strong><br><time datetime="2026-09-26">September 26, 2026</time> · 8 min read</span></div>
       </div>
-      <figure class="blog-hero-visual">
-        <img src="../penstack-product-refresh-audit-map.webp" alt="Product listing refresh audit covering identity, content, details, images, search, and merchandising" loading="eager" fetchpriority="high" decoding="async">
+      <figure class="blog-hero-visual accessibility-hero-visual">
+        <img src="../penstack-blog-product-refresh-audit-v2.webp" width="1630" height="965" alt="Navy crew-neck T-shirt product card beside a blank record card, with a blue search lens" loading="eager" fetchpriority="high" decoding="async">
       </figure>
     </div>
   </header>
@@ -132,8 +142,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="blog-prose">
         <p>Before changing anything, inspect the listing as it exists. Look across identity, content, structured details, images, search, and merchandising.</p>
       </div>
-      <figure class="blog-figure">
-        <img src="../penstack-product-refresh-audit-map.webp" loading="lazy" alt="Product refresh audit map showing identity, content, details, images, search, and merchandising around an existing product listing">
+      <figure class="blog-figure accessibility-figure">
+        <img src="../penstack-blog-product-refresh-audit-v2.webp" width="1630" height="965" loading="lazy" alt="Navy crew-neck T-shirt product card beside a blank record card, with a blue search lens">
+        <div class="refresh-audit-copy"><span class="blog-example-label">Illustrative product: Classic Crew Neck T-Shirt</span><div class="refresh-audit-areas"><div><h3>Identity</h3><p>Is it clear what the product is?</p><ul><li>Title is accurate and clear</li><li>Product type is correct</li><li>Brand and vendor are right</li><li>Variants are properly set up</li></ul></div><div><h3>Content</h3><p>Does it tell the right story?</p><ul><li>Description is complete</li><li>Key features are highlighted</li><li>Benefits are clear</li><li>Copy matches your brand voice</li></ul></div><div><h3>Details</h3><p>Is the information correct?</p><ul><li>Materials are accurate</li><li>Specifications are filled in</li><li>Size and color options are correct</li><li>Custom fields are complete</li></ul></div><div><h3>Images</h3><p>Do the images show it well?</p><ul><li>Image quality is high</li><li>Multiple angles are included</li><li>Images match the product variant</li><li>Lifestyle or context images are provided</li></ul></div><div><h3>Search</h3><p>Will shoppers be able to find it?</p><ul><li>Relevant keywords are included</li><li>SEO fields are optimized</li><li>Categories are correct</li><li>Filters and tags are set</li></ul></div><div><h3>Merchandising</h3><p>Is it set up to perform?</p><ul><li>Collection assignments are correct</li><li>Featured status is set</li><li>Cross-sells and related products are added</li><li>Inventory and availability are correct</li></ul></div></div></div>
         <figcaption>A refresh starts by checking the whole listing, not by rewriting one field on instinct.</figcaption>
       </figure>
     </section>
@@ -143,8 +154,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="blog-prose">
         <p>This framework helps separate obvious fixes from changes that deserve more caution.</p>
       </div>
-      <figure class="blog-figure">
-        <img src="../penstack-product-refresh-keep-change-review.webp" loading="lazy" alt="Keep, Change, and Review framework for deciding how to handle existing product listing fields">
+      <figure class="blog-figure accessibility-figure">
+        <img src="../penstack-blog-product-refresh-keep-change-review-v2.webp" width="1902" height="827" loading="lazy" alt="Green, orange, and yellow folders representing Keep, Change, and Review with a check, pencil, and search lens">
+        <div class="refresh-kcr-copy"><div><h3>Keep</h3><p><strong>Keep what’s working well.</strong></p><dl><div><dt>Accurate product identity</dt><dd>Title, product type, brand, and variants are correct.</dd></div><div><dt>Complete and helpful content</dt><dd>Description and key features tell the right story.</dd></div><div><dt>High-quality images</dt><dd>Images are clear, relevant, and on-brand.</dd></div><div><dt>Correct merchandising setup</dt><dd>Categories, collection assignments, and visibility are set properly.</dd></div></dl><div class="refresh-kcr-example"><span class="blog-example-label">Illustrative example (Keep)</span><h4>Classic Crew Neck Tee</h4><p>A timeless everyday t-shirt made from soft, breathable cotton. Available in multiple colors and sizes.</p></div></div><div><h3>Change</h3><p><strong>Update what can be improved.</strong></p><dl><div><dt>Outdated or weak content</dt><dd>Improve titles, descriptions, and key features.</dd></div><div><dt>Missing or unclear details</dt><dd>Add specifications, benefits, or use case information.</dd></div><div><dt>Low-quality or outdated images</dt><dd>Replace blurry images or add missing angles.</dd></div><div><dt>SEO and findability</dt><dd>Add relevant keywords and optimize search fields.</dd></div></dl><div class="refresh-kcr-example"><span class="blog-example-label">Illustrative example (Change)</span><h4>Classic Crew Neck Tee</h4><p>Comfortable and versatile t-shirt. Great for everyday wear.</p><p>Example price: $24.99</p></div></div><div><h3>Review</h3><p><strong>Take a closer look and decide.</strong></p><dl><div><dt>Uncertain or incomplete information</dt><dd>Confirm details that are unclear or missing.</dd></div><div><dt>Inconsistent or conflicting data</dt><dd>Check for mismatches across title, description, images, or specifications.</dd></div><div><dt>Performance signals</dt><dd>Review items with low traffic, low conversion, or high returns.</dd></div><div><dt>Compliance or policy considerations</dt><dd>Verify claims, restricted content, or category placement.</dd></div></dl><div class="refresh-kcr-example"><span class="blog-example-label">Illustrative example (Review)</span><h4>Classic Crew Neck Tee</h4><p>Men’s t-shirt. Various sizes available.</p><p>Example price: $24.99</p><p><strong>Limited product information — needs review.</strong></p></div></div></div>
         <figcaption>Keep what is already useful. Change what is clearly weak. Review anything with tradeoffs before editing.</figcaption>
       </figure>
       <table class="refresh-table">
