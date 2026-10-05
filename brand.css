@@ -363,7 +363,7 @@ footer p { max-width: 24rem; }
 .price-card.solo, .value-step.solo { border-top-color: var(--green); }
 .price-card.pro, .value-step.pro { border-top-color: var(--orange); }
 .price-card.agency, .value-step.agency { border-top-color: var(--yellow); }
-.final-cta { background: var(--navy); color: var(--white); }
+.final-cta { background: var(--green); color: var(--white); }
 .final-cta p { color: #e3e8f0; }
 .final-cta .eyebrow { color: var(--yellow); }
 .final-cta .button.primary { background: var(--yellow); color: var(--navy); box-shadow: none; }
