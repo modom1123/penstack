@@ -26,8 +26,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="shortcut icon" type="image/png" href="penstack-favicon-64.png">
   <link rel="apple-touch-icon" sizes="180x180" href="penstack-favicon-180.png">
     <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"WebPage","@id":"https://penstack.co/pricing.html#webpage","name":"penstack Pricing | Shopify Product Content Plans","url":"https://penstack.co/pricing.html","description":"Compare penstack Free, Solo, Pro, and Agency by publishes, stores, team members, and Brand Voice. Learn how normal edits, usage periods, and pooled capacity work.","isPartOf":{"@id":"https://penstack.co/#website"}}
-  </script>
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"https://penstack.co/pricing.html#webpage",
+      "name":"penstack Pricing | Shopify Product Content Plans",
+      "url":"https://penstack.co/pricing.html",
+      "description":"Compare penstack Free, Solo, Pro, and Agency by publishes, stores, team members, and Brand Voice. Learn how normal edits, usage periods, and pooled capacity work.",
+      "isPartOf":{"@id":"https://penstack.co/#website"},
+      "about":{"@id":"https://penstack.co/#software"},
+      "mainEntity":{"@id":"https://penstack.co/#software"}
+    },
+    {
+      "@type":"WebApplication",
+      "@id":"https://penstack.co/#software",
+      "name":"penstack",
+      "url":"https://penstack.co/product.html",
+      "applicationCategory":"BusinessApplication",
+      "operatingSystem":"Web",
+      "provider":{"@id":"https://penstack.co/#organization"},
+      "offers":[
+        {"@type":"Offer","name":"Free","price":"0","priceCurrency":"USD","url":"https://penstack.co/pricing.html"},
+        {"@type":"Offer","name":"Solo","price":"39","priceCurrency":"USD","url":"https://penstack.co/pricing.html"},
+        {"@type":"Offer","name":"Pro","price":"99","priceCurrency":"USD","url":"https://penstack.co/pricing.html"},
+        {"@type":"Offer","name":"Agency","price":"249","priceCurrency":"USD","url":"https://penstack.co/pricing.html"}
+      ]
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="styles.css?v=20261004-footer-colors">
   <style>
     .pricing-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(380px,.85fr);gap:46px;align-items:center}
