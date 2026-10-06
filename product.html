@@ -86,33 +86,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .demo-intro h2{font-size:clamp(34px,3.3vw,46px);margin-bottom:6px}
   .demo-intro p{margin:0;color:var(--muted);font-size:16px}
 
-  .demo-section{margin-top:32px}
-  .demo-section h3{font-size:25px;line-height:1.15;margin:0 0 16px;letter-spacing:-.03em}
+  .demo-section{margin-top:22px;padding:26px;border:1px solid var(--line);border-radius:18px;background:#fff}
+  .module-head{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:start;margin-bottom:18px}
+  .module-number{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#e9f3ff;color:var(--blue);font-size:15px;font-weight:900}
+  .module-head h3{font-size:25px;line-height:1.15;margin:0 0 5px;letter-spacing:-.03em}
+  .module-head p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
   .evidence-row{display:grid;grid-template-columns:1fr 54px 1fr;align-items:center;gap:18px}
   .evidence-card{min-width:0}
-  .evidence-frame{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px}
+  .evidence-frame{border:1px solid var(--line);border-radius:12px;background:#fff;padding:10px}
   .evidence-frame img{width:100%;height:auto;display:block;object-fit:contain}
   .evidence-arrow{text-align:center;font-size:38px;color:var(--navy);font-weight:500}
-  .pill{display:inline-block;margin-top:7px;padding:5px 12px;border-radius:8px;background:#edf3fb;color:var(--navy);font-size:12px;font-weight:800}
-  .section-note{margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.45}
+  .pill{display:inline-block;margin:0 0 8px;padding:5px 12px;border-radius:8px;background:#edf3fb;color:var(--navy);font-size:12px;font-weight:800}
+  .change-strip{display:grid;grid-template-columns:28px auto 1fr;gap:10px;align-items:center;margin-top:14px;padding:11px 14px;border-radius:10px;background:#eef6ff;color:var(--navy);font-size:13px;line-height:1.4}
+  .change-icon{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#dff6e9;color:var(--green);font-weight:900}
+  .change-strip strong{font-weight:900;white-space:nowrap}
+  .change-strip span:last-child{padding-left:12px;border-left:1px solid #bdd3e8;color:var(--muted)}
 
-  .image-details-grid{display:grid;grid-template-columns:.86fr 1fr 54px 1fr;gap:18px;align-items:stretch}
-  .snow-product{margin:0}
-  .snow-product img{width:100%;height:100%;max-height:385px;object-fit:cover;border-radius:0;display:block}
-  .snow-product figcaption{margin-top:7px;color:var(--navy);font-size:12px;font-weight:700}
-  .detail-card{border:1px solid var(--line);border-radius:10px;padding:18px;background:#fff;min-height:245px}
-  .detail-card .pill{margin:0 0 13px}
-  .detail-card dl{margin:0}
-  .detail-card dt{font-weight:800;color:var(--navy);margin-top:12px}
-  .detail-card dt:first-of-type{margin-top:0}
-  .detail-card dd{margin:5px 0 0;color:var(--navy);line-height:1.38;overflow-wrap:anywhere}
-  .detail-card .muted{color:#708199;font-size:13px;margin-top:9px}
-  .alt-control{max-width:930px;margin:28px auto 0}
+  .image-compare{display:grid;grid-template-columns:1fr 54px 1fr;gap:18px;align-items:stretch}
+  .image-proof-card{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff;min-width:0}
+  .image-proof-body{display:grid;grid-template-columns:minmax(120px,.72fr) 1fr;gap:16px;align-items:center}
+  .image-proof-body img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+  .image-proof-card dl{margin:0}
+  .image-proof-card dt{font-weight:800;color:var(--navy);margin-top:12px}
+  .image-proof-card dt:first-of-type{margin-top:0}
+  .image-proof-card dd{margin:5px 0 0;color:var(--navy);line-height:1.38;overflow-wrap:anywhere}
+  .image-proof-card .muted{color:#708199;font-size:13px;margin-top:9px}
+  .alt-control{max-width:930px;margin:16px auto 0}
   .alt-control .evidence-frame{padding:0;border:0}
-  .alt-control figcaption{margin-top:7px;color:var(--muted);font-size:13px}
 
-  .storefront-row .evidence-frame{padding:12px}
-  .storefront-row img{width:100%;height:auto}
+  .storefront-row{align-items:stretch}
+  .storefront-row .evidence-card{display:flex;flex-direction:column}
+  .storefront-row .evidence-frame{padding:12px;aspect-ratio:1.9/1;display:grid;place-items:center;overflow:hidden;background:#fff}
+  .storefront-row img{width:100%;height:100%;object-fit:contain;display:block}
   .storefront-label{margin:0 0 8px}
 
   .support-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:48px 0 0;border-top:1px solid transparent}
@@ -146,9 +151,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media(max-width:1050px){
     .product-hero{grid-template-columns:1fr;gap:30px}
     .product-hero-art img{max-width:620px}
-    .image-details-grid{grid-template-columns:1fr 1fr}
-    .image-details-grid .evidence-arrow{display:none}
-    .snow-product{grid-column:1/-1}
+    .image-compare{grid-template-columns:1fr 1fr}
+    .image-compare .evidence-arrow{display:none}
+    .image-proof-body{grid-template-columns:150px 1fr}
   }
   @media(max-width:760px){
     .product-hero,.demo-wrap{padding-left:5%;padding-right:5%}
@@ -156,7 +161,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .product-hero h1{font-size:44px}
     .evidence-row{grid-template-columns:1fr}
     .evidence-arrow{transform:rotate(90deg);font-size:28px}
-    .image-details-grid{grid-template-columns:1fr}
+    .image-compare{grid-template-columns:1fr}
+    .image-proof-body{grid-template-columns:110px 1fr}
+    .change-strip{grid-template-columns:24px 1fr}
+    .change-strip strong{white-space:normal}
+    .change-strip span:last-child{grid-column:1/-1;padding-left:0;border-left:0}
     .support-grid{grid-template-columns:1fr}
     .support-panel,.support-panel + .support-panel{padding:22px 0;border-left:0}
     .support-panel + .support-panel{border-top:1px solid var(--line)}
@@ -209,61 +218,93 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <section class="demo-section">
-      <h3>Product content before and after</h3>
+      <div class="module-head">
+        <span class="module-number" aria-hidden="true">1</span>
+        <div>
+          <h3>Product content before and after</h3>
+          <p>Generate product descriptions while keeping the existing title in place. Review and edit before publishing.</p>
+        </div>
+      </div>
       <div class="evidence-row">
         <div class="evidence-card">
-          <div class="evidence-frame"><img src="product-description-before.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Empty product description editor before product copy is added"></div>
           <span class="pill">Before</span>
+          <div class="evidence-frame"><img src="product-description-before.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Empty product description editor before product copy is added"></div>
         </div>
         <div class="evidence-arrow">→</div>
         <div class="evidence-card">
-          <div class="evidence-frame"><img src="product-description-after-current.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Product description editor after the Liquid snowboard description is added"></div>
           <span class="pill">After</span>
+          <div class="evidence-frame"><img src="product-description-after-current.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Product description editor after the Liquid snowboard description is added"></div>
         </div>
       </div>
-      <p class="section-note">The description was empty before and populated afterward. The product title is unchanged.<br>Demo content; review product claims before publishing.</p>
+      <div class="change-strip">
+        <span class="change-icon" aria-hidden="true">✓</span>
+        <strong>What changed</strong>
+        <span>The description was empty before and populated afterward. The product title is unchanged.</span>
+      </div>
     </section>
 
     <section class="demo-section">
-      <h3>Image names and alt text before and after</h3>
-      <div class="image-details-grid">
-        <figure class="snow-product">
-          <img src="penstack-product-hero-liquid-snowboard.webp" width="1024" height="1024" loading="lazy" decoding="async" alt="Liquid Collection snowboard standing upright in alpine snow">
-          <figcaption>Saved Shopify image details · Image 5 of 5</figcaption>
-        </figure>
-
-        <div class="detail-card">
+      <div class="module-head">
+        <span class="module-number" aria-hidden="true">2</span>
+        <div>
+          <h3>Image names and alt text before and after</h3>
+          <p>Prepare clearer image names and descriptive alt text for organization and accessibility.</p>
+        </div>
+      </div>
+      <div class="image-compare">
+        <div class="image-proof-card">
           <span class="pill">Before</span>
-          <dl>
-            <dt>Image name:</dt>
-            <dd>Liquid_board_on_a_mountain</dd>
-            <dt>Saved alt text:</dt>
-            <dd>Empty</dd>
-          </dl>
-          <p class="muted">Shopify suggestion visible, not saved.</p>
+          <div class="image-proof-body">
+            <img src="penstack-product-hero-liquid-snowboard.webp" width="1024" height="1024" loading="lazy" decoding="async" alt="Liquid Collection snowboard standing upright in alpine snow">
+            <div>
+              <dl>
+                <dt>Image name:</dt>
+                <dd>Liquid_board_on_a_mountain</dd>
+                <dt>Saved alt text:</dt>
+                <dd>Empty</dd>
+              </dl>
+              <p class="muted">Shopify suggestion visible, not saved.</p>
+            </div>
+          </div>
         </div>
 
         <div class="evidence-arrow">→</div>
 
-        <div class="detail-card">
+        <div class="image-proof-card">
           <span class="pill">After</span>
-          <dl>
-            <dt>Image name:</dt>
-            <dd>The_Collection_Snowboard_Liquid_<br>Front_Styled_Scene</dd>
-            <dt>Saved alt text:</dt>
-            <dd>Front view of the Liquid Collection snowboard featuring a blue ombre forest and moon graphic, standing upright in alpine snow</dd>
-          </dl>
+          <div class="image-proof-body">
+            <img src="penstack-product-hero-liquid-snowboard.webp" width="1024" height="1024" loading="lazy" decoding="async" alt="Liquid Collection snowboard standing upright in alpine snow">
+            <div>
+              <dl>
+                <dt>Image name:</dt>
+                <dd>The_Collection_Snowboard_Liquid_<br>Front_Styled_Scene</dd>
+                <dt>Saved alt text:</dt>
+                <dd>Front view of the Liquid Collection snowboard featuring a blue ombre forest and moon graphic, standing upright in alpine snow</dd>
+              </dl>
+            </div>
+          </div>
         </div>
       </div>
 
+      <div class="change-strip">
+        <span class="change-icon" aria-hidden="true">✓</span>
+        <strong>What changed</strong>
+        <span>A clearer image name and descriptive alt text were prepared for this product image.</span>
+      </div>
+
       <figure class="alt-control">
-        <div class="evidence-frame"><img src="penstack-product-alt-text-control.webp" width="2048" height="620" loading="lazy" decoding="async" alt="Penstack alt text field with Generate Alt Text control"></div>
-        <figcaption>A cropped image-preparation control in penstack. This example shows another photo of the same product.</figcaption>
+        <div class="evidence-frame"><img src="penstack-product-alt-text-control.webp" width="2048" height="620" loading="lazy" decoding="async" alt="Penstack alt text field containing draft alt text with a Generate Alt Text button"></div>
       </figure>
     </section>
 
     <section class="demo-section">
-      <h3>Storefront before and after</h3>
+      <div class="module-head">
+        <span class="module-number" aria-hidden="true">3</span>
+        <div>
+          <h3>Storefront before and after</h3>
+          <p>Approved product content becomes visible on the Shopify storefront after publishing.</p>
+        </div>
+      </div>
       <div class="evidence-row storefront-row">
         <div class="evidence-card">
           <span class="pill storefront-label">Before</span>
@@ -275,7 +316,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="evidence-frame"><img src="penstack-product-storefront-after.webp" width="1920" height="1012" loading="lazy" decoding="async" alt="Liquid Collection snowboard storefront after the product description is published"></div>
         </div>
       </div>
-      <p class="section-note">The saved description is now visible on the product page. Image names and alt text are reviewed separately.</p>
+      <div class="change-strip">
+        <span class="change-icon" aria-hidden="true">✓</span>
+        <strong>What changed</strong>
+        <span>The approved description is now visible on the storefront. Image names and alt text are reviewed separately.</span>
+      </div>
     </section>
 
     <section class="support-grid">
