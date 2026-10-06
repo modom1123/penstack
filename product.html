@@ -72,96 +72,98 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <link rel="stylesheet" href="styles.css?v=20261004-footer-colors">
   <style>
-    .page-hero{padding-top:66px;padding-bottom:72px;gap:54px;align-items:center}
-    .page-hero h1{max-width:660px}
-    .page-hero .lead{max-width:650px}
-    .product-hero-visual{border:0;border-radius:22px;background:radial-gradient(circle at 50% 50%,var(--tint-green) 0%,var(--surface-neutral) 56%,transparent 57%);box-shadow:none;padding:18px;display:grid;place-items:center;min-height:350px}
-    .product-hero-visual img{width:min(100%,470px);height:auto;object-fit:contain;display:block}
+  .product-locked{background:#fff}
+  .product-hero{padding:26px 6% 34px;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
+  .product-hero-copy{max-width:690px}
+  .product-hero .eyebrow{color:var(--orange);margin-bottom:12px}
+  .product-hero h1{font-size:clamp(46px,5.35vw,74px);line-height:1.01;letter-spacing:-.045em;max-width:650px}
+  .product-hero .lead{font-size:18px;line-height:1.5;max-width:660px;margin:22px 0 22px}
+  .product-hero-art{margin:0;display:flex;justify-content:center}
+  .product-hero-art img{width:100%;max-width:530px;height:auto;display:block;object-fit:contain}
 
-    .process-section{background:var(--soft);padding-top:60px;padding-bottom:64px}
-    .process-section .section-heading{max-width:880px}
-    .process-section .section-heading h2{font-size:clamp(34px,3.4vw,46px)}
-    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
-    .process-card{padding:20px 20px 22px;border:1px solid var(--border-green);border-radius:16px;background:var(--white);position:relative;min-height:236px}
-    .process-card::before{content:'';position:absolute;left:22px;right:22px;top:0;height:3px;border-radius:0 0 3px 3px;background:var(--border-green)}
-    .process-card:nth-child(2)::before{background:var(--tint-blue)}
-    .process-card:nth-child(3)::before{background:var(--border-yellow)}
-    .process-card:nth-child(4)::before{background:var(--border-green)}
-    .process-card:not(:last-child)::after{content:'→';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-size:22px;font-weight:800;color:var(--green);z-index:2}
-    .process-card .number{margin-bottom:10px}
-    .step-art{width:82px;height:82px;margin:0 auto 16px;display:grid;place-items:center;border-radius:15px;background:var(--surface-neutral);overflow:hidden}
-    .step-art img{width:100%;height:100%;object-fit:contain}
-    .process-card h3{margin:0 0 8px;font-size:20px}
-    .process-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+  .demo-wrap{padding:0 6% 22px}
+  .demo-intro{text-align:center;margin:0 auto 30px;max-width:900px}
+  .demo-intro h2{font-size:clamp(34px,3.3vw,46px);margin-bottom:6px}
+  .demo-intro p{margin:0;color:var(--muted);font-size:16px}
 
-    #capabilities{padding-top:76px;padding-bottom:80px}
-    #capabilities .section-heading{max-width:860px}
-    #capabilities .section-heading h2{font-size:clamp(34px,3.2vw,44px)}
-    .capability-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
-    .capability-card{border:1px solid var(--line);border-radius:16px;background:var(--white);padding:20px;min-height:270px;display:flex;flex-direction:column}
-    .capability-art{width:118px;height:118px;margin:0 auto 18px;display:grid;place-items:center;border-radius:14px;background:var(--surface-neutral);overflow:hidden}
-    .capability-art img{width:100%;height:100%;object-fit:contain}
-    .capability-card h3{margin:0 0 8px;font-size:18px}
-    .capability-card p{margin:0;color:var(--muted);line-height:1.52;font-size:14px}
-    .capability-card:nth-child(odd){background:var(--white)}
-    .capability-card:nth-child(even){background:var(--surface-neutral)}
+  .demo-section{margin-top:32px}
+  .demo-section h3{font-size:25px;line-height:1.15;margin:0 0 16px;letter-spacing:-.03em}
+  .evidence-row{display:grid;grid-template-columns:1fr 54px 1fr;align-items:center;gap:18px}
+  .evidence-card{min-width:0}
+  .evidence-frame{border:1px solid var(--line);border-radius:10px;background:#fff;padding:10px}
+  .evidence-frame img{width:100%;height:auto;display:block;object-fit:contain}
+  .evidence-arrow{text-align:center;font-size:38px;color:var(--navy);font-weight:500}
+  .pill{display:inline-block;margin-top:7px;padding:5px 12px;border-radius:8px;background:#edf3fb;color:var(--navy);font-size:12px;font-weight:800}
+  .section-note{margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.45}
 
-    .system-band{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;padding:38px 40px;border:1px solid var(--border-green);border-radius:20px;background:linear-gradient(135deg,var(--tint-green) 0%,var(--tint-green) 100%)}
-    .system-band>div:first-child{max-width:540px}
-    .system-band h2{margin:0 0 14px;font-size:clamp(32px,3.1vw,42px);line-height:1.08}
-    .system-band p{margin:0;color:var(--muted);font-size:16px;line-height:1.62}
-    .system-band a{font-weight:700}
-    .system-visual{margin:0;display:grid;place-items:center}
-    .system-visual img{width:min(100%,430px);height:auto;display:block;object-fit:contain}
+  .image-details-grid{display:grid;grid-template-columns:.86fr 1fr 54px 1fr;gap:18px;align-items:stretch}
+  .snow-product{margin:0}
+  .snow-product img{width:100%;height:100%;max-height:385px;object-fit:cover;border-radius:0;display:block}
+  .snow-product figcaption{margin-top:7px;color:var(--navy);font-size:12px;font-weight:700}
+  .detail-card{border:1px solid var(--line);border-radius:10px;padding:18px;background:#fff;min-height:245px}
+  .detail-card .pill{margin:0 0 13px}
+  .detail-card dl{margin:0}
+  .detail-card dt{font-weight:800;color:var(--navy);margin-top:12px}
+  .detail-card dt:first-of-type{margin-top:0}
+  .detail-card dd{margin:5px 0 0;color:var(--navy);line-height:1.38;overflow-wrap:anywhere}
+  .detail-card .muted{color:#708199;font-size:13px;margin-top:9px}
+  .alt-control{max-width:930px;margin:28px auto 0}
+  .alt-control .evidence-frame{padding:0;border:0}
+  .alt-control figcaption{margin-top:7px;color:var(--muted);font-size:13px}
 
-    .human-review{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;padding:4px 0}
-    .human-review>div:first-child{max-width:560px}
-    .human-review h2{margin:0 0 14px;font-size:clamp(32px,3.1vw,42px);line-height:1.08}
-    .human-review p{color:var(--muted);line-height:1.62}
-    .human-review a{font-weight:700}
-    .review-composition{display:grid;grid-template-columns:1fr .9fr;gap:14px;align-items:center}
-    .review-visual{border:1px solid var(--line);border-radius:18px;background:var(--white);padding:12px}
-    .review-visual img{width:100%;height:auto;object-fit:contain;display:block}
-    .review-proof{display:grid;gap:10px}
-    .review-proof div{display:flex;gap:10px;align-items:flex-start;padding:13px 14px;border:0;border-radius:11px;background:var(--tint-green)}
-    .review-proof b{display:grid;place-items:center;min-width:24px;height:24px;border-radius:50%;background:var(--green);color:var(--white);font-size:12px}
+  .storefront-row .evidence-frame{padding:12px}
+  .storefront-row img{width:100%;height:auto}
+  .storefront-label{margin:0 0 8px}
 
-    .product-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;border:0}
-    .product-evidence-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}
-    .product-evidence-pair img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line);background:#fff}
-    .product-evidence-wide{margin-top:28px}
+  .support-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:48px 0 0;border-top:1px solid transparent}
+  .support-panel{padding:18px 52px 8px 0}
+  .support-panel + .support-panel{border-left:1px solid var(--line);padding-left:52px;padding-right:0}
+  .support-title{display:grid;grid-template-columns:78px 1fr;gap:20px;align-items:center;margin-bottom:16px}
+  .support-title img{width:78px;height:78px;object-fit:contain}
+  .support-title h3{font-size:26px;line-height:1.05;margin:0}
+  .search-demo{border:1px solid #aebed2;border-radius:7px;padding:13px 15px;font-size:16px;margin:13px 0 16px;color:#284a7c}
+  .field-label{font-size:13px;font-weight:800;margin-bottom:7px}
+  .proposal-field{border:1px solid #aebed2;border-radius:7px;padding:13px 15px;font-size:16px;color:#284a7c}
+  .support-copy{color:var(--muted);font-size:14px;line-height:1.5}
+  .review-copy{margin:0 0 18px;color:var(--muted);font-size:14px;line-height:1.5}
+  .support-panel a{color:var(--green);font-weight:800;text-decoration:underline}
+  .store-context{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}
+  .store-context strong{display:block;margin-bottom:4px}
 
-    .proof-card{padding:22px 24px;border:1px solid var(--line);border-radius:14px;background:var(--white)}
-    .proof-card:last-child{border-right:1px solid var(--line)}
-    .proof-card strong{display:block;font-size:18px;margin-bottom:7px}
-    .proof-card p{margin:0;color:var(--muted);font-size:14px;line-height:1.52}
-    .section.compact.soft .section-heading{text-align:center;max-width:760px;margin-left:auto;margin-right:auto}
-    .section.compact.soft .section-heading h2{font-size:clamp(32px,3vw,42px)}
+  .mid-cta{text-align:center;padding:42px 6% 24px}
+  .mid-cta h2{font-size:clamp(36px,4.2vw,54px);max-width:760px;margin:0 auto 10px}
+  .mid-cta p{color:var(--muted);font-size:16px;max-width:560px;margin:0 auto 12px;line-height:1.45}
+  .mid-cta a{color:var(--green);font-weight:800;text-decoration:underline}
+  .product-final{padding:28px 6% 44px;text-align:center;border-top:1px solid var(--line);background:#fff}
+  .product-final h2{font-size:clamp(34px,4vw,48px);margin-bottom:18px}
 
-    .final-cta{padding-top:68px;padding-bottom:72px}
-    .final-cta h2{font-size:clamp(34px,3.2vw,44px)}
-    .final-cta p:not(.eyebrow):not(.microcopy){max-width:650px;margin-left:auto;margin-right:auto}
+  .product-locked footer{background:#fff;color:var(--navy);border-top:1px solid var(--line)}
+  .product-locked footer .brand img{filter:none}
+  .product-locked footer p{display:none}
+  .product-locked footer .footer-links a{color:#637793}
+  .product-locked footer span{color:#637793}
 
-    @media(max-width:1050px){
-      .process-grid,.capability-grid{grid-template-columns:repeat(2,1fr)}
-      .process-card::after{display:none}
-      .system-band,.human-review{grid-template-columns:1fr}
-      .system-visual{max-width:680px}
-      .product-proof{grid-template-columns:1fr}
-      .product-evidence-pair{grid-template-columns:1fr}
-      .proof-card{border-right:0;border-bottom:1px solid var(--line)}
-      .proof-card:last-child{border-bottom:0}
-    }
-    @media(max-width:760px){
-      .page-hero{padding-top:46px;padding-bottom:52px;gap:34px}
-      .process-grid,.capability-grid{grid-template-columns:1fr}
-      .product-hero-visual{min-height:0}
-      .system-band{padding:30px 24px}
-      .system-visual{max-width:100%}
-      .review-composition{grid-template-columns:1fr}
-      .capability-card{min-height:0}
-    }
-  </style>
+  @media(max-width:1050px){
+    .product-hero{grid-template-columns:1fr;gap:30px}
+    .product-hero-art img{max-width:620px}
+    .image-details-grid{grid-template-columns:1fr 1fr}
+    .image-details-grid .evidence-arrow{display:none}
+    .snow-product{grid-column:1/-1}
+  }
+  @media(max-width:760px){
+    .product-hero,.demo-wrap{padding-left:5%;padding-right:5%}
+    .product-hero{padding-top:34px}
+    .product-hero h1{font-size:44px}
+    .evidence-row{grid-template-columns:1fr}
+    .evidence-arrow{transform:rotate(90deg);font-size:28px}
+    .image-details-grid{grid-template-columns:1fr}
+    .support-grid{grid-template-columns:1fr}
+    .support-panel,.support-panel + .support-panel{padding:22px 0;border-left:0}
+    .support-panel + .support-panel{border-top:1px solid var(--line)}
+    .support-title{grid-template-columns:60px 1fr}
+    .support-title img{width:60px;height:60px}
+  }
+</style>
   <link rel="stylesheet" href="brand.css?v=20261004-green-cta">
   <link rel="stylesheet" href="illustrations.css?v=20261003-logo-palette">
 </head>
@@ -171,6 +173,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <main class="site">
+  <main class="site product-locked">
   <header class="site-header">
     <a class="brand" href="index.html"><img src="penstack_logo.png" alt="penstack"></a>
     <nav aria-label="Primary navigation">
@@ -187,114 +190,130 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="button primary" href="https://app.penstack.co/?start=free" data-cta-location="nav">Start free</a>
     </div>
   </header>
-
-  <section class="page-hero">
-    <div>
-      <p class="eyebrow">SHOPIFY PRODUCT CONTENT + SEO</p>
-      <h1>From Shopify product to publishable content.</h1>
-      <p class="lead">Select an existing Shopify product, add the context it needs, and prepare its content in one workspace. Here’s what comes in, what you can work on, and what returns to your store.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="https://app.penstack.co/?start=free" data-cta-location="hero">Start free →</a>
-        <span class="microcopy">Start with 10 product publishes per calendar month. No credit card required.</span>
-      </div>
+  <section class="product-hero">
+    <div class="product-hero-copy">
+      <p class="eyebrow">SHOPIFY LISTING WORK, TOGETHER.</p>
+      <h1>Less time between tools.<br>More progress on your listing.</h1>
+      <p class="lead">Prepare product copy, image details, and supported organization updates in one workflow. Review and choose what to publish to Shopify.</p>
+      <a class="button primary" href="https://app.penstack.co/?start=free" data-cta-location="hero">Start free →</a>
     </div>
-    <figure class="product-hero-visual">
-      <img src="penstack-product-hero-liquid-snowboard.webp" width="1024" height="1024" fetchpriority="high" decoding="async" alt="Liquid Collection snowboard standing upright in snow with mountains in the background" loading="eager">
+    <figure class="product-hero-art">
+      <img src="penstack-product-hero-liquid-snowboard.webp" width="1024" height="1024" fetchpriority="high" decoding="async" loading="eager" alt="Liquid Collection snowboard standing upright in alpine snow">
     </figure>
   </section>
 
-  <section class="section compact process-section">
-    <div class="section-heading">
-      <p class="eyebrow green">HOW IT WORKS</p>
-      <h2>Retrieve → Generate → Review → Publish</h2>
-      <p>The workflow starts with a product already in Shopify. A draft product works too; you do not need to publish it first.</p>
-    </div>
-    <div class="process-grid">
-      <article class="process-card"><span class="number">1</span><div class="step-art"><img src="penstack-retrieve-from-shopify.webp" width="1254" height="1254" loading="lazy" decoding="async" alt=""></div><h3>Retrieve</h3><p>Choose the product’s status and item. Retrieve its existing description, images, and available product fields.</p></article>
-      <article class="process-card"><span class="number">2</span><div class="step-art"><img src="document_and_pencil_icon.webp" width="1536" height="1536" loading="lazy" alt=""></div><h3>Generate</h3><p>Confirm the Collection Brief, Product Description, and source details. On paid plans, apply the store’s Brand Voice.</p></article>
-      <article class="process-card"><span class="number">3</span><div class="step-art"><img src="sneaker_product_approval_dashboard.webp" width="1536" height="1536" loading="lazy" alt=""></div><h3>Review</h3><p>Read the draft beside the product inputs. Check names, claims, practical details, and image descriptions.</p></article>
-      <article class="process-card"><span class="number">4</span><div class="step-art"><img src="product_page_to_shopify_store.webp" width="1536" height="1536" loading="lazy" alt=""></div><h3>Publish</h3><p>Publish the selected updates to the same Shopify product. Successful publishes are recorded in your usage.</p></article>
-    </div>
-  </section>
-
-  <section class="section" id="capabilities">
-    <div class="section-heading">
-      <p class="eyebrow green">WHAT YOU CAN WORK ON</p>
-      <h2>Different fields answer different shopper questions.</h2>
-      <p>A description explains the product. Image text explains a photo. Structured details make practical information easier to find. Each deserves its own content.</p>
+  <section class="demo-wrap">
+    <div class="demo-intro">
+      <h2>One product. Several listing tasks.</h2>
+      <p>A demo-store example: product content, image details, and the saved storefront result.</p>
     </div>
 
-    <div class="capability-grid">
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-descriptions.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a product description document and pencil"></div><h3>Product descriptions</h3><p>Draft from the source information you supply, then check the wording against the actual product.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-seo-discovery.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a sneaker in search discovery"></div><h3>SEO + discovery</h3><p>Prepare a search title and meta description using relevant product context. Preview the wording before publishing.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-images-alt-text.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a product image with metadata"></div><h3>Images + alt text</h3><p>Work with existing product photos. Use color, view, and shot type to prepare image titles and descriptive alt text.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-product-details.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a product page with structured product details"></div><h3>Product details</h3><p>Add verified features and care information. Edit supported plain-text metafields; manage structured field types in Shopify.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-tags-collections.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a tagged product organized into collection folders"></div><h3>Tags + collections</h3><p>Review product tags and collection assignments against the way your catalog is organized.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-brand-voice.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of multiple messages becoming one consistent brand voice"></div><h3>Brand voice</h3><p>Solo, Pro, and Agency include the ten-question quiz. Pro and Agency assign an active voice to each connected store.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-review-approval.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a product listing with an approval check"></div><h3>Review + approval</h3><p>Check the draft, search preview, image text, and supported fields together before the Shopify handoff.</p></article>
-      <article class="capability-card"><div class="capability-art"><img src="penstack-product-capability-publish-shopify.webp" width="768" height="768" loading="lazy" decoding="async" alt="Illustration of a product page moving to a Shopify storefront"></div><h3>Publish to Shopify</h3><p>Update the selected product. Normal edits to the same product do not use another publish; repurposing it can.</p></article>
-    </div>
-  </section>
-
-  <section class="section compact soft">
-    <div class="system-band">
-      <div>
-        <p class="eyebrow green">THE INPUTS SHAPE THE DRAFT</p>
-        <h2>Useful source details make useful copy.</h2>
-        <p>The Collection Brief gives the wider context. The Product Description and metafields supply product-level detail. Brand Voice guides expression; it does not establish whether a product claim is true.</p>
-        <p style="margin-top:14px"><a href="blog/how-to-write-a-product-description.html">Build a useful source brief →</a></p>
-      </div>
-      <div class="system-visual product-evidence-pair">
-        <a href="product-description-before.webp" target="_blank" rel="noopener"><img src="product-description-before.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Empty Shopify product description editor before product copy is added"></a>
-        <a href="product-description-after-current.webp" target="_blank" rel="noopener"><img src="product-description-after-current.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Shopify product description editor after the Liquid snowboard description is added"></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="human-review">
-      <div>
-        <p class="eyebrow green">WHAT REVIEW MEANS</p>
-        <h2>Check meaning, not just spelling.</h2>
-        <p>A fluent sentence can still contain an unsupported claim. Compare the draft with your source facts, check the images, and confirm the product is organized correctly.</p>
-        <p style="margin-top:14px"><a href="blog/product-listing-qa-standard.html">Use a listing review checklist →</a></p>
-      </div>
-      <div class="review-composition">
-        <figure class="review-visual">
-          <a href="penstack-product-alt-text-control.webp" target="_blank" rel="noopener"><img src="penstack-product-alt-text-control.webp" width="2048" height="620" loading="lazy" decoding="async" alt="Penstack alt text field for the Liquid Collection snowboard with Generate Alt Text control"></a>
-        </figure>
-        <div class="review-proof">
-          <div><b>✓</b><span>Claims match the source facts.</span></div>
-          <div><b>✓</b><span>Image descriptions match the actual view.</span></div>
-          <div><b>✓</b><span>Tags and collections fit the product.</span></div>
+    <section class="demo-section">
+      <h3>Product content before and after</h3>
+      <div class="evidence-row">
+        <div class="evidence-card">
+          <div class="evidence-frame"><img src="product-description-before.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Empty product description editor before product copy is added"></div>
+          <span class="pill">Before</span>
+        </div>
+        <div class="evidence-arrow">→</div>
+        <div class="evidence-card">
+          <div class="evidence-frame"><img src="product-description-after-current.webp" width="1094" height="320" loading="lazy" decoding="async" alt="Product description editor after the Liquid snowboard description is added"></div>
+          <span class="pill">After</span>
         </div>
       </div>
-    </div>
+      <p class="section-note">The description was empty before and populated afterward. The product title is unchanged.<br>Demo content; review product claims before publishing.</p>
+    </section>
+
+    <section class="demo-section">
+      <h3>Image names and alt text before and after</h3>
+      <div class="image-details-grid">
+        <figure class="snow-product">
+          <img src="penstack-product-hero-liquid-snowboard.webp" width="1024" height="1024" loading="lazy" decoding="async" alt="Liquid Collection snowboard standing upright in alpine snow">
+          <figcaption>Saved Shopify image details · Image 5 of 5</figcaption>
+        </figure>
+
+        <div class="detail-card">
+          <span class="pill">Before</span>
+          <dl>
+            <dt>Image name:</dt>
+            <dd>Liquid_board_on_a_mountain</dd>
+            <dt>Saved alt text:</dt>
+            <dd>Empty</dd>
+          </dl>
+          <p class="muted">Shopify suggestion visible, not saved.</p>
+        </div>
+
+        <div class="evidence-arrow">→</div>
+
+        <div class="detail-card">
+          <span class="pill">After</span>
+          <dl>
+            <dt>Image name:</dt>
+            <dd>The_Collection_Snowboard_Liquid_<br>Front_Styled_Scene</dd>
+            <dt>Saved alt text:</dt>
+            <dd>Front view of the Liquid Collection snowboard featuring a blue ombre forest and moon graphic, standing upright in alpine snow</dd>
+          </dl>
+        </div>
+      </div>
+
+      <figure class="alt-control">
+        <div class="evidence-frame"><img src="penstack-product-alt-text-control.webp" width="2048" height="620" loading="lazy" decoding="async" alt="Penstack alt text field with Generate Alt Text control"></div>
+        <figcaption>A cropped image-preparation control in penstack. This example shows another photo of the same product.</figcaption>
+      </figure>
+    </section>
+
+    <section class="demo-section">
+      <h3>Storefront before and after</h3>
+      <div class="evidence-row storefront-row">
+        <div class="evidence-card">
+          <span class="pill storefront-label">Before</span>
+          <div class="evidence-frame"><img src="penstack-product-storefront-before.webp" width="1920" height="884" loading="lazy" decoding="async" alt="Liquid Collection snowboard storefront before the product description is added"></div>
+        </div>
+        <div class="evidence-arrow">→</div>
+        <div class="evidence-card">
+          <span class="pill storefront-label">After</span>
+          <div class="evidence-frame"><img src="penstack-product-storefront-after.webp" width="1920" height="1012" loading="lazy" decoding="async" alt="Liquid Collection snowboard storefront after the product description is published"></div>
+        </div>
+      </div>
+      <p class="section-note">The saved description is now visible on the product page. Image names and alt text are reviewed separately.</p>
+    </section>
+
+    <section class="support-grid">
+      <article class="support-panel">
+        <div class="support-title">
+          <img src="assets/illustrations/penstack-illustration-search-intent-v1.webp" loading="lazy" decoding="async" alt="">
+          <h3>Search context for<br>product copy</h3>
+        </div>
+        <div class="search-demo">⌕&nbsp;&nbsp; blue snowboard with forest graphic</div>
+        <div class="field-label">Proposed title:</div>
+        <div class="proposal-field">Liquid Snowboard with Blue Forest Graphic</div>
+        <p class="support-copy">Illustrative wording, not a published result or measured search demand.</p>
+      </article>
+
+      <article class="support-panel">
+        <div class="support-title">
+          <img src="assets/illustrations/penstack-illustration-review-v1.webp" loading="lazy" decoding="async" alt="">
+          <h3>Review the supported<br>details</h3>
+        </div>
+        <p class="review-copy">Check the listing content and supported organization fields before selecting updates to publish. Return to individual listings as your catalog changes.</p>
+        <p><a href="use-cases.html">Explore tags, collections, and catalog upkeep →</a></p>
+        <div class="store-context">
+          <strong>Keep each store in context</strong>
+          <p class="support-copy">Use the relevant product facts and brand guidance for each store.<br>Multi-store support: Pro and Agency.</p>
+        </div>
+      </article>
+    </section>
   </section>
 
-  <section class="section compact soft">
-    <div class="section-heading">
-      <p class="eyebrow green">BEFORE YOUR FIRST SESSION</p>
-      <h2>Bring the details the workflow needs.</h2>
-      <p>Start with a product you can verify. The app prepares content from the available context; missing facts still need an answer from you.</p>
-    </div>
-    <div class="product-proof">
-      <article class="proof-card"><strong>A Shopify product</strong><p>Create the product record in Shopify, then select it in penstack.</p></article>
-      <article class="proof-card"><strong>Reliable product facts</strong><p>Have materials, dimensions, intended use, and care details available where relevant.</p></article>
-      <article class="proof-card"><strong>A clear first task</strong><p>Choose a launch, refresh, image-text update, or catalog organization job.</p></article>
-    </div>
-    <div class="product-evidence-pair product-evidence-wide">
-      <a href="penstack-product-storefront-before.webp" target="_blank" rel="noopener"><img src="penstack-product-storefront-before.webp" width="1920" height="884" loading="lazy" decoding="async" alt="Liquid Collection snowboard storefront before the product description is added"></a>
-      <a href="penstack-product-storefront-after.webp" target="_blank" rel="noopener"><img src="penstack-product-storefront-after.webp" width="1920" height="1012" loading="lazy" decoding="async" alt="Liquid Collection snowboard storefront after the product description is published"></a>
-    </div>
+  <section class="mid-cta">
+    <h2>Less work between steps.<br>You keep the final say.</h2>
+    <p>Prepare the listing details, review the content, and select the changes to publish.</p>
+    <a href="use-cases.html">Find your use case →</a>
   </section>
 
-  <section class="final-cta">
-    <p class="eyebrow green">READY TO SEE IT IN ACTION?</p>
-    <h2>Put one real product through the workflow.</h2>
-    <p>Connect your store, choose a product, and compare the prepared content with its source details.</p>
+  <section class="product-final">
+    <h2>Start with one product you know well.</h2>
     <a class="button primary" href="https://app.penstack.co/?start=free" data-cta-location="final_cta">Start free →</a>
-    <p class="microcopy" style="margin-top:10px">Start with 10 product publishes per calendar month. No credit card required.</p>
   </section>
 
   <footer>
