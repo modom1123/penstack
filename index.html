@@ -131,11 +131,14 @@ img{display:block;max-width:100%}
 .use-card p{color:var(--muted);font-size:16px;line-height:1.35;margin:0 0 12px}
 .home-final{padding:22px 6% 52px;text-align:center}
 .home-final h2{font-size:clamp(34px,4vw,52px);letter-spacing:-.04em;margin:0 0 18px}
-.home-footer{margin:0;padding:24px 6%;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;font-size:12px;background:var(--navy);color:#fff}
-.home-footer .brand img{width:125px;filter:brightness(0) invert(1)}
-.home-footer-links{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
-.home-footer-links a{color:#fff;text-decoration:none}
-.home-footer .copyright{color:#d3dde5}
+footer{padding:28px 6%;display:flex;align-items:center;justify-content:space-between;background:var(--navy);color:#fff;font-size:13px;gap:24px}
+footer .brand{display:inline-flex;align-items:center;position:relative;background:transparent;padding:0;border-radius:0;flex:0 0 auto}
+footer .brand img{width:170px;height:auto;filter:brightness(0) invert(1)}
+footer .brand::after{content:"";position:absolute;inset:0;background:url("penstack_logo.png") center/contain no-repeat;clip-path:inset(32% 86.5% 23% 9%);pointer-events:none}
+footer p{margin:0;color:#d3dde5}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.footer-links a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:4px}
+.footer-links a:hover,.footer-links a:focus-visible{text-decoration-color:#fff}
 @media(max-width:1000px){
   .home-header{grid-template-columns:170px 1fr auto;gap:14px}
   .home-nav{gap:14px;font-size:12px}
@@ -156,7 +159,8 @@ img{display:block;max-width:100%}
   .proof-copy{grid-column:auto}
   .use-card{border-left:0;border-top:1px solid #9fd7ff;padding:24px 0}
   .use-card:first-child{border-top:0}
-  .home-footer{grid-template-columns:1fr;gap:10px;margin:0;padding-left:5%;padding-right:5%}
+  footer{flex-direction:column;align-items:flex-start;gap:10px}
+.footer-links{justify-content:flex-start}
 }
 </style>
 </head>
@@ -253,12 +257,11 @@ img{display:block;max-width:100%}
   <a class="home-btn primary" href="https://app.penstack.co/?start=free" data-cta-location="final_cta">Start free</a>
 </section>
 
-<footer class="home-footer">
+<footer>
   <a class="brand" href="index.html"><img src="penstack_logo.png" alt="penstack"></a>
-  <div>Less grunt work. More time with your craft.</div>
-  <nav class="home-footer-links" aria-label="Legal and support">
-    <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><span>© 2026 penstack</span>
-  </nav>
+  <p>Less grunt work. More time with your craft.</p>
+  <nav class="footer-links" aria-label="Legal and support"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+  <span>© 2026 penstack</span>
 </footer>
 </main>
 </body>
