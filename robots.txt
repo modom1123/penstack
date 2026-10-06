@@ -1,3 +1,19 @@
+# Search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# OpenAI search discovery
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI model-training crawler
+User-agent: GPTBot
+Allow: /
+
+# Default policy
 User-agent: *
 Allow: /
 
