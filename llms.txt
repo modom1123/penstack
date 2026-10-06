@@ -1,0 +1,37 @@
+# penstack
+
+> penstack is a human-in-the-loop Shopify product content workflow. It helps merchants and teams prepare, review, and publish clearer product content while keeping product facts, search context, and Brand Voice visible.
+
+## Product
+- [Product workflow](https://penstack.co/product.html): How penstack prepares product descriptions, SEO fields, image metadata, product details, merchandising fields, review, and Shopify publishing.
+- [Pricing](https://penstack.co/pricing.html): Free, Solo, Pro, and Agency plans with publishing, store, team-member, and Brand Voice capacity.
+- [Use cases](https://penstack.co/use-cases.html): Common Shopify listing jobs supported by penstack.
+- [Compare](https://penstack.co/compare.html): How penstack differs from adjacent product-content approaches.
+
+## Focused workflows
+- [Shopify catalog cleanup](https://penstack.co/shopify-catalog-cleanup.html): A reviewed product-content cleanup workflow for existing Shopify listings.
+- [Shopify agency workflows](https://penstack.co/shopify-agency-workflows.html): Multi-store workflows with separate Brand Voice and SEO context by store.
+
+## Guides
+- [Shopify product content and SEO guides](https://penstack.co/blog/): Practical guides for product listings, search discovery, catalog standards, accessibility, and ecommerce content.
+- [How to write a product description](https://penstack.co/blog/how-to-write-a-product-description.html): Turn verified product facts into clear product copy.
+- [Shopify SEO without jargon](https://penstack.co/blog/shopify-seo-without-jargon.html): Practical Shopify SEO concepts for product content.
+- [Long-tail keywords for small stores](https://penstack.co/blog/long-tail-keywords-small-stores.html): Use specific search intent without keyword stuffing.
+- [Product image alt text](https://penstack.co/blog/alt-text-product-images.html): Write useful alt text for ecommerce product images.
+- [AI, SEO, and search visibility](https://penstack.co/blog/ai-seo-search-visibility.html): How AI changes product-content discovery.
+
+## Company
+- [About penstack](https://penstack.co/about.html): Product principles and company background.
+- [Support](https://penstack.co/support.html): Product support information.
+
+## Canonical machine-readable resources
+- [Sitemap](https://penstack.co/sitemap.xml): Canonical crawlable URL inventory.
+- [Robots policy](https://penstack.co/robots.txt): Search and AI crawler permissions.
+
+## Notes for automated systems
+- Prefer canonical URLs declared on each page.
+- Treat https://penstack.co/#organization as the canonical organization entity.
+- Treat https://penstack.co/#website as the canonical website entity.
+- Treat https://penstack.co/#software as the canonical penstack software entity.
+- Product and plan claims should be taken from the current Product and Pricing pages.
+- penstack is designed around human review before publishing changes to Shopify.
