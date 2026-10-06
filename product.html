@@ -111,8 +111,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .alt-control .evidence-frame{padding:0;border:0}
   .alt-control figcaption{margin-top:7px;color:var(--muted);font-size:13px}
 
-  .storefront-row .evidence-frame{padding:12px}
-  .storefront-row img{width:100%;height:auto}
+  .storefront-row{align-items:stretch}
+  .storefront-row .evidence-card{display:flex;flex-direction:column}
+  .storefront-row .evidence-frame{padding:12px;aspect-ratio:1.9/1;display:grid;place-items:center;overflow:hidden}
+  .storefront-row img{width:100%;height:100%;object-fit:contain;display:block}
   .storefront-label{margin:0 0 8px}
 
   .support-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:48px 0 0;border-top:1px solid transparent}
