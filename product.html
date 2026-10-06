@@ -27,8 +27,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="apple-touch-icon" sizes="180x180" href="penstack-favicon-180.png">
       <link rel="preload" as="image" href="penstack-product-hero-connected-workflow.webp" type="image/webp" fetchpriority="high">
 <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://penstack.co/product.html#webpage","url":"https://penstack.co/product.html","name":"Shopify Product Listing Workflow & SEO | penstack","description":"See how penstack uses Shopify product data, source details, and Brand Voice to prepare listing content. Understand editable fields, review, and publishing.","isPartOf":{"@id":"https://penstack.co/#website"}},{"@type":"SoftwareApplication","@id":"https://penstack.co/product.html#software","name":"penstack","url":"https://penstack.co/product.html","applicationCategory":"BusinessApplication","operatingSystem":"Web","description":"A human-in-the-loop Shopify product workflow for preparing product content, SEO, images, product details, merchandising, review, and publishing.","provider":{"@id":"https://penstack.co/#organization"},"featureList":["Shopify product descriptions","SEO titles and meta descriptions","Image alt text","Product details and metafields","Tags and collections","Brand voice","Human review and approval","Publish to Shopify"]}]}
-  </script>
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "@id":"https://penstack.co/product.html#webpage",
+      "url":"https://penstack.co/product.html",
+      "name":"Shopify Product Listing Workflow & SEO | penstack",
+      "description":"See how penstack uses Shopify product data, source details, and Brand Voice to prepare listing content. Understand editable fields, review, and publishing.",
+      "isPartOf":{"@id":"https://penstack.co/#website"},
+      "about":{"@id":"https://penstack.co/#software"},
+      "mainEntity":{"@id":"https://penstack.co/#software"}
+    },
+    {
+      "@type":"WebApplication",
+      "@id":"https://penstack.co/#software",
+      "name":"penstack",
+      "url":"https://penstack.co/product.html",
+      "applicationCategory":"BusinessApplication",
+      "operatingSystem":"Web",
+      "description":"A human-in-the-loop Shopify product content workflow for preparing product content, SEO, images, product details, merchandising, review, and publishing.",
+      "provider":{"@id":"https://penstack.co/#organization"},
+      "featureList":[
+        "Shopify product descriptions",
+        "SEO titles and meta descriptions",
+        "Image alt text and image naming",
+        "Product details and metafields",
+        "Tags and collections",
+        "Brand Voice",
+        "Human review and approval",
+        "Publish to Shopify"
+      ],
+      "offers":{
+        "@type":"Offer",
+        "name":"Free",
+        "price":"0",
+        "priceCurrency":"USD",
+        "url":"https://penstack.co/pricing.html"
+      }
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="styles.css?v=20261004-footer-colors">
   <style>
     .page-hero{padding-top:66px;padding-bottom:72px;gap:54px;align-items:center}
