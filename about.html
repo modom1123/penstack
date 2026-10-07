@@ -90,11 +90,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .decision-list{display:grid;gap:12px;margin:26px 0 0;padding:0;list-style:none}
   .decision-list li{display:flex;align-items:center;gap:12px;color:var(--navy);font-weight:800}
   .decision-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--white);border:1px solid var(--border-green);color:var(--green);font-size:15px;flex:0 0 auto}
-  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
-  .principle{padding:24px;border:1px solid var(--line);border-radius:18px;background:var(--white)}
-  .principle-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--white);border:1px solid var(--border-green);color:var(--green);font-weight:900;margin-bottom:16px}
-  .principle h3{margin:0 0 8px;color:var(--navy);font-size:18px}
-  .principle p{margin:0;color:var(--muted);font-size:14px;line-height:1.55}
+  .principles-section{margin-top:56px}
+  .principles-header{max-width:860px;margin:0 auto 34px;text-align:center}
+  .principles-title{margin:0;color:var(--navy);font-size:clamp(32px,3.3vw,52px);line-height:1.06;letter-spacing:-.035em}
+  .principles-intro{margin:16px auto 0;max-width:720px;color:var(--muted);font-size:18px;line-height:1.6}
+  .principles-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+  .principle-card{position:relative;padding:30px 32px 34px;border:1px solid var(--line);border-radius:24px;background:var(--white)}
+  .principle-top-line{position:absolute;top:0;left:0;right:0;height:4px;border-radius:24px 24px 0 0}
+  .principle-green .principle-top-line{background:var(--green)}
+  .principle-blue .principle-top-line{background:var(--blue)}
+  .principle-yellow .principle-top-line{background:var(--yellow)}
+  .principle-icon-circle{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;margin-bottom:24px}
+  .principle-green .principle-icon-circle{background:var(--green)}
+  .principle-blue .principle-icon-circle{background:var(--blue)}
+  .principle-yellow .principle-icon-circle{background:var(--yellow)}
+  .principle-icon-svg{width:32px;height:32px;stroke:#fff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .principle-icon-navy{stroke:var(--navy)}
+  .principle-card h4{margin:0 0 14px;color:var(--navy);font-size:clamp(22px,2vw,28px);line-height:1.14;letter-spacing:-.02em}
+  .principle-card p{margin:0;color:var(--muted);font-size:17px;line-height:1.55}
   .time-list{display:grid;gap:16px;margin-top:28px}
   .time-item{display:flex;align-items:center;gap:14px;color:var(--navy);font-size:18px;font-weight:800}
   .time-icon{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--white);border:1px solid var(--line);color:var(--yellow-deep);font-size:17px;flex:0 0 auto}
@@ -108,7 +121,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   @media(max-width:980px){
     .about-grid,.about-hero .about-grid{grid-template-columns:1fr}
     .about-art-frame{max-width:780px}
-    .principles{grid-template-columns:1fr}
+    .principles-grid{grid-template-columns:1fr}
   }
   @media(max-width:720px){
     .about-section{padding:60px 0}
@@ -304,22 +317,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <div class="principles">
-        <article class="principle">
-          <div class="principle-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a2 2 0 0 1 2 2v14H4V5a2 2 0 0 1 2-2Z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
-          <h3>Facts come before fluency</h3>
-          <p>Product claims should be grounded in information you can verify.</p>
-        </article>
-        <article class="principle">
-          <div class="principle-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9h8M8 12h5"/></svg></div>
-          <h3>Voice follows the brand</h3>
-          <p>Penstack can help express the brand, but the business still defines the audience, language, and boundaries.</p>
-        </article>
-        <article class="principle">
-          <div class="principle-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4.5 3.5-7 8-7s7.2 2.5 8 7"/><path d="m16.5 4.5 1.5 1.5 3-3"/></svg></div>
-          <h3>The human makes the final call</h3>
-          <p>Nothing should replace the judgment of the person who actually knows the product.</p>
-        </article>
+      <div class="principles-section">
+        <div class="principles-header">
+          <p class="about-label">THE PRINCIPLES BEHIND PENSTACK</p>
+          <h3 class="principles-title">Built to support judgment, not replace it.</h3>
+          <p class="principles-intro">These principles shape how Penstack works, what it automates, and where people stay in control.</p>
+        </div>
+
+        <div class="principles-grid">
+          <article class="principle-card principle-green">
+            <div class="principle-top-line"></div>
+            <div class="principle-icon-circle">
+              <svg class="principle-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="4" width="14" height="16" rx="2"></rect>
+                <path d="M8 8h8M8 12h8M8 16h5"></path>
+              </svg>
+            </div>
+            <h4>Facts come before fluency</h4>
+            <p>Product claims should be grounded in information you can verify.</p>
+          </article>
+
+          <article class="principle-card principle-blue">
+            <div class="principle-top-line"></div>
+            <div class="principle-icon-circle">
+              <svg class="principle-icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 6h14v10H9l-4 3V6Z"></path>
+                <path d="M9 10h6M9 13h4"></path>
+              </svg>
+            </div>
+            <h4>Voice follows the brand</h4>
+            <p>Penstack can help express the brand. You still define the audience, language, and boundaries.</p>
+          </article>
+
+          <article class="principle-card principle-yellow">
+            <div class="principle-top-line"></div>
+            <div class="principle-icon-circle">
+              <svg class="principle-icon-svg principle-icon-navy" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="8" r="3.5"></circle>
+                <path d="M5 20c.7-4.2 3.1-6.5 7-6.5s6.3 2.3 7 6.5"></path>
+              </svg>
+            </div>
+            <h4>The human makes the final call</h4>
+            <p>Nothing replaces the judgment of the person who actually knows the product.</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
