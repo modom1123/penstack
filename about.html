@@ -57,22 +57,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-section:not(.about-hero){border-top:1px solid #edf0f3}
   .section-card{padding:34px;border:1px solid var(--line);border-radius:22px;background:var(--white)}
   .icon-svg{width:18px;height:18px;display:block;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-  .checklist-visual{width:min(100%,540px);padding:28px;border-radius:24px;background:var(--white)}
-  .listing-stack{display:grid;grid-template-columns:.88fr 1.12fr;gap:18px;align-items:center}
-  .listing-card,.check-card{border:1px solid var(--line);border-radius:16px;background:var(--white);box-shadow:0 8px 24px rgba(27,42,74,.06)}
-  .listing-card{padding:18px}
-  .listing-thumb{height:120px;border-radius:12px;background:var(--white);display:grid;place-items:center;margin-bottom:14px}
-  .tee-shape{width:72px;height:62px;background:var(--green);border-radius:12px 12px 8px 8px;position:relative}
-  .tee-shape:before,.tee-shape:after{content:"";position:absolute;top:7px;width:26px;height:22px;background:var(--green);border-radius:8px}
-  .tee-shape:before{left:-17px;transform:rotate(24deg)}
-  .tee-shape:after{right:-17px;transform:rotate(-24deg)}
-  .ui-line{height:8px;border-radius:999px;background:#dfe5ec;margin-top:9px}
+  .checklist-visual{width:min(100%,620px);padding:18px 10px 8px;background:var(--white)}
+  .listing-stack{position:relative;min-height:430px}
+  .listing-card,.check-card{position:absolute;border:1px solid var(--line);background:var(--white);box-shadow:0 14px 34px rgba(27,42,74,.08)}
+  .listing-card{left:0;top:94px;width:47%;padding:20px 18px 18px;border-radius:18px}
+  .listing-thumb{height:170px;border-radius:14px;background:#f7faf8;display:grid;place-items:center;margin-bottom:18px;overflow:hidden}
+  .tee-shape{width:96px;height:86px;background:var(--green);border-radius:12px 12px 10px 10px;position:relative}
+  .tee-shape:before,.tee-shape:after{content:"";position:absolute;top:8px;width:34px;height:28px;background:var(--green);border-radius:9px}
+  .tee-shape:before{left:-25px;transform:rotate(24deg)}
+  .tee-shape:after{right:-25px;transform:rotate(-24deg)}
+  .tee-shape i{position:absolute;left:50%;top:-1px;width:30px;height:14px;border-radius:0 0 18px 18px;background:#f7faf8;transform:translateX(-50%)}
+  .ui-line{height:8px;border-radius:999px;background:#dfe5ec;margin-top:10px}
   .ui-line.short{width:58%}.ui-line.mid{width:78%}
-  .check-card{padding:18px}
-  .check-row{display:flex;gap:10px;align-items:center;padding:8px 0;color:var(--navy);font-size:12.5px;font-weight:700;border-bottom:1px solid #edf0f3}
+  .check-card{right:0;top:0;width:60%;padding:18px 22px;border-radius:18px}
+  .check-row{display:flex;gap:12px;align-items:center;padding:12px 0;color:var(--navy);font-size:13px;font-weight:800;border-bottom:1px solid #edf0f3}
   .check-row:last-child{border-bottom:0}
-  .check-dot{width:19px;height:19px;border-radius:50%;display:grid;place-items:center;background:var(--white);border:1px solid var(--border-green);color:var(--green);flex:0 0 auto}
-  .repeat-note{margin:16px 2px 0;text-align:right;color:var(--about-red);font-size:13px;font-weight:900}
+  .check-dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--white);border:1.5px solid #cdd8d3;color:var(--green);font-size:14px;flex:0 0 auto}
+  .repeat-note{display:flex;align-items:center;justify-content:flex-end;gap:8px;margin:10px 2px 0;color:var(--about-red);font-size:13px;font-weight:900}
+  .repeat-note svg{width:28px;height:24px;stroke:var(--about-red);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
   .workflow-visual{width:min(100%,560px);position:relative;padding:24px}
   .workflow-card{position:relative;border:1px solid var(--line);border-radius:18px;background:var(--white);box-shadow:0 10px 28px rgba(27,42,74,.07);padding:18px 20px;margin:0 auto 14px}
   .workflow-card:nth-child(1){width:88%;transform:translateX(-5%)}
@@ -129,7 +131,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .about-wrap{width:min(100% - 32px,1180px)}
     .about-hero{padding-top:44px}
     .founder-panel,.section-card{padding:26px}
-    .listing-stack{grid-template-columns:1fr}
+    .listing-stack{min-height:0;display:grid;grid-template-columns:1fr;gap:16px}
+    .listing-card,.check-card{position:relative;inset:auto;width:100%}
+    .listing-card{top:auto;left:auto}
+    .check-card{top:auto;right:auto}
     .checklist-visual,.workflow-visual{padding:18px}
     .workflow-card,.workflow-card:nth-child(1),.workflow-card:nth-child(2),.workflow-card:nth-child(3){width:100%;transform:none}
   }
@@ -223,7 +228,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="checklist-visual" role="img" aria-label="A product listing beside a repeated product publishing checklist">
           <div class="listing-stack">
             <div class="listing-card">
-              <div class="listing-thumb"><div class="tee-shape" aria-hidden="true"></div></div>
+              <div class="listing-thumb"><div class="tee-shape" aria-hidden="true"><i></i></div></div>
               <div class="ui-line mid"></div>
               <div class="ui-line"></div>
               <div class="ui-line short"></div>
@@ -239,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="check-row"><span class="check-dot">✓</span>Publish it</div>
             </div>
           </div>
-          <div class="repeat-note">↳ Then do it again for the next product.</div>
+          <div class="repeat-note"><svg viewBox="0 0 32 28" aria-hidden="true"><path d="M4 3v13c0 5 3 8 8 8h13"/><path d="m21 19 5 5-5 5"/></svg><span>Then do it again for the next product.</span></div>
         </div>
       </div>
     </div>
