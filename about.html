@@ -41,6 +41,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-copy p:last-child{margin-bottom:0}
   .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
   .about-art{display:block;width:100%;height:auto}
+  .about-hero .about-art{max-width:690px}
+  .about-section:nth-of-type(2) .about-art{max-width:610px}
+  .about-section:nth-of-type(4) .about-art{max-width:640px}
+  .about-section:nth-of-type(6) .about-art{max-width:560px}
+  .founder-panel .about-art{max-width:560px}
   .about-art-frame{display:flex;align-items:center;justify-content:center;min-width:0}
   .about-hero{padding:70px 0 82px;background:var(--white)}
   .about-hero .about-grid{grid-template-columns:minmax(0,.95fr) minmax(420px,1.05fr)}
@@ -48,10 +53,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin-top:28px}
   .about-text-link{color:var(--green);font-weight:800;text-decoration:none}
   .about-text-link:hover{text-decoration:underline}
-  .soft-blue{background:#f3f8fc}
-  .soft-cream{background:#fffaf0}
-  .soft-white{background:var(--white)}
+  .soft-blue,.soft-cream,.soft-white{background:var(--white)}
+  .about-section:not(.about-hero){border-top:1px solid #edf0f3}
   .section-card{padding:34px;border:1px solid var(--line);border-radius:22px;background:var(--white)}
+  .icon-svg{width:18px;height:18px;display:block;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .checklist-visual{width:min(100%,540px);padding:28px;border-radius:24px;background:#f7f9fb}
+  .listing-stack{display:grid;grid-template-columns:.88fr 1.12fr;gap:18px;align-items:center}
+  .listing-card,.check-card{border:1px solid var(--line);border-radius:16px;background:var(--white);box-shadow:0 8px 24px rgba(27,42,74,.06)}
+  .listing-card{padding:18px}
+  .listing-thumb{height:120px;border-radius:12px;background:#eef6f1;display:grid;place-items:center;margin-bottom:14px}
+  .tee-shape{width:72px;height:62px;background:var(--green);border-radius:12px 12px 8px 8px;position:relative}
+  .tee-shape:before,.tee-shape:after{content:"";position:absolute;top:7px;width:26px;height:22px;background:var(--green);border-radius:8px}
+  .tee-shape:before{left:-17px;transform:rotate(24deg)}
+  .tee-shape:after{right:-17px;transform:rotate(-24deg)}
+  .ui-line{height:8px;border-radius:999px;background:#dfe5ec;margin-top:9px}
+  .ui-line.short{width:58%}.ui-line.mid{width:78%}
+  .check-card{padding:18px}
+  .check-row{display:flex;gap:10px;align-items:center;padding:8px 0;color:var(--navy);font-size:12.5px;font-weight:700;border-bottom:1px solid #edf0f3}
+  .check-row:last-child{border-bottom:0}
+  .check-dot{width:19px;height:19px;border-radius:50%;display:grid;place-items:center;background:#e9f4ed;color:var(--green);flex:0 0 auto}
+  .repeat-note{margin:16px 2px 0;text-align:right;color:var(--about-red);font-size:13px;font-weight:900}
+  .workflow-visual{width:min(100%,560px);position:relative;padding:24px}
+  .workflow-card{position:relative;border:1px solid var(--line);border-radius:18px;background:var(--white);box-shadow:0 10px 28px rgba(27,42,74,.07);padding:18px 20px;margin:0 auto 14px}
+  .workflow-card:nth-child(1){width:88%;transform:translateX(-5%)}
+  .workflow-card:nth-child(2){width:82%;transform:translateX(8%)}
+  .workflow-card:nth-child(3){width:90%;transform:translateX(-1%)}
+  .workflow-card-head{display:flex;align-items:center;gap:12px;color:var(--navy);font-size:13px;font-weight:900}
+  .workflow-badge{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:#eef6f1;color:var(--green)}
+  .workflow-thumb{width:36px;height:36px;border-radius:9px;background:#eef6f1;display:grid;place-items:center}
+  .mini-shirt{width:20px;height:18px;border-radius:5px;background:var(--green)}
+  .workflow-check{margin-left:auto;color:var(--green)}
+  .workflow-lines{margin-left:48px;margin-top:8px}
+  .workflow-lines .ui-line{margin-top:6px}
   .question{margin-top:24px;color:var(--navy);font-size:20px;font-weight:900;line-height:1.35}
   .answer{margin-top:8px;color:var(--green);font-size:18px;font-weight:900}
   .decision-list{display:grid;gap:12px;margin:26px 0 0;padding:0;list-style:none}
@@ -82,6 +115,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .about-wrap{width:min(100% - 32px,1180px)}
     .about-hero{padding-top:44px}
     .founder-panel,.section-card{padding:26px}
+    .listing-stack{grid-template-columns:1fr}
+    .checklist-visual,.workflow-visual{padding:18px}
+    .workflow-card,.workflow-card:nth-child(1),.workflow-card:nth-child(2),.workflow-card:nth-child(3){width:100%;transform:none}
   }
 </style>
 <script type="application/ld+json">
@@ -140,7 +176,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="about-section soft-blue">
+  <section class="about-section soft-white">
     <div class="about-wrap about-grid">
       <div class="about-art-frame">
         <img class="about-art" src="penstack-about-origin-someday-why-not-now.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Mallory sitting with a mug while Salmon looks up at her">
@@ -169,13 +205,33 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>What surprised me was how much of that work was the same work, repeated.</p>
         </div>
       </div>
-      <div class="about-art-frame section-card">
-        <img class="about-art" src="assets/illustrations/penstack-illustration-review-v1.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Product listing review and checklist workflow">
+      <div class="about-art-frame">
+        <div class="checklist-visual" role="img" aria-label="A product listing beside a repeated product publishing checklist">
+          <div class="listing-stack">
+            <div class="listing-card">
+              <div class="listing-thumb"><div class="tee-shape" aria-hidden="true"></div></div>
+              <div class="ui-line mid"></div>
+              <div class="ui-line"></div>
+              <div class="ui-line short"></div>
+            </div>
+            <div class="check-card">
+              <div class="check-row"><span class="check-dot">✓</span>Research the search terms</div>
+              <div class="check-row"><span class="check-dot">✓</span>Write the description</div>
+              <div class="check-row"><span class="check-dot">✓</span>Check the details</div>
+              <div class="check-row"><span class="check-dot">✓</span>Name the images</div>
+              <div class="check-row"><span class="check-dot">✓</span>Write the alt text</div>
+              <div class="check-row"><span class="check-dot">✓</span>Add tags and collections</div>
+              <div class="check-row"><span class="check-dot">✓</span>Review it</div>
+              <div class="check-row"><span class="check-dot">✓</span>Publish it</div>
+            </div>
+          </div>
+          <div class="repeat-note">↳ Then do it again for the next product.</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="about-section soft-cream">
+  <section class="about-section soft-white">
     <div class="about-wrap about-grid">
       <div class="about-art-frame">
         <img class="about-art" src="penstack-about-turning-point-repetitive-work.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Mallory thinking at her laptop while Salmon rests nearby">
@@ -188,10 +244,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>So much energy was going into the mechanics around the strategy that, by the time the checklist was finished, there was less attention left for the decisions that actually needed it.</p>
         </div>
         <ul class="decision-list" aria-label="The work that needed attention">
-          <li><span class="decision-icon">✦</span>The product.</li>
-          <li><span class="decision-icon">●</span>The customer.</li>
-          <li><span class="decision-icon">⌁</span>The brand.</li>
-          <li><span class="decision-icon">↗</span>The next idea.</li>
+          <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5c-.9.7-1.5 1.6-1.5 2.5h-4c0-.9-.6-1.8-1.5-2.5Z"/></svg></span>The product.</li>
+          <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.4-4 2.5-6 6-6s5.6 2 6 6"/><path d="M14 15c3.5-.2 5.8 1.5 6.5 5"/></svg></span>The customer.</li>
+          <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h10l6 6-10 10-6-6V4Z"/><circle cx="9" cy="9" r="1.5"/></svg></span>The brand.</li>
+          <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></span>The next idea.</li>
         </ul>
         <div class="about-copy" style="margin-top:26px">
           <p>With a background spanning product, marketing, customer experience, ecommerce, and workflow design, I kept coming back to the same question:</p>
@@ -215,23 +271,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
         <div class="about-art-frame">
-          <img class="about-art" src="penstack-product-complete-process.webp" loading="lazy" decoding="async" alt="Penstack product listing workflow from product information through review and publishing">
+          <div class="workflow-visual" role="img" aria-label="Connected Penstack product information, writing, image details, review, and publishing panels">
+            <div class="workflow-card">
+              <div class="workflow-card-head">
+                <span class="workflow-thumb"><span class="mini-shirt" aria-hidden="true"></span></span>
+                Product information
+                <span class="workflow-check">✓</span>
+              </div>
+              <div class="workflow-lines"><div class="ui-line"></div><div class="ui-line mid"></div></div>
+            </div>
+            <div class="workflow-card">
+              <div class="workflow-card-head">
+                <span class="workflow-badge">
+                  <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4l11-11-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/></svg>
+                </span>
+                Description + search context
+                <span class="workflow-check">✓</span>
+              </div>
+              <div class="workflow-lines"><div class="ui-line"></div><div class="ui-line short"></div></div>
+            </div>
+            <div class="workflow-card">
+              <div class="workflow-card-head">
+                <span class="workflow-badge">
+                  <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 15-5-5L5 20"/></svg>
+                </span>
+                Image details + review
+                <span class="workflow-check">✓</span>
+              </div>
+              <div class="workflow-lines"><div class="ui-line mid"></div><div class="ui-line"></div></div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="principles">
         <article class="principle">
-          <div class="principle-icon">▤</div>
+          <div class="principle-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a2 2 0 0 1 2 2v14H4V5a2 2 0 0 1 2-2Z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
           <h3>Facts come before fluency</h3>
           <p>Product claims should be grounded in information you can verify.</p>
         </article>
         <article class="principle">
-          <div class="principle-icon">◌</div>
+          <div class="principle-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9h8M8 12h5"/></svg></div>
           <h3>Voice follows the brand</h3>
           <p>Penstack can help express the brand, but the business still defines the audience, language, and boundaries.</p>
         </article>
         <article class="principle">
-          <div class="principle-icon">✓</div>
+          <div class="principle-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c.8-4.5 3.5-7 8-7s7.2 2.5 8 7"/><path d="m16.5 4.5 1.5 1.5 3-3"/></svg></div>
           <h3>The human makes the final call</h3>
           <p>Nothing should replace the judgment of the person who actually knows the product.</p>
         </article>
@@ -239,7 +324,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="about-section soft-blue">
+  <section class="about-section soft-white">
     <div class="about-wrap about-grid">
       <div class="about-art-frame">
         <img class="about-art" src="penstack-about-time-back-salmon-download.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Salmon resting on a yellow cushion beside books, a mug, and a plant">
@@ -248,11 +333,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="about-label">WHAT GETTING TIME BACK ACTUALLY MEANS</p>
         <h2 class="about-h2">More time for the work that keeps you going.</h2>
         <div class="time-list">
-          <div class="time-item"><span class="time-icon">◎</span>More time for strategy.</div>
-          <div class="time-item"><span class="time-icon">✦</span>More time for creating something new.</div>
-          <div class="time-item"><span class="time-icon">●</span>More time with customers.</div>
-          <div class="time-item"><span class="time-icon">♥</span>More time with what inspires you.</div>
-          <div class="time-item"><span class="time-icon">◐</span>Or more time to close the laptop earlier.</div>
+          <div class="time-item"><span class="time-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4V2M20 12h2M12 20v2M4 12H2"/></svg></span>More time for strategy.</div>
+          <div class="time-item"><span class="time-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></svg></span>More time for creating something new.</div>
+          <div class="time-item"><span class="time-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 20c.5-4 2.3-6 5.5-6s5 2 5.5 6"/><path d="M10.5 20c.5-4 2.3-6 5.5-6s5 2 5.5 6"/></svg></span>More time with customers.</div>
+          <div class="time-item"><span class="time-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 5.5a5.5 5.5 0 0 0-7.8 0L12 6.2l-.7-.7a5.5 5.5 0 1 0-7.8 7.8L12 21l8.5-7.7a5.5 5.5 0 0 0 0-7.8Z"/></svg></span>More time with what inspires you.</div>
+          <div class="time-item"><span class="time-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5A8 8 0 0 1 8.5 4a8.5 8.5 0 1 0 11.5 11.5Z"/></svg></span>Or more time to close the laptop earlier.</div>
         </div>
       </div>
     </div>
