@@ -41,6 +41,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-copy p:last-child{margin-bottom:0}
   .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
   .about-art{display:block;width:100%;height:auto}
+  .repetitive-work-section .about-grid{align-items:start}
+  .repetitive-work-section .about-art-frame{margin-top:54px}
+  @media(max-width:800px){.repetitive-work-section .about-art-frame{margin-top:0}}
   .about-hero .about-art{max-width:690px}
   .about-section:nth-of-type(2) .about-art{max-width:610px}
   .about-section:nth-of-type(4) .about-art{max-width:640px}
@@ -230,7 +233,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <section class="about-section soft-white">
+  <section class="about-section soft-white repetitive-work-section">
     <div class="about-wrap about-grid">
       <div class="about-art-frame">
         <img class="about-art" src="penstack-about-repetitive-work.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Mallory thinking at her laptop while Salmon rests nearby">
