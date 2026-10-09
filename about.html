@@ -41,13 +41,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-copy p:last-child{margin-bottom:0}
   .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
   .about-art{display:block;width:100%;height:auto}
-  .repetitive-work-section .about-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px;align-items:center}
-  .repetitive-work-section .about-art-frame{margin-top:0;align-self:center}
-  .repetitive-work-section .about-art{width:100%;max-width:none}
-  @media(max-width:800px){
-    .repetitive-work-section .about-grid{grid-template-columns:1fr;gap:32px}
-    .repetitive-work-section .about-art{max-width:640px}
+  .repetitive-work-section{padding:48px 0}
+  .repetitive-work-section .about-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px;align-items:center}
+  .repetitive-work-section .about-art-frame{margin:0;min-width:0}
+  .repetitive-work-section .about-art{width:min(100%,520px);max-width:none;aspect-ratio:1/1;object-fit:cover;object-position:center}
+  .repetitive-work-section .about-h2{font-size:clamp(32px,3.2vw,46px);margin-bottom:16px}
+  .repetitive-work-section .about-copy{font-size:16px;line-height:1.5}
+  .repetitive-work-section .decision-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 16px;margin-top:20px}
+  .repetitive-work-section .decision-icon{width:30px;height:30px}
+  .repetitive-work-section .question{margin-top:18px;font-size:18px}
+  .repetitive-work-section .answer{margin-top:6px;font-size:17px}
+  @media(max-width:980px){
+    .repetitive-work-section .about-grid{grid-template-columns:1fr;gap:28px}
+    .repetitive-work-section .about-art{width:min(100%,520px)}
   }
+  @media(max-width:540px){.repetitive-work-section .decision-list{grid-template-columns:1fr 1fr;gap:10px 6px}.repetitive-work-section .decision-list li{font-size:14px}}
   .about-hero .about-art{max-width:690px}
   .about-section:nth-of-type(2) .about-art{max-width:610px}
   .about-section:nth-of-type(4) .about-art{max-width:640px}
@@ -244,10 +252,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div>
         <p class="about-label">THERE HAD TO BE A BETTER WAY</p>
-        <h2 class="about-h2">The repetitive work was starting to eat the work I actually cared about.</h2>
+        <h2 class="about-h2">The busywork was taking over.</h2>
         <div class="about-copy">
-          <p>Product listings and SEO were some of the biggest time sinks. Not because the strategy was unimportant. The opposite.</p>
-          <p>So much energy was going into the mechanics around the strategy that, by the time the checklist was finished, there was less attention left for the decisions that actually needed it.</p>
+          <p>Product listings and SEO mattered. But the repetitive work behind them was eating up the time I needed for what mattered more.</p>
         </div>
         <ul class="decision-list" aria-label="The work that needed attention">
           <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5c-.9.7-1.5 1.6-1.5 2.5h-4c0-.9-.6-1.8-1.5-2.5Z"/></svg></span>The product.</li>
@@ -255,9 +262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h10l6 6-10 10-6-6V4Z"/><circle cx="9" cy="9" r="1.5"/></svg></span>The brand.</li>
           <li><span class="decision-icon"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg></span>The next idea.</li>
         </ul>
-        <div class="about-copy" style="margin-top:26px">
-          <p>With a background spanning product, marketing, customer experience, ecommerce, and workflow design, I kept coming back to the same question:</p>
-        </div>
+        <div class="about-copy" style="margin-top:18px"><p>I kept coming back to one question:</p></div>
         <div class="question">Why am I rebuilding this process for every product?</div>
         <div class="answer">Penstack started as my answer.</div>
       </div>
