@@ -41,9 +41,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .about-copy p:last-child{margin-bottom:0}
   .about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
   .about-art{display:block;width:100%;height:auto}
-  .repetitive-work-section .about-grid{align-items:start}
-  .repetitive-work-section .about-art-frame{margin-top:54px}
-  @media(max-width:800px){.repetitive-work-section .about-art-frame{margin-top:0}}
+  .repetitive-work-section .about-grid{grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px;align-items:center}
+  .repetitive-work-section .about-art-frame{margin-top:0;align-self:center}
+  .repetitive-work-section .about-art{width:100%;max-width:none}
+  @media(max-width:800px){
+    .repetitive-work-section .about-grid{grid-template-columns:1fr;gap:32px}
+    .repetitive-work-section .about-art{max-width:640px}
+  }
   .about-hero .about-art{max-width:690px}
   .about-section:nth-of-type(2) .about-art{max-width:610px}
   .about-section:nth-of-type(4) .about-art{max-width:640px}
