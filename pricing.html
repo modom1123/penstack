@@ -117,6 +117,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .plan-details .section-heading{max-width:1180px;margin-left:auto;margin-right:auto}
     .plan-details .section-heading h2{font-size:clamp(34px,4vw,48px)}
     .plan-table-wrap{overflow:auto;max-width:1180px;margin:0 auto;border:1px solid var(--line);border-radius:14px;background:var(--white)}
+    .plan-table-wrap:focus-visible{outline:3px solid var(--green);outline-offset:4px}
     .plan-table{width:100%;min-width:900px;margin:0;border-collapse:separate;border-spacing:0;table-layout:fixed}
     .plan-table th,.plan-table td{padding:8px 10px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
     .plan-table th:last-child,.plan-table td:last-child{border-right:0}
@@ -328,7 +329,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>The core product workflow is included on every plan. Higher tiers add Brand Voice, more capacity, more people, and multi-store support.</p>
     </div>
 
-    <div class="plan-table-wrap">
+    <div class="plan-table-wrap" role="region" aria-label="Compare Penstack pricing plans" tabindex="0">
       <table class="plan-table">
         <thead>
           <tr>
