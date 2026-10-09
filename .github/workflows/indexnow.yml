@@ -1,0 +1,102 @@
+name: Notify IndexNow
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.html"
+      - "**/*.html"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-main
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build changed URL list
+        id: urls
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+        run: |
+          python <<'PY'
+          import json
+          import os
+          import subprocess
+
+          before = os.environ["BEFORE"]
+          after = os.environ["AFTER"]
+
+          if before == "0" * 40:
+              output = subprocess.check_output(
+                  ["git", "ls-tree", "-r", "--name-only", after],
+                  text=True,
+              )
+              paths = [p for p in output.splitlines() if p.endswith(".html")]
+          else:
+              output = subprocess.check_output(
+                  ["git", "diff", "--name-only", before, after, "--", "*.html", "**/*.html"],
+                  text=True,
+              )
+              paths = [p for p in output.splitlines() if p.endswith(".html")]
+
+          urls = []
+          for path in sorted(set(paths)):
+              if path == "index.html":
+                  url = "https://penstack.co/"
+              elif path.endswith("/index.html"):
+                  url = "https://penstack.co/" + path[:-10]
+              else:
+                  url = "https://penstack.co/" + path
+
+              if url not in urls:
+                  urls.append(url)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a") as fh:
+              fh.write("count=" + str(len(urls)) + "\n")
+              fh.write("urls=" + json.dumps(urls, separators=(",", ":")) + "\n")
+
+          print("Changed URLs:")
+          for url in urls:
+              print(url)
+          PY
+
+      - name: Wait for GitHub Pages deployment
+        if: steps.urls.outputs.count != '0'
+        run: sleep 75
+
+      - name: Notify IndexNow
+        if: steps.urls.outputs.count != '0'
+        env:
+          URLS: ${{ steps.urls.outputs.urls }}
+        run: |
+          python <<'PY' > indexnow-payload.json
+          import json
+          import os
+
+          payload = {
+              "host": "penstack.co",
+              "key": "1cafb67f514c43b48f366417e22559f4",
+              "keyLocation": "https://penstack.co/1cafb67f514c43b48f366417e22559f4.txt",
+              "urlList": json.loads(os.environ["URLS"]),
+          }
+          print(json.dumps(payload))
+          PY
+
+          curl --fail-with-body \
+            --request POST \
+            --header "Content-Type: application/json; charset=utf-8" \
+            --data @indexnow-payload.json \
+            https://api.indexnow.org/IndexNow
