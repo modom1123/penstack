@@ -1027,3 +1027,35 @@
 .guide-library .badge-up{border-left-color:var(--yellow,#f0a500)}
 .guide-library .topic-badge{color:var(--muted,#526078);font-weight:600}
 .guide-library .guide-card:focus-within{outline:3px solid var(--navy,#1b2a4a);outline-offset:3px}
+
+/* Education level is communicated by its section heading, not repeated in each card. */
+.journey-library .guide-labels{margin-bottom:10px}
+.journey-library .topic-badge{
+  display:inline-block;
+  min-height:0;
+  padding:0;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.02em;
+}
+.journey-start .topic-badge{color:#1a5c3a}
+.journey-go-deeper .topic-badge{color:#1b5fa8}
+.journey-level-up .topic-badge{color:#765500}
+.journey-library .journey-lane-heading h3{
+  display:inline-block;
+  padding-bottom:5px;
+  border-bottom:5px solid currentColor;
+}
+.journey-start .journey-lane-heading h3{color:#1a5c3a}
+.journey-go-deeper .journey-lane-heading h3{color:#1b5fa8}
+.journey-level-up .journey-lane-heading h3{color:#1b2a4a;border-bottom-color:#f0a500}
+.journey-library .journey-stage-label{
+  padding:0;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  color:var(--hub-muted,#526078);
+}
