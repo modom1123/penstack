@@ -1002,3 +1002,28 @@
   max-width:780px;
   margin:0 0 0 -6%;
 }
+
+
+/* Education system: full-color structural labels, no muted pill badges.
+   Scoped to the Blog guide library so filters and other site components retain their behavior. */
+.guide-library .guide-labels{align-items:flex-start;gap:8px 12px}
+.guide-library .level-badge,
+.guide-library .topic-badge{
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:var(--navy,#1b2a4a);
+  min-height:0;
+  padding:3px 0;
+  font-size:12px;
+  line-height:1.4;
+}
+.guide-library .level-badge{
+  border-left:4px solid var(--green,#1a5c3a);
+  padding-left:10px;
+}
+.guide-library .badge-start{border-left-color:var(--green,#1a5c3a)}
+.guide-library .badge-deep{border-left-color:#2879c8}
+.guide-library .badge-up{border-left-color:var(--yellow,#f0a500)}
+.guide-library .topic-badge{color:var(--muted,#526078);font-weight:600}
+.guide-library .guide-card:focus-within{outline:3px solid var(--navy,#1b2a4a);outline-offset:3px}
