@@ -1086,3 +1086,8 @@
 .journey-go-deeper .guide-card a.guide-image[href="audit-inherited-shopify-catalog.html"] img,
 .journey-go-deeper .guide-card a.guide-image[href="product-listing-qa-standard.html"] img,
 .journey-go-deeper .guide-card a.guide-image[href="multi-brand-store-boundaries.html"] img{transform:scale(.92);transform-origin:center}
+
+/* Make the three education destinations actionable without turning the cards into buttons. */
+.learning-model-grid article{display:flex;flex-direction:column;align-items:flex-start}
+.learning-model-grid .learning-resource-link{display:inline-block;margin-top:auto;padding-top:16px;color:#1a5c3a;font-weight:750;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+.learning-model-grid .learning-resource-link:focus-visible{outline:3px solid #1b5fa8;outline-offset:4px;border-radius:2px}
