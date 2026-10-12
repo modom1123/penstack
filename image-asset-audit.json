@@ -1,0 +1,1176 @@
+{
+  "tracked_images": 273,
+  "referenced": 150,
+  "needs_manual_review": 9,
+  "unreferenced_candidates": 114,
+  "used": [
+    {
+      "path": "Crafting a clear product description-2.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "One-variable product page test-6.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "Running Shoe Photo With Alt Text-3.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "Shoe in the search spotlight-1.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "T-shirt tags and collection folders-4.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "Three bubbles, one clear voice-5.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "ai-seo-how-ai-changes-search.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "anatomy-of-a-great-product-listing.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-catalog-folder.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-content-icon.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-edit-icon.webp",
+      "refs": [
+        "docs/penstack-design-system.md",
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-hero-product-listing.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-launch-shirt.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-publish-icon.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-published-storefront.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-refresh-sneaker.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/home/penstack-home-shopify-admin.webp",
+      "refs": [
+        "index.html"
+      ]
+    },
+    {
+      "path": "assets/illustrations/penstack-illustration-launch-v1.webp",
+      "refs": [
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "assets/illustrations/penstack-illustration-refresh-v1.webp",
+      "refs": [
+        "shopify-catalog-cleanup.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "assets/illustrations/penstack-illustration-review-v1.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "assets/illustrations/penstack-illustration-search-intent-v1.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "assets/illustrations/penstack-illustration-store-contexts-v1.webp",
+      "refs": [
+        "shopify-agency-workflows.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "final-agencies-onboard-new-ecommerce-client-penstack.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "final-audit-inherited-shopify-catalog.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "final-one-account-multiple-brands-separate-stores.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "final-product-listing-qa-standard-team.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "final-product-taxonomy-before-catalog-becomes-a-mess.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "how-collections-can-become-search-landing-pages.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "image-accessibility-qa-standard.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "long-tail-keywords.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "penstack-about-founder-note-mallory-salmon-2.webp",
+      "refs": [
+        "about.html"
+      ]
+    },
+    {
+      "path": "penstack-about-hero-time-back.webp",
+      "refs": [
+        "about.html"
+      ]
+    },
+    {
+      "path": "penstack-about-origin-start-building-final.webp",
+      "refs": [
+        "about.html"
+      ]
+    },
+    {
+      "path": "penstack-about-repetitive-work.webp",
+      "refs": [
+        "about.html"
+      ]
+    },
+    {
+      "path": "penstack-about-time-back.webp",
+      "refs": [
+        "about.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ab-testing-hero-v2.webp",
+      "refs": [
+        "blog/ab-test-product-page.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ab-testing-one-variable-v2.webp",
+      "refs": [
+        "blog/ab-test-product-page.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ab-testing-plan-v2.webp",
+      "refs": [
+        "blog/ab-test-product-page.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-agency-client-context-v2.webp",
+      "refs": [
+        "blog/agency-client-onboarding-penstack.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-agency-onboarding-hero-v2.webp",
+      "refs": [
+        "blog/agency-client-onboarding-penstack.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-agency-onboarding-sequence-v2.webp",
+      "refs": [
+        "blog/agency-client-onboarding-penstack.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-agency-pilot-products-v2.webp",
+      "refs": [
+        "blog/agency-client-onboarding-penstack.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-alt-text-definition-v2.webp",
+      "refs": [
+        "blog/alt-text-product-images.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-alt-text-examples-v2.webp",
+      "refs": [
+        "blog/alt-text-product-images.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-alt-text-hero-v2.webp",
+      "refs": [
+        "blog/alt-text-product-images.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-alt-text-informative-decorative-v2.webp",
+      "refs": [
+        "blog/alt-text-product-images.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-boundaries-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-guide-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-hero-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-personality-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-perspective-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-qa-example-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-rhythm-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-brand-voice-words-v2.webp",
+      "refs": [
+        "blog/brand-voice-isnt-just-tone.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-catalog-audit-framework-v2.webp",
+      "refs": [
+        "blog/audit-inherited-shopify-catalog.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-catalog-audit-hero-v2.webp",
+      "refs": [
+        "blog/audit-inherited-shopify-catalog.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-catalog-common-mistakes-v2.webp",
+      "refs": [
+        "blog/tags-collections-product-types.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-catalog-image-review-v2.webp",
+      "refs": [
+        "blog/audit-inherited-shopify-catalog.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-catalog-stable-to-flexible-v2.webp",
+      "refs": [
+        "blog/tags-collections-product-types.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-collection-context-v2.webp",
+      "refs": [
+        "blog/collections-search-landing-pages.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-collection-search-intent-v2.webp",
+      "refs": [
+        "blog/collections-search-landing-pages.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-collections-shopping-paths-v2.webp",
+      "refs": [
+        "blog/tags-collections-product-types.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ecommerce-image-accessibility-qa-checklist-v2.webp",
+      "refs": [
+        "blog/ecommerce-image-accessibility-qa.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ecommerce-image-accessibility-qa-hero-v2.webp",
+      "refs": [
+        "blog/ecommerce-image-accessibility-qa.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ecommerce-image-accessibility-qa-variant-example-v2.webp",
+      "refs": [
+        "blog/ecommerce-image-accessibility-qa.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-ecommerce-image-accessibility-qa-workflow-v2.webp",
+      "refs": [
+        "blog/ecommerce-image-accessibility-qa.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-final-approval-qa-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-long-tail-catalog-structure-v2.webp",
+      "refs": [
+        "blog/long-tail-keywords-small-stores.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-long-tail-page-types-v2.webp",
+      "refs": [
+        "blog/long-tail-keywords-small-stores.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-long-tail-product-angles-v2.webp",
+      "refs": [
+        "blog/long-tail-keywords-small-stores.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-long-tail-search-hero-v2.webp",
+      "refs": [
+        "blog/long-tail-keywords-small-stores.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-long-tail-specificity-ladder-v2.webp",
+      "refs": [
+        "blog/long-tail-keywords-small-stores.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-main-banner-v2.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-multi-brand-boundaries-hero-v2.webp",
+      "refs": [
+        "blog/multi-brand-store-boundaries.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-multi-brand-context-v2.webp",
+      "refs": [
+        "blog/multi-brand-store-boundaries.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-accuracy-qa-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-description-before-after-v2.webp",
+      "refs": [
+        "blog/how-to-write-a-product-description.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-description-source-check-v2.webp",
+      "refs": [
+        "blog/how-to-write-a-product-description.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-description-source-hero-v2.webp",
+      "refs": [
+        "blog/how-to-write-a-product-description.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-description-two-pass-v2.webp",
+      "refs": [
+        "blog/how-to-write-a-product-description.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-image-accessibility-qa-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-image-metadata-alt-text-example-v2.webp",
+      "refs": [
+        "blog/product-image-metadata.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-image-metadata-hero-v2.webp",
+      "refs": [
+        "blog/product-image-metadata.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-image-metadata-takeaway-v2.webp",
+      "refs": [
+        "blog/product-image-metadata.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-image-metadata-three-fields-v2.webp",
+      "refs": [
+        "blog/product-image-metadata.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-description-guide-v2.webp",
+      "refs": [
+        "blog/anatomy-great-product-listing.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-fields-v2.webp",
+      "refs": [
+        "blog/anatomy-great-product-listing.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-final-review-v2.webp",
+      "refs": [
+        "blog/anatomy-great-product-listing.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-overview-v2.webp",
+      "refs": [
+        "blog/anatomy-great-product-listing.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-qa-framework-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-qa-hero-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-listing-seo-qa-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-merchandising-qa-v2.webp",
+      "refs": [
+        "blog/product-listing-qa-standard.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-refresh-audit-v2.webp",
+      "refs": [
+        "blog/refresh-existing-product.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-refresh-information-gaps-v2.webp",
+      "refs": [
+        "blog/refresh-existing-product.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-refresh-keep-change-review-v2.webp",
+      "refs": [
+        "blog/refresh-existing-product.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-refresh-targeted-updates-v2.webp",
+      "refs": [
+        "blog/refresh-existing-product.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-tag-anatomy-v2.webp",
+      "refs": [
+        "blog/product-tags-seo.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-tags-reusable-v2.webp",
+      "refs": [
+        "blog/tags-collections-product-types.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-tags-seo-hero-v2.webp",
+      "refs": [
+        "blog/index.html",
+        "blog/product-tags-seo.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-taxonomy-example-v2.webp",
+      "refs": [
+        "blog/product-taxonomy-before-catalog-mess.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-taxonomy-hero-v2.webp",
+      "refs": [
+        "blog/product-taxonomy-before-catalog-mess.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-titles-anatomy-v2.webp",
+      "refs": [
+        "blog/product-titles-101.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-titles-formula-v2.webp",
+      "refs": [
+        "blog/product-titles-101.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-titles-order-v2.webp",
+      "refs": [
+        "blog/product-titles-101.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-type-identity-v2.webp",
+      "refs": [
+        "blog/tags-collections-product-types.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-product-vs-collection-v2.webp",
+      "refs": [
+        "blog/collections-search-landing-pages.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-shopify-seo-page-types-v2.webp",
+      "refs": [
+        "blog/shopify-seo-without-jargon.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-shopify-seo-product-context-review-v2.webp",
+      "refs": [
+        "blog/shopify-seo-without-jargon.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-shopify-seo-readable-url-v2.webp",
+      "refs": [
+        "blog/shopify-seo-without-jargon.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-shopify-seo-search-discovery-v2.webp",
+      "refs": [
+        "blog/shopify-seo-without-jargon.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-shopify-seo-search-intent-v2.webp",
+      "refs": [
+        "blog/shopify-seo-without-jargon.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-shopify-seo-takeaway-v2.webp",
+      "refs": [
+        "blog/shopify-seo-without-jargon.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-tag-cleanup-v2.webp",
+      "refs": [
+        "blog/product-tags-seo.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-tag-search-opportunity-v2.webp",
+      "refs": [
+        "blog/product-tags-seo.html"
+      ]
+    },
+    {
+      "path": "penstack-blog-tag-to-collection-v2.webp",
+      "refs": [
+        "blog/product-tags-seo.html"
+      ]
+    },
+    {
+      "path": "penstack-compare-connected-workflow.webp",
+      "refs": [
+        "compare.html"
+      ]
+    },
+    {
+      "path": "penstack-compare-hero-current-products.webp",
+      "refs": [
+        "compare.html"
+      ]
+    },
+    {
+      "path": "penstack-favicon-180.png",
+      "refs": [
+        "about.html",
+        "blog/ab-test-product-page.html",
+        "blog/agency-client-onboarding-penstack.html",
+        "blog/ai-seo-search-visibility.html",
+        "blog/alt-text-product-images.html",
+        "blog/anatomy-great-product-listing.html",
+        "blog/audit-inherited-shopify-catalog.html",
+        "blog/brand-voice-isnt-just-tone.html",
+        "blog/collections-search-landing-pages.html",
+        "blog/ecommerce-image-accessibility-qa.html",
+        "blog/how-to-write-a-product-description.html",
+        "blog/index.html",
+        "blog/long-tail-keywords-small-stores.html",
+        "blog/product-image-metadata.html",
+        "blog/product-tags-seo.html",
+        "blog/product-taxonomy-before-catalog-mess.html",
+        "blog/product-titles-101.html",
+        "blog/refresh-existing-product.html",
+        "blog/shopify-seo-without-jargon.html",
+        "blog/social-media-hashtags-seo.html",
+        "blog/tags-collections-product-types.html",
+        "compare.html",
+        "index.html",
+        "pricing.html",
+        "privacy.html",
+        "product.html",
+        "shopify-agency-workflows.html",
+        "shopify-catalog-cleanup.html",
+        "support.html",
+        "terms.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-favicon-64.png",
+      "refs": [
+        "about.html",
+        "blog/ab-test-product-page.html",
+        "blog/agency-client-onboarding-penstack.html",
+        "blog/ai-seo-search-visibility.html",
+        "blog/alt-text-product-images.html",
+        "blog/anatomy-great-product-listing.html",
+        "blog/audit-inherited-shopify-catalog.html",
+        "blog/brand-voice-isnt-just-tone.html",
+        "blog/collections-search-landing-pages.html",
+        "blog/ecommerce-image-accessibility-qa.html",
+        "blog/how-to-write-a-product-description.html",
+        "blog/index.html",
+        "blog/long-tail-keywords-small-stores.html",
+        "blog/multi-brand-store-boundaries.html",
+        "blog/product-image-metadata.html",
+        "blog/product-listing-qa-standard.html",
+        "blog/product-tags-seo.html",
+        "blog/product-taxonomy-before-catalog-mess.html",
+        "blog/product-titles-101.html",
+        "blog/refresh-existing-product.html",
+        "blog/shopify-seo-without-jargon.html",
+        "blog/social-media-hashtags-seo.html",
+        "blog/tags-collections-product-types.html",
+        "compare.html",
+        "index.html",
+        "pricing.html",
+        "privacy.html",
+        "product.html",
+        "shopify-agency-workflows.html",
+        "shopify-catalog-cleanup.html",
+        "support.html",
+        "terms.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-illustration-hero-v1.png",
+      "refs": [
+        "ILLUSTRATION_SYSTEM.md"
+      ]
+    },
+    {
+      "path": "penstack-illustration-launch-v1.png",
+      "refs": [
+        "ILLUSTRATION_SYSTEM.md"
+      ]
+    },
+    {
+      "path": "penstack-illustration-launch-v1.webp",
+      "refs": [
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-illustration-refresh-v1.png",
+      "refs": [
+        "ILLUSTRATION_SYSTEM.md"
+      ]
+    },
+    {
+      "path": "penstack-illustration-refresh-v1.webp",
+      "refs": [
+        "shopify-catalog-cleanup.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-illustration-review-v1.png",
+      "refs": [
+        "ILLUSTRATION_SYSTEM.md"
+      ]
+    },
+    {
+      "path": "penstack-illustration-review-v1.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-illustration-search-intent-v1.png",
+      "refs": [
+        "ILLUSTRATION_SYSTEM.md"
+      ]
+    },
+    {
+      "path": "penstack-illustration-search-intent-v1.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-illustration-store-contexts-v1.png",
+      "refs": [
+        "ILLUSTRATION_SYSTEM.md"
+      ]
+    },
+    {
+      "path": "penstack-illustration-store-contexts-v1.webp",
+      "refs": [
+        "shopify-agency-workflows.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-product-alt-text-control.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-product-hero-liquid-snowboard.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-product-storefront-after.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-product-storefront-before.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-social-preview.jpg",
+      "refs": [
+        "about.html",
+        "blog/ai-seo-search-visibility.html",
+        "blog/alt-text-product-images.html",
+        "blog/ecommerce-image-accessibility-qa.html",
+        "blog/index.html",
+        "blog/product-image-metadata.html",
+        "blog/social-media-hashtags-seo.html",
+        "blog/tags-collections-product-types.html",
+        "compare.html",
+        "pricing.html",
+        "product.html"
+      ]
+    },
+    {
+      "path": "penstack-use-cases-catalog-cleanup-maintenance.webp",
+      "refs": [
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-use-cases-image-details-2.webp",
+      "refs": [
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-use-cases-merchandising.webp",
+      "refs": [
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-use-cases-overview.webp",
+      "refs": [
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack-use-cases-search-intent.webp",
+      "refs": [
+        ".github/workflows/assemble-search-intent.yml",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack_logo.png",
+      "refs": [
+        "about.html",
+        "blog/ab-test-product-page.html",
+        "blog/agency-client-onboarding-penstack.html",
+        "blog/ai-seo-search-visibility.html",
+        "blog/alt-text-product-images.html",
+        "blog/anatomy-great-product-listing.html",
+        "blog/audit-inherited-shopify-catalog.html",
+        "blog/brand-voice-isnt-just-tone.html",
+        "blog/collections-search-landing-pages.html",
+        "blog/ecommerce-image-accessibility-qa.html",
+        "blog/how-to-write-a-product-description.html",
+        "blog/index.html",
+        "blog/long-tail-keywords-small-stores.html",
+        "blog/multi-brand-store-boundaries.html",
+        "blog/product-image-metadata.html",
+        "blog/product-listing-qa-standard.html",
+        "blog/product-tags-seo.html",
+        "blog/product-taxonomy-before-catalog-mess.html",
+        "blog/product-titles-101.html",
+        "blog/refresh-existing-product.html",
+        "blog/shopify-seo-without-jargon.html",
+        "blog/social-media-hashtags-seo.html",
+        "blog/tags-collections-product-types.html",
+        "compare.html",
+        "docs/penstack-design-system.md",
+        "enhancements.css",
+        "index.html",
+        "pricing.html",
+        "privacy.html",
+        "product.html",
+        "shopify-agency-workflows.html",
+        "shopify-catalog-cleanup.html",
+        "styles.css",
+        "support.html",
+        "terms.html",
+        "use-cases.html"
+      ]
+    },
+    {
+      "path": "penstack_mark.png",
+      "refs": [
+        "enhancements.css"
+      ]
+    },
+    {
+      "path": "product-description-after-current.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "product-description-before.webp",
+      "refs": [
+        "product.html"
+      ]
+    },
+    {
+      "path": "product-image-metadata-filenames-alt-text-visible-copy.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "product-titles-101.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "product_page_to_shopify_store.webp",
+      "refs": [
+        "pricing.html"
+      ]
+    },
+    {
+      "path": "refresh-existing-product-without-starting-over.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    },
+    {
+      "path": "social-media-hashtags-seo.webp",
+      "refs": [
+        "blog/index.html"
+      ]
+    }
+  ],
+  "manual_review": [
+    {
+      "path": "PS-blog-hero-cropped.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "document_and_pencil_icon.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-catalog-common-mistakes-final.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-catalog-stable-to-flexible-final.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-product-description-source-check.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-audit-framework.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-audit-hero.png",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-audit-hero.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-image-audit-checklist.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    }
+  ],
+  "candidates": [
+    "blog/assets/alt-text-informative-decorative.svg",
+    "blog/assets/avoid-tag-soup-v5.svg",
+    "blog/assets/long-tail-opportunity-v7.svg",
+    "blog/assets/penstack-alt-text-definition.webp",
+    "blog/assets/penstack-alt-text-examples.webp",
+    "blog/assets/penstack-alt-text-hero.webp",
+    "blog/assets/penstack-anatomy-product-description-guide.webp",
+    "blog/assets/penstack-anatomy-product-listing-fields.webp",
+    "blog/assets/penstack-anatomy-product-listing-final-review.webp",
+    "blog/assets/penstack-anatomy-product-listing-overview.png",
+    "blog/assets/penstack-anatomy-product-listing-overview.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-checklist.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-hero.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-variant-example.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-workflow.webp",
+    "blog/assets/penstack-product-image-metadata-alt-text-example.webp",
+    "blog/assets/penstack-product-image-metadata-hero.webp",
+    "blog/assets/penstack-product-image-metadata-takeaway.webp",
+    "blog/assets/penstack-product-image-metadata-three-fields.webp",
+    "blog/assets/product-tag-anatomy-v7.svg",
+    "blog/assets/product-tags-organization-seo.svg",
+    "blog/assets/tag-to-collection-v5.svg",
+    "eco_friendly_green_tee_product_page.webp",
+    "penstack-ab-testing-hero.png",
+    "penstack-ab-testing-hero.webp",
+    "penstack-ab-testing-one-variable.webp",
+    "penstack-ab-testing-test-anatomy.webp",
+    "penstack-about-founder-note-mallory-salmon.webp",
+    "penstack-about-hero-founder-salmon.webp",
+    "penstack-about-origin-someday-why-not-now.webp",
+    "penstack-about-time-back-editorial.webp",
+    "penstack-about-time-back-salmon-download.webp",
+    "penstack-about-time-back.png",
+    "penstack-about-turning-point-repetitive-work.webp",
+    "penstack-agency-onboarding-hero.png",
+    "penstack-agency-onboarding-hero.webp",
+    "penstack-agency-onboarding-pilot-before-scaling.webp",
+    "penstack-agency-onboarding-sequence.webp",
+    "penstack-agency-onboarding-standardize-vs-client-specific.webp",
+    "penstack-anatomy-product-listing-overview.png",
+    "penstack-brand-voice-boundaries-hd.svg",
+    "penstack-brand-voice-guide-hd.svg",
+    "penstack-brand-voice-personality.webp",
+    "penstack-brand-voice-perspective.webp",
+    "penstack-brand-voice-qa-example.webp",
+    "penstack-brand-voice-rhythm-hd.svg",
+    "penstack-brand-voice-system-hd.svg",
+    "penstack-brand-voice-system.png",
+    "penstack-brand-voice-words.webp",
+    "penstack-collection-bare-vs-useful-landing-page.webp",
+    "penstack-collection-product-vs-collection.webp",
+    "penstack-collection-search-intent-path.png",
+    "penstack-collection-search-intent-path.webp",
+    "penstack-collections-shopping-paths-final.webp",
+    "penstack-compare-hero-tools-tradeoffs.webp",
+    "penstack-compare-hero-transparent.webp",
+    "penstack-final-approval-qa.webp",
+    "penstack-home-consistent-listings.webp",
+    "penstack-home-useful-attention.webp",
+    "penstack-long-tail-keywords-avoid-micro-collections.webp",
+    "penstack-long-tail-keywords-hero-specificity-search.png",
+    "penstack-long-tail-keywords-hero-specificity-search.webp",
+    "penstack-long-tail-keywords-one-product-many-angles.webp",
+    "penstack-long-tail-keywords-search-intent-best-page-type.webp",
+    "penstack-long-tail-keywords-specificity-ladder.webp",
+    "penstack-multi-brand-context-boundaries.webp",
+    "penstack-multi-brand-store-boundaries-hero.png",
+    "penstack-multi-brand-store-boundaries-hero.webp",
+    "penstack-product-accuracy-qa.webp",
+    "penstack-product-capability-brand-voice.webp",
+    "penstack-product-capability-descriptions.webp",
+    "penstack-product-capability-images-alt-text.webp",
+    "penstack-product-capability-product-details.webp",
+    "penstack-product-capability-publish-shopify.webp",
+    "penstack-product-capability-review-approval.webp",
+    "penstack-product-capability-seo-discovery.webp",
+    "penstack-product-capability-tags-collections.webp",
+    "penstack-product-complete-process.webp",
+    "penstack-product-description-before-after.webp",
+    "penstack-product-description-start-with-facts.png",
+    "penstack-product-description-start-with-facts.webp",
+    "penstack-product-description-two-pass-draft.webp",
+    "penstack-product-hero-connected-workflow.webp",
+    "penstack-product-image-accessibility-qa.webp",
+    "penstack-product-listing-qa-framework.webp",
+    "penstack-product-listing-qa-hero.png",
+    "penstack-product-listing-qa-hero.webp",
+    "penstack-product-listing-seo-qa.webp",
+    "penstack-product-merchandising-qa.webp",
+    "penstack-product-refresh-audit-map.png",
+    "penstack-product-refresh-audit-map.webp",
+    "penstack-product-refresh-information-gaps.webp",
+    "penstack-product-refresh-keep-change-review.webp",
+    "penstack-product-refresh-targeted-updates.webp",
+    "penstack-product-tags-reusable-labels-final.webp",
+    "penstack-product-taxonomy-example-product.webp",
+    "penstack-product-taxonomy-hero.png",
+    "penstack-product-taxonomy-hero.webp",
+    "penstack-product-titles-anatomy.png",
+    "penstack-product-titles-anatomy.webp",
+    "penstack-product-titles-order-matters.webp",
+    "penstack-product-titles-simple-formula.webp",
+    "penstack-product-type-identity-final.webp",
+    "penstack-retrieve-from-shopify.webp",
+    "penstack-shopify-seo-better-discovery-takeaway.webp",
+    "penstack-shopify-seo-intent-to-discovery-hd.png",
+    "penstack-shopify-seo-intent-to-discovery-hd.webp",
+    "penstack-shopify-seo-page-types.webp",
+    "penstack-shopify-seo-penstack-support.webp",
+    "penstack-shopify-seo-readable-url-example.webp",
+    "penstack-shopify-seo-search-intent-example.webp",
+    "penstack-use-cases-overview.png",
+    "product-tags-two-jobs.webp",
+    "sneaker_product_approval_dashboard.webp"
+  ]
+}
