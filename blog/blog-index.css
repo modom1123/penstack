@@ -1059,3 +1059,20 @@
   border-radius:0;
   color:var(--hub-muted,#526078);
 }
+
+
+/* Normalize the five late-library thumbnails with excess baked-in outer matting.
+   Increase visual footprint without stretching or replacing approved illustrations. */
+.journey-go-deeper .guide-card a[href="product-taxonomy-before-catalog-mess.html"].guide-image img,
+.journey-go-deeper .guide-card a[href="agency-client-onboarding-penstack.html"].guide-image img,
+.journey-go-deeper .guide-card a[href="audit-inherited-shopify-catalog.html"].guide-image img,
+.journey-go-deeper .guide-card a[href="product-listing-qa-standard.html"].guide-image img,
+.journey-go-deeper .guide-card a[href="multi-brand-store-boundaries.html"].guide-image img{
+  padding:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  transform:scale(1.12);
+  transform-origin:center;
+}
