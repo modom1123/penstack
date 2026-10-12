@@ -1052,7 +1052,7 @@
 .journey-start .journey-lane-heading h3{color:#1a5c3a}
 .journey-go-deeper .journey-lane-heading h3{color:#1b5fa8}
 .journey-level-up .journey-lane-heading h3{color:#1b2a4a;border-bottom-color:#f0a500}
-.journey-library .journey-stage-label{
+.journey-library .journey-lane .journey-stage-label{
   padding:0;
   background:transparent;
   border:0;
