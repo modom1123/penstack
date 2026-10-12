@@ -30,3 +30,9 @@ for p in images:
 report={'tracked_images':len(images),'referenced':len(used),'needs_manual_review':len(maybe),'unreferenced_candidates':len(unused),'used':used,'manual_review':maybe,'candidates':unused}
 Path('image-asset-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:report[k] for k in ['tracked_images','referenced','needs_manual_review','unreferenced_candidates']},indent=2))
+
+# Remove only images with zero references and no reserved-name safeguards.
+# These files remain recoverable from Git history.
+for p in unused:
+    Path(p).unlink()
+print(f"Removed {len(unused)} unreferenced image files")
