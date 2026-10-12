@@ -1,82 +1,66 @@
 {
   "tracked_images": 273,
-  "referenced": 273,
-  "needs_manual_review": 0,
-  "unreferenced_candidates": 0,
+  "referenced": 150,
+  "needs_manual_review": 9,
+  "unreferenced_candidates": 114,
   "used": [
     {
       "path": "Crafting a clear product description-2.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "One-variable product page test-6.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "PS-blog-hero-cropped.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "Running Shoe Photo With Alt Text-3.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "Shoe in the search spotlight-1.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "T-shirt tags and collection folders-4.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "Three bubbles, one clear voice-5.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "ai-seo-how-ai-changes-search.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "anatomy-of-a-great-product-listing.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-catalog-folder.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-content-icon.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
@@ -84,63 +68,54 @@
       "path": "assets/home/penstack-home-edit-icon.webp",
       "refs": [
         "docs/penstack-design-system.md",
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-hero-product-listing.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-launch-shirt.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-publish-icon.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-published-storefront.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-refresh-sneaker.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/home/penstack-home-shopify-admin.webp",
       "refs": [
-        "image-asset-audit.json",
         "index.html"
       ]
     },
     {
       "path": "assets/illustrations/penstack-illustration-launch-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "use-cases.html"
       ]
     },
     {
       "path": "assets/illustrations/penstack-illustration-refresh-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "shopify-catalog-cleanup.html",
         "use-cases.html"
       ]
@@ -148,1050 +123,597 @@
     {
       "path": "assets/illustrations/penstack-illustration-review-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "assets/illustrations/penstack-illustration-search-intent-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "assets/illustrations/penstack-illustration-store-contexts-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "shopify-agency-workflows.html",
         "use-cases.html"
       ]
     },
     {
-      "path": "blog/assets/alt-text-informative-decorative.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/avoid-tag-soup-v5.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/long-tail-opportunity-v7.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-alt-text-definition.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-alt-text-examples.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-alt-text-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-anatomy-product-description-guide.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-anatomy-product-listing-fields.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-anatomy-product-listing-final-review.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-anatomy-product-listing-overview.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-anatomy-product-listing-overview.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-ecommerce-image-accessibility-qa-checklist.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-ecommerce-image-accessibility-qa-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-ecommerce-image-accessibility-qa-variant-example.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-ecommerce-image-accessibility-qa-workflow.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-product-image-metadata-alt-text-example.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-product-image-metadata-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-product-image-metadata-takeaway.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/penstack-product-image-metadata-three-fields.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/product-tag-anatomy-v7.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/product-tags-organization-seo.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "blog/assets/tag-to-collection-v5.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "document_and_pencil_icon.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "eco_friendly_green_tee_product_page.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
       "path": "final-agencies-onboard-new-ecommerce-client-penstack.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "final-audit-inherited-shopify-catalog.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "final-one-account-multiple-brands-separate-stores.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "final-product-listing-qa-standard-team.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "final-product-taxonomy-before-catalog-becomes-a-mess.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "how-collections-can-become-search-landing-pages.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "image-accessibility-qa-standard.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "long-tail-keywords.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-ab-testing-hero.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-ab-testing-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-ab-testing-one-variable.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-ab-testing-test-anatomy.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "penstack-about-founder-note-mallory-salmon-2.webp",
       "refs": [
-        "about.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-founder-note-mallory-salmon.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-hero-founder-salmon.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "about.html"
       ]
     },
     {
       "path": "penstack-about-hero-time-back.webp",
       "refs": [
-        "about.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-origin-someday-why-not-now.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "about.html"
       ]
     },
     {
       "path": "penstack-about-origin-start-building-final.webp",
       "refs": [
-        "about.html",
-        "image-asset-audit.json"
+        "about.html"
       ]
     },
     {
       "path": "penstack-about-repetitive-work.webp",
       "refs": [
-        "about.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-time-back-editorial.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-time-back-salmon-download.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-time-back.png",
-      "refs": [
-        "image-asset-audit.json"
+        "about.html"
       ]
     },
     {
       "path": "penstack-about-time-back.webp",
       "refs": [
-        "about.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-about-turning-point-repetitive-work.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-agency-onboarding-hero.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-agency-onboarding-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-agency-onboarding-pilot-before-scaling.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-agency-onboarding-sequence.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-agency-onboarding-standardize-vs-client-specific.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-anatomy-product-listing-overview.png",
-      "refs": [
-        "image-asset-audit.json"
+        "about.html"
       ]
     },
     {
       "path": "penstack-blog-ab-testing-hero-v2.webp",
       "refs": [
-        "blog/ab-test-product-page.html",
-        "image-asset-audit.json"
+        "blog/ab-test-product-page.html"
       ]
     },
     {
       "path": "penstack-blog-ab-testing-one-variable-v2.webp",
       "refs": [
-        "blog/ab-test-product-page.html",
-        "image-asset-audit.json"
+        "blog/ab-test-product-page.html"
       ]
     },
     {
       "path": "penstack-blog-ab-testing-plan-v2.webp",
       "refs": [
-        "blog/ab-test-product-page.html",
-        "image-asset-audit.json"
+        "blog/ab-test-product-page.html"
       ]
     },
     {
       "path": "penstack-blog-agency-client-context-v2.webp",
       "refs": [
-        "blog/agency-client-onboarding-penstack.html",
-        "image-asset-audit.json"
+        "blog/agency-client-onboarding-penstack.html"
       ]
     },
     {
       "path": "penstack-blog-agency-onboarding-hero-v2.webp",
       "refs": [
-        "blog/agency-client-onboarding-penstack.html",
-        "image-asset-audit.json"
+        "blog/agency-client-onboarding-penstack.html"
       ]
     },
     {
       "path": "penstack-blog-agency-onboarding-sequence-v2.webp",
       "refs": [
-        "blog/agency-client-onboarding-penstack.html",
-        "image-asset-audit.json"
+        "blog/agency-client-onboarding-penstack.html"
       ]
     },
     {
       "path": "penstack-blog-agency-pilot-products-v2.webp",
       "refs": [
-        "blog/agency-client-onboarding-penstack.html",
-        "image-asset-audit.json"
+        "blog/agency-client-onboarding-penstack.html"
       ]
     },
     {
       "path": "penstack-blog-alt-text-definition-v2.webp",
       "refs": [
-        "blog/alt-text-product-images.html",
-        "image-asset-audit.json"
+        "blog/alt-text-product-images.html"
       ]
     },
     {
       "path": "penstack-blog-alt-text-examples-v2.webp",
       "refs": [
-        "blog/alt-text-product-images.html",
-        "image-asset-audit.json"
+        "blog/alt-text-product-images.html"
       ]
     },
     {
       "path": "penstack-blog-alt-text-hero-v2.webp",
       "refs": [
-        "blog/alt-text-product-images.html",
-        "image-asset-audit.json"
+        "blog/alt-text-product-images.html"
       ]
     },
     {
       "path": "penstack-blog-alt-text-informative-decorative-v2.webp",
       "refs": [
-        "blog/alt-text-product-images.html",
-        "image-asset-audit.json"
+        "blog/alt-text-product-images.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-boundaries-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-guide-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-hero-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-personality-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-perspective-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-qa-example-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-rhythm-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-brand-voice-words-v2.webp",
       "refs": [
-        "blog/brand-voice-isnt-just-tone.html",
-        "image-asset-audit.json"
+        "blog/brand-voice-isnt-just-tone.html"
       ]
     },
     {
       "path": "penstack-blog-catalog-audit-framework-v2.webp",
       "refs": [
-        "blog/audit-inherited-shopify-catalog.html",
-        "image-asset-audit.json"
+        "blog/audit-inherited-shopify-catalog.html"
       ]
     },
     {
       "path": "penstack-blog-catalog-audit-hero-v2.webp",
       "refs": [
-        "blog/audit-inherited-shopify-catalog.html",
-        "image-asset-audit.json"
+        "blog/audit-inherited-shopify-catalog.html"
       ]
     },
     {
       "path": "penstack-blog-catalog-common-mistakes-v2.webp",
       "refs": [
-        "blog/tags-collections-product-types.html",
-        "image-asset-audit.json"
+        "blog/tags-collections-product-types.html"
       ]
     },
     {
       "path": "penstack-blog-catalog-image-review-v2.webp",
       "refs": [
-        "blog/audit-inherited-shopify-catalog.html",
-        "image-asset-audit.json"
+        "blog/audit-inherited-shopify-catalog.html"
       ]
     },
     {
       "path": "penstack-blog-catalog-stable-to-flexible-v2.webp",
       "refs": [
-        "blog/tags-collections-product-types.html",
-        "image-asset-audit.json"
+        "blog/tags-collections-product-types.html"
       ]
     },
     {
       "path": "penstack-blog-collection-context-v2.webp",
       "refs": [
-        "blog/collections-search-landing-pages.html",
-        "image-asset-audit.json"
+        "blog/collections-search-landing-pages.html"
       ]
     },
     {
       "path": "penstack-blog-collection-search-intent-v2.webp",
       "refs": [
-        "blog/collections-search-landing-pages.html",
-        "image-asset-audit.json"
+        "blog/collections-search-landing-pages.html"
       ]
     },
     {
       "path": "penstack-blog-collections-shopping-paths-v2.webp",
       "refs": [
-        "blog/tags-collections-product-types.html",
-        "image-asset-audit.json"
+        "blog/tags-collections-product-types.html"
       ]
     },
     {
       "path": "penstack-blog-ecommerce-image-accessibility-qa-checklist-v2.webp",
       "refs": [
-        "blog/ecommerce-image-accessibility-qa.html",
-        "image-asset-audit.json"
+        "blog/ecommerce-image-accessibility-qa.html"
       ]
     },
     {
       "path": "penstack-blog-ecommerce-image-accessibility-qa-hero-v2.webp",
       "refs": [
-        "blog/ecommerce-image-accessibility-qa.html",
-        "image-asset-audit.json"
+        "blog/ecommerce-image-accessibility-qa.html"
       ]
     },
     {
       "path": "penstack-blog-ecommerce-image-accessibility-qa-variant-example-v2.webp",
       "refs": [
-        "blog/ecommerce-image-accessibility-qa.html",
-        "image-asset-audit.json"
+        "blog/ecommerce-image-accessibility-qa.html"
       ]
     },
     {
       "path": "penstack-blog-ecommerce-image-accessibility-qa-workflow-v2.webp",
       "refs": [
-        "blog/ecommerce-image-accessibility-qa.html",
-        "image-asset-audit.json"
+        "blog/ecommerce-image-accessibility-qa.html"
       ]
     },
     {
       "path": "penstack-blog-final-approval-qa-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-long-tail-catalog-structure-v2.webp",
       "refs": [
-        "blog/long-tail-keywords-small-stores.html",
-        "image-asset-audit.json"
+        "blog/long-tail-keywords-small-stores.html"
       ]
     },
     {
       "path": "penstack-blog-long-tail-page-types-v2.webp",
       "refs": [
-        "blog/long-tail-keywords-small-stores.html",
-        "image-asset-audit.json"
+        "blog/long-tail-keywords-small-stores.html"
       ]
     },
     {
       "path": "penstack-blog-long-tail-product-angles-v2.webp",
       "refs": [
-        "blog/long-tail-keywords-small-stores.html",
-        "image-asset-audit.json"
+        "blog/long-tail-keywords-small-stores.html"
       ]
     },
     {
       "path": "penstack-blog-long-tail-search-hero-v2.webp",
       "refs": [
-        "blog/long-tail-keywords-small-stores.html",
-        "image-asset-audit.json"
+        "blog/long-tail-keywords-small-stores.html"
       ]
     },
     {
       "path": "penstack-blog-long-tail-specificity-ladder-v2.webp",
       "refs": [
-        "blog/long-tail-keywords-small-stores.html",
-        "image-asset-audit.json"
+        "blog/long-tail-keywords-small-stores.html"
       ]
     },
     {
       "path": "penstack-blog-main-banner-v2.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "penstack-blog-multi-brand-boundaries-hero-v2.webp",
       "refs": [
-        "blog/multi-brand-store-boundaries.html",
-        "image-asset-audit.json"
+        "blog/multi-brand-store-boundaries.html"
       ]
     },
     {
       "path": "penstack-blog-multi-brand-context-v2.webp",
       "refs": [
-        "blog/multi-brand-store-boundaries.html",
-        "image-asset-audit.json"
+        "blog/multi-brand-store-boundaries.html"
       ]
     },
     {
       "path": "penstack-blog-product-accuracy-qa-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-product-description-before-after-v2.webp",
       "refs": [
-        "blog/how-to-write-a-product-description.html",
-        "image-asset-audit.json"
+        "blog/how-to-write-a-product-description.html"
       ]
     },
     {
       "path": "penstack-blog-product-description-source-check-v2.webp",
       "refs": [
-        "blog/how-to-write-a-product-description.html",
-        "image-asset-audit.json"
+        "blog/how-to-write-a-product-description.html"
       ]
     },
     {
       "path": "penstack-blog-product-description-source-hero-v2.webp",
       "refs": [
-        "blog/how-to-write-a-product-description.html",
-        "image-asset-audit.json"
+        "blog/how-to-write-a-product-description.html"
       ]
     },
     {
       "path": "penstack-blog-product-description-two-pass-v2.webp",
       "refs": [
-        "blog/how-to-write-a-product-description.html",
-        "image-asset-audit.json"
+        "blog/how-to-write-a-product-description.html"
       ]
     },
     {
       "path": "penstack-blog-product-image-accessibility-qa-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-product-image-metadata-alt-text-example-v2.webp",
       "refs": [
-        "blog/product-image-metadata.html",
-        "image-asset-audit.json"
+        "blog/product-image-metadata.html"
       ]
     },
     {
       "path": "penstack-blog-product-image-metadata-hero-v2.webp",
       "refs": [
-        "blog/product-image-metadata.html",
-        "image-asset-audit.json"
+        "blog/product-image-metadata.html"
       ]
     },
     {
       "path": "penstack-blog-product-image-metadata-takeaway-v2.webp",
       "refs": [
-        "blog/product-image-metadata.html",
-        "image-asset-audit.json"
+        "blog/product-image-metadata.html"
       ]
     },
     {
       "path": "penstack-blog-product-image-metadata-three-fields-v2.webp",
       "refs": [
-        "blog/product-image-metadata.html",
-        "image-asset-audit.json"
+        "blog/product-image-metadata.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-description-guide-v2.webp",
       "refs": [
-        "blog/anatomy-great-product-listing.html",
-        "image-asset-audit.json"
+        "blog/anatomy-great-product-listing.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-fields-v2.webp",
       "refs": [
-        "blog/anatomy-great-product-listing.html",
-        "image-asset-audit.json"
+        "blog/anatomy-great-product-listing.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-final-review-v2.webp",
       "refs": [
-        "blog/anatomy-great-product-listing.html",
-        "image-asset-audit.json"
+        "blog/anatomy-great-product-listing.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-overview-v2.webp",
       "refs": [
-        "blog/anatomy-great-product-listing.html",
-        "image-asset-audit.json"
+        "blog/anatomy-great-product-listing.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-qa-framework-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-qa-hero-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-product-listing-seo-qa-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-product-merchandising-qa-v2.webp",
       "refs": [
-        "blog/product-listing-qa-standard.html",
-        "image-asset-audit.json"
+        "blog/product-listing-qa-standard.html"
       ]
     },
     {
       "path": "penstack-blog-product-refresh-audit-v2.webp",
       "refs": [
-        "blog/refresh-existing-product.html",
-        "image-asset-audit.json"
+        "blog/refresh-existing-product.html"
       ]
     },
     {
       "path": "penstack-blog-product-refresh-information-gaps-v2.webp",
       "refs": [
-        "blog/refresh-existing-product.html",
-        "image-asset-audit.json"
+        "blog/refresh-existing-product.html"
       ]
     },
     {
       "path": "penstack-blog-product-refresh-keep-change-review-v2.webp",
       "refs": [
-        "blog/refresh-existing-product.html",
-        "image-asset-audit.json"
+        "blog/refresh-existing-product.html"
       ]
     },
     {
       "path": "penstack-blog-product-refresh-targeted-updates-v2.webp",
       "refs": [
-        "blog/refresh-existing-product.html",
-        "image-asset-audit.json"
+        "blog/refresh-existing-product.html"
       ]
     },
     {
       "path": "penstack-blog-product-tag-anatomy-v2.webp",
       "refs": [
-        "blog/product-tags-seo.html",
-        "image-asset-audit.json"
+        "blog/product-tags-seo.html"
       ]
     },
     {
       "path": "penstack-blog-product-tags-reusable-v2.webp",
       "refs": [
-        "blog/tags-collections-product-types.html",
-        "image-asset-audit.json"
+        "blog/tags-collections-product-types.html"
       ]
     },
     {
       "path": "penstack-blog-product-tags-seo-hero-v2.webp",
       "refs": [
         "blog/index.html",
-        "blog/product-tags-seo.html",
-        "image-asset-audit.json"
+        "blog/product-tags-seo.html"
       ]
     },
     {
       "path": "penstack-blog-product-taxonomy-example-v2.webp",
       "refs": [
-        "blog/product-taxonomy-before-catalog-mess.html",
-        "image-asset-audit.json"
+        "blog/product-taxonomy-before-catalog-mess.html"
       ]
     },
     {
       "path": "penstack-blog-product-taxonomy-hero-v2.webp",
       "refs": [
-        "blog/product-taxonomy-before-catalog-mess.html",
-        "image-asset-audit.json"
+        "blog/product-taxonomy-before-catalog-mess.html"
       ]
     },
     {
       "path": "penstack-blog-product-titles-anatomy-v2.webp",
       "refs": [
-        "blog/product-titles-101.html",
-        "image-asset-audit.json"
+        "blog/product-titles-101.html"
       ]
     },
     {
       "path": "penstack-blog-product-titles-formula-v2.webp",
       "refs": [
-        "blog/product-titles-101.html",
-        "image-asset-audit.json"
+        "blog/product-titles-101.html"
       ]
     },
     {
       "path": "penstack-blog-product-titles-order-v2.webp",
       "refs": [
-        "blog/product-titles-101.html",
-        "image-asset-audit.json"
+        "blog/product-titles-101.html"
       ]
     },
     {
       "path": "penstack-blog-product-type-identity-v2.webp",
       "refs": [
-        "blog/tags-collections-product-types.html",
-        "image-asset-audit.json"
+        "blog/tags-collections-product-types.html"
       ]
     },
     {
       "path": "penstack-blog-product-vs-collection-v2.webp",
       "refs": [
-        "blog/collections-search-landing-pages.html",
-        "image-asset-audit.json"
+        "blog/collections-search-landing-pages.html"
       ]
     },
     {
       "path": "penstack-blog-shopify-seo-page-types-v2.webp",
       "refs": [
-        "blog/shopify-seo-without-jargon.html",
-        "image-asset-audit.json"
+        "blog/shopify-seo-without-jargon.html"
       ]
     },
     {
       "path": "penstack-blog-shopify-seo-product-context-review-v2.webp",
       "refs": [
-        "blog/shopify-seo-without-jargon.html",
-        "image-asset-audit.json"
+        "blog/shopify-seo-without-jargon.html"
       ]
     },
     {
       "path": "penstack-blog-shopify-seo-readable-url-v2.webp",
       "refs": [
-        "blog/shopify-seo-without-jargon.html",
-        "image-asset-audit.json"
+        "blog/shopify-seo-without-jargon.html"
       ]
     },
     {
       "path": "penstack-blog-shopify-seo-search-discovery-v2.webp",
       "refs": [
-        "blog/shopify-seo-without-jargon.html",
-        "image-asset-audit.json"
+        "blog/shopify-seo-without-jargon.html"
       ]
     },
     {
       "path": "penstack-blog-shopify-seo-search-intent-v2.webp",
       "refs": [
-        "blog/shopify-seo-without-jargon.html",
-        "image-asset-audit.json"
+        "blog/shopify-seo-without-jargon.html"
       ]
     },
     {
       "path": "penstack-blog-shopify-seo-takeaway-v2.webp",
       "refs": [
-        "blog/shopify-seo-without-jargon.html",
-        "image-asset-audit.json"
+        "blog/shopify-seo-without-jargon.html"
       ]
     },
     {
       "path": "penstack-blog-tag-cleanup-v2.webp",
       "refs": [
-        "blog/product-tags-seo.html",
-        "image-asset-audit.json"
+        "blog/product-tags-seo.html"
       ]
     },
     {
       "path": "penstack-blog-tag-search-opportunity-v2.webp",
       "refs": [
-        "blog/product-tags-seo.html",
-        "image-asset-audit.json"
+        "blog/product-tags-seo.html"
       ]
     },
     {
       "path": "penstack-blog-tag-to-collection-v2.webp",
       "refs": [
-        "blog/product-tags-seo.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-boundaries-hd.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-guide-hd.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-personality.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-perspective.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-qa-example.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-rhythm-hd.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-system-hd.svg",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-system.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-brand-voice-words.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-catalog-common-mistakes-final.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-catalog-stable-to-flexible-final.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-collection-bare-vs-useful-landing-page.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-collection-product-vs-collection.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-collection-search-intent-path.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-collection-search-intent-path.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-collections-shopping-paths-final.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "blog/product-tags-seo.html"
       ]
     },
     {
       "path": "penstack-compare-connected-workflow.webp",
       "refs": [
-        "compare.html",
-        "image-asset-audit.json"
+        "compare.html"
       ]
     },
     {
       "path": "penstack-compare-hero-current-products.webp",
       "refs": [
-        "compare.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-compare-hero-tools-tradeoffs.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-compare-hero-transparent.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "compare.html"
       ]
     },
     {
@@ -1219,7 +741,6 @@
         "blog/social-media-hashtags-seo.html",
         "blog/tags-collections-product-types.html",
         "compare.html",
-        "image-asset-audit.json",
         "index.html",
         "pricing.html",
         "privacy.html",
@@ -1258,7 +779,6 @@
         "blog/social-media-hashtags-seo.html",
         "blog/tags-collections-product-types.html",
         "compare.html",
-        "image-asset-audit.json",
         "index.html",
         "pricing.html",
         "privacy.html",
@@ -1271,55 +791,32 @@
       ]
     },
     {
-      "path": "penstack-final-approval-qa.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-home-consistent-listings.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-home-useful-attention.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
       "path": "penstack-illustration-hero-v1.png",
       "refs": [
-        "ILLUSTRATION_SYSTEM.md",
-        "image-asset-audit.json"
+        "ILLUSTRATION_SYSTEM.md"
       ]
     },
     {
       "path": "penstack-illustration-launch-v1.png",
       "refs": [
-        "ILLUSTRATION_SYSTEM.md",
-        "image-asset-audit.json"
+        "ILLUSTRATION_SYSTEM.md"
       ]
     },
     {
       "path": "penstack-illustration-launch-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "use-cases.html"
       ]
     },
     {
       "path": "penstack-illustration-refresh-v1.png",
       "refs": [
-        "ILLUSTRATION_SYSTEM.md",
-        "image-asset-audit.json"
+        "ILLUSTRATION_SYSTEM.md"
       ]
     },
     {
       "path": "penstack-illustration-refresh-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "shopify-catalog-cleanup.html",
         "use-cases.html"
       ]
@@ -1327,414 +824,62 @@
     {
       "path": "penstack-illustration-review-v1.png",
       "refs": [
-        "ILLUSTRATION_SYSTEM.md",
-        "image-asset-audit.json"
+        "ILLUSTRATION_SYSTEM.md"
       ]
     },
     {
       "path": "penstack-illustration-review-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "penstack-illustration-search-intent-v1.png",
       "refs": [
-        "ILLUSTRATION_SYSTEM.md",
-        "image-asset-audit.json"
+        "ILLUSTRATION_SYSTEM.md"
       ]
     },
     {
       "path": "penstack-illustration-search-intent-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "penstack-illustration-store-contexts-v1.png",
       "refs": [
-        "ILLUSTRATION_SYSTEM.md",
-        "image-asset-audit.json"
+        "ILLUSTRATION_SYSTEM.md"
       ]
     },
     {
       "path": "penstack-illustration-store-contexts-v1.webp",
       "refs": [
-        "image-asset-audit.json",
         "shopify-agency-workflows.html",
         "use-cases.html"
       ]
     },
     {
-      "path": "penstack-long-tail-keywords-avoid-micro-collections.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-long-tail-keywords-hero-specificity-search.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-long-tail-keywords-hero-specificity-search.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-long-tail-keywords-one-product-many-angles.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-long-tail-keywords-search-intent-best-page-type.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-long-tail-keywords-specificity-ladder.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-multi-brand-context-boundaries.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-multi-brand-store-boundaries-hero.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-multi-brand-store-boundaries-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-accuracy-qa.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
       "path": "penstack-product-alt-text-control.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-brand-voice.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-descriptions.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-images-alt-text.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-product-details.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-publish-shopify.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-review-approval.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-seo-discovery.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-capability-tags-collections.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-complete-process.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-description-before-after.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-description-source-check.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-description-start-with-facts.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-description-start-with-facts.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-description-two-pass-draft.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-hero-connected-workflow.webp",
-      "refs": [
-        "image-asset-audit.json"
       ]
     },
     {
       "path": "penstack-product-hero-liquid-snowboard.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
-      ]
-    },
-    {
-      "path": "penstack-product-image-accessibility-qa.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-listing-qa-framework.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-listing-qa-hero.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-listing-qa-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-listing-seo-qa.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-merchandising-qa.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-refresh-audit-map.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-refresh-audit-map.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-refresh-information-gaps.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-refresh-keep-change-review.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-refresh-targeted-updates.webp",
-      "refs": [
-        "image-asset-audit.json"
       ]
     },
     {
       "path": "penstack-product-storefront-after.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "penstack-product-storefront-before.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
-      ]
-    },
-    {
-      "path": "penstack-product-tags-reusable-labels-final.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-taxonomy-example-product.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-taxonomy-hero.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-taxonomy-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-titles-anatomy.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-titles-anatomy.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-titles-order-matters.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-titles-simple-formula.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-product-type-identity-final.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-retrieve-from-shopify.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-catalog-audit-framework.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-catalog-audit-hero.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-catalog-audit-hero.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-catalog-image-audit-checklist.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-better-discovery-takeaway.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-intent-to-discovery-hd.png",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-intent-to-discovery-hd.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-page-types.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-penstack-support.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-readable-url-example.webp",
-      "refs": [
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "penstack-shopify-seo-search-intent-example.webp",
-      "refs": [
-        "image-asset-audit.json"
       ]
     },
     {
@@ -1749,7 +894,6 @@
         "blog/social-media-hashtags-seo.html",
         "blog/tags-collections-product-types.html",
         "compare.html",
-        "image-asset-audit.json",
         "pricing.html",
         "product.html"
       ]
@@ -1757,34 +901,24 @@
     {
       "path": "penstack-use-cases-catalog-cleanup-maintenance.webp",
       "refs": [
-        "image-asset-audit.json",
         "use-cases.html"
       ]
     },
     {
       "path": "penstack-use-cases-image-details-2.webp",
       "refs": [
-        "image-asset-audit.json",
         "use-cases.html"
       ]
     },
     {
       "path": "penstack-use-cases-merchandising.webp",
       "refs": [
-        "image-asset-audit.json",
         "use-cases.html"
-      ]
-    },
-    {
-      "path": "penstack-use-cases-overview.png",
-      "refs": [
-        "image-asset-audit.json"
       ]
     },
     {
       "path": "penstack-use-cases-overview.webp",
       "refs": [
-        "image-asset-audit.json",
         "use-cases.html"
       ]
     },
@@ -1792,7 +926,6 @@
       "path": "penstack-use-cases-search-intent.webp",
       "refs": [
         ".github/workflows/assemble-search-intent.yml",
-        "image-asset-audit.json",
         "use-cases.html"
       ]
     },
@@ -1825,7 +958,6 @@
         "compare.html",
         "docs/penstack-design-system.md",
         "enhancements.css",
-        "image-asset-audit.json",
         "index.html",
         "pricing.html",
         "privacy.html",
@@ -1841,72 +973,204 @@
     {
       "path": "penstack_mark.png",
       "refs": [
-        "enhancements.css",
-        "image-asset-audit.json"
+        "enhancements.css"
       ]
     },
     {
       "path": "product-description-after-current.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "product-description-before.webp",
       "refs": [
-        "image-asset-audit.json",
         "product.html"
       ]
     },
     {
       "path": "product-image-metadata-filenames-alt-text-visible-copy.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "product-tags-two-jobs.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "product-titles-101.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "product_page_to_shopify_store.webp",
       "refs": [
-        "image-asset-audit.json",
         "pricing.html"
       ]
     },
     {
       "path": "refresh-existing-product-without-starting-over.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
-      ]
-    },
-    {
-      "path": "sneaker_product_approval_dashboard.webp",
-      "refs": [
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     },
     {
       "path": "social-media-hashtags-seo.webp",
       "refs": [
-        "blog/index.html",
-        "image-asset-audit.json"
+        "blog/index.html"
       ]
     }
   ],
-  "manual_review": [],
-  "candidates": []
+  "manual_review": [
+    {
+      "path": "PS-blog-hero-cropped.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "document_and_pencil_icon.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-catalog-common-mistakes-final.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-catalog-stable-to-flexible-final.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-product-description-source-check.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-audit-framework.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-audit-hero.png",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-audit-hero.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    },
+    {
+      "path": "penstack-shopify-catalog-image-audit-checklist.webp",
+      "reason": "Unreferenced but potentially implicit/reserved site image"
+    }
+  ],
+  "candidates": [
+    "blog/assets/alt-text-informative-decorative.svg",
+    "blog/assets/avoid-tag-soup-v5.svg",
+    "blog/assets/long-tail-opportunity-v7.svg",
+    "blog/assets/penstack-alt-text-definition.webp",
+    "blog/assets/penstack-alt-text-examples.webp",
+    "blog/assets/penstack-alt-text-hero.webp",
+    "blog/assets/penstack-anatomy-product-description-guide.webp",
+    "blog/assets/penstack-anatomy-product-listing-fields.webp",
+    "blog/assets/penstack-anatomy-product-listing-final-review.webp",
+    "blog/assets/penstack-anatomy-product-listing-overview.png",
+    "blog/assets/penstack-anatomy-product-listing-overview.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-checklist.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-hero.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-variant-example.webp",
+    "blog/assets/penstack-ecommerce-image-accessibility-qa-workflow.webp",
+    "blog/assets/penstack-product-image-metadata-alt-text-example.webp",
+    "blog/assets/penstack-product-image-metadata-hero.webp",
+    "blog/assets/penstack-product-image-metadata-takeaway.webp",
+    "blog/assets/penstack-product-image-metadata-three-fields.webp",
+    "blog/assets/product-tag-anatomy-v7.svg",
+    "blog/assets/product-tags-organization-seo.svg",
+    "blog/assets/tag-to-collection-v5.svg",
+    "eco_friendly_green_tee_product_page.webp",
+    "penstack-ab-testing-hero.png",
+    "penstack-ab-testing-hero.webp",
+    "penstack-ab-testing-one-variable.webp",
+    "penstack-ab-testing-test-anatomy.webp",
+    "penstack-about-founder-note-mallory-salmon.webp",
+    "penstack-about-hero-founder-salmon.webp",
+    "penstack-about-origin-someday-why-not-now.webp",
+    "penstack-about-time-back-editorial.webp",
+    "penstack-about-time-back-salmon-download.webp",
+    "penstack-about-time-back.png",
+    "penstack-about-turning-point-repetitive-work.webp",
+    "penstack-agency-onboarding-hero.png",
+    "penstack-agency-onboarding-hero.webp",
+    "penstack-agency-onboarding-pilot-before-scaling.webp",
+    "penstack-agency-onboarding-sequence.webp",
+    "penstack-agency-onboarding-standardize-vs-client-specific.webp",
+    "penstack-anatomy-product-listing-overview.png",
+    "penstack-brand-voice-boundaries-hd.svg",
+    "penstack-brand-voice-guide-hd.svg",
+    "penstack-brand-voice-personality.webp",
+    "penstack-brand-voice-perspective.webp",
+    "penstack-brand-voice-qa-example.webp",
+    "penstack-brand-voice-rhythm-hd.svg",
+    "penstack-brand-voice-system-hd.svg",
+    "penstack-brand-voice-system.png",
+    "penstack-brand-voice-words.webp",
+    "penstack-collection-bare-vs-useful-landing-page.webp",
+    "penstack-collection-product-vs-collection.webp",
+    "penstack-collection-search-intent-path.png",
+    "penstack-collection-search-intent-path.webp",
+    "penstack-collections-shopping-paths-final.webp",
+    "penstack-compare-hero-tools-tradeoffs.webp",
+    "penstack-compare-hero-transparent.webp",
+    "penstack-final-approval-qa.webp",
+    "penstack-home-consistent-listings.webp",
+    "penstack-home-useful-attention.webp",
+    "penstack-long-tail-keywords-avoid-micro-collections.webp",
+    "penstack-long-tail-keywords-hero-specificity-search.png",
+    "penstack-long-tail-keywords-hero-specificity-search.webp",
+    "penstack-long-tail-keywords-one-product-many-angles.webp",
+    "penstack-long-tail-keywords-search-intent-best-page-type.webp",
+    "penstack-long-tail-keywords-specificity-ladder.webp",
+    "penstack-multi-brand-context-boundaries.webp",
+    "penstack-multi-brand-store-boundaries-hero.png",
+    "penstack-multi-brand-store-boundaries-hero.webp",
+    "penstack-product-accuracy-qa.webp",
+    "penstack-product-capability-brand-voice.webp",
+    "penstack-product-capability-descriptions.webp",
+    "penstack-product-capability-images-alt-text.webp",
+    "penstack-product-capability-product-details.webp",
+    "penstack-product-capability-publish-shopify.webp",
+    "penstack-product-capability-review-approval.webp",
+    "penstack-product-capability-seo-discovery.webp",
+    "penstack-product-capability-tags-collections.webp",
+    "penstack-product-complete-process.webp",
+    "penstack-product-description-before-after.webp",
+    "penstack-product-description-start-with-facts.png",
+    "penstack-product-description-start-with-facts.webp",
+    "penstack-product-description-two-pass-draft.webp",
+    "penstack-product-hero-connected-workflow.webp",
+    "penstack-product-image-accessibility-qa.webp",
+    "penstack-product-listing-qa-framework.webp",
+    "penstack-product-listing-qa-hero.png",
+    "penstack-product-listing-qa-hero.webp",
+    "penstack-product-listing-seo-qa.webp",
+    "penstack-product-merchandising-qa.webp",
+    "penstack-product-refresh-audit-map.png",
+    "penstack-product-refresh-audit-map.webp",
+    "penstack-product-refresh-information-gaps.webp",
+    "penstack-product-refresh-keep-change-review.webp",
+    "penstack-product-refresh-targeted-updates.webp",
+    "penstack-product-tags-reusable-labels-final.webp",
+    "penstack-product-taxonomy-example-product.webp",
+    "penstack-product-taxonomy-hero.png",
+    "penstack-product-taxonomy-hero.webp",
+    "penstack-product-titles-anatomy.png",
+    "penstack-product-titles-anatomy.webp",
+    "penstack-product-titles-order-matters.webp",
+    "penstack-product-titles-simple-formula.webp",
+    "penstack-product-type-identity-final.webp",
+    "penstack-retrieve-from-shopify.webp",
+    "penstack-shopify-seo-better-discovery-takeaway.webp",
+    "penstack-shopify-seo-intent-to-discovery-hd.png",
+    "penstack-shopify-seo-intent-to-discovery-hd.webp",
+    "penstack-shopify-seo-page-types.webp",
+    "penstack-shopify-seo-penstack-support.webp",
+    "penstack-shopify-seo-readable-url-example.webp",
+    "penstack-shopify-seo-search-intent-example.webp",
+    "penstack-use-cases-overview.png",
+    "product-tags-two-jobs.webp",
+    "sneaker_product_approval_dashboard.webp"
+  ]
 }
