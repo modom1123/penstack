@@ -1,0 +1,29 @@
+name: Refresh Blog artwork thumbnails
+on:
+  push:
+    branches: [fix/rebuild-blog-artwork-assets]
+    paths:
+      - scripts/refresh-blog-thumbnails.py
+      - .github/workflows/refresh-blog-artwork.yml
+permissions:
+  contents: write
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/rebuild-blog-artwork-assets
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow numpy
+      - run: python scripts/refresh-blog-thumbnails.py
+      - name: Commit corrected WebP artwork
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add final-product-taxonomy-before-catalog-becomes-a-mess.webp final-agencies-onboard-new-ecommerce-client-penstack.webp final-audit-inherited-shopify-catalog.webp final-product-listing-qa-standard-team.webp final-one-account-multiple-brands-separate-stores.webp
+          git diff --cached --quiet || git commit -m "Replace five inset Blog artwork assets"
+          git push
