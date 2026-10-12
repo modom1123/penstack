@@ -10,6 +10,8 @@ images=[p for p in tracked if Path(p).suffix.lower() in exts]
 code_exts={'.html','.htm','.css','.js','.jsx','.ts','.tsx','.json','.md','.xml','.yml','.yaml','.txt','.webmanifest','.php'}
 text={}
 for p in tracked:
+ if p == 'image-asset-audit.json' or p.startswith('scripts/audit-unused-images'):
+  continue
  if Path(p).suffix.lower() in code_exts:
   try:text[p]=Path(p).read_text(encoding='utf-8')
   except (UnicodeError,OSError):pass
