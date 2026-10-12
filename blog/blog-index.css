@@ -1078,3 +1078,11 @@
 /* Unified image canvas for every Go Deeper guide, including transparent artwork. */
 .journey-go-deeper .guide-card a.guide-image{background:#faf9f4}
 .journey-go-deeper .guide-card a.guide-image img{background:transparent;object-fit:contain;object-position:center;transform:none;padding:0}
+
+/* Balance the later five illustrations with the first row's breathing room.
+   Transparent artwork stays fully visible; the underlying card field stays unchanged. */
+.journey-go-deeper .guide-card a.guide-image[href="product-taxonomy-before-catalog-mess.html"] img,
+.journey-go-deeper .guide-card a.guide-image[href="agency-client-onboarding-penstack.html"] img,
+.journey-go-deeper .guide-card a.guide-image[href="audit-inherited-shopify-catalog.html"] img,
+.journey-go-deeper .guide-card a.guide-image[href="product-listing-qa-standard.html"] img,
+.journey-go-deeper .guide-card a.guide-image[href="multi-brand-store-boundaries.html"] img{transform:scale(.92);transform-origin:center}
