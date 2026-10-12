@@ -1,0 +1,28 @@
+name: Normalize Go Deeper artwork
+on:
+  push:
+    branches: [fix/go-deeper-backgrounds-at-source]
+    paths:
+      - .github/workflows/normalize-go-deeper.yml
+permissions:
+  contents: write
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/go-deeper-backgrounds-at-source
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install pillow numpy scipy
+      - run: python scripts/normalize-go-deeper-artwork.py
+      - name: Commit transparent WebPs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- 'ai-seo-how-ai-changes-search.webp' 'image-accessibility-qa-standard.webp' 'One-variable product page test-6.webp'
+          git diff --cached --quiet || git commit -m "Remove baked-in mattes from three Go Deeper images"
+          git push
