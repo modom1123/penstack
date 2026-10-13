@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Privacy Policy | penstack</title>
-  <meta name="description" content="penstack privacy policy describing how account, store, product, support, and technical information is handled.">
+  <meta name="description" content="penstack privacy policy describing how account, store, product, Google Search Console, support, and technical information is handled.">
   <link rel="canonical" href="https://penstack.co/privacy.html">
   <link rel="icon" type="image/png" sizes="64x64" href="penstack-favicon-64.png">
   <link rel="shortcut icon" type="image/png" href="penstack-favicon-64.png">
@@ -55,7 +55,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="legal-wrap">
     <section class="legal-card">
-      <p class="legal-meta"><strong>Effective date:</strong> September 16, 2026</p>
+      <p class="legal-meta"><strong>Effective date:</strong> October 12, 2026</p>
 
       <h2>1. Information we process</h2>
       <p>Depending on how you use penstack, we may process the following categories of information:</p>
@@ -72,6 +72,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <h2>3. Connected store data</h2>
       <p>penstack accesses store and product information only after a merchant authorizes the connection. Access is limited to the permissions granted to the app and is used to provide the product workflow requested by the merchant. penstack does not require access to customer order data to provide its core product-content workflow unless that functionality is added and separately disclosed in the future.</p>
+
+
+      <h2 id="google-search-console">Google Search Console connection</h2>
+      <p>Connecting Google Search Console is optional. After you authorize read-only access, penstack retrieves the Search Console properties your Google account can access. For the property you select, penstack retrieves reported search queries and performance data for a product’s public page, including clicks, impressions, click-through rate, average position, page URL, reporting dates, and retrieval time. This permission does not allow penstack to change your Search Console settings.</p>
+      <p>We use this information to show search guidance within your listing workflow. When you select query phrases and request content generation, those phrases are sent to Anthropic, the AI service provider supporting that request as wording guidance alongside your product information. Search performance metrics and Google authorization tokens are not included in that generation prompt. Search guidance is optional, and you review generated content before publishing.</p>
+      <p>We store the selected property, connection details, and an encrypted Google refresh token so penstack can retrieve data without asking you to authorize every request. Query snapshots are stored server-side and expire for use after 24 hours. Expired snapshots are cleared when new query data is fetched for that store. Your browser may retain selected phrases and guidance used in a saved listing draft in tab-session storage; drafts are restored only when last saved within 24 hours.</p>
+      <p>You can disconnect Google Search Console in Manage store. Disconnecting deletes the saved Google connection credentials, pending authorization attempts, and query snapshots for that connection. It does not remove wording already incorporated into a listing or clear previously saved browser drafts. You can also revoke penstack’s access through your <a href="https://myaccount.google.com/connections">Google Account connections</a>. For additional deletion requests, contact <a href="mailto:support@penstack.co">support@penstack.co</a>.</p>
+      <p>We use Google Search Console data to provide the search-guidance and content-generation features you request. We do not sell this data or use it for advertising. Our handling of Google data is subject to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>.</p>
 
       <h2>4. AI-assisted features</h2>
       <p>Some penstack features use automated or AI-assisted systems to help create, transform, organize, or review product content. Information needed to perform those requests may be processed by service providers that support penstack’s operation. Users are responsible for reviewing generated content before publishing it.</p>
