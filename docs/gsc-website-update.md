@@ -1,6 +1,6 @@
 # Google Search Console website update
 
-Status: Proposed implementation; review before production publication.
+Status: Approved by Mallory on October 15, 2026 (Pacific), including the reconstructed visual and page edits.
 Date: October 15, 2026 (Pacific).
 
 ## Task and source
@@ -15,7 +15,7 @@ App behavior source: modom1123/penstack-app, src/components/GscQueries.tsx and d
 
 Follow docs/penstack-design-system.md sections 4–6 (type, layout and components), 8–9 (actions and links), 18–19 (imagery and Home/Product), 20–24 (buyer pages, pricing/comparison, articles, help and claims), and 25–26 (frontend verification and review).
 
-## Proposed changes
+## Approved changes
 
 - Home: a compact optional-GSC benefit section; preserve the hero.
 - Product: replace generic search-context example with a concrete query-to-draft demonstration. Preserve existing Shopify before/after evidence.
@@ -36,4 +36,4 @@ The UI is a static demonstration, not functional checkboxes or an active connect
 
 See docs/previews/gsc for full desktop/mobile page renders, GSC section closeups, baseline Home/Product renders, and validation.json. The JSON records viewport reflow, font loading, image loading, and link checks. Review the images before production publication.
 
-Approval remains pending for the reconstructed visual and new section composition. No production publication is implied by a branch or pull request.
+Mallory approved these edits on October 15, 2026 (Pacific): “I'm good with these edits.” Production publication and live verification are authorized. The original app paid-store validation remains separate and pending Shopify approval.
