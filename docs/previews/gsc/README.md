@@ -1,12 +1,12 @@
-# Proposed GSC website update — review gallery
+# Approved GSC website update — review gallery
 
-All changes are proposed and have not been published. The Home/Product search examples are reconstructed from the current app component with sample data. Existing Shopify screenshots remain actual product evidence.
+Mallory approved these changes on October 15, 2026 (Pacific). This gallery records the approved pre-publication renders. The Home/Product search examples are reconstructed from the current app component with sample data. Existing Shopify screenshots remain actual product evidence.
 
 ## Home
 
 The hero is preserved. A compact new section introduces query guidance and links to Product.
 
-![Proposed Home, desktop](index-1440.webp)
+![Approved Home, desktop](index-1440.webp)
 
 [Mobile Home](index-390.webp) · [Current Home baseline](before-index-1440.webp)
 
@@ -14,7 +14,7 @@ The hero is preserved. A compact new section introduces query guidance and links
 
 The generic search-context example is replaced with a query-to-draft demonstration. Sample rows, counts and draft text are labeled illustrative.
 
-![Proposed GSC Product section](product-section-1440.webp)
+![Approved GSC Product section](product-section-1440.webp)
 
 [Full desktop Product](product-1440.webp) · [Mobile section](product-section-390.webp) · [Full mobile Product](product-390.webp) · [Current Product baseline](before-product-1440.webp)
 
@@ -38,4 +38,4 @@ Support includes connection and no-data answers. A practical setup/use guide is 
 
 ## Validation
 
-The two JSON reports record checks at 1440, 1024, 768, 390, and 320px, with DM Sans loaded and images decoded before measurement. Local links, anchor targets, image paths and structured-data syntax were checked. The new guide is visible under the learning hub's Level Up filter. Support disclosures open normally. This validates the marketing pages, not a live paid-store GSC connection.
+The validation reports record checks at 1440, 1024, 768, 390, and 320px, with DM Sans loaded and images decoded before measurement. Local links, anchor targets, image paths and structured-data syntax were checked. The new guide is visible under the learning hub's Level Up filter. Support disclosures open normally. This validates the marketing pages, not a live paid-store GSC connection.
