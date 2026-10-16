@@ -841,3 +841,8 @@ Use navy on yellow. Preserve the full approved subject. Verify contrast against 
 
 
 Use consistent gaps within the same component. Distinguish headings by size, weight and spacing. The examples do not replace named page exceptions.
+
+
+## Product takeaway and closing action — approved October 15, 2026
+
+Mallory approved the outlined, left-aligned Product takeaway panel and centered closing call to action, with the existing light gray section border instead of navy. Use the shared `--line` token (#d8dee8) on a white panel with an 18px radius. On desktop, the takeaway heading sits left of its supporting paragraph. On mobile, stack both left-aligned. Preserve the centered closing CTA with generous spacing above it. This supersedes the full-width pale-yellow takeaway band on Product; it does not change other page patterns or CTA colors.
