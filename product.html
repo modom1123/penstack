@@ -147,11 +147,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .store-context{border-top:1px solid var(--line);margin-top:28px;padding-top:18px}
   .store-context strong{display:block;margin-bottom:4px}
 
-  .mid-cta{text-align:center;padding:46px 6%;background:var(--tint-yellow);border-top:1px solid var(--border-yellow);border-bottom:1px solid var(--border-yellow)}
-  .mid-cta h2{font-size:clamp(36px,4.2vw,54px);max-width:760px;margin:0 auto 10px}
-  .mid-cta p{color:var(--muted);font-size:16px;max-width:600px;margin:0 auto;line-height:1.45}
-  .product-final{padding:34px 6% 48px;text-align:center;background:#fff}
-  .product-final h2{font-size:clamp(34px,4vw,48px);margin-bottom:18px}
+  .mid-cta{padding:16px 6% 0;background:#fff}
+  .mid-cta-panel{display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:48px;padding:38px 40px;border:1px solid var(--line);border-radius:18px;text-align:left}
+  .mid-cta h2{font-size:clamp(32px,3.4vw,42px);line-height:1.12;letter-spacing:-.035em;margin:0;font-weight:800}
+  .mid-cta p{color:var(--muted);font-size:18px;line-height:1.6;margin:0}
+  .product-final{padding:64px 6% 60px;text-align:center;background:#fff}
+  .product-final h2{font-size:clamp(34px,4vw,48px);margin-bottom:24px}
 
   .product-locked footer{background:var(--navy);color:#fff;border-top:0}
   .product-locked footer .brand img{filter:brightness(0) invert(1)}
@@ -168,6 +169,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .image-proof-body img{width:150px;height:150px}
   }
   @media(max-width:760px){
+    .mid-cta{padding:8px 5% 0}
+    .mid-cta-panel{grid-template-columns:1fr;gap:20px;padding:26px 24px}
+    .mid-cta h2{font-size:32px}
+    .mid-cta p{font-size:16px}
+    .product-final{padding:52px 5% 48px}
+    .product-final h2{font-size:34px;margin-bottom:24px}
     .product-hero,.demo-wrap{padding-left:5%;padding-right:5%}
     .product-hero{padding-top:34px}
     .product-hero h1{font-size:44px}
@@ -391,9 +398,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
   </section>
 
-  <section class="mid-cta">
-    <h2>Less work between steps.<br>You keep the final say.</h2>
-    <p>Start with the product details, work through the copy and image information, review what changed, then choose what goes to Shopify.</p>
+  <section class="mid-cta" id="listing-takeaway" aria-labelledby="listing-takeaway-title">
+    <div class="mid-cta-panel">
+      <h2 id="listing-takeaway-title">Less work between steps.<br>You keep the final say.</h2>
+      <p>Start with the product details, work through the copy and image information, review what changed, then choose what goes to Shopify.</p>
+    </div>
   </section>
 
   <section class="product-final">
