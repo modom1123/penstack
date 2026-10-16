@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-agency-workflows.html"
+    },
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-catalog-cleanup.html"
+    },
+    {
+      "width": 1024,
+      "scroll": 1024,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-agency-workflows.html"
+    },
+    {
+      "width": 1024,
+      "scroll": 1024,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-catalog-cleanup.html"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-agency-workflows.html"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-catalog-cleanup.html"
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-agency-workflows.html"
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-catalog-cleanup.html"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-agency-workflows.html"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "shopify-catalog-cleanup.html"
+    }
+  ],
+  "overflowOrImageErrors": [],
+  "linkErrors": []
+}
