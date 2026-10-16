@@ -1,0 +1,38 @@
+/* Scoped GSC marketing examples. Sample data, not a live connection. */
+@font-face{font-family:"Penstack GSC";font-style:normal;font-weight:400;font-display:swap;src:url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Penstack GSC";font-style:normal;font-weight:500;font-display:swap;src:url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2");}
+@font-face{font-family:"Penstack GSC";font-style:normal;font-weight:600;font-display:swap;src:url("assets/fonts/dm-sans-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Penstack GSC";font-style:normal;font-weight:700;font-display:swap;src:url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Penstack GSC";font-style:normal;font-weight:800;font-display:swap;src:url("assets/fonts/dm-sans-latin-800-normal.woff2") format("woff2");}
+.gsc-feature,.gsc-demo,.gsc-summary{font-family:"Penstack GSC","DM Sans",Arial,sans-serif;color:#1b2a4a;box-sizing:border-box}
+.gsc-feature{margin:36px 0;padding:32px;border:1px solid #d8dee8;border-radius:18px;background:#fff}
+.gsc-feature .gsc-kicker,.gsc-summary .gsc-kicker{margin:0 0 12px;color:#1a5c3a;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.gsc-feature h2,.gsc-summary h2{font-size:clamp(28px,3vw,42px);line-height:1.12;letter-spacing:-.035em;margin:0 0 16px}
+.gsc-intro{max-width:790px;font-size:17px;line-height:1.6;color:#526078;margin:0 0 24px}
+.gsc-feature a,.gsc-summary a{color:#1a5c3a;text-decoration:underline;text-underline-offset:3px;font-weight:700}
+.gsc-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0}
+.gsc-steps h3{font-size:18px;margin:0 0 6px;line-height:1.3}.gsc-steps p{font-size:15px;color:#526078;line-height:1.6;margin:0}
+.gsc-demo{margin:0;border:1px solid #d8dee8;border-radius:12px;overflow:hidden;background:#fff;min-width:0}
+.gsc-demo-bar{padding:14px 20px;border-bottom:1px solid #d8dee8;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.gsc-demo-bar img{width:115px;height:auto}.gsc-demo-bar span{font-size:12px;color:#526078}
+.gsc-demo-context{padding:18px 20px;border-bottom:1px solid #d8dee8;display:flex;gap:14px;align-items:center}
+.gsc-demo-context img{width:55px;height:55px;object-fit:contain}.gsc-demo-context strong{font-size:16px}.gsc-demo-context p{font-size:12px;margin:4px 0 0;color:#526078}
+.gsc-demo-columns{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+.gsc-query-panel,.gsc-draft-panel{padding:22px;min-width:0}.gsc-draft-panel{border-left:1px solid #d8dee8}
+.gsc-demo h3{font-size:17px;line-height:1.3;margin:0 0 10px;letter-spacing:0}.gsc-demo p{font-size:13px;line-height:1.55;color:#526078;margin:8px 0}
+.gsc-source{font-size:11px!important;overflow-wrap:anywhere}
+.gsc-query-table{width:100%;border-collapse:collapse;margin:18px 0 12px;table-layout:fixed}
+.gsc-query-table th,.gsc-query-table td{padding:11px 5px;border-bottom:1px solid #d8dee8;font-size:12px;line-height:1.45;text-align:right;font-variant-numeric:tabular-nums;vertical-align:top;background:#fff;color:#1b2a4a}
+.gsc-query-table th{color:#526078;font-weight:500;font-size:11px}.gsc-query-table th:first-child,.gsc-query-table td:first-child{text-align:left;width:63%;padding-left:0;overflow-wrap:anywhere}
+.gsc-phrase{display:flex;gap:8px;align-items:flex-start}.gsc-check{display:inline-grid;place-items:center;width:16px;height:16px;flex:0 0 16px;border:1px solid #1b2a4a;margin-top:1px;font-size:12px;line-height:1;color:#fff;background:#1b2a4a}.gsc-check.empty{background:#fff}
+.gsc-demo .gsc-selected{font-weight:700;color:#1b2a4a}.gsc-selection-note{padding:12px;border-left:3px solid #f0a500;margin:16px 0}
+.gsc-draft-field{border:1px solid #d8dee8;padding:16px;margin:12px 0}.gsc-draft-field p{color:#1b2a4a;font-size:15px;line-height:1.65;margin:0}
+.gsc-demo .gsc-field-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#526078;margin:18px 0 8px}
+.gsc-phrase-used{font-weight:700;text-decoration:underline;text-decoration-color:#f0a500;text-decoration-thickness:3px;text-underline-offset:3px}
+.gsc-demo figcaption{padding:12px 20px;background:#fff;border-top:1px solid #d8dee8;font-size:12px;line-height:1.5;color:#526078;text-align:left}
+.gsc-feature .gsc-boundary{font-size:14px;line-height:1.6;color:#526078;margin:18px 0 0}
+.gsc-home{padding:0 6% 44px}.gsc-summary{border:1px solid #d8dee8;border-radius:18px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}.gsc-summary p{color:#526078;font-size:16px;line-height:1.6}.gsc-summary .gsc-mini-title{font-size:15px;font-weight:700;color:#1b2a4a}.gsc-mini{padding:22px;border:1px solid #d8dee8;border-radius:12px}.gsc-mini-row{padding:10px 0;border-bottom:1px solid #d8dee8;font-size:14px}.gsc-mini .gsc-mini-note{font-size:12px;margin:12px 0 0}
+.gsc-faq details{padding:18px 0;border-bottom:1px solid #d8dee8}.gsc-faq summary{font-weight:700;cursor:pointer;line-height:1.5}.gsc-faq details p{margin-bottom:0}
+@media(max-width:760px){.gsc-feature{padding:20px;margin:24px 0}.gsc-steps,.gsc-demo-columns,.gsc-summary{grid-template-columns:1fr}.gsc-steps{gap:18px}.gsc-query-panel,.gsc-draft-panel{padding:16px}.gsc-draft-panel{border-left:0;border-top:1px solid #d8dee8}.gsc-home{padding:0 5% 32px}.gsc-summary{padding:22px;gap:20px}.gsc-demo-context{padding:14px}.gsc-demo-bar{padding:12px 14px}.gsc-query-table th:first-child,.gsc-query-table td:first-child{width:58%}.gsc-query-table th,.gsc-query-table td{font-size:11px;padding-right:2px}.gsc-query-table th{font-size:10px}}
+
+.gsc-demo .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

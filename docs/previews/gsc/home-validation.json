@@ -1,0 +1,41 @@
+{
+  "results": [
+    {
+      "width": 1440,
+      "scroll": 1440,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "index.html"
+    },
+    {
+      "width": 1024,
+      "scroll": 1024,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "index.html"
+    },
+    {
+      "width": 768,
+      "scroll": 768,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "index.html"
+    },
+    {
+      "width": 390,
+      "scroll": 390,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "index.html"
+    },
+    {
+      "width": 320,
+      "scroll": 320,
+      "brokenImages": [],
+      "fonts": true,
+      "page": "index.html"
+    }
+  ],
+  "overflowOrImageErrors": [],
+  "linkErrors": []
+}
