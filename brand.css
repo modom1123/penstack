@@ -361,7 +361,7 @@ footer p { max-width: 24rem; }
   border-top: 4px solid var(--navy);
 }
 .price-card.solo, .value-step.solo { border-top-color: var(--green); }
-.price-card.pro, .value-step.pro { border-top-color: var(--orange); }
+.price-card.pro, .value-step.pro { border-top-color: var(--yellow); }
 .price-card.agency, .value-step.agency { border-top-color: var(--yellow); }
 .final-cta { background: var(--green); color: var(--white); }
 .final-cta p { color: #e3e8f0; }

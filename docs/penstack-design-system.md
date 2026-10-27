@@ -850,4 +850,4 @@ Mallory approved the outlined, left-aligned Product takeaway panel and centered 
 
 ### Approved launch plan packaging — October 27, 2026
 
-Free: 5 lifetime published products, 1 store. Solo: $29/month, 50 published products/month, 1 store, 2 users. Pro: $79/month, 200 pooled published products/month, up to 3 stores, 5 users. Ordinary edits and republishes remain free. Agency, catalog bonuses, and publishing bundles are deferred. Launch offers use monthly billing. Preserve internal/legacy Agency compatibility without offering new Agency enrollment.
+Free: 5 published products per calendar month, 1 store, 1 user. Solo: $29/month or $290/year, 50 published products/month, 1 store, 2 users. Pro: $79/month or $790/year, 150 pooled published products/month, up to 3 stores, 5 users. Annual billing saves two months; allowances still reset monthly. Ordinary edits and republishes remain free. Agency, catalog bonuses, and publishing bundles are deferred. Preserve internal/legacy Agency compatibility without offering new Agency enrollment. The public Pro card and value-step accent use brand yellow.
