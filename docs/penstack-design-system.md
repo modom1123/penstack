@@ -846,3 +846,8 @@ Use consistent gaps within the same component. Distinguish headings by size, wei
 ## Product takeaway and closing action — approved October 15, 2026
 
 Mallory approved the outlined, left-aligned Product takeaway panel and centered closing call to action, with the existing light gray section border instead of navy. Use the shared `--line` token (#d8dee8) on a white panel with an 18px radius. On desktop, the takeaway heading sits left of its supporting paragraph. On mobile, stack both left-aligned. Preserve the centered closing CTA with generous spacing above it. This supersedes the full-width pale-yellow takeaway band on Product; it does not change other page patterns or CTA colors.
+
+
+### Approved launch plan packaging — October 27, 2026
+
+Free: 5 lifetime published products, 1 store. Solo: $29/month, 50 published products/month, 1 store, 2 users. Pro: $79/month, 200 pooled published products/month, up to 3 stores, 5 users. Ordinary edits and republishes remain free. Agency, catalog bonuses, and publishing bundles are deferred. Launch offers use monthly billing. Preserve internal/legacy Agency compatibility without offering new Agency enrollment.
