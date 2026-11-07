@@ -4,7 +4,7 @@
 
 ## Product
 - [Product workflow](https://penstack.co/product.html): How penstack prepares product descriptions, SEO fields, image metadata, product details, merchandising fields, review, and Shopify publishing.
-- [Pricing](https://penstack.co/pricing.html): Free, Solo, Pro, and Agency plans with publishing, store, team-member, and Brand Voice capacity.
+- [Pricing](https://penstack.co/pricing.html): Proof (free), Batch, and Run plans with publishing, store, team-member, and Brand Voice capacity, plus refills for extra products.
 - [Use cases](https://penstack.co/use-cases.html): Common Shopify listing jobs supported by penstack.
 - [Compare](https://penstack.co/compare.html): How penstack differs from adjacent product-content approaches.
 
