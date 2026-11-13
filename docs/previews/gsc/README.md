@@ -28,7 +28,7 @@ Pricing explicitly names optional GSC guidance across plans. Use Cases explains 
 
 Only Penstack's own GSC capability is clarified. No new competitor capability ratings are added. The agency and catalog pages connect existing workflows to optional query guidance.
 
-[Compare desktop](compare-1440.webp) · [Compare mobile](compare-390.webp) · [Agency desktop](shopify-agency-workflows-1440.webp) · [Agency mobile](shopify-agency-workflows-390.webp) · [Catalog cleanup desktop](shopify-catalog-cleanup-1440.webp) · [Catalog cleanup mobile](shopify-catalog-cleanup-390.webp)
+[Compare desktop](compare-1440.webp) · [Compare mobile](compare-390.webp) · [Catalog cleanup desktop](shopify-catalog-cleanup-1440.webp) · [Catalog cleanup mobile](shopify-catalog-cleanup-390.webp)
 
 ## Support and learning
 
