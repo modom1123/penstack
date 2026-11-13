@@ -1,8 +1,8 @@
 {
-  "tracked_images": 273,
-  "referenced": 150,
+  "tracked_images": 263,
+  "referenced": 145,
   "needs_manual_review": 9,
-  "unreferenced_candidates": 114,
+  "unreferenced_candidates": 109,
   "used": [
     {
       "path": "Crafting a clear product description-2.webp",
@@ -135,14 +135,7 @@
     {
       "path": "assets/illustrations/penstack-illustration-store-contexts-v1.webp",
       "refs": [
-        "shopify-agency-workflows.html",
         "use-cases.html"
-      ]
-    },
-    {
-      "path": "final-agencies-onboard-new-ecommerce-client-penstack.webp",
-      "refs": [
-        "blog/index.html"
       ]
     },
     {
@@ -233,30 +226,6 @@
       "path": "penstack-blog-ab-testing-plan-v2.webp",
       "refs": [
         "blog/ab-test-product-page.html"
-      ]
-    },
-    {
-      "path": "penstack-blog-agency-client-context-v2.webp",
-      "refs": [
-        "blog/agency-client-onboarding-penstack.html"
-      ]
-    },
-    {
-      "path": "penstack-blog-agency-onboarding-hero-v2.webp",
-      "refs": [
-        "blog/agency-client-onboarding-penstack.html"
-      ]
-    },
-    {
-      "path": "penstack-blog-agency-onboarding-sequence-v2.webp",
-      "refs": [
-        "blog/agency-client-onboarding-penstack.html"
-      ]
-    },
-    {
-      "path": "penstack-blog-agency-pilot-products-v2.webp",
-      "refs": [
-        "blog/agency-client-onboarding-penstack.html"
       ]
     },
     {
@@ -721,7 +690,6 @@
       "refs": [
         "about.html",
         "blog/ab-test-product-page.html",
-        "blog/agency-client-onboarding-penstack.html",
         "blog/ai-seo-search-visibility.html",
         "blog/alt-text-product-images.html",
         "blog/anatomy-great-product-listing.html",
@@ -745,7 +713,6 @@
         "pricing.html",
         "privacy.html",
         "product.html",
-        "shopify-agency-workflows.html",
         "shopify-catalog-cleanup.html",
         "support.html",
         "terms.html",
@@ -757,7 +724,6 @@
       "refs": [
         "about.html",
         "blog/ab-test-product-page.html",
-        "blog/agency-client-onboarding-penstack.html",
         "blog/ai-seo-search-visibility.html",
         "blog/alt-text-product-images.html",
         "blog/anatomy-great-product-listing.html",
@@ -783,7 +749,6 @@
         "pricing.html",
         "privacy.html",
         "product.html",
-        "shopify-agency-workflows.html",
         "shopify-catalog-cleanup.html",
         "support.html",
         "terms.html",
@@ -854,7 +819,6 @@
     {
       "path": "penstack-illustration-store-contexts-v1.webp",
       "refs": [
-        "shopify-agency-workflows.html",
         "use-cases.html"
       ]
     },
@@ -934,7 +898,6 @@
       "refs": [
         "about.html",
         "blog/ab-test-product-page.html",
-        "blog/agency-client-onboarding-penstack.html",
         "blog/ai-seo-search-visibility.html",
         "blog/alt-text-product-images.html",
         "blog/anatomy-great-product-listing.html",
@@ -962,7 +925,6 @@
         "pricing.html",
         "privacy.html",
         "product.html",
-        "shopify-agency-workflows.html",
         "shopify-catalog-cleanup.html",
         "styles.css",
         "support.html",
@@ -1092,11 +1054,6 @@
     "penstack-about-time-back-salmon-download.webp",
     "penstack-about-time-back.png",
     "penstack-about-turning-point-repetitive-work.webp",
-    "penstack-agency-onboarding-hero.png",
-    "penstack-agency-onboarding-hero.webp",
-    "penstack-agency-onboarding-pilot-before-scaling.webp",
-    "penstack-agency-onboarding-sequence.webp",
-    "penstack-agency-onboarding-standardize-vs-client-specific.webp",
     "penstack-anatomy-product-listing-overview.png",
     "penstack-brand-voice-boundaries-hd.svg",
     "penstack-brand-voice-guide-hd.svg",
