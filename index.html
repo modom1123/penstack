@@ -89,12 +89,18 @@ body{margin:0;background:#fff;color:var(--navy);font-family:Inter,"DM Sans",Aria
 a{color:inherit}
 img{display:block;max-width:100%}
 .home-page{max-width:1440px;margin:0 auto;background:#fff;min-height:100vh}
-.home-header{display:grid;grid-template-columns:210px 1fr auto;gap:24px;align-items:center;padding:28px 6%;border-bottom:1px solid #edf2f7}
-.home-logo img{width:170px;height:auto}
-.home-nav{display:flex;gap:24px;justify-content:center;font-size:13px;font-weight:600}
-.home-nav a{text-decoration:none}
-.home-nav a.active{color:var(--green);border-bottom:2px solid var(--green);padding-bottom:4px}
-.home-actions{display:flex;gap:16px;align-items:center;font-size:13px;font-weight:600}
+/* Shared site header: matches .site-header in styles.css + brand.css (product page is the reference) */
+.site-header{height:82px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #d8dee8;background:#fff;font-family:"DM Sans","Penstack GSC",Arial,sans-serif;line-height:1.6;color:#1b2a4a}
+.site-header a{text-decoration:none}
+.site-header .brand img{width:180px;height:auto}
+.site-header nav{display:flex;gap:clamp(.875rem,1.6vw,1.375rem);align-items:center;font-weight:700}
+.site-header nav,.site-header nav a,.site-header .login{font-size:.875rem;line-height:1.5;font-weight:700}
+.site-header nav a{padding:29px 0 25px;border-bottom:3px solid transparent}
+.site-header nav a:hover,.site-header nav a.active{color:var(--green);border-color:var(--green)}
+.header-actions{display:flex;align-items:center;gap:20px}
+.site-header .button{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:14px 22px;font-weight:800;font-size:1rem;line-height:1.5}
+.site-header .button.primary{background:var(--green);color:#fff;box-shadow:0 8px 18px rgb(27 42 74 / 10%)}
+.site-header .button.primary:hover{background:#14482d}
 .home-btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;padding:13px 24px;font-weight:700;text-decoration:none}
 .home-btn.primary{background:var(--green);color:#fff}
 .home-hero{display:grid;grid-template-columns:1.04fr .96fr;gap:44px;align-items:center;padding:58px 6% 54px}
@@ -140,17 +146,22 @@ footer p{margin:0;color:#d3dde5}
 .footer-links{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
 .footer-links a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5);text-underline-offset:4px}
 .footer-links a:hover,.footer-links a:focus-visible{text-decoration-color:#fff}
+@media(max-width:1100px){
+  .site-header{height:auto;padding-top:12px;gap:12px;flex-wrap:wrap}
+  .site-header nav{order:3;width:100%;overflow-x:auto;border-top:1px solid #d8dee8;gap:20px;scrollbar-width:thin}
+  .site-header nav a{padding:12px 0 10px;white-space:nowrap}
+  .header-actions{margin-left:auto}
+}
 @media(max-width:1000px){
-  .home-header{grid-template-columns:170px 1fr auto;gap:14px}
-  .home-nav{gap:14px;font-size:12px}
   .home-hero{gap:30px}
   .proof-grid{grid-template-columns:1fr 1fr}
   .proof-copy{grid-column:1/-1;padding-top:8px;max-width:720px}
 }
 @media(max-width:760px){
-  .home-header{grid-template-columns:1fr auto;padding:18px 5%;gap:12px}
-  .home-nav{grid-column:1/-1;order:3;justify-content:flex-start;overflow-x:auto;padding-top:8px}
-  .home-actions .login{display:none}
+  .site-header{height:auto;min-height:76px;padding:14px 5% 0;gap:12px;flex-wrap:wrap}
+  .site-header nav{padding:0}
+  .site-header .brand img{width:160px}
+  .header-actions .login{display:none}
   .home-hero{grid-template-columns:1fr;padding:36px 5% 40px}
   .home-hero-art{order:-1}
   .home-hero h1{font-size:50px}
@@ -170,9 +181,9 @@ footer p{margin:0;color:#d3dde5}
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8WV8XC7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<header class="home-header">
-  <a class="home-logo" href="/"><img src="penstack_logo.png" alt="penstack"></a>
-  <nav class="home-nav" aria-label="Primary navigation">
+<header class="site-header">
+  <a class="brand" href="/"><img src="penstack_logo.png" alt="penstack"></a>
+  <nav aria-label="Primary navigation">
     <a class="active" aria-current="page" href="/">Home</a>
     <a href="product.html" data-cta-location="nav">Product</a>
     <a href="use-cases.html" data-cta-location="nav">Use Cases</a>
@@ -181,9 +192,9 @@ footer p{margin:0;color:#d3dde5}
     <a href="blog/" data-cta-location="nav">Blog</a>
     <a href="about.html" data-cta-location="nav">About</a>
   </nav>
-  <div class="home-actions">
+  <div class="header-actions">
     <a class="login" href="https://app.penstack.co" data-cta-location="nav">Log in</a>
-    <a class="home-btn primary" href="https://app.penstack.co/?start=free" data-cta-location="nav">Start free</a>
+    <a class="button primary" href="https://app.penstack.co/?start=free" data-cta-location="nav">Start free</a>
   </div>
 </header>
 <main class="home-page">
