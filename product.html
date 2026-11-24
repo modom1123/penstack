@@ -73,13 +73,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="styles.css?v=20261123-no-header-line">
   <style>
   .product-locked{background:#fff}
-  .product-hero{padding:26px 6% 34px;display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center}
-  .product-hero-copy{max-width:690px}
+  .product-hero{padding:26px 6% 34px;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:56px;align-items:center}
+  .product-hero-copy{max-width:none}
   .product-hero .eyebrow{color:var(--orange);margin-bottom:12px}
-  .product-hero h1{font-size:clamp(46px,5.35vw,74px);line-height:1.01;letter-spacing:-.045em;max-width:650px}
+  .product-hero h1{font-size:clamp(40px,calc((88vw - 436px) / 11.6),74px);line-height:1.01;letter-spacing:-.045em;max-width:none}
   .product-hero .lead{font-size:18px;line-height:1.5;max-width:660px;margin:22px 0 22px}
   .product-hero-art{margin:0;display:flex;justify-content:center}
-  .product-hero-art img{width:100%;max-width:530px;height:auto;display:block;object-fit:contain}
+  .product-hero-art img{width:100%;max-width:320px;height:auto;display:block;object-fit:contain}
 
   .demo-wrap{padding:0 6% 22px}
   .demo-intro{text-align:center;margin:0 auto 30px;max-width:900px}
@@ -162,7 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   @media(max-width:1050px){
     .product-hero{grid-template-columns:1fr;gap:30px}
-    .product-hero-art img{max-width:620px}
+    .product-hero h1{font-size:clamp(46px,5.35vw,74px)}
     .image-compare{grid-template-columns:1fr 1fr}
     .image-compare .evidence-arrow{display:none}
     .image-proof-body{grid-template-columns:150px minmax(0,1fr)}
